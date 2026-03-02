@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Target, CheckCircle2, Sparkles } from 'lucide-react';
-import { PhaseData } from '../data/phases';
+import { PhaseData } from './phases';
 interface PhaseModalProps {
   phase: PhaseData | null;
   isOpen: boolean;

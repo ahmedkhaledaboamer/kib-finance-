@@ -8,15 +8,15 @@ const fadeUp = {
     opacity: 0,
     y: 40
   },
-  visible: (i: number = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
+      delay: 0,
       duration: 0.6,
-      ease: 'easeOut'
+      ease: 'easeOut' as const
     }
-  })
+  }
 };
 const identityItems = [
 {
