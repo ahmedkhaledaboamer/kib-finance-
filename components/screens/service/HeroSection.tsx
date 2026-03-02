@@ -16,7 +16,7 @@ export function HeroSection() {
     return () => clearInterval(timer);
   }, []);
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen   flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax-like scale */}
       <motion.div
         initial={{
@@ -131,8 +131,8 @@ export function HeroSection() {
         className="absolute top-[30%] left-[60%] w-2 h-2 rounded-full bg-[#D4AF37]/30 z-0" />
 
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
-        <div className="max-w-3xl">
+      <div className="relative z-10 p-[5%] w-full pt-20 flex items-center justify-center">
+        <div className="max-w-4xl w-full text-center">
           <motion.div
             initial={{
               opacity: 0,
@@ -225,7 +225,7 @@ export function HeroSection() {
               duration: 0.8,
               delay: 0.8
             }}
-            className="text-lg text-gray-300 mb-10 leading-relaxed max-w-2xl">
+            className="text-lg text-gray-300 mb-10 leading-relaxed">
 
             تقدّم كيه إي بي للتمويل ش.ذ.م.م منظومة خدمات مالية متكاملة صُممت
             لتلبية احتياجات الشركات، المؤسسات، رواد الأعمال، والمشاريع
@@ -247,7 +247,7 @@ export function HeroSection() {
               duration: 0.8,
               delay: 1
             }}
-            className="flex flex-wrap gap-4">
+            className="flex flex-wrap gap-4 justify-center">
 
             <button
               onClick={() =>

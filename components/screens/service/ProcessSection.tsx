@@ -54,9 +54,9 @@ export function ProcessSection() {
   return (
     <section
       ref={containerRef}
-      className="py-24 bg-[#FDF8F0] relative overflow-hidden">
+      className="  bg-[#FDF8F0] relative overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" p-[5%] relative z-10">
         <div className="text-center mb-20">
           <motion.h2
             initial={{

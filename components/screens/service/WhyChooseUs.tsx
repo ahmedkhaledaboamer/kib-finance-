@@ -60,7 +60,7 @@ export function WhyChooseUs() {
     }
   };
   return (
-    <section className="py-24 bg-[#ECFDF5] relative overflow-hidden">
+    <section className="  bg-[#ECFDF5] relative overflow-hidden">
       {/* Subtle Background Pattern */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -70,7 +70,7 @@ export function WhyChooseUs() {
         }}>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" p-[5%] relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{
@@ -117,7 +117,7 @@ export function WhyChooseUs() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-gray-600 max-w-2xl mx-auto">
+            className="text-xl text-gray-600  ">
 
             نقدم قيمة حقيقية تتجاوز التمويل التقليدي
           </motion.p>

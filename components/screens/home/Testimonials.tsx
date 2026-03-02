@@ -59,10 +59,10 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-24 bg-stone-50 overflow-hidden"
+      className="bg-stone-50 overflow-hidden"
       ref={ref}>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="p-[5%]">
         {/* Header */}
         <motion.div
           initial={{
@@ -88,7 +88,7 @@ export function Testimonials() {
           <h2 className="text-4xl lg:text-5xl font-black text-navy mb-4">
             ثقة <span className="gradient-text">تتحدث عنها</span> الأرقام
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto text-lg">
+          <p className="text-gray-500   text-lg">
             شركاؤنا يشاركوننا قصص نجاحهم
           </p>
         </motion.div>

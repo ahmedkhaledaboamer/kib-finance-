@@ -57,8 +57,8 @@ export function About() {
     margin: '-100px'
   });
   return (
-    <section id="about" className="py-24 bg-white overflow-hidden" ref={ref}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="about" className=" bg-white overflow-hidden" ref={ref}>
+      <div className=" px-[5%] pt-[5%]">
         {/* Section header */}
         <motion.div
           variants={fadeUp}
@@ -72,7 +72,7 @@ export function About() {
           <h2 className="text-4xl lg:text-5xl font-black text-navy mb-4">
             من نحن؟ وما الذي <span className="gradient-text">نُمثّله؟</span>
           </h2>
-          <p className="text-gray-500 max-w-3xl mx-auto leading-relaxed text-lg">
+          <p className="text-gray-500   leading-relaxed text-lg">
             كيه إي بي للتمويل ش.ذ.م.م ليست مجرد شركة تعمل في مجال الوساطة
             المالية، بل هي كيان مؤسسي متكامل يقوم على رؤية واضحة، وقيم ثابتة،
             ونظام حوكمة صارم.

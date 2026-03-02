@@ -152,7 +152,7 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
     <AnimatePresence>
       {service &&
       <div
-        className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+        className="fixed inset-0 z-[100] flex items-center justify-center p-[5%]"
         dir="rtl">
 
           {/* Backdrop */}
@@ -192,7 +192,7 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
             damping: 28,
             stiffness: 320
           }}
-          className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col">
+          className="relative w-full   bg-white rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col">
 
             {/* Hero image */}
             <div className="relative h-52 flex-shrink-0 overflow-hidden">
@@ -336,7 +336,7 @@ export function Services() {
           <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-teal/5" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="  px-4 sm:px-6 relative z-10">
           {/* Header */}
           <motion.div
             initial={{
@@ -362,7 +362,7 @@ export function Services() {
             <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
               حلول تمويلية <span className="gradient-text-gold">متخصصة</span>
             </h2>
-            <p className="text-white/50 max-w-2xl mx-auto text-lg">
+            <p className="text-white/50   text-lg">
               نصمم حلولاً تمويلية دقيقة تتناسب مع طبيعة كل نشاط ومتطلبات كل
               مرحلة
             </p>
@@ -436,19 +436,7 @@ export function Services() {
           </div>
         </div>
 
-        {/* Wave */}
-        <div className="wave-divider mt-16 relative z-10">
-          <svg
-            viewBox="0 0 1440 80"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-
-            <path
-              d="M0 80L48 72C96 64 192 48 288 40C384 32 480 32 576 37.3C672 43 768 53 864 56C960 59 1056 53 1152 48C1248 43 1344 37 1392 34.7L1440 32V0H1392C1344 0 1248 0 1152 0C1056 0 960 0 864 0C768 0 672 0 576 0C480 0 384 0 288 0C192 0 96 0 48 0H0Z"
-              fill="#FEF3C7" />
-
-          </svg>
-        </div>
+         
       </section>
 
       {/* Service Detail Modal */}

@@ -91,7 +91,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col overflow-hidden">
+      className="relative p-[5%] min-h-screen w-full flex flex-col justify-center items-center overflow-hidden">
 
       {/* Background Image with Parallax */}
       <motion.div
@@ -157,12 +157,12 @@ export function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 flex-1 flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-20"
+        className="relative z-10 flex-1 flex flex-col justify-center items-center px-4 sm:px-6 pt-28 pb-20"
         style={{
           opacity
         }}>
 
-        <div className="max-w-3xl">
+        <div className="flex flex-col items-center justify-center">
           {/* Badge */}
           <motion.div
             initial={{
@@ -224,7 +224,7 @@ export function Hero() {
             transition={{
               delay: 0.5
             }}
-            className="text-xl text-white/70 mb-8 leading-relaxed max-w-xl">
+            className="text-xl text-white/70 mb-8 leading-relaxed  ">
 
             {slide.subheadline}
           </motion.p>
@@ -277,26 +277,10 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Slide controls */}
-        <div className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-20">
-          <button
-            onClick={() =>
-            setCurrent((c) => (c - 1 + slides.length) % slides.length)
-            }
-            className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-gold/50 transition-all">
-
-            <ChevronLeftIcon size={16} />
-          </button>
-          <button
-            onClick={() => setCurrent((c) => (c + 1) % slides.length)}
-            className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-gold/50 transition-all">
-
-            <ChevronRightIcon size={16} />
-          </button>
-        </div>
+       
 
         {/* Slide dots */}
-        <div className="absolute bottom-32 right-6 flex gap-2">
+        <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex justify-center items-center gap-2">
           {slides.map((_, i) =>
           <button
             key={i}
@@ -308,9 +292,9 @@ export function Hero() {
       </motion.div>
 
       {/* Stats Strip */}
-      <div className="relative z-10 bg-white/5 backdrop-blur-sm border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="relative w-full z-10 bg-white/5 backdrop-blur-sm border-t border-white/10">
+        <div className="px-4 sm:px-6 py-6">
+          <div className="  grid grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center text-center">
             {stats.map((stat, i) =>
             <motion.div
               key={i}
@@ -325,7 +309,7 @@ export function Hero() {
               transition={{
                 delay: 0.8 + i * 0.1
               }}
-              className="flex items-center gap-3">
+              className="flex flex-col items-center gap-3">
 
                 <div
                 className={`w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center ${stat.color}`}>
@@ -343,20 +327,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Wave divider */}
-      <div className="wave-divider relative z-10">
-        <svg
-          viewBox="0 0 1440 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-
-          <path
-            d="M0 60L60 50C120 40 240 20 360 15C480 10 600 20 720 25C840 30 960 30 1080 25C1200 20 1320 10 1380 5L1440 0V60H1380C1320 60 1200 60 1080 60C960 60 840 60 720 60C600 60 480 60 360 60C240 60 120 60 60 60H0Z"
-            fill="white" />
-
-        </svg>
-      </div>
+ 
 
       <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>);

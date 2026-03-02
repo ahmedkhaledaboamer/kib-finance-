@@ -97,8 +97,8 @@ export function Benefits() {
     margin: '-80px'
   });
   return (
-    <section id="benefits" className="py-24 bg-cream overflow-hidden" ref={ref}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="benefits" className=" bg-cream overflow-hidden" ref={ref}>
+      <div className=" p-[5%]">
         {/* Header */}
         <motion.div
           initial={{
@@ -124,7 +124,7 @@ export function Benefits() {
           <h2 className="text-4xl lg:text-5xl font-black text-navy mb-4">
             قيم تُشكّل <span className="gradient-text">شخصية المؤسسة</span>
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-500   text-lg">
             قيم تحدد طريقة تعاملنا وتضبط سلوكنا المهني في كل خطوة
           </p>
         </motion.div>

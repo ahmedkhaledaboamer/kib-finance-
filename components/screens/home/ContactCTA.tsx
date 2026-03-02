@@ -21,7 +21,7 @@ export function ContactCTA() {
     <>
       <section
         id="contact"
-        className="py-24 bg-amber-50 relative overflow-hidden"
+        className="  bg-amber-50 relative overflow-hidden"
         ref={ref}>
 
         {/* Subtle background pattern */}
@@ -30,7 +30,7 @@ export function ContactCTA() {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal/8 rounded-full blur-3xl" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className=" px-[5%] pt-[5%] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: text */}
             <motion.div
@@ -59,7 +59,7 @@ export function ContactCTA() {
                 <br />
                 <span className="gradient-text-gold">التمويلية اليوم</span>
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg">
+              <p className="text-gray-600 text-lg leading-relaxed mb-8  ">
                 فريقنا من الخبراء جاهز لمساعدتك في تصميم الحل التمويلي الأمثل
                 لنشاطك. تواصل معنا الآن واحصل على استشارة مجانية.
               </p>

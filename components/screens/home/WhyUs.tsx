@@ -180,7 +180,7 @@ export function WhyUs() {
     margin: '-80px'
   });
   return (
-    <section id="why-us" className="py-24 relative overflow-hidden" ref={ref}>
+    <section id="why-us" className=" relative overflow-hidden" ref={ref}>
       {/* Background image with blur overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -193,7 +193,7 @@ export function WhyUs() {
         <div className="absolute inset-0 bg-gradient-to-tl from-teal/8 via-transparent to-gold/5" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="  p-[5%] relative z-10">
         {/* Header */}
         <motion.div
           initial={{
@@ -219,7 +219,7 @@ export function WhyUs() {
           <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
             لماذا <span className="gradient-text-gold">كيه إي بي؟</span>
           </h2>
-          <p className="text-white/50 max-w-2xl mx-auto text-lg">
+          <p className="text-white/50   text-lg">
             رؤية تُبنى على الاستدامة… وتتحرك نحو الريادة… وتُدار بمعايير عالمية
           </p>
         </motion.div>
@@ -329,19 +329,7 @@ export function WhyUs() {
         </motion.div>
       </div>
 
-      {/* Wave → ContactCTA (amber-50) */}
-      <div className="wave-divider mt-16 relative z-10">
-        <svg
-          viewBox="0 0 1440 80"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-
-          <path
-            d="M0 40L48 36C96 32 192 24 288 22.7C384 21 480 27 576 32C672 37 768 43 864 42.7C960 43 1056 37 1152 32C1248 27 1344 21 1392 18.7L1440 16V0H1392C1344 0 1248 0 1152 0C1056 0 960 0 864 0C768 0 672 0 576 0C480 0 384 0 288 0C192 0 96 0 48 0H0Z"
-            fill="#fffbeb" />
-
-        </svg>
-      </div>
+       
     </section>);
 
 }

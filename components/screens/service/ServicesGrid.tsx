@@ -29,7 +29,7 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
     return servicesData.filter((s) => s.category === categoryId).length;
   };
   return (
-    <section id="services-grid" className="py-24 bg-white relative">
+    <section id="services-grid" className=" bg-white relative">
       {/* Subtle Background Pattern */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -39,7 +39,7 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
         }}>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" p-[5%] relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{
@@ -86,7 +86,7 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto">
+            className="text-xl text-gray-600  ">
 
             اختر من بين 30 خدمة تمويلية مصممة خصيصاً لتلبية احتياجاتك ودعم نمو
             أعمالك
@@ -171,7 +171,7 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             {filteredServices.map((service, index) =>
             <div
               key={service.id}
-              className="snap-center shrink-0 w-[85vw] max-w-[340px]">
+              className="snap-center shrink-0 ]  ">
 
                 <ServiceCard
                 service={service}

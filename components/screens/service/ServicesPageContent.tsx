@@ -7,12 +7,10 @@ import { HeroSection } from "./HeroSection";
 import { ServicesGrid } from "./ServicesGrid";
 import { ProcessSection } from "./ProcessSection";
 import { WhyChooseUs } from "./WhyChooseUs";
-import { StatsSection } from "./StatsSection";
-import { PartnersSection } from "./PartnersSection";
+ import { PartnersSection } from "./PartnersSection";
 import { FAQSection } from "./FAQSection";
 import { CTASection } from "./CTASection";
-import { ClosingSection } from "./ClosingSection";
-import { ServiceModal } from "./ServiceModal";
+ import { ServiceModal } from "./ServiceModal";
 import { ContactFormModal } from "./ContactFormModal";
 import type { ServiceItem } from "./services";
 
@@ -57,12 +55,10 @@ export function ServicesPageContent() {
         <ServicesGrid onServiceClick={handleOpenServiceModal} />
         <ProcessSection />
         <WhyChooseUs />
-        <StatsSection />
-        <PartnersSection />
+         <PartnersSection />
         <FAQSection />
         <CTASection onOpenContact={handleOpenContactModal} />
-        <ClosingSection />
-      </main>
+       </main>
 
       <ServiceModal
         isOpen={isServiceModalOpen}

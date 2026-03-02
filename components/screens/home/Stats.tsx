@@ -120,7 +120,7 @@ export function Stats() {
     margin: '-80px'
   });
   return (
-    <section className="py-24 bg-zinc-950 relative overflow-hidden" ref={ref}>
+    <section className=" bg-zinc-950 relative overflow-hidden" ref={ref}>
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold/8 rounded-full blur-3xl" />
@@ -135,7 +135,7 @@ export function Stats() {
 
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className=" p-[5%] relative z-10">
         {/* Header */}
         <motion.div
           initial={{
@@ -161,7 +161,7 @@ export function Stats() {
           <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
             إنجازات <span className="gradient-text-gold">حقيقية</span>
           </h2>
-          <p className="text-white/50 max-w-xl mx-auto text-lg">
+          <p className="text-white/50   text-lg">
             أرقام تعكس ثقة عملائنا وخبرتنا المتراكمة في القطاع المالي
           </p>
         </motion.div>
@@ -237,7 +237,7 @@ export function Stats() {
 
           <div className="absolute inset-0 bg-gradient-to-l from-navy/90 via-navy/50 to-transparent" />
           <div className="absolute inset-0 flex items-center justify-end px-10">
-            <div className="text-start max-w-md">
+            <div className="text-start  ">
               <h3 className="text-2xl lg:text-3xl font-black text-white mb-2">
                 نحن نقود القرارات المالية الكبرى
               </h3>
@@ -247,19 +247,7 @@ export function Stats() {
         </motion.div>
       </div>
 
-      {/* Wave → Testimonials (cream-alt / stone) */}
-      <div className="wave-divider mt-16">
-        <svg
-          viewBox="0 0 1440 80"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-
-          <path
-            d="M0 80L60 70C120 60 240 40 360 33.3C480 27 600 33 720 38.7C840 44 960 49 1080 46.7C1200 44 1320 34 1380 29.3L1440 24V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z"
-            fill="#f5f5f4" />
-
-        </svg>
-      </div>
+       
     </section>);
 
 }

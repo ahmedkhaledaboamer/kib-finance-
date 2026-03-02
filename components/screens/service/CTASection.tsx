@@ -7,7 +7,7 @@ interface CTASectionProps {
 }
 export function CTASection({ onOpenContact }: CTASectionProps) {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative   overflow-hidden">
       {/* Background Image & Gradient */}
       <div className="absolute inset-0 z-0">
         <img
@@ -51,7 +51,7 @@ export function CTASection({ onOpenContact }: CTASectionProps) {
         }} />
 
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className=" p-[5%] relative z-10 text-center">
         <motion.div
           initial={{
             opacity: 0,
@@ -71,7 +71,7 @@ export function CTASection({ onOpenContact }: CTASectionProps) {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             هل تبحث عن حل تمويلي مخصص؟
           </h2>
-          <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-200 mb-4   leading-relaxed">
             تواصل معنا اليوم ودعنا نصمم لك الحل الأمثل الذي يلبي طموحاتك ويحقق
             أهدافك المؤسسية بكفاءة واحترافية.
           </p>
