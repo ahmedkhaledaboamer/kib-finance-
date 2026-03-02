@@ -1,12 +1,16 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ChevronDown } from 'lucide-react';
-export function HeroSection() {
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+export function HeroSection({ locale }: { locale: string }) {
+  const t = useTranslations('servicesPage.hero');
+  const isRTL = locale === "ar";
   const [text, setText] = useState('');
-  const fullText =
-  'حلول مالية متخصصة تُصمَّم بدقة… وتُنفَّذ باحتراف… وتُدار بمعايير مجلس الإدارة';
+  const fullText = t('typingLine');
   useEffect(() => {
+    setText('');
     let i = 0;
     const timer = setInterval(() => {
       setText(fullText.slice(0, i));
@@ -14,9 +18,9 @@ export function HeroSection() {
       if (i > fullText.length) clearInterval(timer);
     }, 50);
     return () => clearInterval(timer);
-  }, []);
+  }, [fullText]);
   return (
-    <section className="relative h-screen   flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax-like scale */}
       <motion.div
         initial={{
@@ -33,7 +37,7 @@ export function HeroSection() {
 
         <img
           src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
-          alt="Dubai Financial District"
+          alt={t('imageAlt')}
           className="w-full h-full object-cover" />
 
         {/* Dark Blue Overlay */}
@@ -148,7 +152,7 @@ export function HeroSection() {
             }}>
 
             <span className="inline-block py-1.5 px-4 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/30 text-sm font-bold mb-6 tracking-wider backdrop-blur-sm">
-              كيه إي بي للتمويل ش.ذ.م.م
+              {t('badge')}
             </span>
           </motion.div>
 
@@ -165,11 +169,11 @@ export function HeroSection() {
               duration: 0.8,
               delay: 0.4
             }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+            className="home-hero-heading font-black text-white mb-6 leading-tight drop-shadow-lg text-center">
 
-            خدماتنا{' '}
+            {t('title')}{' '}
             <span className="text-[#D4AF37] relative">
-              للتمويل
+              {t('titleHighlight')}
               <motion.span
                 initial={{
                   scaleX: 0
@@ -197,7 +201,7 @@ export function HeroSection() {
               duration: 0.8,
               delay: 0.6
             }}
-            className="text-xl md:text-2xl text-gray-200 font-medium mb-8 leading-relaxed border-r-4 border-[#D4AF37] pr-4 h-16 md:h-auto">
+            className={`home-section-subtitle text-gray-200 font-medium mb-8 leading-relaxed px-2 border-[#D4AF37] h-16 md:h-auto ${!isRTL ? 'border-l-4 border-[#D4AF37]' : 'border-r-4 border-[#D4AF37]'}`}>
 
             {text}
             <motion.span
@@ -225,13 +229,9 @@ export function HeroSection() {
               duration: 0.8,
               delay: 0.8
             }}
-            className="text-lg text-gray-300 mb-10 leading-relaxed">
+            className="home-body-large text-gray-300 mb-10 leading-relaxed">
 
-            تقدّم كيه إي بي للتمويل ش.ذ.م.م منظومة خدمات مالية متكاملة صُممت
-            لتلبية احتياجات الشركات، المؤسسات، رواد الأعمال، والمشاريع
-            الاستثمارية داخل الدولة وخارجها. نحن لا نوفّر خدمات تقليدية، بل
-            حلولًا تمويلية مُحكمة تُبنى على تحليل دقيق، ورؤية استراتيجية، وخبرة
-            تشغيلية واسعة.
+            {t('paragraph')}
           </motion.p>
 
           <motion.div
@@ -255,55 +255,19 @@ export function HeroSection() {
                 behavior: 'smooth'
               })
               }
-              className="bg-[#D4AF37] hover:bg-white text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 flex items-center gap-2 group shadow-lg shadow-[#D4AF37]/20">
+              className="cursor-pointer bg-[#D4AF37] hover:bg-white text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 flex items-center gap-2 group shadow-lg shadow-[#D4AF37]/20">
 
-              استكشف خدماتنا
-              <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+              {t('exploreServices')}
             </button>
 
             {/* New Secondary CTA */}
-            <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 flex items-center gap-2">
-              تواصل معنا
-            </button>
+            <Link href="/implementation-mechanism" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 flex items-center gap-2">
+              {t('contactUs')}
+              {!isRTL ? <ArrowRight className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> : <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />}
+            </Link>
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1
-        }}
-        transition={{
-          delay: 2,
-          duration: 1
-        }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 cursor-pointer hover:text-white transition-colors z-20"
-        onClick={() =>
-        document.getElementById('services-grid')?.scrollIntoView({
-          behavior: 'smooth'
-        })
-        }>
-
-        <span className="text-sm font-medium tracking-widest uppercase">
-          اكتشف المزيد
-        </span>
-        <motion.div
-          animate={{
-            y: [0, 8, 0]
-          }}
-          transition={{
-            repeat: Infinity,
-            duration: 1.5,
-            ease: 'easeInOut'
-          }}>
-
-          <ChevronDown className="w-6 h-6" />
-        </motion.div>
-      </motion.div>
 
       {/* Animated Bottom Divider */}
       <div className="absolute bottom-0 left-0 w-full h-[3px] overflow-hidden z-20">

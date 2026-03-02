@@ -1,19 +1,17 @@
 "use client";
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
-import { servicesData, categories, ServiceItem } from '@/components/screens/service/services';
+import { useTranslations } from 'next-intl';
+import { servicesData, ServiceItem } from '@/components/screens/service/services';
 import { ServiceCard } from './ServiceCard';
 interface ServicesGridProps {
   onServiceClick: (service: ServiceItem) => void;
+  locale: string;
 }
-export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
-  const [activeCategory, setActiveCategory] = useState('all');
+export function ServicesGrid({ onServiceClick, locale }: ServicesGridProps) {
+  const t = useTranslations('servicesPage.servicesGrid');
   const scrollRef = useRef<HTMLDivElement>(null);
-  const filteredServices =
-  activeCategory === 'all' ?
-  servicesData :
-  servicesData.filter((s) => s.category === activeCategory);
   const scrollCarousel = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = scrollRef.current.offsetWidth * 0.85;
@@ -22,11 +20,6 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
         behavior: 'smooth'
       });
     }
-  };
-  // Helper to get count for a category
-  const getCategoryCount = (categoryId: string) => {
-    if (categoryId === 'all') return servicesData.length;
-    return servicesData.filter((s) => s.category === categoryId).length;
   };
   return (
     <section id="services-grid" className=" bg-white relative">
@@ -53,9 +46,9 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-bold text-[#1E3A5F] mb-4">
+            className="services-heading font-black text-[#1E3A5F] mb-4">
 
-            منظومة خدماتنا <span className="text-[#D4AF37]">المتكاملة</span>
+            {t('heading')} <span className="text-[#D4AF37]">{t('headingHighlight')}</span>{t('headingSuffix') ? ` ${t('headingSuffix')}` : ''}
           </motion.h2>
 
           <motion.div
@@ -86,47 +79,16 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-gray-600  ">
+            className="services-subtitle text-gray-600">
 
-            اختر من بين 30 خدمة تمويلية مصممة خصيصاً لتلبية احتياجاتك ودعم نمو
-            أعمالك
+            {t('subtitle')}
           </motion.p>
-        </div>
-
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16">
-          {categories.map((category) => {
-            const count = getCategoryCount(category.id);
-            return (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`relative px-6 py-3 rounded-full text-sm md:text-base font-bold transition-all duration-300 ${activeCategory === category.id ? 'text-white shadow-lg shadow-[#1E3A5F]/20' : 'text-gray-600 bg-gray-100 hover:bg-gray-200'}`}>
-
-                {activeCategory === category.id &&
-                <motion.div
-                  layoutId="activeTab"
-                  className="absolute inset-0 bg-[#1E3A5F] rounded-full -z-10"
-                  transition={{
-                    type: 'spring',
-                    stiffness: 300,
-                    damping: 30
-                  }} />
-
-                }
-                {category.label}
-                <span className="text-xs opacity-70 mr-1 font-medium">
-                  ({count})
-                </span>
-              </button>);
-
-          })}
         </div>
 
         {/* Desktop Grid (hidden on mobile) */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence mode="popLayout">
-            {filteredServices.map((service, index) =>
+            {servicesData.map((service, index) =>
             <motion.div
               key={service.id}
               layout
@@ -149,7 +111,8 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
                 <ServiceCard
                 service={service}
                 index={index}
-                onClick={onServiceClick} />
+                onClick={onServiceClick}
+                locale={locale} />
 
               </motion.div>
             )}
@@ -168,7 +131,7 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             }}>
 
             <style>{`div::-webkit-scrollbar { display: none; }`}</style>
-            {filteredServices.map((service, index) =>
+            {servicesData.map((service, index) =>
             <div
               key={service.id}
               className="snap-center shrink-0 ]  ">
@@ -176,7 +139,8 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
                 <ServiceCard
                 service={service}
                 index={index}
-                onClick={onServiceClick} />
+                onClick={onServiceClick}
+                locale={locale} />
 
               </div>
             )}
@@ -186,14 +150,14 @@ export function ServicesGrid({ onServiceClick }: ServicesGridProps) {
             <button
               onClick={() => scrollCarousel('right')}
               className="w-10 h-10 rounded-full bg-[#1E3A5F] text-white flex items-center justify-center shadow-md hover:bg-[#D4AF37] transition-colors"
-              aria-label="السابق">
+              aria-label={t('carouselPrev')}>
 
               <ChevronRightIcon className="w-5 h-5" />
             </button>
             <button
               onClick={() => scrollCarousel('left')}
               className="w-10 h-10 rounded-full bg-[#1E3A5F] text-white flex items-center justify-center shadow-md hover:bg-[#D4AF37] transition-colors"
-              aria-label="التالي">
+              aria-label={t('carouselNext')}>
 
               <ChevronLeftIcon className="w-5 h-5" />
             </button>

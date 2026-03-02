@@ -2,54 +2,18 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Search, PenTool, Settings, Activity, BarChart3 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+const icons = [Search, PenTool, Settings, Activity, BarChart3];
 export function ProcessSection() {
+  const t = useTranslations('servicesPage.process');
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'center center']
   });
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const steps = [
-  {
-    id: 1,
-    title: 'التحليل',
-    subtitle: 'Analysis',
-    shortDesc: 'تحليل دقيق لاحتياجاتك المالية',
-    desc: 'نبدأ بفهم عميق لوضعك المالي وأهدافك',
-    icon: Search
-  },
-  {
-    id: 2,
-    title: 'التصميم',
-    subtitle: 'Design',
-    shortDesc: 'تصميم حل تمويلي مخصص',
-    desc: 'نصمم حلاً فريداً يتناسب مع احتياجاتك',
-    icon: PenTool
-  },
-  {
-    id: 3,
-    title: 'التنفيذ',
-    subtitle: 'Execution',
-    shortDesc: 'تنفيذ احترافي وسريع',
-    desc: 'ننفذ بسرعة ودقة مع ضمان الامتثال الكامل',
-    icon: Settings
-  },
-  {
-    id: 4,
-    title: 'المتابعة',
-    subtitle: 'Follow-up',
-    shortDesc: 'متابعة مستمرة وإدارة مؤسسية',
-    desc: 'نقدم متابعة مستمرة وتقارير دورية',
-    icon: Activity
-  },
-  {
-    id: 5,
-    title: 'التقييم',
-    subtitle: 'Evaluation',
-    shortDesc: 'تقييم شامل للنتائج',
-    desc: 'نقيّم النتائج ونطور الحلول باستمرار',
-    icon: BarChart3
-  }];
+  const stepsRaw = t.raw('steps') as { title: string; subtitle: string; shortDesc: string; desc: string }[];
+  const steps = stepsRaw.map((s, i) => ({ id: i + 1, ...s, icon: icons[i] }));
 
   return (
     <section
@@ -70,9 +34,9 @@ export function ProcessSection() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-bold text-[#1E3A5F] mb-4">
+            className="home-section-heading font-black text-[#1E3A5F] mb-4">
 
-            كيف <span className="text-[#D4AF37]">نعمل</span>
+            {t('heading')} <span className="text-[#D4AF37]">{t('headingHighlight')}</span>
           </motion.h2>
           <motion.div
             initial={{
@@ -144,28 +108,6 @@ export function ProcessSection() {
                   }}
                   className="relative flex flex-col items-center text-center group bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
 
-                  {/* Mobile Connecting Line */}
-                  {index !== steps.length - 1 &&
-                  <div className="lg:hidden absolute top-24 bottom-[-3rem] w-0.5 bg-gray-200 z-0">
-                      <motion.div
-                      initial={{
-                        scaleY: 0
-                      }}
-                      whileInView={{
-                        scaleY: 1
-                      }}
-                      viewport={{
-                        once: true
-                      }}
-                      transition={{
-                        duration: 0.5,
-                        delay: 0.3
-                      }}
-                      className="w-full h-full bg-gradient-to-b from-[#D4AF37] to-[#059669] origin-top" />
-
-                    </div>
-                  }
-
                   <motion.div
                     whileInView={{
                       y: [0, -10, 0]
@@ -188,16 +130,16 @@ export function ProcessSection() {
                     </div>
                   </motion.div>
 
-                  <h3 className="text-xl font-bold text-[#1E3A5F] mb-1">
+                  <h3 className="home-body-large font-bold text-[#1E3A5F] mb-1">
                     {step.title}
                   </h3>
                   <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-widest mb-3 block">
                     {step.subtitle}
                   </span>
-                  <p className="text-gray-800 font-medium mb-2 text-sm">
+                  <p className="home-small-label text-gray-800 font-medium mb-2">
                     {step.shortDesc}
                   </p>
-                  <p className="text-gray-500 text-xs leading-relaxed">
+                  <p className="home-small-label text-gray-500 leading-relaxed">
                     {step.desc}
                   </p>
                 </motion.div>);

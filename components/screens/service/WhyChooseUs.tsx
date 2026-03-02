@@ -1,39 +1,13 @@
 "use client";
-import React, { Children } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Clock, Users, Target, Globe, Award } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+const icons = [ShieldCheck, Clock, Users, Target, Globe, Award];
 export function WhyChooseUs() {
-  const features = [
-  {
-    icon: ShieldCheck,
-    title: 'الامتثال والحوكمة',
-    desc: 'نلتزم بأعلى معايير الامتثال والحوكمة المؤسسية في جميع عملياتنا التمويلية'
-  },
-  {
-    icon: Clock,
-    title: 'سرعة التنفيذ',
-    desc: 'نضمن سرعة الإجراءات والموافقات مع الحفاظ على أعلى معايير الجودة والدقة'
-  },
-  {
-    icon: Users,
-    title: 'فريق متخصص',
-    desc: 'يضم فريقنا خبراء ماليين ومستشارين بخبرة تتجاوز 15 عاماً في القطاع المالي'
-  },
-  {
-    icon: Target,
-    title: 'حلول مخصصة',
-    desc: 'نصمم كل حل تمويلي بناءً على تحليل دقيق لاحتياجات العميل وأهدافه الاستراتيجية'
-  },
-  {
-    icon: Globe,
-    title: 'تغطية شاملة',
-    desc: 'نقدم خدماتنا داخل الدولة وخارجها مع شبكة شركاء تمتد عبر المنطقة والعالم'
-  },
-  {
-    icon: Award,
-    title: 'سجل حافل',
-    desc: 'أكثر من 500 عميل و2 مليار درهم تمويلات ناجحة تشهد على التزامنا بالتميز'
-  }];
+  const t = useTranslations('servicesPage.whyChooseUs');
+  const featuresRaw = t.raw('features') as { title: string; desc: string }[];
+  const features = featuresRaw.map((f, i) => ({ ...f, icon: icons[i] }));
 
   const containerVariants = {
     hidden: {
@@ -84,9 +58,9 @@ export function WhyChooseUs() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-bold text-[#1E3A5F] mb-4">
+            className="home-section-heading font-black text-[#1E3A5F] mb-4">
 
-            لماذا <span className="text-[#D4AF37]">تختارنا</span>
+            {t('heading')} <span className="text-[#D4AF37]">{t('headingHighlight')}</span>
           </motion.h2>
 
           <motion.div
@@ -117,9 +91,9 @@ export function WhyChooseUs() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-gray-600  ">
+            className="home-section-subtitle text-gray-600">
 
-            نقدم قيمة حقيقية تتجاوز التمويل التقليدي
+            {t('subtitle')}
           </motion.p>
         </div>
 
@@ -151,10 +125,10 @@ export function WhyChooseUs() {
                   <Icon className="w-7 h-7 text-[#059669] group-hover:text-white transition-colors duration-300" />
                 </div>
 
-                <h3 className="text-xl font-bold text-[#1E3A5F] mb-3 relative z-10">
+                <h3 className="home-body-large font-bold text-[#1E3A5F] mb-3 relative z-10">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed relative z-10">
+                <p className="home-small-label text-gray-600 leading-relaxed relative z-10">
                   {feature.desc}
                 </p>
 

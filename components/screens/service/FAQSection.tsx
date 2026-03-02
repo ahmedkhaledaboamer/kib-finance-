@@ -2,36 +2,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 export function FAQSection() {
+  const t = useTranslations('servicesPage.faq');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const faqs = [
-  {
-    q: 'ما هي أنواع التمويل المتاحة؟',
-    a: 'نقدم أكثر من 30 خدمة تمويلية تشمل تمويل الشركات، المشاريع، العقارات، التمويل الإسلامي، التمويل الدولي، الاستشارات المالية، وغيرها الكثير. كل خدمة مصممة لتلبية احتياجات محددة.'
-  },
-  {
-    q: 'كم يستغرق الحصول على الموافقة؟',
-    a: 'تختلف مدة الموافقة حسب نوع التمويل وحجمه، لكننا نلتزم بتقديم ردود أولية خلال 48 ساعة عمل، مع إتمام معظم المعاملات خلال 2-4 أسابيع.'
-  },
-  {
-    q: 'هل تقدمون خدمات للشركات الناشئة؟',
-    a: 'نعم، لدينا برنامج خاص لتمويل رواد الأعمال والشركات الناشئة يشمل التأسيس والتشغيل والتوسع، مع دعم استشاري متكامل.'
-  },
-  {
-    q: 'ما هي المستندات المطلوبة؟',
-    a: 'تختلف المستندات حسب نوع التمويل، لكن بشكل عام نطلب: السجل التجاري، القوائم المالية، خطة العمل، وإثبات الهوية. فريقنا سيرشدك خلال كل خطوة.'
-  },
-  {
-    q: 'هل تقدمون تمويلاً متوافقاً مع الشريعة الإسلامية؟',
-    a: 'نعم، نقدم مجموعة كاملة من المنتجات المتوافقة مع أحكام الشريعة الإسلامية تشمل المرابحة والمضاربة والإجارة والاستصناع، جميعها معتمدة من هيئة الرقابة الشرعية.'
-  },
-  {
-    q: 'هل يمكنكم تمويل مشاريع خارج الدولة؟',
-    a: 'بالتأكيد، نقدم حلول تمويل دولية وخارجية تشمل المشاريع الإقليمية والدولية، مع خبرة واسعة في التجارة العابرة للحدود وسلاسل الإمداد العالمية.'
-  }];
+  const faqs = t.raw('items') as { q: string; a: string }[];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 bg-white relative overflow-hidden px-[5%]">
       {/* Subtle Dot Pattern Background */}
       <div
         className="absolute inset-0 opacity-[0.02] pointer-events-none"
@@ -41,7 +19,7 @@ export function FAQSection() {
         }}>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{
@@ -55,9 +33,9 @@ export function FAQSection() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-bold text-[#1E3A5F] mb-4">
+            className="home-section-heading font-black text-[#1E3A5F] mb-4">
 
-            الأسئلة <span className="text-[#D4AF37]">الشائعة</span>
+            {t('heading')} <span className="text-[#D4AF37]">{t('headingHighlight')}</span>
           </motion.h2>
           <motion.p
             initial={{
@@ -74,9 +52,9 @@ export function FAQSection() {
             transition={{
               delay: 0.1
             }}
-            className="text-xl text-gray-600">
+            className="home-section-subtitle text-gray-600">
 
-            إجابات على أكثر الأسئلة شيوعاً حول خدماتنا التمويلية
+            {t('subtitle')}
           </motion.p>
         </div>
 
@@ -104,11 +82,11 @@ export function FAQSection() {
                   transition={{
                     delay: index * 0.1
                   }}
-                  className={`border border-gray-200 rounded-lg overflow-hidden transition-colors duration-300 ${isOpen ? 'bg-[#FDF8F0] border-l-4 border-l-[#D4AF37]' : 'bg-white'}`}>
+                  className={` border border-gray-200 rounded-lg overflow-hidden transition-colors duration-300 ${isOpen ? 'bg-[#FDF8F0] border-l-4 border-l-[#D4AF37]' : 'bg-white'}`}>
 
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-start focus:outline-none">
+                    className="cursor-pointer w-full px-6 py-5 flex items-center justify-between text-start focus:outline-none">
 
                     <div className="flex items-center gap-4">
                       <span
@@ -116,7 +94,7 @@ export function FAQSection() {
 
                         {index + 1}
                       </span>
-                      <span className="font-bold text-lg text-[#1E3A5F]">
+                      <span className="font-bold text-[#1E3A5F] home-body-large">
                         {faq.q}
                       </span>
                     </div>
@@ -144,7 +122,7 @@ export function FAQSection() {
                         ease: 'easeInOut'
                       }}>
 
-                        <div className="px-6 pb-5 pr-16 text-gray-600 leading-relaxed">
+                        <div className="px-6 pb-5 pr-16 text-gray-600 leading-relaxed home-body-large">
                           {faq.a}
                         </div>
                       </motion.div>

@@ -1,7 +1,11 @@
 {
     "page": {
         "title": "KIB Finance | Home",
-        "description": "At KIB Finance, we design and structure bespoke financing solutions for companies and projects, combining deep local expertise, strong banking relationships and disciplined execution to turn ambitious plans into sustainable, long‑term growth."
+        "description": "At KIB Finance, we design and structure bespoke financing solutions for companies and projects, combining deep local expertise, strong banking relationships and disciplined execution to turn ambitious plans into sustainable, long‑term growth.",
+        "services": {
+            "title": "KIB Finance | Financing Services",
+            "description": "KIB Finance L.L.C. offers an integrated suite of financial services for companies, institutions, entrepreneurs and investment projects. Structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise."
+        }
     },
     "notFound": {
       "title": "Page not found",
@@ -336,8 +340,115 @@
         "cta": {"title": "A complete administrative apparatus working", "titleHighlight": "for you…", "subtitle": "Because your time is too valuable to waste on details.", "cta": "Start now", "contact": "Talk to us", "confidentiality": "Total confidentiality", "experience": "Global experience", "guaranteed": "Guaranteed results", "formTitle": "Contact management", "formSubtitle": "Leave your details and one of our executive directors will contact you", "formSubtitle2": "immediately.", "name": "Your name", "namePlaceholder": "Enter your name", "phone": "Phone number", "phonePlaceholder": "Enter your phone number", "message": "Your message (optional)", "messagePlaceholder": "How can we serve you?", "submit": "Send request", "success": "Your request has been received successfully", "successMsg": "We will contact you as soon as possible."}
     },
     "servicesPage": {
-        "hero": {"title": "At KIB for Business Services, we don't work within market boundaries… we draw them.", "paragraphs": ["We don't move with the flow of business… we set the rhythm that companies move to.", "We are the entity that doesn't offer a service, but builds a system, creates influence, and establishes a presence that precedes the client's name before they arrive.", "We don't run with an office mentality…", "But with a mentality of an institution that decisions are built around, standards are measured by, and that is referred to in the details that make the difference between a company that operates… and a company that is respected.", "Partner in decision… partner in expansion… and partner in influence.", "Here… a new phase of engagement begins.", "A phase that doesn't depend on what we do for you… but on what we build with you."]},
-        "nav": {"title": "Service sections", "subtitle": "Choose a section for quick browsing", "count": "section", "service": "service"}
+        "hero": {
+            "badge": "KIB Finance L.L.C.",
+            "title": "Our",
+            "titleHighlight": "Financing Services",
+            "typingLine": "Specialised financial solutions designed with precision… executed professionally… managed to board-level standards",
+            "paragraph": "KIB Finance L.L.C. offers an integrated suite of financial services designed to meet the needs of companies, institutions, entrepreneurs and investment projects at home and abroad. We do not provide traditional services, but structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise.",
+            "exploreServices": "Explore our services",
+            "contactUs": "Contact us",
+            "imageAlt": "Dubai Financial District"
+        },
+        "nav": {"title": "Service sections", "subtitle": "Choose a section for quick browsing", "count": "section", "service": "service"},
+        "servicesGrid": {
+            "heading": "Our",
+            "headingHighlight": "integrated",
+            "headingSuffix": "services",
+            "subtitle": "Choose from over 12 financing services designed to meet your needs and support your business growth",
+            "categories": {
+                "all": "All",
+                "corporate": "Corporate finance",
+                "projects": "Projects & industry",
+                "realestate": "Real estate & trade",
+                "islamic": "Islamic & international",
+                "investment": "Investment & partnerships",
+                "advisory": "Advisory & development"
+            },
+            "carouselPrev": "Previous",
+            "carouselNext": "Next",
+            "readMore": "Read more",
+            "details": "Details"
+        },
+        "process": {
+            "heading": "How we",
+            "headingHighlight": "work",
+            "steps": [
+                { "title": "Analysis", "subtitle": "Analysis", "shortDesc": "Rigorous analysis of your financial needs", "desc": "We start with a deep understanding of your financial position and goals" },
+                { "title": "Design", "subtitle": "Design", "shortDesc": "Tailored financing solution design", "desc": "We design a unique solution that fits your needs" },
+                { "title": "Execution", "subtitle": "Execution", "shortDesc": "Professional, fast execution", "desc": "We execute with speed and precision while ensuring full compliance" },
+                { "title": "Follow-up", "subtitle": "Follow-up", "shortDesc": "Ongoing follow-up and institutional management", "desc": "We provide continuous follow-up and periodic reporting" },
+                { "title": "Evaluation", "subtitle": "Evaluation", "shortDesc": "Comprehensive results evaluation", "desc": "We evaluate results and continuously improve solutions" }
+            ]
+        },
+        "whyChooseUs": {
+            "heading": "Why",
+            "headingHighlight": "choose us",
+            "subtitle": "We deliver real value beyond traditional financing",
+            "features": [
+                { "title": "Compliance and governance", "desc": "We adhere to the highest standards of compliance and institutional governance in all our financing operations" },
+                { "title": "Speed of execution", "desc": "We ensure fast processing and approvals while maintaining the highest standards of quality and accuracy" },
+                { "title": "Specialised team", "desc": "Our team includes financial experts and advisers with over 15 years of experience in the financial sector" },
+                { "title": "Tailored solutions", "desc": "We design each financing solution based on a rigorous analysis of the client's needs and strategic objectives" },
+                { "title": "Comprehensive coverage", "desc": "We deliver our services at home and abroad with a partner network spanning the region and the world" },
+                { "title": "Proven track record", "desc": "Over 500 clients and 2 billion dirhams in successful financing attest to our commitment to excellence" }
+            ]
+        },
+        "partners": {
+            "heading": "Our partners in",
+            "headingHighlight": "success",
+            "subtitle": "We are proud of the trust of our clients and partners around the world",
+            "names": ["Emirates NBD", "Abu Dhabi Islamic Bank", "Mashreq Bank", "Commercial Bank of Dubai", "Al Futtaim Group", "Emaar Properties", "Al Habtoor Group", "DAMAC Properties", "Majid Al Futtaim Group", "Aldar Properties"]
+        },
+        "faq": {
+            "heading": "Frequently",
+            "headingHighlight": "asked questions",
+            "subtitle": "Answers to the most common questions about our financing services",
+            "items": [
+                { "q": "What types of financing are available?", "a": "We offer over 30 financing services including corporate finance, project finance, real estate, Islamic finance, international finance, financial advisory and more. Each service is designed to meet specific needs." },
+                { "q": "How long does approval take?", "a": "Approval times vary by type and size of financing, but we commit to providing initial responses within 48 business hours, with most transactions completed within 2–4 weeks." },
+                { "q": "Do you serve start-ups?", "a": "Yes, we have a dedicated programme for entrepreneurs and start-ups covering establishment, operations and expansion, with integrated advisory support." },
+                { "q": "What documents are required?", "a": "Documents vary by type of financing, but generally we request: trade licence, financial statements, business plan and ID. Our team will guide you through each step." },
+                { "q": "Do you offer Sharia-compliant financing?", "a": "Yes, we offer a full range of Sharia-compliant products including Murabaha, Mudaraba, Ijara and Istisna, all approved by the Sharia supervisory board." },
+                { "q": "Can you finance projects outside the country?", "a": "Absolutely. We provide international and cross-border financing solutions including regional and global projects, with extensive experience in cross-border trade and global supply chains." }
+            ]
+        },
+        "cta": {
+            "heading": "Looking for a tailored financing solution?",
+            "paragraph1": "Contact us today and let us design the optimal solution that meets your ambitions and achieves your institutional goals with efficiency and professionalism.",
+            "paragraph2": "Our team is ready to help you choose the best financing solution",
+            "cta": "Contact us now",
+            "imageAlt": "Financial Advisory Meeting"
+        },
+        "modal": {
+            "backToTop": "Back to top",
+            "serviceNumber": "Service",
+            "includes": "This financing includes:",
+            "close": "Close",
+            "requestService": "Request this service",
+            "categories": {
+                "corporate": "Corporate",
+                "projects": "Projects",
+                "realestate": "Real estate",
+                "islamic": "Islamic",
+                "investment": "Investment",
+                "advisory": "Advisory"
+            }
+        },
+        "serviceItems": {
+            "1": { "title": "Corporate finance", "desc": "Financial solutions that support institutional growth.", "items": ["Working capital", "Operational expansion", "Restructuring", "Cash flow support"] },
+            "2": { "title": "Project finance", "desc": "Integrated financing for commercial and industrial projects.", "items": ["Production lines", "Equipment", "Operational infrastructure", "Establishment"] },
+            "3": { "title": "Real estate finance", "desc": "Real estate financing solutions for residential and commercial projects.", "items": ["Property purchase", "Development", "Refinancing", "Land financing"] },
+            "4": { "title": "Trade finance", "desc": "Support for buy and sell operations domestically and internationally.", "items": ["Deals", "Suppliers", "Customers", "Supply chain"] },
+            "5": { "title": "Islamic finance", "desc": "Products compliant with Sharia provisions.", "items": ["Murabaha", "Mudaraba", "Ijara", "Istisna"] },
+            "6": { "title": "External credits", "desc": "Secure solutions for international trade.", "items": ["Documentary credits", "Shipping guarantees", "Import financing", "Export financing"] },
+            "7": { "title": "Investment finance", "desc": "Connecting investment projects with the right funders.", "items": ["Major projects", "Alliances", "Real estate development", "Portfolios"] },
+            "8": { "title": "Financial advisory", "desc": "Specialised financial analysis to support decision-making.", "items": ["Risk assessment", "Financial plans", "Cash flow analysis", "Structure review"] },
+            "9": { "title": "Entrepreneur finance", "desc": "Solutions that support innovation and building new ventures.", "items": ["Establishment", "Operations", "Expansion", "Start-up support"] },
+            "10": { "title": "Expansion finance", "desc": "Financing that strengthens companies' capacity for institutional growth.", "items": ["New branches", "Production lines", "Digital transformation", "Internal development"] },
+            "11": { "title": "SME finance", "desc": "Tailored financing and working capital solutions for small and medium enterprises.", "items": ["Working capital facilities", "Equipment financing", "Invoice financing", "Overdraft solutions"] },
+            "12": { "title": "Compliance & regulatory advisory", "desc": "Guidance on regulatory requirements and compliance frameworks for financial operations.", "items": ["Regulatory compliance review", "Licensing support", "Audit readiness", "Policy and procedure design"] }
+        }
     },
     "financeHome": {
         "hero": {

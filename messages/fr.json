@@ -1,7 +1,11 @@
 {
   "page": {
     "title": "KIB Finance | Accueil",
-    "description": "Chez KIB Finance, nous concevons et structurons des solutions de financement sur mesure pour les entreprises et les projets, en alliant expertise locale, réseau bancaire solide et exécution rigoureuse afin de transformer les ambitions en croissance durable à long terme."
+    "description": "Chez KIB Finance, nous concevons et structurons des solutions de financement sur mesure pour les entreprises et les projets, en alliant expertise locale, réseau bancaire solide et exécution rigoureuse afin de transformer les ambitions en croissance durable à long terme.",
+    "services": {
+      "title": "KIB Finance | Services de financement",
+      "description": "KIB Finance L.L.C. propose une offre intégrée de services financiers pour les entreprises, les institutions, les entrepreneurs et les projets d'investissement. Des solutions de financement structurées, fondées sur une analyse rigoureuse, une vision stratégique et une vaste expertise opérationnelle."
+    }
   },
   "notFound": {
     "title": "Page non trouvée",
@@ -218,6 +222,117 @@
     "cta": "Contactez-nous",
     "email": "contact@example.com",
     "phone": "+966 50 000 0000"
+  },
+  "servicesPage": {
+    "hero": {
+      "badge": "KIB Finance L.L.C.",
+      "title": "Nos services",
+      "titleHighlight": "de financement",
+      "typingLine": "Des solutions financières spécialisées conçues avec précision… exécutées avec professionnalisme… gérées selon les normes du conseil d'administration",
+      "paragraph": "KIB Finance L.L.C. propose une offre intégrée de services financiers conçue pour répondre aux besoins des entreprises, des institutions, des entrepreneurs et des projets d'investissement dans le pays et à l'étranger. Nous ne proposons pas de services traditionnels, mais des solutions de financement structurées, fondées sur une analyse rigoureuse, une vision stratégique et une vaste expertise opérationnelle.",
+      "exploreServices": "Découvrir nos services",
+      "contactUs": "Nous contacter",
+      "imageAlt": "District financier de Dubaï"
+    },
+    "nav": { "title": "Sections de services", "subtitle": "Choisissez une section pour naviguer rapidement", "count": "section", "service": "service" },
+    "servicesGrid": {
+      "heading": "Notre offre de services",
+      "headingHighlight": "intégrée",
+      "headingSuffix": "",
+      "subtitle": "Choisissez parmi plus de 12 services de financement conçus pour répondre à vos besoins et soutenir la croissance de votre entreprise",
+      "categories": {
+        "all": "Tout",
+        "corporate": "Financement d'entreprise",
+        "projects": "Projets et industrie",
+        "realestate": "Immobilier et commerce",
+        "islamic": "Islamique et international",
+        "investment": "Investissement et partenariats",
+        "advisory": "Conseil et développement"
+      },
+      "carouselPrev": "Précédent",
+      "carouselNext": "Suivant",
+      "readMore": "En savoir plus",
+      "details": "Détails"
+    },
+    "process": {
+      "heading": "Comment nous",
+      "headingHighlight": "travaillons",
+      "steps": [
+        { "title": "Analyse", "subtitle": "Analyse", "shortDesc": "Analyse rigoureuse de vos besoins financiers", "desc": "Nous commençons par une compréhension approfondie de votre situation et de vos objectifs financiers" },
+        { "title": "Conception", "subtitle": "Conception", "shortDesc": "Conception d'une solution de financement sur mesure", "desc": "Nous concevons une solution unique adaptée à vos besoins" },
+        { "title": "Exécution", "subtitle": "Exécution", "shortDesc": "Exécution professionnelle et rapide", "desc": "Nous exécutons avec rapidité et précision tout en garantissant une conformité totale" },
+        { "title": "Suivi", "subtitle": "Suivi", "shortDesc": "Suivi continu et gestion institutionnelle", "desc": "Nous assurons un suivi continu et des rapports périodiques" },
+        { "title": "Évaluation", "subtitle": "Évaluation", "shortDesc": "Évaluation complète des résultats", "desc": "Nous évaluons les résultats et améliorons continuellement les solutions" }
+      ]
+    },
+    "whyChooseUs": {
+      "heading": "Pourquoi nous",
+      "headingHighlight": "choisir",
+      "subtitle": "Nous offrons une valeur réelle au-delà du financement traditionnel",
+      "features": [
+        { "title": "Conformité et gouvernance", "desc": "Nous respectons les plus hauts standards de conformité et de gouvernance institutionnelle dans toutes nos opérations de financement" },
+        { "title": "Rapidité d'exécution", "desc": "Nous garantissons des délais et des approbations rapides tout en maintenant les plus hauts standards de qualité et de précision" },
+        { "title": "Équipe spécialisée", "desc": "Notre équipe comprend des experts financiers et des conseillers avec plus de 15 ans d'expérience dans le secteur financier" },
+        { "title": "Solutions sur mesure", "desc": "Nous concevons chaque solution de financement sur la base d'une analyse rigoureuse des besoins et des objectifs stratégiques du client" },
+        { "title": "Couverture complète", "desc": "Nous proposons nos services dans le pays et à l'étranger avec un réseau de partenaires couvrant la région et le monde" },
+        { "title": "Références éprouvées", "desc": "Plus de 500 clients et 2 milliards de dirhams de financements réussis attestent de notre engagement envers l'excellence" }
+      ]
+    },
+    "partners": {
+      "heading": "Nos partenaires dans le",
+      "headingHighlight": "succès",
+      "subtitle": "Nous sommes fiers de la confiance de nos clients et partenaires dans le monde entier",
+      "names": ["Emirates NBD", "Abu Dhabi Islamic Bank", "Mashreq Bank", "Commercial Bank of Dubai", "Groupe Al Futtaim", "Emaar Properties", "Groupe Al Habtoor", "DAMAC Properties", "Groupe Majid Al Futtaim", "Aldar Properties"]
+    },
+    "faq": {
+      "heading": "Questions",
+      "headingHighlight": "fréquentes",
+      "subtitle": "Réponses aux questions les plus courantes sur nos services de financement",
+      "items": [
+        { "q": "Quels types de financement sont disponibles ?", "a": "Nous proposons plus de 30 services de financement : financement d'entreprise, de projets, immobilier, finance islamique, financement international, conseil financier et plus encore. Chaque service est conçu pour répondre à des besoins spécifiques." },
+        { "q": "Combien de temps prend l'approbation ?", "a": "Les délais varient selon le type et la taille du financement, mais nous nous engageons à fournir des réponses initiales sous 48 heures ouvrables, la plupart des opérations étant finalisées en 2 à 4 semaines." },
+        { "q": "Travaillez-vous avec les start-ups ?", "a": "Oui, nous avons un programme dédié aux entrepreneurs et aux start-ups couvrant la création, l'exploitation et l'expansion, avec un accompagnement conseil intégré." },
+        { "q": "Quels documents sont requis ?", "a": "Les documents varient selon le type de financement, mais en règle générale nous demandons : licence commerciale, états financiers, plan d'affaires et pièce d'identité. Notre équipe vous guidera à chaque étape." },
+        { "q": "Proposez-vous du financement conforme à la charia ?", "a": "Oui, nous proposons une gamme complète de produits conformes à la charia, notamment Murabaha, Mudaraba, Ijara et Istisna, tous approuvés par l'organe de contrôle charia." },
+        { "q": "Pouvez-vous financer des projets à l'étranger ?", "a": "Absolument. Nous proposons des solutions de financement international et transfrontalier, y compris des projets régionaux et mondiaux, avec une vaste expérience du commerce transfrontalier et des chaînes d'approvisionnement mondiales." }
+      ]
+    },
+    "cta": {
+      "heading": "Vous recherchez une solution de financement sur mesure ?",
+      "paragraph1": "Contactez-nous aujourd'hui et laissez-nous concevoir la solution optimale qui répond à vos ambitions et atteint vos objectifs institutionnels avec efficacité et professionnalisme.",
+      "paragraph2": "Notre équipe est prête à vous aider à choisir la meilleure solution de financement",
+      "cta": "Contactez-nous maintenant",
+      "imageAlt": "Réunion de conseil financier"
+    },
+    "modal": {
+      "backToTop": "Retour en haut",
+      "serviceNumber": "Service",
+      "includes": "Ce financement comprend :",
+      "close": "Fermer",
+      "requestService": "Demander ce service",
+      "categories": {
+        "corporate": "Entreprise",
+        "projects": "Projets",
+        "realestate": "Immobilier",
+        "islamic": "Islamique",
+        "investment": "Investissement",
+        "advisory": "Conseil"
+      }
+    },
+    "serviceItems": {
+      "1": { "title": "Financement d'entreprise", "desc": "Solutions financières qui soutiennent la croissance institutionnelle.", "items": ["Fonds de roulement", "Expansion opérationnelle", "Restructuration", "Soutien à la trésorerie"] },
+      "2": { "title": "Financement de projets", "desc": "Financement intégré pour les projets commerciaux et industriels.", "items": ["Lignes de production", "Équipements", "Infrastructure opérationnelle", "Création"] },
+      "3": { "title": "Financement immobilier", "desc": "Solutions de financement immobilier pour les projets résidentiels et commerciaux.", "items": ["Achat immobilier", "Développement", "Refinancement", "Financement de terrains"] },
+      "4": { "title": "Financement du commerce", "desc": "Soutien aux opérations d'achat et de vente au pays et à l'étranger.", "items": ["Transactions", "Fournisseurs", "Clients", "Chaîne d'approvisionnement"] },
+      "5": { "title": "Finance islamique", "desc": "Produits conformes aux dispositions de la charia.", "items": ["Murabaha", "Mudaraba", "Ijara", "Istisna"] },
+      "6": { "title": "Crédits externes", "desc": "Solutions sécurisées pour le commerce international.", "items": ["Crédits documentaires", "Garanties d'expédition", "Financement des importations", "Financement des exportations"] },
+      "7": { "title": "Financement d'investissement", "desc": "Mise en relation des projets d'investissement avec les bons financeurs.", "items": ["Grands projets", "Alliances", "Développement immobilier", "Portefeuilles"] },
+      "8": { "title": "Conseil financier", "desc": "Analyse financière spécialisée pour soutenir la prise de décision.", "items": ["Évaluation des risques", "Plans financiers", "Analyse des flux", "Revue des structures"] },
+      "9": { "title": "Financement des entrepreneurs", "desc": "Solutions qui soutiennent l'innovation et la création de nouveaux projets.", "items": ["Création", "Exploitation", "Expansion", "Soutien aux start-ups"] },
+      "10": { "title": "Financement de l'expansion", "desc": "Financement qui renforce la capacité des entreprises à croître institutionnellement.", "items": ["Nouvelles filiales", "Lignes de production", "Transformation numérique", "Développement interne"] },
+      "11": { "title": "Financement PME", "desc": "Solutions de financement et de fonds de roulement adaptées aux petites et moyennes entreprises.", "items": ["Facilités de trésorerie", "Financement d'équipements", "Financement des factures", "Solutions de découvert"] },
+      "12": { "title": "Conformité et conseil réglementaire", "desc": "Accompagnement sur les exigences réglementaires et les cadres de conformité pour les opérations financières.", "items": ["Revue de conformité réglementaire", "Soutien aux autorisations", "Préparation aux audits", "Conception de politiques et procédures"] }
+    }
   },
   "footer": {
     "contact": {

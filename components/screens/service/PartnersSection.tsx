@@ -2,19 +2,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Landmark } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 export function PartnersSection() {
-  const partners = [
-  'بنك الإمارات دبي الوطني',
-  'مصرف أبوظبي الإسلامي',
-  'بنك المشرق',
-  'بنك دبي التجاري',
-  'مجموعة الفطيم',
-  'إعمار العقارية',
-  'مجموعة الحبتور',
-  'داماك العقارية',
-  'مجموعة ماجد الفطيم',
-  'شركة الدار العقارية'];
-
+  const t = useTranslations('servicesPage.partners');
+  const partners = t.raw('names') as string[];
   // Duplicate for seamless infinite scroll
   const scrollItems = [...partners, ...partners];
   return (
@@ -54,10 +45,10 @@ export function PartnersSection() {
           }}
           viewport={{
             once: true
-          }}
-          className="text-3xl md:text-4xl font-bold text-[#1E3A5F] mb-4">
+        }}
+        className="home-section-heading font-black text-[#1E3A5F] mb-4">
 
-          شركاؤنا في <span className="text-[#D4AF37]">النجاح</span>
+          {t('heading')} <span className="text-[#D4AF37]">{t('headingHighlight')}</span>
         </motion.h2>
 
         <motion.div
@@ -84,13 +75,13 @@ export function PartnersSection() {
           }}
           viewport={{
             once: true
-          }}
-          transition={{
+        }}
+        transition={{
             delay: 0.1
           }}
-          className="text-gray-600">
+        className="home-section-subtitle text-gray-600">
 
-          نفخر بثقة عملائنا وشركائنا حول العالم
+          {t('subtitle')}
         </motion.p>
       </div>
 
