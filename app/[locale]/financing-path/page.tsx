@@ -9,9 +9,7 @@ import { Testimonials } from '@/components/screens/financing-path/Testimonials';
 import { Partners } from '@/components/screens/financing-path/Partners';
 import { FAQ } from '@/components/screens/financing-path/FAQ';
 import { CTASection } from '@/components/screens/financing-path/CTASection';
-import { Footer } from '@/components/screens/financing-path/Footer';
 import { ScrollProgress } from '@/components/screens/financing-path/ScrollProgress';
-import { BackToTop } from '@/components/screens/financing-path/BackToTop';
 export default function FinancingPathPage() {
   return (
     <div
@@ -31,8 +29,6 @@ export default function FinancingPathPage() {
         <FAQ />
         <CTASection />
       </main>
-      <Footer />
-      <BackToTop />
     </div>);
 
 }

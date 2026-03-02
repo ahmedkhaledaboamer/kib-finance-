@@ -35,7 +35,7 @@ export function StepModal({ step, onClose }: StepModalProps) {
         onClick={onClose}>
 
         <motion.div
-          className="relative bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto"
+          className="relative bg-white rounded-3xl max-w-5xl shadow-2xl w-full max-h-[90vh] overflow-y-auto"
           initial={{
             opacity: 0,
             scale: 0.85,

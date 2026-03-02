@@ -7,60 +7,63 @@ import {
   TrendingUpIcon,
   ShieldCheckIcon,
   UsersIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon } from
+  ArrowRightIcon} from
 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { ContactModal } from './ContactModal';
-const slides = [
-{
-  image:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80',
-  headline: 'كيه إي بي للتمويل',
-  subheadline: 'شريكك الاستراتيجي في عالم التمويل',
-  highlight: 'ريادة مالية بمعايير عالمية'
-},
-{
-  image:
-  'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&q=80',
-  headline: 'حلول تمويلية متخصصة',
-  subheadline: 'نصمم حلولاً دقيقة تتناسب مع طبيعة نشاطك',
-  highlight: 'خبرة تشغيلية عميقة'
-},
-{
-  image:
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80',
-  headline: 'شراكات استراتيجية',
-  subheadline: 'علاقات طويلة الأمد مع البنوك والجهات التمويلية',
-  highlight: 'شبكة تمويلية واسعة'
-}];
+import Link from 'next/link';
 
-const stats = [
-{
-  icon: TrendingUpIcon,
-  value: '+500',
-  label: 'ملف تمويلي ناجح',
-  color: 'text-gold'
-},
-{
-  icon: ShieldCheckIcon,
-  value: '+15',
-  label: 'سنة خبرة',
-  color: 'text-teal'
-},
-{
-  icon: UsersIcon,
-  value: '+200',
-  label: 'عميل راضٍ',
-  color: 'text-coral'
-},
-{
-  icon: TrendingUpIcon,
-  value: '98%',
-  label: 'نسبة نجاح',
-  color: 'text-emerald'
-}];
+export function Hero({ locale }: { locale: string }) {
+  const isRTL = locale === "ar";
+  const t = useTranslations('financeHome.hero');
+  const slides = [
+  {
+    image:
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80',
+    headline: t('slide1.headline'),
+    subheadline: t('slide1.subheadline'),
+    highlight: t('slide1.highlight')
+  },
+  {
+    image:
+    'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&q=80',
+    headline: t('slide2.headline'),
+    subheadline: t('slide2.subheadline'),
+    highlight: t('slide2.highlight')
+  },
+  {
+    image:
+    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80',
+    headline: t('slide3.headline'),
+    subheadline: t('slide3.subheadline'),
+    highlight: t('slide3.highlight')
+  }];
 
-export function Hero() {
+  const stats = [
+  {
+    icon: TrendingUpIcon,
+    value: '+500',
+    label: t('stats.files'),
+    color: 'text-gold'
+  },
+  {
+    icon: ShieldCheckIcon,
+    value: '+15',
+    label: t('stats.experience'),
+    color: 'text-teal'
+  },
+  {
+    icon: UsersIcon,
+    value: '+200',
+    label: t('stats.clients'),
+    color: 'text-coral'
+  },
+  {
+    icon: TrendingUpIcon,
+    value: '98%',
+    label: t('stats.successRate'),
+    color: 'text-emerald'
+  }];
   const [current, setCurrent] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const { scrollY } = useScroll();
@@ -73,21 +76,6 @@ export function Hero() {
     return () => clearInterval(timer);
   }, []);
   const slide = slides[current];
-  const wordVariants = {
-    hidden: {
-      opacity: 0,
-      y: 30
-    },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.15,
-        duration: 0.6,
-        ease: 'easeOut'
-      }
-    })
-  };
   return (
     <section
       id="hero"
@@ -179,7 +167,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 bg-gold/20 border border-gold/30 rounded-full px-4 py-2 mb-6">
 
             <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-            <span className="text-gold text-sm font-semibold">
+            <span className="text-gold home-badge-text font-semibold">
               {slide.highlight}
             </span>
           </motion.div>
@@ -200,7 +188,7 @@ export function Hero() {
               ease: 'easeOut',
               delay: 0.2
             }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight mb-4">
+            className="home-hero-heading font-black text-white leading-tight mb-4 text-center">
 
             <span className="gradient-text-gold">
               {slide.headline.split(' ').slice(0, 2).join(' ')}
@@ -224,12 +212,12 @@ export function Hero() {
             transition={{
               delay: 0.5
             }}
-            className="text-xl text-white/70 mb-8 leading-relaxed  ">
+            className="home-section-subtitle text-white/70 mb-8 leading-relaxed text-center">
 
             {slide.subheadline}
           </motion.p>
 
-          {/* CTAs */}
+          {/* CTAs + Slide dots */}
           <motion.div
             initial={{
               opacity: 0,
@@ -242,52 +230,60 @@ export function Hero() {
             transition={{
               delay: 0.7
             }}
-            className="flex flex-wrap gap-4">
+            className="flex flex-col items-center gap-6">
+            <div className="flex flex-nowrap md:flex-wrap gap-4 justify-center">
+              <Link href="/implementation-mechanism">
+                <motion.button
+                  whileHover={{
+                    scale: 1.05,
+                    x: -4
+                  }}
+                  whileTap={{
+                    scale: 0.95
+                  }}
+                  className="cursor-pointer group flex items-center gap-3 bg-gradient-to-l from-gold to-gold-light text-navy font-bold md:px-8 px-4 py-3 rounded-2xl shadow-xl shadow-gold/30 md:text-lg text-base">
+                  
+                  {t('primaryCta')}
+                  <motion.span className="group-hover:-translate-x-1 transition-transform">
+                    {isRTL ? <ArrowLeftIcon size={18} /> : <ArrowRightIcon size={18} />}
+                  </motion.span>
+                </motion.button>
+              </Link>
 
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                x: -4
-              }}
-              whileTap={{
-                scale: 0.95
-              }}
-              onClick={() => setModalOpen(true)}
-              className="group flex items-center gap-3 bg-gradient-to-l from-gold to-gold-light text-navy font-bold px-8 py-4 rounded-2xl shadow-xl shadow-gold/30 text-base">
+              <motion.a
+                href="#about"
+                whileHover={{
+                  scale: 1.05
+                }}
+                whileTap={{
+                  scale: 0.95
+                }}
+                className="flex items-center gap-3 border-2 border-white/30 text-white font-semibold md:px-8 px-4 py-3 rounded-2xl hover:bg-white/10 transition-colors md:text-lg text-base">
+                {isRTL ? (
+                  <>
+                  <PlayIcon size={16} className="text-gold" />
+                  {t('secondaryCta')}
+                  </>
 
-              طلب استشارة مجانية
-              <motion.span className="group-hover:-translate-x-1 transition-transform">
-                <ArrowLeftIcon size={18} />
-              </motion.span>
-            </motion.button>
+                ) : (
+                  <>
+                  {t('secondaryCta')}
+                  <PlayIcon size={16} className="text-gold" />
+                  </>
+                )}
+              </motion.a>
+            </div>
 
-            <motion.a
-              href="#about"
-              whileHover={{
-                scale: 1.05
-              }}
-              whileTap={{
-                scale: 0.95
-              }}
-              className="flex items-center gap-3 border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-2xl hover:bg-white/10 transition-colors text-base">
+            <div className="flex justify-center items-center gap-2">
+              {slides.map((_, i) =>
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`cursor-pointer h-2 rounded-full transition-all duration-300 testimonial-dot ${i === current ? 'active bg-gold w-6' : 'bg-white/30 w-2'}`} />
 
-              <PlayIcon size={16} className="text-gold" />
-              اعرف أكثر عنا
-            </motion.a>
+              )}
+            </div>
           </motion.div>
-        </div>
-
-       
-
-        {/* Slide dots */}
-        <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex justify-center items-center gap-2">
-          {slides.map((_, i) =>
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`h-2 rounded-full transition-all duration-300 testimonial-dot ${i === current ? 'active bg-gold w-6' : 'bg-white/30 w-2'}`} />
-
-          )}
         </div>
       </motion.div>
 
@@ -317,10 +313,10 @@ export function Hero() {
                   <stat.icon size={20} />
                 </div>
                 <div>
-                  <div className={`text-2xl font-black ${stat.color}`}>
+                  <div className={`home-stat-number font-black ${stat.color}`}>
                     {stat.value}
                   </div>
-                  <div className="text-white/60 text-xs">{stat.label}</div>
+                  <div className="text-white/60 home-stat-label">{stat.label}</div>
                 </div>
               </motion.div>
             )}

@@ -80,7 +80,7 @@ export function ExecutionUnits() {
   return (
     <section
       id="units"
-      className="py-20"
+      className="py-20 px-[5%]"
       style={{
         background:
         'linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 50%, #EFF6FF 100%)'
@@ -88,7 +88,7 @@ export function ExecutionUnits() {
       dir="rtl"
       ref={ref}>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           className="text-center mb-14"
@@ -120,7 +120,7 @@ export function ExecutionUnits() {
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
             وحدات التنفيذ المتخصصة
           </h2>
-          <p className="text-gray-500 text-lg font-medium max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg font-medium mx-auto">
             7 وحدات تنفيذية متخصصة تعمل بتناغم لضمان أعلى معايير الجودة في كل
             مرحلة
           </p>

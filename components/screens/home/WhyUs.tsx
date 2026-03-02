@@ -16,7 +16,7 @@ import {
   ClipboardCheckIcon,
   LayersIcon } from
 'lucide-react';
-const visionItems = [
+const legacyVisionItems = [
 {
   icon: CrownIcon,
   title: 'ريادة مالية',
@@ -101,6 +101,81 @@ const visionItems = [
   color: 'text-emerald',
   bg: 'bg-emerald'
 }];
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+const visionItems = [
+{
+  icon: CrownIcon,
+  key: 'financialLeadership',
+  color: 'text-gold',
+  bg: 'bg-gold'
+},
+{
+  icon: HeartIcon,
+  key: 'strategicPartnerships',
+  color: 'text-teal',
+  bg: 'bg-teal'
+},
+{
+  icon: GlobeIcon,
+  key: 'regionalExpansion',
+  color: 'text-coral',
+  bg: 'bg-coral'
+},
+{
+  icon: LightbulbIconLocal,
+  key: 'innovativeSolutions',
+  color: 'text-emerald',
+  bg: 'bg-emerald'
+},
+{
+  icon: TrendingUpIcon,
+  key: 'sustainableFinance',
+  color: 'text-gold',
+  bg: 'bg-gold'
+},
+{
+  icon: ZapIconLocal,
+  key: 'operationalStrength',
+  color: 'text-teal',
+  bg: 'bg-teal'
+},
+{
+  icon: BuildingIcon,
+  key: 'institutionalPresence',
+  color: 'text-coral',
+  bg: 'bg-coral'
+},
+{
+  icon: RefreshCwIcon,
+  key: 'continuousDevelopment',
+  color: 'text-emerald',
+  bg: 'bg-emerald'
+},
+{
+  icon: BarChart2Icon,
+  key: 'marketLeadership',
+  color: 'text-gold',
+  bg: 'bg-gold'
+},
+{
+  icon: NetworkIcon,
+  key: 'economicImpact',
+  color: 'text-teal',
+  bg: 'bg-teal'
+},
+{
+  icon: EyeIcon,
+  key: 'futureReadiness',
+  color: 'text-coral',
+  bg: 'bg-coral'
+},
+{
+  icon: GlobeIcon,
+  key: 'globalExpansion',
+  color: 'text-emerald',
+  bg: 'bg-emerald'
+}];
 
 // Inline icon components to avoid import issues
 function LightbulbIconLocal({
@@ -151,7 +226,8 @@ function ZapIconLocal({
     </svg>);
 
 }
-const governanceItems = [
+
+const legacyGovernanceItems = [
 {
   icon: ClipboardCheckIcon,
   title: 'إطار تنظيمي واضح',
@@ -172,8 +248,26 @@ const governanceItems = [
   title: 'امتثال تنظيمي كامل',
   desc: 'التوافق مع الأنظمة المحلية والدولية.'
 }];
+const governanceItems = [
+{
+  icon: ClipboardCheckIcon,
+  key: 'clearFramework'
+},
+{
+  icon: ShieldIcon,
+  key: 'internalControl'
+},
+{
+  icon: BarChart2Icon,
+  key: 'advancedRiskManagement'
+},
+{
+  icon: LayersIcon,
+  key: 'fullCompliance'
+}];
 
 export function WhyUs() {
+  const t = useTranslations('financeHome.whyUs');
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -213,14 +307,14 @@ export function WhyUs() {
           }}
           className="text-center mb-16">
 
-          <span className="inline-block text-teal font-bold text-sm tracking-widest uppercase mb-3 border border-teal/30 rounded-full px-4 py-1">
-            الرؤية المؤسسية
+          <span className="inline-block text-teal home-badge-text font-bold tracking-widest uppercase mb-3 border border-teal/30 rounded-full px-4 py-1">
+            {t('badge')}
           </span>
-          <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
-            لماذا <span className="gradient-text-gold">كيه إي بي؟</span>
+          <h2 className="home-section-heading font-black text-white mb-4">
+            {t('title')} <span className="gradient-text-gold">{t('titleHighlight')}</span>
           </h2>
-          <p className="text-white/50   text-lg">
-            رؤية تُبنى على الاستدامة… وتتحرك نحو الريادة… وتُدار بمعايير عالمية
+          <p className="text-white/50 home-section-subtitle">
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -248,18 +342,18 @@ export function WhyUs() {
             whileHover={{
               y: -4
             }}
-            className="bg-white/5 border border-white/10 rounded-2xl p-4 cursor-default hover:bg-white/8 transition-colors">
+            className="flex flex-col items-center justify-center md:items-start md:justify-start bg-white/5 border border-white/10 rounded-2xl p-4 cursor-default hover:bg-white/8 transition-colors">
 
               <div
-              className={`w-9 h-9 ${item.bg}/20 rounded-xl flex items-center justify-center mb-3`}>
+              className={`w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 ${item.bg}/20 rounded-xl flex items-center justify-center mb-3`}>
 
-                <item.icon size={18} className={item.color} />
+                <item.icon size={20} className={item.color} />
               </div>
-              <h3 className="text-white font-bold text-sm mb-1">
-                {item.title}
+              <h3 className="text-white font-bold home-small-label mb-1">
+                {t(`vision.${item.key}.title`)}
               </h3>
-              <p className="text-white/40 text-xs leading-relaxed">
-                {item.desc}
+              <p className="text-white/40 home-small-label leading-relaxed text-center md:text-left">
+                {t(`vision.${item.key}.desc`)}
               </p>
             </motion.div>
           )}
@@ -286,42 +380,44 @@ export function WhyUs() {
           className="bg-white/5 border border-white/10 rounded-3xl p-8 lg:p-12">
 
           <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <span className="inline-block text-gold font-bold text-sm tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
-                نظام الحوكمة
+            <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
+              <span className="inline-block text-gold home-badge-text font-bold tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
+                {t('governanceSection.badge')}
               </span>
-              <h3 className="text-3xl font-black text-white mb-4">
-                حوكمة تُحكم القرار
+              <h3 className="home-section-heading font-black text-white mb-4">
+                {t('governanceSection.title')}
                 <br />
-                <span className="gradient-text-gold">وتضمن الامتثال</span>
+                <span className="gradient-text-gold">{t('governanceSection.titleHighlight')}</span>
               </h3>
-              <p className="text-white/50 leading-relaxed mb-6">
-                نعمل وفق إطار حوكمة مؤسسية صارم يضمن أن كل قرار يُتخذ بمعايير
-                مهنية عالية وشفافية كاملة.
+              <p className="text-white/50 leading-relaxed home-body-large mb-6 text-center md:text-left">
+                {t('governanceSection.description')}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {governanceItems.map((g, i) =>
-                <div key={i} className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-teal/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div key={i} className="flex items-center justify-center flex-col md:flex-row md:items-start md:justify-start gap-3">
+                    <div className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-teal/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                       <g.icon size={14} className="text-teal" />
                     </div>
-                    <div>
-                      <div className="text-white font-semibold text-sm">
-                        {g.title}
+                    <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
+                      <div className="text-white font-semibold home-small-label">
+                        {t(`governance.${g.key}.title`)}
                       </div>
-                      <div className="text-white/40 text-xs mt-0.5">
-                        {g.desc}
+                      <div className="text-white/40 home-small-label mt-0.5 text-center md:text-left">
+                        {t(`governance.${g.key}.desc`)}
                       </div>
                     </div>
                   </div>
                 )}
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden h-72">
-              <img
+            <div className="relative rounded-2xl overflow-hidden home-image-tall">
+              <Image
                 src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"
                 alt="حوكمة كيه إي بي"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+                />
 
               <div className="absolute inset-0 bg-gradient-to-l from-navy/60 to-transparent" />
             </div>

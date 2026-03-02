@@ -1,7 +1,13 @@
 {
   "page": {
-    "title": "Page d'accueil",
-    "description": "Votre partenaire exécutif pour renforcer votre influence et orienter vos décisions stratégiques grâce à un système opérationnel intégré offrant clarté, exécution précise et croissance sécurisée au niveau local et international."
+    "title": "KIB Finance | Accueil",
+    "description": "Chez KIB Finance, nous concevons et structurons des solutions de financement sur mesure pour les entreprises et les projets, en alliant expertise locale, réseau bancaire solide et exécution rigoureuse afin de transformer les ambitions en croissance durable à long terme."
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a peut-être été déplacée. Essayez de retourner à la page d'accueil.",
+    "cta": "Retour à la page d'accueil",
+    "badge": "Non trouvé"
   },
   "navbar": {
     "cta": "Réservez votre service",
@@ -127,7 +133,82 @@
     "title": "Ce qui nous distingue des",
     "titleHighlight": "autres",
     "subtitle": "Nous vous offrons des atouts exceptionnels qui font de nous le choix idéal pour les dirigeants ambitieux",
-    "features": ["Une méthodologie fermée garantissant la plus stricte confidentialité", "Réactivité sans délai", "Un réseau de relations qui ouvre les portes", "Expertise pluridisciplinaire", "Engagement total sur les résultats", "Une exécution qui repose sur l'action, pas les mots"]
+    "features": [
+      "Une méthodologie fermée garantissant la plus stricte confidentialité",
+      "Réactivité sans délai",
+      "Un réseau de relations qui ouvre les portes",
+      "Expertise pluridisciplinaire",
+      "Engagement total sur les résultats",
+      "Une exécution qui repose sur l'action, pas les mots"
+    ],
+    "vision": {
+      "financialLeadership": {
+        "title": "Leadership financier",
+        "desc": "Devenir la référence première en solutions de financement spécialisées."
+      },
+      "strategicPartnerships": {
+        "title": "Partenariats stratégiques",
+        "desc": "Construire des relations durables avec les clients et les institutions financières."
+      },
+      "regionalExpansion": {
+        "title": "Expansion régionale",
+        "desc": "Étendre la portée de nos services dans le pays et dans la région."
+      },
+      "innovativeSolutions": {
+        "title": "Solutions innovantes",
+        "desc": "Développer des produits de financement adaptés aux transformations économiques."
+      },
+      "sustainableFinance": {
+        "title": "Financement durable",
+        "desc": "Proposer des solutions qui soutiennent la croissance à long terme et réduisent les risques."
+      },
+      "operationalStrength": {
+        "title": "Puissance opérationnelle",
+        "desc": "Construire un dispositif fondé sur la précision, la rapidité et la conformité."
+      },
+      "institutionalPresence": {
+        "title": "Présence institutionnelle",
+        "desc": "Renforcer la position de l'entreprise comme acteur financier de confiance."
+      },
+      "continuousDevelopment": {
+        "title": "Amélioration continue",
+        "desc": "Améliorer en permanence les systèmes et les processus."
+      },
+      "marketLeadership": {
+        "title": "Leadership sur le marché",
+        "desc": "Devenir le premier choix des entreprises et des projets d'investissement."
+      },
+      "economicImpact": {
+        "title": "Impact économique",
+        "desc": "Contribuer à soutenir l'économie nationale et à renforcer l'environnement des affaires."
+      },
+      "futureReadiness": {
+        "title": "Préparation au futur",
+        "desc": "Se préparer aux évolutions économiques et technologiques à venir."
+      },
+      "globalExpansion": {
+        "title": "Expansion internationale",
+        "desc": "Ouvrir des canaux de financement externes au service des projets internationaux de nos clients."
+      }
+    },
+    "governance": {
+      "clearFramework": {
+        "title": "Cadre organisationnel clair",
+        "desc": "Une structure de gouvernance qui définit avec précision pouvoirs et responsabilités."
+      },
+      "internalControl": {
+        "title": "Contrôle interne continu",
+        "desc": "Un suivi rigoureux pour garantir le respect des normes."
+      },
+      "advancedRiskManagement": {
+        "title": "Gestion avancée des risques",
+        "desc": "Une évaluation globale des risques avant toute décision de financement."
+      },
+      "fullCompliance": {
+        "title": "Conformité réglementaire totale",
+        "desc": "Alignement avec les réglementations locales et internationales."
+      }
+    }
   },
   "contact": {
     "badge": "Contactez-nous",
@@ -170,13 +251,346 @@
         }
       ]
     },
-    "description": "Votre partenaire exécutif pour renforcer votre influence et orienter vos décisions stratégiques grâce à un système opérationnel intégré offrant clarté, exécution précise et croissance sécurisée au niveau local et international.",
-    "copyright": "© 2026 KIB pour les services exécutifs pour les dirigeants. Tous droits réservés.",
+    "description": "KIB Finance L.L.C. est une entité financière institutionnelle intégrée, fondée sur une vision claire, des valeurs stables et une gouvernance rigoureuse. Nous croyons que le financement n’est pas un simple produit à vendre, mais une responsabilité à piloter et un partenariat stratégique qui façonne l’avenir des entreprises et des projets.", 
+    "copyright": "© 2026 KIB Finance L.L.C. Tous droits réservés.",
     "socialMedia": {
       "linkedin": "LinkedIn",
       "twitter": "Twitter",
       "instagram": "Instagram",
       "facebook": "Facebook"
+    }
+  },
+  "financeHome": {
+    "hero": {
+      "slide1": {
+        "headline": "KIB Finance",
+        "subheadline": "Votre partenaire stratégique dans le monde du financement",
+        "highlight": "Leadership financier aux standards internationaux"
+      },
+      "slide2": {
+        "headline": "Solutions de financement spécialisées",
+        "subheadline": "Nous concevons des montages précis adaptés à votre secteur et à vos flux de trésorerie",
+        "highlight": "Expertise opérationnelle approfondie"
+      },
+      "slide3": {
+        "headline": "Partenariats stratégiques",
+        "subheadline": "Des relations durables avec les banques et les institutions financières",
+        "highlight": "Un large réseau de financement fiable"
+      },
+      "primaryCta": "Demander une consultation",
+      "secondaryCta": "En savoir plus sur nous",
+      "stats": {
+        "files": "Dossiers de financement réussis",
+        "experience": "Années d'expérience",
+        "clients": "Clients satisfaits",
+        "successRate": "Taux de réussite"
+      }
+    },
+    "about": {
+      "badge": "Identité institutionnelle",
+      "title": "Qui sommes-nous et ce que",
+      "titleHighlight": "nous représentons",
+      "paragraph1": "KIB Finance n'est pas une simple société de courtage, mais une institution financière structurée, fondée sur une vision claire, des valeurs stables, une gouvernance exigeante et une connaissance fine du marché du financement.",
+      "paragraph2": "Nous croyons que le financement n'est pas un produit rapide à vendre, mais une responsabilité stratégique qui façonne l'avenir des entreprises et des projets.",
+      "bullet1": "Une présence professionnelle forte qui reflète la solidité de l'entreprise et la confiance du marché",
+      "bullet2": "Une capacité analytique élevée — lecture précise des chiffres, des risques et des flux de trésorerie",
+      "bullet3": "Confidentialité opérationnelle — protection totale de chaque dossier et information",
+      "bullet4": "Vision long terme — nous voyons le client comme un partenaire, pas comme une simple opération",
+      "floatingBadgeTitle": "Institution de confiance",
+      "floatingBadgeSubtitle": "+15 ans dans le secteur financier",
+      "introLabel": "Introduction",
+      "introCompanyName": "KIB Finance L.L.C.",
+      "introParagraph1": "Nous croyons que le financement n'est pas un simple service rendu, mais une responsabilité à piloter, un partenariat à construire et une décision stratégique qui façonne l'avenir des entreprises et des projets.",
+      "introParagraph2": "Le conseil d'administration a adopté un cadre conceptuel global qui définit notre identité institutionnelle, ancre nos valeurs, renforce les mécanismes de gouvernance et pose les bases sur lesquelles se construisent chaque relation, chaque service et chaque décision.",
+      "identity": {
+        "1": {
+          "title": "Entité financière indépendante",
+          "desc": "Nous disposons d'une structure institutionnelle claire et de pouvoirs opérationnels définis."
+        },
+        "2": {
+          "title": "Partenaire stratégique",
+          "desc": "Nous accompagnons le client à chaque étape de sa croissance financière."
+        },
+        "3": {
+          "title": "Expertise opérationnelle approfondie",
+          "desc": "Une connaissance étendue du secteur financier et du financement acquise au fil des années."
+        },
+        "4": {
+          "title": "Large réseau de financement",
+          "desc": "Des relations solides avec les banques et les institutions de financement, à l'intérieur et à l'extérieur du pays."
+        },
+        "5": {
+          "title": "Solutions spécialisées",
+          "desc": "Conception de solutions de financement précises, adaptées à la nature de chaque activité."
+        },
+        "6": {
+          "title": "Engagement institutionnel",
+          "desc": "Un fonctionnement fondé sur des politiques claires et des standards constants qui ne varient pas."
+        }
+      }
+    },
+    "services": {
+      "badge": "Nos services",
+      "title": "Des solutions de financement",
+      "titleHighlight": "spécialisées",
+      "subtitle": "Nous concevons des montages de financement intégrés pour les entreprises, les projets et les investisseurs.",
+      "learnMore": "En savoir plus",
+      "modalFeaturesTitle": "Ce que ce service comprend",
+      "modalConsultCta": "Obtenir une consultation pour ce service",
+      "modalClose": "Fermer",
+      "items": {
+        "corporateFinance": {
+          "title": "Financement institutionnel",
+          "desc": "Solutions de financement intégrées pour les grandes entreprises et institutions, selon des standards professionnels élevés.",
+          "fullDesc": "Nous proposons des solutions de financement institutionnel conçues sur mesure pour les entreprises et institutions qui cherchent à atteindre leurs objectifs d’expansion et d’exploitation. Nous agissons comme un partenaire stratégique qui comprend les besoins de chaque entité et conçoit la structure de financement optimale, en garantissant les meilleures conditions grâce à notre large réseau de partenaires financiers.",
+          "features": {
+            "1": "Financement du fonds de roulement et des besoins opérationnels",
+            "2": "Prêts d’expansion et d’investissement à long terme",
+            "3": "Financement d’acquisition et de fusion",
+            "4": "Structuration de financements multi-sources",
+            "5": "Négociation avec les banques et les organismes de financement"
+          }
+        },
+        "projectFinance": {
+          "title": "Financement de projets",
+          "desc": "Accompagnement des projets d’investissement de la planification jusqu’à l’exécution complète.",
+          "fullDesc": "Nous accompagnons les projets d’investissement à chaque étape, depuis l’étude de faisabilité et la structuration du financement jusqu’à la clôture de l’opération et le démarrage effectif. Notre expérience approfondie en financement de projets nous permet de proposer des solutions innovantes adaptées à la nature, à la taille et au secteur de chaque projet.",
+          "features": {
+            "1": "Études de faisabilité financière et économique",
+            "2": "Structuration du financement des grands projets",
+            "3": "Financement des secteurs immobilier et des infrastructures",
+            "4": "Projets dans l’énergie et l’industrie",
+            "5": "Suivi du projet jusqu’à la clôture complète"
+          }
+        },
+        "riskManagement": {
+          "title": "Gestion des risques",
+          "desc": "Évaluation globale des risques financiers et conception de stratégies de protection adaptées.",
+          "fullDesc": "Nous considérons la gestion des risques comme un pilier essentiel de toute décision de financement réussie. Notre équipe spécialisée réalise une analyse complète des risques financiers et opérationnels et met en place des stratégies claires pour les atténuer, protéger les actifs du client et assurer la continuité de son activité.",
+          "features": {
+            "1": "Évaluation des risques de crédit et financiers",
+            "2": "Analyse des risques de marché et de liquidité",
+            "3": "Mise en place de politiques de gestion des risques",
+            "4": "Tests de résistance et scénarios",
+            "5": "Rapports périodiques sur les risques et recommandations"
+          }
+        },
+        "internationalFinance": {
+          "title": "Financement international",
+          "desc": "Ouverture de canaux de financement externes pour soutenir les projets à l’international.",
+          "fullDesc": "Nous disposons d’un vaste réseau international d’institutions financières et de banques régionales et mondiales, ce qui nous permet d’ouvrir des canaux de financement externes pour nos clients. Nous aidons les entreprises à accéder aux marchés de capitaux internationaux et à obtenir des financements à des conditions compétitives.",
+          "features": {
+            "1": "Financement auprès de banques régionales et internationales",
+            "2": "Fonds d’investissement et capital-investissement",
+            "3": "Financement islamique international",
+            "4": "Lettres de crédit et garanties internationales",
+            "5": "Financement du commerce extérieur et des exportations"
+          }
+        },
+        "financialAdvisory": {
+          "title": "Conseil financier",
+          "desc": "Conseil financier spécialisé fondé sur une analyse rigoureuse des données et des chiffres.",
+          "fullDesc": "Notre service de conseil financier fournit une analyse approfondie et objective de la situation financière de l’entreprise et définit une feuille de route claire pour atteindre ses objectifs financiers. Toutes nos recommandations reposent sur des données réelles et des chiffres vérifiés, loin des suppositions et estimations non fondées.",
+          "features": {
+            "1": "Analyse financière globale de l’entreprise",
+            "2": "Évaluation des actifs et des portefeuilles d’investissement",
+            "3": "Élaboration de plans financiers stratégiques",
+            "4": "Conseil en investissement et allocation d’actifs",
+            "5": "Rapports de performance financière et analyses comparatives"
+          }
+        },
+        "debtRestructuring": {
+          "title": "Restructuration de la dette",
+          "desc": "Réorganisation des engagements financiers pour améliorer la trésorerie et réduire les charges.",
+          "fullDesc": "Nous aidons les entreprises confrontées à une pression sur leurs engagements financiers à restructurer leur dette de manière à améliorer la trésorerie et alléger la charge financière. Nous négocions avec les créanciers au nom du client afin de parvenir à des solutions durables garantissant la continuité de l’activité.",
+          "features": {
+            "1": "Analyse de la structure actuelle de la dette",
+            "2": "Négociation avec les banques et créanciers",
+            "3": "Rééchelonnement des prêts et engagements",
+            "4": "Regroupement des dettes et réduction de leur coût",
+            "5": "Plan de redressement financier à long terme"
+          }
+        }
+      }
+    },
+    "benefits": {
+      "badge": "Valeurs institutionnelles",
+      "title": "Des valeurs qui façonnent",
+      "titleHighlight": "notre identité",
+      "subtitle": "Des principes qui encadrent notre comportement et la gestion de chaque dossier de financement.",
+      "values": {
+        "professionalIntegrity": {
+          "title": "Intégrité professionnelle",
+          "desc": "Agir avec une transparence totale à chaque étape."
+        },
+        "fullConfidentiality": {
+          "title": "Confidentialité totale",
+          "desc": "Protéger les informations des clients comme partie intégrante de notre identité."
+        },
+        "strictGovernance": {
+          "title": "Gouvernance rigoureuse",
+          "desc": "Respect strict des politiques et des normes réglementaires, sans exception."
+        },
+        "operationalQuality": {
+          "title": "Qualité opérationnelle",
+          "desc": "Exécuter chaque dossier avec le plus haut niveau de précision."
+        },
+        "financialResponsibility": {
+          "title": "Responsabilité financière",
+          "desc": "Prendre des décisions fondées sur l’analyse, pas sur les suppositions."
+        },
+        "respectTime": {
+          "title": "Respect du temps",
+          "desc": "Livrer les résultats dans un délai clairement défini."
+        },
+        "mutualTrust": {
+          "title": "Confiance mutuelle",
+          "desc": "Construire une relation fondée sur la crédibilité et l’engagement."
+        },
+        "institutionalProfessionalism": {
+          "title": "Professionnalisme institutionnel",
+          "desc": "Travailler avec une méthodologie claire à chaque étape."
+        },
+        "continuousInnovation": {
+          "title": "Innovation continue",
+          "desc": "Développer des solutions nouvelles adaptées aux besoins du marché."
+        },
+        "clientService": {
+          "title": "Service client",
+          "desc": "Mettre l’intérêt du client au centre de chaque décision."
+        },
+        "resultCommitment": {
+          "title": "Engagement sur le résultat",
+          "desc": "Travailler jusqu’à atteindre le meilleur résultat possible."
+        },
+        "sustainability": {
+          "title": "Durabilité",
+          "desc": "Proposer des solutions de long terme plutôt que des réponses de court terme."
+        }
+      }
+    },
+    "stats": {
+      "badge": "Nos chiffres parlent",
+      "title": "Des résultats",
+      "titleHighlight": "concrets",
+      "subtitle": "Des chiffres qui reflètent la confiance de nos clients et notre expérience accumulée dans le secteur financier.",
+      "items": {
+        "files": {
+          "label": "Dossiers de financement",
+          "sublabel": "Menés à bien avec succès"
+        },
+        "clients": {
+          "label": "Clients satisfaits",
+          "sublabel": "Qui font confiance à nos services"
+        },
+        "experience": {
+          "label": "Années d'expérience",
+          "sublabel": "Dans le secteur financier"
+        },
+        "funders": {
+          "label": "Institutions financières",
+          "sublabel": "Partenaires stratégiques"
+        },
+        "successRate": {
+          "label": "Taux de réussite",
+          "sublabel": "Dans la clôture des dossiers"
+        },
+        "responseTime": {
+          "label": "Délai moyen de réponse",
+          "sublabel": "Pour chaque demande de financement"
+        }
+      }
+    },
+    "whyUs": {
+      "badge": "Vision institutionnelle",
+      "title": "Pourquoi",
+      "titleHighlight": "KIB Finance ?",
+      "subtitle": "Une vision fondée sur la durabilité, orientée vers le leadership et gérée selon des standards internationaux.",
+      "vision": {
+        "financialLeadership": {
+          "title": "Leadership financier",
+          "desc": "Devenir la référence première en solutions de financement spécialisées."
+        },
+        "strategicPartnerships": {
+          "title": "Partenariats stratégiques",
+          "desc": "Construire des relations durables avec les clients et les institutions financières."
+        },
+        "regionalExpansion": {
+          "title": "Expansion régionale",
+          "desc": "Étendre la portée de nos services dans le pays et dans la région."
+        },
+        "innovativeSolutions": {
+          "title": "Solutions innovantes",
+          "desc": "Développer des produits de financement adaptés aux transformations économiques."
+        },
+        "sustainableFinance": {
+          "title": "Financement durable",
+          "desc": "Proposer des solutions qui soutiennent la croissance à long terme et réduisent les risques."
+        },
+        "operationalStrength": {
+          "title": "Puissance opérationnelle",
+          "desc": "Construire un dispositif fondé sur la précision, la rapidité et la conformité."
+        },
+        "institutionalPresence": {
+          "title": "Présence institutionnelle",
+          "desc": "Renforcer la position de l'entreprise comme acteur financier de confiance."
+        },
+        "continuousDevelopment": {
+          "title": "Amélioration continue",
+          "desc": "Améliorer en permanence les systèmes et les processus."
+        },
+        "marketLeadership": {
+          "title": "Leadership sur le marché",
+          "desc": "Devenir le premier choix des entreprises et des projets d'investissement."
+        },
+        "economicImpact": {
+          "title": "Impact économique",
+          "desc": "Contribuer à soutenir l'économie nationale et à renforcer l'environnement des affaires."
+        },
+        "futureReadiness": {
+          "title": "Préparation au futur",
+          "desc": "Se préparer aux évolutions économiques et technologiques à venir."
+        },
+        "globalExpansion": {
+          "title": "Expansion internationale",
+          "desc": "Ouvrir des canaux de financement externes au service des projets internationaux de nos clients."
+        }
+      },
+      "governance": {
+        "clearFramework": {
+          "title": "Cadre organisationnel clair",
+          "desc": "Une structure de gouvernance qui définit avec précision pouvoirs et responsabilités."
+        },
+        "internalControl": {
+          "title": "Contrôle interne continu",
+          "desc": "Un suivi rigoureux pour garantir le respect des normes."
+        },
+        "advancedRiskManagement": {
+          "title": "Gestion avancée des risques",
+          "desc": "Une évaluation globale des risques avant toute décision de financement."
+        },
+        "fullCompliance": {
+          "title": "Conformité réglementaire totale",
+          "desc": "Alignement avec les réglementations locales et internationales."
+        }
+      },
+      "governanceSection": {
+        "badge": "Cadre de gouvernance",
+        "title": "Une gouvernance qui encadre la décision",
+        "titleHighlight": "et garantit la conformité",
+        "description": "Nous travaillons selon un cadre de gouvernance institutionnelle strict qui garantit que chaque décision est prise avec un haut niveau de professionnalisme et une transparence totale."
+      }
+    },
+    "contactCta": {
+      "badge": "Consultation de financement",
+      "title": "Commencez votre",
+      "titleHighlight": "parcours de financement aujourd'hui",
+      "subtitle": "Notre équipe spécialisée est prête à étudier vos besoins, structurer la meilleure solution de financement et vous accompagner jusqu'à la clôture du dossier.",
+      "phoneLabel": "Appelez-nous",
+      "emailLabel": "Écrivez-nous",
+      "cta": "Obtenir une consultation",
+      "responseTitle": "Réponse sous",
+      "responseValue": "24 heures"
     }
   }
 }

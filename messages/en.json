@@ -1,7 +1,13 @@
 {
     "page": {
-        "title": "Home Page",
-        "description": "Your executive partner in building influence and shaping strategic decisions through an integrated operational system that delivers clarity, precision execution, and secure growth pathways locally and internationally."
+        "title": "KIB Finance | Home",
+        "description": "At KIB Finance, we design and structure bespoke financing solutions for companies and projects, combining deep local expertise, strong banking relationships and disciplined execution to turn ambitious plans into sustainable, long‑term growth."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for doesn't exist or may have been moved. Try going back to the homepage.",
+      "cta": "Back to homepage",
+      "badge": "Not Found"
     },
     "navbar": {
         "cta": "Book Your Service",
@@ -123,13 +129,94 @@
         "imageAlt": "Strategic vision",
         "visionChip": "Vision · Influence · Execution"
     },
-    "whyUs": {
-        "badge": "Why us?",
-        "title": "What sets us apart from",
-        "titleHighlight": "others",
-        "subtitle": "We offer you exceptional advantages that make us the ideal choice for ambitious business leaders",
-        "features": ["A closed methodology ensuring the highest level of confidentiality", "Rapid response with no delay", "A network of relationships that opens closed doors", "Multi-disciplinary expertise", "Full commitment to results", "Execution that relies on action not words"]
-    },
+        "whyUs": {
+            "badge": "Why us?",
+            "title": "What sets us apart from",
+            "titleHighlight": "others",
+            "subtitle": "We offer you exceptional advantages that make us the ideal choice for ambitious business leaders",
+            "features": [
+                "A closed methodology ensuring the highest level of confidentiality",
+                "Rapid response with no delay",
+                "A network of relationships that opens closed doors",
+                "Multi-disciplinary expertise",
+                "Full commitment to results",
+                "Execution that relies on action not words"
+            ],
+            "vision": {
+                "financialLeadership": {
+                    "title": "Financial leadership",
+                    "desc": "To become the primary reference for specialised financing solutions."
+                },
+                "strategicPartnerships": {
+                    "title": "Strategic partnerships",
+                    "desc": "Building long-term relationships with clients and financing institutions."
+                },
+                "regionalExpansion": {
+                    "title": "Regional expansion",
+                    "desc": "Expanding our services within the country and across the region."
+                },
+                "innovativeSolutions": {
+                    "title": "Innovative solutions",
+                    "desc": "Developing financing products that match economic transformations."
+                },
+                "sustainableFinance": {
+                    "title": "Sustainable finance",
+                    "desc": "Providing solutions that support long-term growth and reduce risk."
+                },
+                "operationalStrength": {
+                    "title": "Operational strength",
+                    "desc": "Building a system based on accuracy, speed and compliance."
+                },
+                "institutionalPresence": {
+                    "title": "Institutional presence",
+                    "desc": "Strengthening the company's position as a trusted financial institution."
+                },
+                "continuousDevelopment": {
+                    "title": "Continuous development",
+                    "desc": "Continuously improving systems and processes."
+                },
+                "marketLeadership": {
+                    "title": "Market leadership",
+                    "desc": "Becoming the first choice for companies and investment projects."
+                },
+                "economicImpact": {
+                    "title": "Economic impact",
+                    "desc": "Contributing to the national economy and strengthening the business environment."
+                },
+                "futureReadiness": {
+                    "title": "Future readiness",
+                    "desc": "Preparing for upcoming economic and technological changes."
+                },
+                "globalExpansion": {
+                    "title": "Global expansion",
+                    "desc": "Opening external financing channels to support clients' international projects."
+                }
+            },
+            "governance": {
+                "clearFramework": {
+                    "title": "Clear governance framework",
+                    "desc": "An organisational structure that precisely defines authorities and responsibilities."
+                },
+                "internalControl": {
+                    "title": "Ongoing internal control",
+                    "desc": "Close monitoring to ensure compliance with standards."
+                },
+                "advancedRiskManagement": {
+                    "title": "Advanced risk management",
+                    "desc": "Comprehensive risk assessment before any financing decision."
+                },
+                "fullCompliance": {
+                    "title": "Full regulatory compliance",
+                    "desc": "Alignment with local and international regulations."
+                }
+            },
+            "governanceSection": {
+                "badge": "Governance framework",
+                "title": "Governance that guides decisions",
+                "titleHighlight": "and guarantees compliance",
+                "description": "We operate under a strict institutional governance framework that ensures every decision is taken with high professional standards and full transparency."
+            }
+        },
     "contact": {
         "badge": "Contact us",
         "title": "Start building a decision path",
@@ -171,8 +258,8 @@
                   }
             ]
         },
-        "description": "Your executive partner in building influence and shaping strategic decisions through an integrated operational system that delivers clarity, precision execution, and secure growth pathways locally and internationally.",
-        "copyright": "© 2026 KIB for Executive Services for Business Leaders. All Rights Reserved.",
+        "description": "KIB Finance L.L.C. is an integrated institutional financial entity built on clear vision, stable values and disciplined governance. We believe financing is not a quick product to be sold, but a responsibility to manage and a strategic partnership that shapes the future of companies and projects.", 
+        "copyright": "© 2026 KIB Finance L.L.C. All Rights Reserved.",
         "socialMedia": {
             "linkedin": "LinkedIn",
             "twitter": "Twitter",
@@ -251,5 +338,338 @@
     "servicesPage": {
         "hero": {"title": "At KIB for Business Services, we don't work within market boundaries… we draw them.", "paragraphs": ["We don't move with the flow of business… we set the rhythm that companies move to.", "We are the entity that doesn't offer a service, but builds a system, creates influence, and establishes a presence that precedes the client's name before they arrive.", "We don't run with an office mentality…", "But with a mentality of an institution that decisions are built around, standards are measured by, and that is referred to in the details that make the difference between a company that operates… and a company that is respected.", "Partner in decision… partner in expansion… and partner in influence.", "Here… a new phase of engagement begins.", "A phase that doesn't depend on what we do for you… but on what we build with you."]},
         "nav": {"title": "Service sections", "subtitle": "Choose a section for quick browsing", "count": "section", "service": "service"}
+    },
+    "financeHome": {
+        "hero": {
+            "slide1": {
+                "headline": "KIB Finance",
+                "subheadline": "Your strategic partner in the world of financing",
+                "highlight": "Financial leadership with global standards"
+            },
+            "slide2": {
+                "headline": "Specialised financing solutions",
+                "subheadline": "We engineer precise structures tailored to your sector and cash‑flow reality",
+                "highlight": "Deep operational expertise"
+            },
+            "slide3": {
+                "headline": "Strategic partnerships",
+                "subheadline": "Long‑term relationships with banks and financing institutions",
+                "highlight": "A wide, reliable financing network"
+            },
+            "primaryCta": "Request a consultation",
+            "secondaryCta": "Learn more about us",
+            "stats": {
+                "files": "Financing files closed",
+                "experience": "Years of experience",
+                "clients": "Satisfied clients",
+                "successRate": "Success rate"
+            }
+        },
+        "about": {
+            "badge": "Corporate identity",
+            "title": "Who we are and what",
+            "titleHighlight": "we represent",
+            "paragraph1": "KIB Finance is not just another brokerage firm; it is a specialised financial institution built on clear governance, strong risk discipline and deep knowledge of the regional financing landscape.",
+            "paragraph2": "We believe that financing is not a quick product to be sold, but a strategic responsibility that shapes the future of companies and projects.",
+            "bullet1": "A strong professional presence that reflects the strength of the company and market trust",
+            "bullet2": "High analytical capability – reading numbers, risks and cash flows with precision",
+            "bullet3": "Operational confidentiality – full protection for every file and piece of information",
+            "bullet4": "A long‑term vision – we look at the client as a partner, not a single transaction",
+            "floatingBadgeTitle": "Trusted institution",
+        "floatingBadgeSubtitle": "15+ years in the financial sector",
+      "introLabel": "Introduction",
+      "introCompanyName": "KIB Finance L.L.C.",
+      "introParagraph1": "We believe that financing is not merely a service to be delivered, but a responsibility to be managed, a partnership to be built, and a strategic decision that shapes the future of companies and projects.",
+        "introParagraph2": "The Board of Directors has adopted a comprehensive conceptual framework that defines our institutional identity, anchors our values, strengthens governance mechanisms and lays the foundations on which every relationship, service and decision is built.",
+        "identity": {
+          "1": {
+            "title": "Independent financial entity",
+            "desc": "We have a clear institutional structure and well-defined operational authorities."
+          },
+          "2": {
+            "title": "Strategic partner",
+            "desc": "We accompany our clients at every stage of their financial growth."
+          },
+          "3": {
+            "title": "Deep operational expertise",
+            "desc": "Extensive knowledge of the financial and funding sector built over years of experience."
+          },
+          "4": {
+            "title": "Extensive financing network",
+            "desc": "Strong relationships with banks and financing institutions inside and outside the country."
+          },
+          "5": {
+            "title": "Specialised solutions",
+            "desc": "We design precise financing solutions tailored to the nature of each activity."
+          },
+          "6": {
+            "title": "Institutional commitment",
+            "desc": "We operate according to clear policies and consistent, unchanging standards."
+          }
+        }
+        },
+        "services": {
+            "badge": "Our services",
+            "title": "Specialised",
+            "titleHighlight": "financing solutions",
+            "subtitle": "We design integrated financing structures for institutions, projects and investors.",
+            "learnMore": "Learn more",
+            "modalFeaturesTitle": "What this service includes",
+            "modalConsultCta": "Get a consultation for this service",
+            "modalClose": "Close",
+            "items": {
+              "corporateFinance": {
+                "title": "Corporate finance",
+                "desc": "Integrated financing solutions for large companies and institutions delivered with high professional standards.",
+                "fullDesc": "We provide institutional financing solutions tailored for companies and large organisations seeking to achieve their expansion and operational objectives. We act as a strategic partner that understands each organisation's requirements and designs the optimal financing structure, securing the best terms and pricing through our broad network of financing partners.",
+                "features": {
+                  "1": "Working capital and operational financing",
+                  "2": "Expansion and long-term investment loans",
+                  "3": "Acquisition and merger financing",
+                  "4": "Multi-source financing structures",
+                  "5": "Negotiation with banks and financing institutions"
+                }
+              },
+              "projectFinance": {
+                "title": "Project finance",
+                "desc": "Supporting investment projects from planning to full execution.",
+                "fullDesc": "We accompany investment projects at every stage, from feasibility studies and financing structures through to deal closing and project launch. Our extensive experience in project finance enables us to deliver innovative solutions that fit each project's nature, size and sector.",
+                "features": {
+                  "1": "Financial and economic feasibility studies",
+                  "2": "Structuring finance for large-scale projects",
+                  "3": "Real estate and infrastructure project financing",
+                  "4": "Energy and industrial projects",
+                  "5": "Follow-up until successful closing"
+                }
+              },
+              "riskManagement": {
+                "title": "Risk management",
+                "desc": "Comprehensive assessment of financial risks and design of appropriate protection strategies.",
+                "fullDesc": "We recognise that risk management is a core pillar of every successful financing decision. Our specialised team performs a thorough analysis of financial and operational risks and develops clear strategies to mitigate them, protect client assets and ensure business continuity.",
+                "features": {
+                  "1": "Credit and financial risk assessment",
+                  "2": "Market and liquidity risk analysis",
+                  "3": "Designing risk management policies",
+                  "4": "Stress testing and scenario analysis",
+                  "5": "Periodic risk reports and recommendations"
+                }
+              },
+              "internationalFinance": {
+                "title": "International finance",
+                "desc": "Opening external financing channels to support clients' projects globally.",
+                "fullDesc": "We maintain a wide international network of financial institutions and regional and global banks, enabling us to open external financing channels for our clients. We help companies access international capital markets and secure funding on competitive terms.",
+                "features": {
+                  "1": "Financing from regional and international banks",
+                  "2": "Investment funds and private equity",
+                  "3": "International Islamic finance",
+                  "4": "Letters of credit and international guarantees",
+                  "5": "Trade finance and export financing"
+                }
+              },
+              "financialAdvisory": {
+                "title": "Financial advisory",
+                "desc": "Specialised financial advisory based on rigorous data and number analysis.",
+                "fullDesc": "Our financial advisory service provides deep and objective analysis of a company's financial position and sets a clear roadmap to achieve its financial goals. Every recommendation we make is grounded in real data and numbers, far from guesswork or untested assumptions.",
+                "features": {
+                  "1": "Comprehensive financial analysis of the company",
+                  "2": "Asset and investment portfolio valuation",
+                  "3": "Development of strategic financial plans",
+                  "4": "Investment advisory and asset allocation",
+                  "5": "Financial performance reports and benchmarking"
+                }
+              },
+              "debtRestructuring": {
+                "title": "Debt restructuring",
+                "desc": "Reorganising financial obligations to improve cash flow and reduce burdens.",
+                "fullDesc": "We support companies facing pressure from their financial obligations by restructuring their debts in ways that improve cash flow and reduce financial strain. We negotiate with creditors on behalf of the client to reach sustainable solutions that safeguard business continuity.",
+                "features": {
+                  "1": "Analysis of the current debt structure",
+                  "2": "Negotiation with banks and creditors",
+                  "3": "Rescheduling of loans and obligations",
+                  "4": "Debt consolidation and cost reduction",
+                  "5": "Long-term financial recovery planning"
+                }
+              }
+            }
+        },
+        "benefits": {
+            "badge": "Institutional values",
+            "title": "Values that shape",
+            "titleHighlight": "our character",
+            "subtitle": "Principles that govern our behaviour and the way we manage every financing file.",
+            "values": {
+              "professionalIntegrity": {
+                "title": "Professional integrity",
+                "desc": "Acting with full transparency at every step."
+              },
+              "fullConfidentiality": {
+                "title": "Total confidentiality",
+                "desc": "Protecting client information as a core part of our identity."
+              },
+              "strictGovernance": {
+                "title": "Strict governance",
+                "desc": "Adhering to policies and regulatory standards without exception."
+              },
+              "operationalQuality": {
+                "title": "Operational quality",
+                "desc": "Executing every file with the highest level of precision."
+              },
+              "financialResponsibility": {
+                "title": "Financial responsibility",
+                "desc": "Making decisions based on analysis, not assumption."
+              },
+              "respectTime": {
+                "title": "Respect for time",
+                "desc": "Delivering results within a clear timeframe."
+              },
+              "mutualTrust": {
+                "title": "Mutual trust",
+                "desc": "Building relationships based on credibility and commitment."
+              },
+              "institutionalProfessionalism": {
+                "title": "Institutional professionalism",
+                "desc": "Operating with a clear methodology at every stage."
+              },
+              "continuousInnovation": {
+                "title": "Continuous innovation",
+                "desc": "Developing new solutions that match market needs."
+              },
+              "clientService": {
+                "title": "Client service",
+                "desc": "Putting the client’s interests at the forefront of every decision."
+              },
+              "resultCommitment": {
+                "title": "Commitment to results",
+                "desc": "Working until we reach the best possible outcome."
+              },
+              "sustainability": {
+                "title": "Sustainability",
+                "desc": "Providing long-term solutions, not short-term fixes."
+              }
+            }
+        },
+        "stats": {
+            "badge": "Our numbers speak",
+            "title": "Real",
+            "titleHighlight": "results",
+            "subtitle": "Figures that reflect our clients' trust and our accumulated experience in the financial sector.",
+            "items": {
+              "files": {
+                "label": "Financing files",
+                "sublabel": "Successfully completed"
+              },
+              "clients": {
+                "label": "Satisfied clients",
+                "sublabel": "Who trust our services"
+              },
+              "experience": {
+                "label": "Years of experience",
+                "sublabel": "In the financial sector"
+              },
+              "funders": {
+                "label": "Financing institutions",
+                "sublabel": "Strategic partners"
+              },
+              "successRate": {
+                "label": "Success rate",
+                "sublabel": "In closing financing mandates"
+              },
+              "responseTime": {
+                "label": "Average response time",
+                "sublabel": "For each financing request"
+              }
+            }
+        },
+        "whyUs": {
+            "badge": "Institutional vision",
+            "title": "Why",
+            "titleHighlight": "KIB Finance?",
+            "subtitle": "A vision built on sustainability, driven toward leadership and executed with international‑grade standards.",
+            "vision": {
+                "financialLeadership": {
+                    "title": "Financial leadership",
+                    "desc": "To become the primary reference for specialised financing solutions."
+                },
+                "strategicPartnerships": {
+                    "title": "Strategic partnerships",
+                    "desc": "Building long-term relationships with clients and financing institutions."
+                },
+                "regionalExpansion": {
+                    "title": "Regional expansion",
+                    "desc": "Expanding our services within the country and across the region."
+                },
+                "innovativeSolutions": {
+                    "title": "Innovative solutions",
+                    "desc": "Developing financing products that match economic transformations."
+                },
+                "sustainableFinance": {
+                    "title": "Sustainable finance",
+                    "desc": "Providing solutions that support long-term growth and reduce risk."
+                },
+                "operationalStrength": {
+                    "title": "Operational strength",
+                    "desc": "Building a system based on accuracy, speed and compliance."
+                },
+                "institutionalPresence": {
+                    "title": "Institutional presence",
+                    "desc": "Strengthening the company's position as a trusted financial institution."
+                },
+                "continuousDevelopment": {
+                    "title": "Continuous development",
+                    "desc": "Continuously improving systems and processes."
+                },
+                "marketLeadership": {
+                    "title": "Market leadership",
+                    "desc": "Becoming the first choice for companies and investment projects."
+                },
+                "economicImpact": {
+                    "title": "Economic impact",
+                    "desc": "Contributing to the national economy and strengthening the business environment."
+                },
+                "futureReadiness": {
+                    "title": "Future readiness",
+                    "desc": "Preparing for upcoming economic and technological changes."
+                },
+                "globalExpansion": {
+                    "title": "Global expansion",
+                    "desc": "Opening external financing channels to support clients' international projects."
+                }
+            },
+            "governance": {
+                "clearFramework": {
+                    "title": "Clear governance framework",
+                    "desc": "An organisational structure that precisely defines authorities and responsibilities."
+                },
+                "internalControl": {
+                    "title": "Ongoing internal control",
+                    "desc": "Close monitoring to ensure compliance with standards."
+                },
+                "advancedRiskManagement": {
+                    "title": "Advanced risk management",
+                    "desc": "Comprehensive risk assessment before any financing decision."
+                },
+                "fullCompliance": {
+                    "title": "Full regulatory compliance",
+                    "desc": "Alignment with local and international regulations."
+                }
+            },
+            "governanceSection": {
+                "badge": "Governance framework",
+                "title": "Governance that guides decisions",
+                "titleHighlight": "and guarantees compliance",
+                "description": "We operate under a strict institutional governance framework that ensures every decision is taken with high professional standards and full transparency."
+            }
+        },
+        "contactCta": {
+            "badge": "Financing consultation",
+            "title": "Start your",
+            "titleHighlight": "financing journey today",
+            "subtitle": "Our specialised team is ready to study your needs, structure the optimal solution and accompany you until closing.",
+            "phoneLabel": "Call us",
+            "emailLabel": "Write to us",
+            "cta": "Get a consultation",
+            "responseTitle": "Response within",
+            "responseValue": "24 hours"
+        }
     }
 }

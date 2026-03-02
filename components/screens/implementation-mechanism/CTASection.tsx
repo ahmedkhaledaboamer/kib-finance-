@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ArrowLeftIcon, PhoneIcon, MailIcon, MapPinIcon } from 'lucide-react';
-interface CTASectionProps {
-  onOpenForm: () => void;
-}
-export function CTASection({ onOpenForm }: CTASectionProps) {
+import Image from 'next/image';
+import Link from 'next/link';
+export function CTASection() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -13,16 +12,19 @@ export function CTASection({ onOpenForm }: CTASectionProps) {
   return (
     <section
       id="cta"
-      className="py-20 relative overflow-hidden"
+      className="py-20 relative overflow-hidden px-[5%]"
       dir="rtl"
       ref={ref}>
 
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
           alt="تواصل معنا"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+          width={500}
+          height={500}
+          />
 
         <div
           className="absolute inset-0"
@@ -33,7 +35,7 @@ export function CTASection({ onOpenForm }: CTASectionProps) {
 
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative z-10 mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
           <motion.div
@@ -92,8 +94,8 @@ export function CTASection({ onOpenForm }: CTASectionProps) {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={onOpenForm}
+              <Link
+                href="/implementation-mechanism#form"
                 className="flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-black text-lg shadow-2xl hover:shadow-3xl transition-all hover:scale-105"
                 style={{
                   background: 'linear-gradient(135deg, #F59E0B, #EF4444)'
@@ -101,13 +103,13 @@ export function CTASection({ onOpenForm }: CTASectionProps) {
 
                 ابدأ طلبك الآن
                 <ArrowLeftIcon size={18} />
-              </button>
-              <a
+              </Link>
+              <Link
                 href="#process"
                 className="flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-black text-lg border-2 border-white/40 text-white hover:bg-white/10 transition-all">
 
                 استعرض المراحل
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -132,10 +134,13 @@ export function CTASection({ onOpenForm }: CTASectionProps) {
             }}>
 
             <div className="col-span-2 rounded-2xl overflow-hidden h-48">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80"
                 alt="فريق التفاوض"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+                />
 
             </div>
             <div

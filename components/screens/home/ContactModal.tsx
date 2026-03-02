@@ -84,7 +84,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             damping: 25,
             stiffness: 300
           }}
-          className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden z-10"
+          className="relative w-full  bg-white rounded-2xl shadow-2xl overflow-hidden z-10"
           dir="rtl">
 
             {/* Header */}

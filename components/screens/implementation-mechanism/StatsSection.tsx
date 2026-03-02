@@ -84,7 +84,7 @@ export function StatsSection() {
     margin: '-60px'
   });
   return (
-    <section className="py-20 relative overflow-hidden" dir="rtl" ref={ref}>
+    <section className="py-20 relative overflow-hidden px-[5%]" dir="rtl" ref={ref}>
       {/* Amber gradient background */}
       <div
         className="absolute inset-0"
@@ -103,7 +103,7 @@ export function StatsSection() {
         }} />
 
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative z-10 mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           className="text-center mb-12"

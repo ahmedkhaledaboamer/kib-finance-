@@ -63,6 +63,35 @@ html {
   font-family: var(--font-ibm-plex-sans-arabic), "IBM Plex Sans Arabic", sans-serif;
 }
 
+/* Global base font size with scaling on very large screens */
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 /* Section text: wrap words, readable line-height, no single-line overflow */
 section p,
 section li,
@@ -194,5 +223,80 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-gold);
   width: 24px;
   border-radius: 4px;
+}
+
+/* Home page responsive typography (approx. 320px–3440px) */
+.home-hero-heading {
+  font-size: clamp(2.5rem, 1.4rem + 2.2vw, 4.8rem);
+}
+
+.home-section-heading {
+  font-size: clamp(2rem, 1.2rem + 1.6vw, 3.5rem);
+}
+
+.home-section-subtitle {
+  font-size: clamp(1.125rem, 0.95rem + 0.8vw, 2.1rem);
+}
+
+.home-body-large {
+  font-size: clamp(1rem, 0.9rem + 0.7vw, 1.6rem);
+}
+
+.home-badge-text {
+  font-size: clamp(0.8rem, 0.7rem + 0.45vw, 1.05rem);
+}
+
+.home-stat-number {
+  font-size: clamp(1.9rem, 1.4rem + 1.5vw, 3.6rem);
+}
+
+.home-stat-label {
+  font-size: clamp(1rem, 0.9rem + 0.55vw, 1.6rem);
+}
+
+.home-small-label {
+  font-size: clamp(0.75rem, 0.65rem + 0.35vw, 0.95rem);
+}
+
+/* Services section specific typography (calmer sizing) */
+.services-heading {
+  font-size: clamp(1.7rem, 1.15rem + 1.3vw, 2.7rem);
+}
+
+.services-subtitle {
+  font-size: clamp(1rem, 0.9rem + 0.6vw, 1.6rem);
+}
+
+.services-badge-text {
+  font-size: clamp(0.8rem, 0.72rem + 0.35vw, 1rem);
+}
+
+.services-card-title {
+  font-size: clamp(1.1rem, 0.95rem + 0.6vw, 1.7rem);
+}
+
+.services-card-desc {
+  font-size: clamp(0.95rem, 0.85rem + 0.5vw, 1.35rem);
+}
+
+.services-card-cta {
+  font-size: clamp(0.95rem, 0.85rem + 0.5vw, 1.3rem);
+}
+
+/* Home page responsive image heights */
+.home-image-card {
+  height: clamp(11rem, 14vw, 18rem);
+}
+
+.home-image-service {
+  height: clamp(12rem, 16vw, 22rem);
+}
+
+.home-image-tall {
+  height: clamp(13rem, 18vw, 26rem);
+}
+
+.home-image-full {
+  height: clamp(15rem, 22vw, 30rem);
 }
 

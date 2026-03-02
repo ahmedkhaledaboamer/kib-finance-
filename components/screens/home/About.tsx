@@ -3,6 +3,8 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { CheckCircleIcon, AwardIcon, BuildingIcon } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -19,38 +21,41 @@ const fadeUp = {
   }
 };
 const identityItems = [
-{
-  num: '01',
-  title: 'كيان مالي مستقل',
-  desc: 'نمتلك بنية مؤسسية واضحة وصلاحيات تشغيلية محددة.'
-},
-{
-  num: '02',
-  title: 'شريك استراتيجي',
-  desc: 'نرافق العميل في كل مرحلة من مراحل نموه المالي.'
-},
-{
-  num: '03',
-  title: 'خبرة تشغيلية عميقة',
-  desc: 'معرفة واسعة بالقطاع المالي والتمويلي عبر سنوات من الخبرة.'
-},
-{
-  num: '04',
-  title: 'شبكة تمويلية واسعة',
-  desc: 'علاقات قوية مع البنوك والجهات التمويلية داخل الدولة وخارجها.'
-},
-{
-  num: '05',
-  title: 'حلول متخصصة',
-  desc: 'تصميم حلول تمويلية دقيقة تتناسب مع طبيعة كل نشاط.'
-},
-{
-  num: '06',
-  title: 'التزام مؤسسي',
-  desc: 'العمل وفق سياسات واضحة ومعايير ثابتة لا تتغير.'
-}];
+  {
+    num: '01',
+    titleKey: 'identity.1.title',
+    descKey: 'identity.1.desc'
+  },
+  {
+    num: '02',
+    titleKey: 'identity.2.title',
+    descKey: 'identity.2.desc'
+  },
+  {
+    num: '03',
+    titleKey: 'identity.3.title',
+    descKey: 'identity.3.desc'
+  },
+  {
+    num: '04',
+    titleKey: 'identity.4.title',
+    descKey: 'identity.4.desc'
+  },
+  {
+    num: '05',
+    titleKey: 'identity.5.title',
+    descKey: 'identity.5.desc'
+  },
+  {
+    num: '06',
+    titleKey: 'identity.6.title',
+    descKey: 'identity.6.desc'
+  }
+];
 
-export function About() {
+export function About({ locale }: { locale: string }) {
+  const isRTL = locale === "ar";
+  const t = useTranslations('financeHome.about');
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -66,16 +71,17 @@ export function About() {
           animate={isInView ? 'visible' : 'hidden'}
           className="text-center mb-16">
 
-          <span className="inline-block text-gold font-bold text-sm tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
-            الهوية المؤسسية
+          <span className="inline-block text-gold home-badge-text font-bold tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
+            {t('badge')}
           </span>
-          <h2 className="text-4xl lg:text-5xl font-black text-navy mb-4">
-            من نحن؟ وما الذي <span className="gradient-text">نُمثّله؟</span>
+          <h2 className="home-section-heading font-black text-navy mb-4">
+            {t('title')} <span className="gradient-text">{t('titleHighlight')}</span>
           </h2>
-          <p className="text-gray-500   leading-relaxed text-lg">
-            كيه إي بي للتمويل ش.ذ.م.م ليست مجرد شركة تعمل في مجال الوساطة
-            المالية، بل هي كيان مؤسسي متكامل يقوم على رؤية واضحة، وقيم ثابتة،
-            ونظام حوكمة صارم.
+          <p className="text-gray-500 leading-relaxed home-body-large">
+            {t('paragraph1')}
+          </p>
+          <p className="text-gray-500 leading-relaxed home-body-large mt-4">
+            {t('paragraph2')}
           </p>
         </motion.div>
 
@@ -91,34 +97,46 @@ export function About() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden h-48 shadow-xl">
-                  <img
+                <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
+                  <Image
                     src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80"
                     alt="فريق كيه إي بي"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    width={500}
+                    height={500}
+                    />
 
                 </div>
-                <div className="rounded-2xl overflow-hidden h-32 shadow-xl">
-                  <img
+                <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
+                  <Image
                     src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80"
                     alt="مكتب كيه إي بي"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    width={500}
+                    height={500}
+                    />
 
                 </div>
               </div>
               <div className="space-y-4 mt-8">
-                <div className="rounded-2xl overflow-hidden h-32 shadow-xl">
-                  <img
+                <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
+                  <Image
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
                     alt="اجتماع تمويلي"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    width={500}
+                    height={500}
+                    />
 
                 </div>
-                <div className="rounded-2xl overflow-hidden h-48 shadow-xl">
-                  <img
+                <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
+                  <Image
                     src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80"
                     alt="احترافية كيه إي بي"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    width={500}
+                    height={500}
+                    />
 
                 </div>
               </div>
@@ -138,14 +156,14 @@ export function About() {
 
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gold/20 rounded-xl flex items-center justify-center">
-                  <AwardIcon size={20} className="text-gold" />
+                  <AwardIcon size={30} className="text-gold" />
                 </div>
                 <div>
-                  <div className="text-white font-bold text-sm">
-                    مؤسسة موثوقة
+                  <div className="text-white font-bold text-sm md:text-base lg:text-lg xl:text-xl">
+                    {t('floatingBadgeTitle')}
                   </div>
-                  <div className="text-gold text-xs">
-                    +15 سنة في القطاع المالي
+                  <div className="text-gold text-xs md:text-sm lg:text-base xl:text-lg">
+                    {t('floatingBadgeSubtitle')}
                   </div>
                 </div>
               </div>
@@ -157,38 +175,33 @@ export function About() {
             variants={fadeUp}
             custom={2}
             initial="hidden"
-            animate={isInView ? 'visible' : 'hidden'}>
+            animate={isInView ? 'visible' : 'hidden'}
+            className="flex flex-col gap-6 items-center justify-center md:items-start md:justify-start">
 
-            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-teal/10 rounded-2xl flex items-center justify-center">
                 <BuildingIcon size={24} className="text-teal" />
               </div>
               <div>
-                <div className="text-sm text-gray-400">المقدمة</div>
-                <div className="font-bold text-navy">
-                  كيه إي بي للتمويل ش.ذ.م.م
-                </div>
+              <div className="home-body-large text-gray-400">
+                {t('introLabel')}
+              </div>
+              <div className="font-bold text-navy home-body-large">
+                {t('introCompanyName')}
+              </div>
               </div>
             </div>
 
-            <p className="text-gray-600 leading-loose mb-6 text-base">
-              نحن نؤمن بأن التمويل ليس خدمة تُقدّم، بل مسؤولية تُدار، وشراكة
-              تُبنى، وقرار استراتيجي يُحدد مستقبل الشركات والمشاريع.
+            <p className={`text-gray-600 leading-loose mb-6 home-body-large text-center md:text-${!isRTL ? 'left' : 'right'} `}>
+              {t('introParagraph1')}
             </p>
-            <p className="text-gray-600 leading-loose mb-8 text-base">
-              اعتمد مجلس الإدارة إطارًا فكريًا شاملًا يحدد هويتنا المؤسسية،
-              ويضبط قيمنا، ويُحكم آليات الحوكمة، ويضع الأسس التي تُبنى عليها كل
-              علاقة، وكل خدمة، وكل قرار.
+            <p className={`text-gray-600 leading-loose mb-8 home-body-large text-center md:text-${!isRTL ? 'left' : 'right'}`}>
+              {t('introParagraph2')}
             </p>
 
             <div className="space-y-3">
-              {[
-              'حضور مهني قوي يعكس قوة الشركة وثقة السوق',
-              'قدرة تحليلية عالية — قراءة دقيقة للأرقام والمخاطر',
-              'سرية تشغيلية — حماية كاملة لكل معلومة',
-              'رؤية طويلة الأمد — ننظر للعميل كشريك لا كمعاملة'].
-              map((item, i) =>
-              <motion.div
+              {['bullet1', 'bullet2', 'bullet3', 'bullet4'].map((key, i) =>
+                <motion.div
                 key={i}
                 custom={3 + i}
                 variants={fadeUp}
@@ -197,10 +210,12 @@ export function About() {
                 className="flex items-start gap-3">
 
                   <CheckCircleIcon
-                  size={18}
-                  className="text-teal mt-0.5 flex-shrink-0" />
+                  size={25}
+                  className="text-teal mt-0.5 md:mt-3 flex-shrink-0" />
 
-                  <span className="text-gray-600 text-sm">{item}</span>
+                  <span className="text-gray-600 home-body-large">
+                    {t(key as 'bullet1')}
+                  </span>
                 </motion.div>
               )}
             </div>
@@ -220,14 +235,16 @@ export function About() {
               y: -4,
               boxShadow: '0 20px 40px rgba(15,23,42,0.08)'
             }}
-            className="bg-white border border-gray-100 rounded-2xl p-6 cursor-default shadow-sm hover:shadow-lg transition-shadow">
+            className={`bg-white border border-gray-100 rounded-2xl p-6 cursor-default shadow-sm hover:shadow-lg transition-shadow ${!isRTL ? 'text-center md:text-left' : 'text-center md:text-right'}`}>
 
               <div className="text-3xl font-black text-gold/20 mb-3">
                 {item.num}
               </div>
-              <h3 className="font-bold text-navy mb-2">{item.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                {item.desc}
+              <h3 className="font-bold text-navy mb-2 home-body-large">
+                {t(item.titleKey as any)}
+              </h3>
+              <p className="text-gray-500 leading-relaxed home-small-label">
+                {t(item.descKey as any)}
               </p>
             </motion.div>
           )}

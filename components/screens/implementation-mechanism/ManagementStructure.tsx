@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
+import Image from 'next/image';
 interface Manager {
   title: string;
   role: string;
@@ -144,14 +145,14 @@ export function ManagementStructure() {
   return (
     <section
       id="management"
-      className="py-20"
+      className="py-20 px-[5%]"
       style={{
         background: '#EFF6FF'
       }}
       dir="rtl"
       ref={ref}>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className=" mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           className="text-center mb-14"
@@ -183,7 +184,7 @@ export function ManagementStructure() {
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
             أولًا: الهيكل الإداري العالمي
           </h2>
-          <p className="text-gray-500 text-lg font-medium max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg font-medium mx-auto">
             منظومة قيادية متكاملة تضمن أن كل قرار يُتخذ بمسؤولية واضحة وصلاحيات
             محددة
           </p>
@@ -209,10 +210,13 @@ export function ManagementStructure() {
             delay: 0.2
           }}>
 
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
             alt="الهيكل الإداري"
-            className="w-full h-full object-cover" />
+            className="w-full h-full object-cover"
+            width={500}
+            height={500}
+            />
 
           <div
             className="absolute inset-0 flex items-center justify-center"
