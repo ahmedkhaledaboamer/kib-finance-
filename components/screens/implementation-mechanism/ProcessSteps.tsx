@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { ArrowLeftIcon, ExternalLinkIcon } from 'lucide-react';
 import { StepModal } from './StepModal';
+import Image from 'next/image';
 interface StepData {
   number: number;
   title: string;
@@ -160,10 +161,13 @@ function StepCard({
         <div className="flex flex-col sm:flex-row">
           {/* Image */}
           <div className="relative sm:w-48 h-44 sm:h-auto flex-shrink-0 overflow-hidden">
-            <img
+            <Image
               src={step.image}
               alt={step.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              width={500}
+              height={500}
+              />
 
             <div
               className="absolute inset-0 opacity-60"
@@ -258,8 +262,8 @@ export function ProcessSteps() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
   const [selectedStep, setSelectedStep] = useState<StepData | null>(null);
   return (
-    <section id="process" className="py-20 bg-white" dir="rtl" ref={ref}>
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <section id="process" className="py-20 bg-white px-[5%]" dir="rtl" ref={ref}>
+      <div className=" mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           className="text-center mb-14"
@@ -299,7 +303,7 @@ export function ProcessSteps() {
               داخل المؤسسة؟
             </span>
           </h2>
-          <p className="text-gray-500 text-lg font-medium max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg font-medium mx-auto">
             10 مراحل تنفيذية متكاملة — انقر على أي مرحلة لعرض التفاصيل الكاملة
           </p>
         </motion.div>

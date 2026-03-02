@@ -12,133 +12,123 @@ import {
   BarChart2Icon,
   XIcon,
   CheckCircleIcon,
-  PhoneIcon } from
+  PhoneIcon, 
+  ArrowRightIcon} from
 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { ContactModal } from './ContactModal';
+import Image from 'next/image';
+import Link from 'next/link';
 interface Service {
   icon: React.ElementType;
-  title: string;
-  desc: string;
+  key: string;
   image: string;
   color: string;
   accent: string;
   bg: string;
-  fullDesc: string;
-  features: string[];
+  featureKeys: string[];
 }
 const services: Service[] = [
 {
   icon: BuildingIcon,
-  title: 'التمويل المؤسسي',
-  desc: 'حلول تمويلية متكاملة للشركات والمؤسسات الكبرى بمعايير مهنية عالية.',
+  key: 'corporateFinance',
   image:
   'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
   color: 'from-navy to-navy-light',
   accent: 'text-gold',
   bg: 'bg-gold/10',
-  fullDesc:
-  'نقدم حلول التمويل المؤسسي المصممة خصيصًا للشركات والمؤسسات الكبرى التي تسعى إلى تحقيق أهدافها التوسعية والتشغيلية. نعمل كشريك استراتيجي يفهم متطلبات كل مؤسسة ويصمم هيكل التمويل الأمثل لها، مع ضمان أفضل الشروط والأسعار من خلال شبكتنا الواسعة من الجهات التمويلية.',
-  features: [
-  'تمويل رأس المال العامل والتشغيلي',
-  'قروض التوسع والاستثمار طويل الأمد',
-  'تمويل الاستحواذ والاندماج',
-  'هيكلة التمويل المتعدد المصادر',
-  'التفاوض مع البنوك والجهات التمويلية']
+  featureKeys: [
+    'items.corporateFinance.features.1',
+    'items.corporateFinance.features.2',
+    'items.corporateFinance.features.3',
+    'items.corporateFinance.features.4',
+    'items.corporateFinance.features.5'
+  ]
 
 },
 {
   icon: TrendingUpIcon,
-  title: 'تمويل المشاريع',
-  desc: 'دعم المشاريع الاستثمارية من مرحلة التخطيط حتى التنفيذ الكامل.',
+  key: 'projectFinance',
   image:
   'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80',
   color: 'from-teal to-teal-dark',
   accent: 'text-teal',
   bg: 'bg-teal/10',
-  fullDesc:
-  'نرافق المشاريع الاستثمارية في كل مراحلها، من دراسة الجدوى وهيكلة التمويل، وصولًا إلى إغلاق الصفقة وبدء التنفيذ. خبرتنا الواسعة في تمويل المشاريع تمكّننا من تقديم حلول مبتكرة تتناسب مع طبيعة كل مشروع وحجمه وقطاعه.',
-  features: [
-  'دراسة الجدوى المالية والاقتصادية',
-  'هيكلة تمويل المشاريع الكبرى',
-  'تمويل القطاع العقاري والبنية التحتية',
-  'مشاريع الطاقة والصناعة',
-  'متابعة المشروع حتى الإغلاق الكامل']
+  featureKeys: [
+    'items.projectFinance.features.1',
+    'items.projectFinance.features.2',
+    'items.projectFinance.features.3',
+    'items.projectFinance.features.4',
+    'items.projectFinance.features.5'
+  ]
 
 },
 {
   icon: ShieldIcon,
-  title: 'إدارة المخاطر',
-  desc: 'تقييم شامل للمخاطر المالية وتصميم استراتيجيات الحماية المناسبة.',
+  key: 'riskManagement',
   image:
   'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=600&q=80',
   color: 'from-coral to-coral-light',
   accent: 'text-coral',
   bg: 'bg-coral/10',
-  fullDesc:
-  'ندرك أن إدارة المخاطر هي ركيزة أساسية في أي قرار تمويلي ناجح. فريقنا المتخصص يقوم بتحليل شامل لكل أنواع المخاطر المالية والتشغيلية، ويضع استراتيجيات واضحة للتخفيف منها وحماية أصول العميل وضمان استمرارية نشاطه.',
-  features: [
-  'تقييم المخاطر الائتمانية والمالية',
-  'تحليل مخاطر السوق والسيولة',
-  'وضع سياسات إدارة المخاطر',
-  'اختبارات الضغط والسيناريوهات',
-  'تقارير المخاطر الدورية والتوصيات']
+  featureKeys: [
+    'items.riskManagement.features.1',
+    'items.riskManagement.features.2',
+    'items.riskManagement.features.3',
+    'items.riskManagement.features.4',
+    'items.riskManagement.features.5'
+  ]
 
 },
 {
   icon: GlobeIcon,
-  title: 'التمويل الدولي',
-  desc: 'فتح قنوات تمويلية خارجية تدعم مشاريع العملاء على المستوى الدولي.',
+  key: 'internationalFinance',
   image:
   'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&q=80',
   color: 'from-emerald to-teal',
   accent: 'text-emerald',
   bg: 'bg-emerald/10',
-  fullDesc:
-  'نمتلك شبكة علاقات دولية واسعة مع المؤسسات المالية والبنوك الإقليمية والعالمية، مما يمكّننا من فتح قنوات تمويلية خارجية لعملائنا. نساعد الشركات على الوصول إلى أسواق رأس المال الدولية والحصول على تمويل بشروط تنافسية.',
-  features: [
-  'التمويل من البنوك الإقليمية والدولية',
-  'صناديق الاستثمار والأسهم الخاصة',
-  'التمويل الإسلامي الدولي',
-  'خطابات الاعتماد والضمانات الدولية',
-  'تمويل التجارة الخارجية والصادرات']
+  featureKeys: [
+    'items.internationalFinance.features.1',
+    'items.internationalFinance.features.2',
+    'items.internationalFinance.features.3',
+    'items.internationalFinance.features.4',
+    'items.internationalFinance.features.5'
+  ]
 
 },
 {
   icon: FileTextIcon,
-  title: 'الاستشارات المالية',
-  desc: 'تقديم استشارات مالية متخصصة مبنية على تحليل دقيق للبيانات والأرقام.',
+  key: 'financialAdvisory',
   image:
   'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
   color: 'from-gold to-gold-light',
   accent: 'text-gold',
   bg: 'bg-gold/10',
-  fullDesc:
-  'خدمة الاستشارات المالية لدينا تقدم تحليلًا عميقًا وموضوعيًا للوضع المالي للشركة، وتضع خارطة طريق واضحة لتحقيق الأهداف المالية. نعتمد على البيانات والأرقام الحقيقية في كل توصياتنا، بعيدًا عن التخمين أو التوقعات غير المدروسة.',
-  features: [
-  'التحليل المالي الشامل للشركة',
-  'تقييم الأصول والمحافظ الاستثمارية',
-  'إعداد الخطط المالية الاستراتيجية',
-  'استشارات الاستثمار وتوزيع الأصول',
-  'تقارير الأداء المالي والمقارنة المعيارية']
+  featureKeys: [
+    'items.financialAdvisory.features.1',
+    'items.financialAdvisory.features.2',
+    'items.financialAdvisory.features.3',
+    'items.financialAdvisory.features.4',
+    'items.financialAdvisory.features.5'
+  ]
 
 },
 {
   icon: BarChart2Icon,
-  title: 'إعادة هيكلة الديون',
-  desc: 'إعادة تنظيم الالتزامات المالية لتحسين التدفق النقدي وتقليل الأعباء.',
+  key: 'debtRestructuring',
   image:
   'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
   color: 'from-navy-mid to-navy',
   accent: 'text-teal',
   bg: 'bg-teal/10',
-  fullDesc:
-  'نساعد الشركات التي تواجه ضغوطًا في التزاماتها المالية على إعادة هيكلة ديونها بطريقة تحسّن التدفق النقدي وتقلل الأعباء المالية. نتفاوض نيابةً عن العميل مع الجهات الدائنة للوصول إلى حلول مستدامة تضمن استمرارية الأعمال.',
-  features: [
-  'تحليل هيكل الديون الحالي',
-  'التفاوض مع البنوك والدائنين',
-  'إعادة جدولة القروض والالتزامات',
-  'دمج الديون وتخفيض تكلفتها',
-  'خطة التعافي المالي طويل الأمد']
+  featureKeys: [
+    'items.debtRestructuring.features.1',
+    'items.debtRestructuring.features.2',
+    'items.debtRestructuring.features.3',
+    'items.debtRestructuring.features.4',
+    'items.debtRestructuring.features.5'
+  ]
 
 }];
 
@@ -146,8 +136,11 @@ interface ServiceModalProps {
   service: Service | null;
   onClose: () => void;
   onContact: () => void;
+  locale: string;
 }
-function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
+function ServiceModal({ service, onClose, onContact, locale }: ServiceModalProps) {
+  const isRTL = locale === "ar";
+  const t = useTranslations('financeHome.services');
   return (
     <AnimatePresence>
       {service &&
@@ -192,35 +185,38 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
             damping: 28,
             stiffness: 320
           }}
-          className="relative w-full   bg-white rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col">
+          className="relative w-full max-w-7xl mx-auto   bg-white rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col">
 
             {/* Hero image */}
-            <div className="relative h-52 flex-shrink-0 overflow-hidden">
-              <img
+            <div className="relative home-image-service flex-shrink-0 overflow-hidden">
+              <Image
               src={service.image}
-              alt={service.title}
-              className="w-full h-full object-cover" />
+              alt={t(`items.${service.key}.title` as any)}
+              className="w-full h-full object-cover"
+              width={500}
+              height={500}
+              />
 
               <div
               className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-75`} />
 
 
               {/* Icon + title overlay */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 flex flex-col justify-end p-6" dir={isRTL ? "rtl" : "ltr"}>
                 <div
                 className={`w-11 h-11 ${service.bg} backdrop-blur-sm rounded-xl flex items-center justify-center mb-3`}>
 
                   <service.icon size={22} className={service.accent} />
                 </div>
-                <h2 className="text-2xl font-black text-white">
-                  {service.title}
+                <h2 className="services-heading font-black text-white">
+                  {t(`items.${service.key}.title` as any)}
                 </h2>
               </div>
 
               {/* Close button */}
               <button
               onClick={onClose}
-              className="absolute top-4 left-4 w-9 h-9 bg-black/30 hover:bg-black/50 backdrop-blur-sm rounded-xl flex items-center justify-center text-white transition-colors">
+              className={`cursor-pointer absolute top-4 ${!isRTL ? 'right-4' : 'left-4'} w-9 h-9 bg-black/30 hover:bg-black/50 backdrop-blur-sm rounded-xl flex items-center justify-center text-white transition-colors`}>
 
                 <XIcon size={16} />
               </button>
@@ -230,20 +226,20 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
             <div className="h-1 bg-gradient-to-l from-gold to-gold-light flex-shrink-0" />
 
             {/* Content */}
-            <div className="p-6 overflow-y-auto flex-1">
+            <div className="p-6 overflow-y-auto flex-1" dir={isRTL ? "rtl" : "ltr"}>
               {/* Description */}
-              <p className="text-gray-600 leading-loose text-base mb-6">
-                {service.fullDesc}
+              <p className="text-gray-600 leading-loose services-card-desc mb-6">
+              {t(`items.${service.key}.fullDesc` as any)}
               </p>
 
               {/* Features */}
               <div className="mb-6">
-                <h3 className="text-navy font-bold text-base mb-4 flex items-center gap-2">
+                <h3 className="text-navy font-bold services-card-title mb-4 flex items-center gap-2">
                   <span className="w-1 h-5 bg-gold rounded-full inline-block" />
-                  ما يشمله هذا الملف
+                  {t('modalFeaturesTitle')}
                 </h3>
                 <ul className="space-y-3">
-                  {service.features.map((feature, i) =>
+                  {service.featureKeys.map((featureKey, i) =>
                 <motion.li
                   key={i}
                   initial={{
@@ -263,8 +259,8 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
                     size={17}
                     className="text-teal flex-shrink-0 mt-0.5" />
 
-                      <span className="text-gray-600 text-sm leading-relaxed">
-                        {feature}
+                        <span className="text-gray-600 home-body-large leading-relaxed">
+                        {t(featureKey as any)}
                       </span>
                     </motion.li>
                 )}
@@ -272,23 +268,30 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
               </div>
 
               {/* CTA */}
-              <div className="flex gap-3 pt-2 border-t border-gray-100">
-                <motion.button
-                whileHover={{
-                  scale: 1.03
-                }}
-                whileTap={{
-                  scale: 0.97
-                }}
-                onClick={() => {
-                  onClose();
-                  onContact();
-                }}
-                className="flex-1 bg-gradient-to-l from-gold to-gold-light text-navy font-bold py-3.5 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-gold/25 text-sm">
-
-                  <PhoneIcon size={15} />
-                  احصل على استشارة في هذه الخدمة
-                </motion.button>
+              <div className="flex gap-3 pt-2 border-t border-gray-100 justify-center">
+                <Link href="/implementation-mechanism">
+                  <motion.button
+                  whileHover={{
+                    scale: 1.03
+                  }}
+                  whileTap={{
+                    scale: 0.97
+                  }}
+                  className="w-full cursor-pointer flex-1 bg-gradient-to-l from-gold to-gold-light text-navy font-bold md:px-5 md:py-3.5 px-3 py-2 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-gold/25 text-sm">
+                    {!isRTL?             
+                    <>
+                      <PhoneIcon size={15} />
+                      <span>{t('modalConsultCta')}</span>
+                    </>
+                    :
+                    <>
+                      <span>{t('modalConsultCta')}</span>
+                      <PhoneIcon size={15} />
+                    </>
+                    }
+        
+                  </motion.button>
+                </Link>
                 <motion.button
                 whileHover={{
                   scale: 1.03
@@ -297,9 +300,9 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
                   scale: 0.97
                 }}
                 onClick={onClose}
-                className="px-5 py-3.5 border-2 border-gray-200 text-gray-500 font-semibold rounded-2xl text-sm hover:border-gray-300 transition-colors">
+                className="cursor-pointer md:px-5 md:py-3.5 px-3 py-2 border-2 border-gray-200 text-gray-500 font-semibold rounded-2xl text-sm hover:border-gray-300 transition-colors">
 
-                  إغلاق
+                  {t('modalClose')}
                 </motion.button>
               </div>
             </div>
@@ -309,7 +312,9 @@ function ServiceModal({ service, onClose, onContact }: ServiceModalProps) {
     </AnimatePresence>);
 
 }
-export function Services() {
+export function Services({ locale }: { locale: string }) {
+  const isRTL = locale === "ar";
+  const t = useTranslations('financeHome.services');
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -321,7 +326,7 @@ export function Services() {
     <>
       <section
         id="services"
-        className="py-24 relative overflow-hidden"
+        className="py-24 relative overflow-hidden px-[5%]"
         ref={ref}>
 
         {/* Background image with blur overlay */}
@@ -356,15 +361,14 @@ export function Services() {
             }}
             className="text-center mb-16">
 
-            <span className="inline-block text-gold font-bold text-sm tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
-              خدماتنا
+            <span className="inline-block text-gold services-badge-text font-bold tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
+              {t('badge')}
             </span>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
-              حلول تمويلية <span className="gradient-text-gold">متخصصة</span>
+            <h2 className="services-heading font-black text-white mb-4">
+              {t('title')} <span className="gradient-text-gold">{t('titleHighlight')}</span>
             </h2>
-            <p className="text-white/50   text-lg">
-              نصمم حلولاً تمويلية دقيقة تتناسب مع طبيعة كل نشاط ومتطلبات كل
-              مرحلة
+            <p className="text-white/50 services-subtitle">
+              {t('subtitle')}
             </p>
           </motion.div>
 
@@ -397,11 +401,14 @@ export function Services() {
               onClick={() => setSelectedService(service)}>
 
                 {/* Image */}
-                <div className="relative h-44 overflow-hidden">
-                  <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className="relative home-image-service overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={t(`items.${service.key}.title` as any)}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    width={500}
+                    height={500}
+                    />
 
                   <div
                   className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-70`} />
@@ -415,17 +422,17 @@ export function Services() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-white font-bold text-lg mb-2">
-                    {service.title}
+                  <h3 className="text-white font-bold services-card-title mb-2">
+                    {t(`items.${service.key}.title` as any)}
                   </h3>
-                  <p className="text-white/50 text-sm leading-relaxed mb-4">
-                    {service.desc}
+                  <p className="text-white/50 services-card-desc leading-relaxed mb-4">
+                    {t(`items.${service.key}.desc` as any)}
                   </p>
                   <div
-                  className={`flex items-center gap-2 ${service.accent} text-sm font-semibold group-hover:gap-3 transition-all`}>
+                  className={`flex items-center gap-2 ${service.accent} services-card-cta font-semibold group-hover:gap-3 transition-all`}>
 
-                    <span>اعرف أكثر</span>
-                    <ArrowLeftIcon size={14} />
+                    <span>{t('learnMore')}</span>
+                    {isRTL ? <ArrowLeftIcon size={14} /> : <ArrowRightIcon size={14} />}
                   </div>
                 </div>
 
@@ -443,7 +450,9 @@ export function Services() {
       <ServiceModal
         service={selectedService}
         onClose={() => setSelectedService(null)}
-        onContact={() => setContactOpen(true)} />
+        onContact={() => setContactOpen(true)}
+        locale={locale}
+        />
 
 
       {/* Contact Modal (triggered from service modal CTA) */}

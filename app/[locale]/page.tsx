@@ -1,5 +1,5 @@
 import { HomePageContent } from "@/components/screens/home/HomePageContent";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -10,10 +10,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function Page() {
+export default async function Page() {
+  const locale = await getLocale();
   return (
     <section>
-      <HomePageContent />
+      <HomePageContent locale={locale} />
     </section>
   );
 }

@@ -79,7 +79,7 @@ export function ServiceModal({
             type: 'spring',
             duration: 0.5
           }}
-          className="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+          className="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-title">

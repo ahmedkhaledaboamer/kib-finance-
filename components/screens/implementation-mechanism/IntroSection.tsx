@@ -9,6 +9,7 @@ import {
   ZapIcon,
   EyeIcon } from
 'lucide-react';
+import Image from 'next/image';
 export function IntroSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -48,8 +49,8 @@ export function IntroSection() {
   }];
 
   return (
-    <section className="py-20 bg-white" dir="rtl" ref={ref}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="py-20 bg-white px-[5%]" dir="rtl" ref={ref}>
+      <div className=" mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
           <motion.div
@@ -196,7 +197,7 @@ export function IntroSection() {
 
             {/* Image */}
             <motion.div
-              className="col-span-2 sm:col-span-3 rounded-2xl overflow-hidden h-40 mt-2"
+              className="col-span-2 sm:col-span-3 rounded-2xl overflow-hidden h-140 mt-2"
               initial={{
                 opacity: 0,
                 scale: 0.95
@@ -213,10 +214,13 @@ export function IntroSection() {
                 delay: 0.7
               }}>
 
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
                 alt="فريق العمل"
-                className="w-full h-full object-cover" />
+                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+                />
 
             </motion.div>
           </motion.div>

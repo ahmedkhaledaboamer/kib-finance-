@@ -10,13 +10,13 @@ import {
   ShieldCheckIcon,
   ZapIcon } from
 'lucide-react';
+import { useTranslations } from 'next-intl';
 interface StatItem {
   icon: React.ElementType;
   value: number;
   suffix: string;
   prefix?: string;
-  label: string;
-  sublabel: string;
+  key: string;
   color: string;
   bg: string;
 }
@@ -25,8 +25,7 @@ const statsData: StatItem[] = [
   icon: TrendingUpIcon,
   value: 500,
   suffix: '+',
-  label: 'ملف تمويلي',
-  sublabel: 'تم إنجازه بنجاح',
+  key: 'files',
   color: 'text-gold',
   bg: 'bg-gold/10'
 },
@@ -34,8 +33,7 @@ const statsData: StatItem[] = [
   icon: UsersIcon,
   value: 200,
   suffix: '+',
-  label: 'عميل راضٍ',
-  sublabel: 'يثقون بخدماتنا',
+  key: 'clients',
   color: 'text-teal',
   bg: 'bg-teal/10'
 },
@@ -43,8 +41,7 @@ const statsData: StatItem[] = [
   icon: AwardIcon,
   value: 15,
   suffix: '+',
-  label: 'سنة خبرة',
-  sublabel: 'في القطاع المالي',
+  key: 'experience',
   color: 'text-coral',
   bg: 'bg-coral/10'
 },
@@ -52,8 +49,7 @@ const statsData: StatItem[] = [
   icon: GlobeIcon,
   value: 20,
   suffix: '+',
-  label: 'جهة تمويلية',
-  sublabel: 'شركاء استراتيجيون',
+  key: 'funders',
   color: 'text-emerald',
   bg: 'bg-emerald/10'
 },
@@ -61,8 +57,7 @@ const statsData: StatItem[] = [
   icon: ShieldCheckIcon,
   value: 98,
   suffix: '%',
-  label: 'نسبة نجاح',
-  sublabel: 'في إتمام الملفات',
+  key: 'successRate',
   color: 'text-gold',
   bg: 'bg-gold/10'
 },
@@ -70,8 +65,7 @@ const statsData: StatItem[] = [
   icon: ZapIcon,
   value: 48,
   suffix: 'h',
-  label: 'متوسط الاستجابة',
-  sublabel: 'لكل طلب تمويلي',
+  key: 'responseTime',
   color: 'text-teal',
   bg: 'bg-teal/10'
 }];
@@ -114,6 +108,7 @@ function CountUp({
 
 }
 export function Stats() {
+  const t = useTranslations('financeHome.stats');
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -155,14 +150,14 @@ export function Stats() {
           }}
           className="text-center mb-16">
 
-          <span className="inline-block text-gold font-bold text-sm tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
-            أرقامنا تتحدث
+          <span className="inline-block text-gold home-badge-text font-bold tracking-widest uppercase mb-3 border border-gold/30 rounded-full px-4 py-1">
+            {t('badge')}
           </span>
-          <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
-            إنجازات <span className="gradient-text-gold">حقيقية</span>
+          <h2 className="home-section-heading font-black text-white mb-4">
+            {t('title')} <span className="gradient-text-gold">{t('titleHighlight')}</span>
           </h2>
-          <p className="text-white/50   text-lg">
-            أرقام تعكس ثقة عملائنا وخبرتنا المتراكمة في القطاع المالي
+          <p className="text-white/50 home-section-subtitle">
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -195,7 +190,7 @@ export function Stats() {
                 <stat.icon size={24} className={stat.color} />
               </div>
               <div
-              className={`text-4xl lg:text-5xl font-black mb-2 ${stat.color}`}>
+              className={`home-stat-number font-black mb-2 ${stat.color}`}>
 
                 <CountUp
                 target={stat.value}
@@ -204,50 +199,18 @@ export function Stats() {
                 isActive={isInView} />
 
               </div>
-              <div className="text-white font-bold mb-1">{stat.label}</div>
-              <div className="text-white/40 text-sm">{stat.sublabel}</div>
+              <div className="text-white font-bold home-stat-label mb-1">
+                {t(`items.${stat.key}.label` as any)}
+              </div>
+              <div className="text-white/40 home-small-label">
+                {t(`items.${stat.key}.sublabel` as any)}
+              </div>
             </motion.div>
           )}
         </div>
-
-        {/* Bottom image */}
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 30
-          }}
-          animate={
-          isInView ?
-          {
-            opacity: 1,
-            y: 0
-          } :
-          {}
-          }
-          transition={{
-            delay: 0.6,
-            duration: 0.6
-          }}
-          className="mt-16 rounded-3xl overflow-hidden relative h-56 lg:h-72">
-
-          <img
-            src="https://images.unsplash.com/photo-1560472355-536de3962603?w=1400&q=80"
-            alt="نجاحات كيه إي بي"
-            className="w-full h-full object-cover" />
-
-          <div className="absolute inset-0 bg-gradient-to-l from-navy/90 via-navy/50 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-end px-10">
-            <div className="text-start  ">
-              <h3 className="text-2xl lg:text-3xl font-black text-white mb-2">
-                نحن نقود القرارات المالية الكبرى
-              </h3>
-              <p className="text-white/60">بثبات، ورؤية، واحتراف</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
-       
+    
     </section>);
 
 }

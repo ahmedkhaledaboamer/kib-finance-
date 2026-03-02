@@ -1,22 +1,26 @@
 "use client";
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import {
   ArrowLeftIcon,
   PhoneIcon,
   MailIcon,
-  ClockIcon,
-  SparklesIcon } from
+  SparklesIcon, 
+  ArrowRightIcon} from
 'lucide-react';
-import { ContactModal } from './ContactModal';
-export function ContactCTA() {
+import Link from 'next/link';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
+export function ContactCTA({ locale }: { locale: string }) {
+  const isRTL = locale === "ar";
+  const t = useTranslations('financeHome.contactCta');
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
     margin: '-80px'
   });
-  const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
       <section
@@ -48,44 +52,39 @@ export function ContactCTA() {
               }
               transition={{
                 duration: 0.7
-              }}>
+              }}
+              className="flex flex-col items-center justify-center md:items-start md:justify-start"
+              >
 
-              <span className="inline-flex items-center gap-2 text-gold font-bold text-sm tracking-widest uppercase mb-4 border border-gold/30 rounded-full px-4 py-1.5 bg-gold/5">
+              <span className="inline-flex items-center gap-2 text-gold home-badge-text font-bold tracking-widest uppercase mb-4 border border-gold/30 rounded-full px-4 py-1.5 bg-gold/5">
                 <SparklesIcon size={13} />
-                استشارة مجانية
+                {t('badge')}
               </span>
-              <h2 className="text-4xl lg:text-5xl font-black text-navy mb-5 leading-tight">
-                ابدأ رحلتك
+              <h2 className="text-center md:text-left home-section-heading font-black text-navy mb-5 leading-tight">
+                {t('title')}
                 <br />
-                <span className="gradient-text-gold">التمويلية اليوم</span>
+                <span className="gradient-text-gold">{t('titleHighlight')}</span>
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8  ">
-                فريقنا من الخبراء جاهز لمساعدتك في تصميم الحل التمويلي الأمثل
-                لنشاطك. تواصل معنا الآن واحصل على استشارة مجانية.
+              <p className="text-gray-600 text-center md:text-left home-body-large leading-relaxed mb-8">
+                {t('subtitle')}
               </p>
 
               {/* Quick info */}
               <div className="space-y-4 mb-8">
                 {[
-                {
-                  icon: PhoneIcon,
-                  label: 'اتصل بنا',
-                  value: '+971 00 000 0000',
-                  color: 'text-gold bg-gold/10'
-                },
-                {
-                  icon: MailIcon,
-                  label: 'راسلنا',
-                  value: 'info@kebfinancing.com',
-                  color: 'text-teal bg-teal/10'
-                },
-                {
-                  icon: ClockIcon,
-                  label: 'ساعات العمل',
-                  value: 'الأحد – الخميس: 9 ص – 6 م',
-                  color: 'text-coral bg-coral/10'
-                }].
-                map((item, i) =>
+                  {
+                    icon: PhoneIcon,
+                    label: t('phoneLabel'),
+                    value: '+971 00 000 0000',
+                    color: 'text-gold bg-gold/10'
+                  },
+                  {
+                    icon: MailIcon,
+                    label: t('emailLabel'),
+                    value: 'info@kebfinancing.com',
+                    color: 'text-teal bg-teal/10'
+                  }
+                ].map((item, i) =>
                 <motion.div
                   key={i}
                   initial={{
@@ -111,9 +110,9 @@ export function ContactCTA() {
                       <item.icon size={16} />
                     </div>
                     <div>
-                      <div className="text-gray-400 text-xs">{item.label}</div>
+                      <div className="text-gray-400 home-small-label">{item.label}</div>
                       <div
-                      className="text-navy font-semibold text-sm"
+                      className="text-navy font-semibold home-small-label"
                       dir="ltr">
 
                         {item.value}
@@ -122,7 +121,7 @@ export function ContactCTA() {
                   </motion.div>
                 )}
               </div>
-
+              <Link href="/implementation-mechanism">
               <motion.button
                 whileHover={{
                   scale: 1.04,
@@ -131,14 +130,14 @@ export function ContactCTA() {
                 whileTap={{
                   scale: 0.97
                 }}
-                onClick={() => setModalOpen(true)}
-                className="group inline-flex items-center gap-3 bg-gradient-to-l from-gold to-gold-light text-navy font-bold px-8 py-4 rounded-2xl shadow-xl shadow-gold/30 text-base">
+                className="cursor-pointer group inline-flex items-center gap-3 bg-gradient-to-l from-gold to-gold-light text-navy font-bold px-8 py-4 rounded-2xl shadow-xl shadow-gold/30 home-body-large">
 
-                احصل على استشارة مجانية
+                {t('cta')}
                 <motion.span className="group-hover:-translate-x-1 transition-transform">
-                  <ArrowLeftIcon size={18} />
+                  {!isRTL ? <ArrowRightIcon size={18} /> : <ArrowLeftIcon size={18} />}
                 </motion.span>
               </motion.button>
+              </Link>
             </motion.div>
 
             {/* Right: image card */}
@@ -162,10 +161,13 @@ export function ContactCTA() {
               className="relative">
 
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80"
                   alt="تواصل مع كيه إي بي"
-                  className="w-full h-80 object-cover" />
+                  className="w-full home-image-full object-cover"
+                  width={500}
+                  height={500}
+                  />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent rounded-3xl" />
               </div>
@@ -187,10 +189,12 @@ export function ContactCTA() {
                     <PhoneIcon size={18} className="text-gold" />
                   </div>
                   <div>
-                    <div className="text-navy font-black text-sm">
-                      استجابة خلال
+                    <div className="text-navy font-black home-small-label">
+                      {t('responseTitle')}
                     </div>
-                    <div className="text-gold font-black text-lg">24 ساعة</div>
+                    <div className="text-gold font-black home-body-large">
+                      {t('responseValue')}
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -213,7 +217,6 @@ export function ContactCTA() {
         </div>
       </section>
 
-      <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </>);
 
 }

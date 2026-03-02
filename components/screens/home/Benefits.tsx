@@ -16,81 +16,72 @@ import {
   TargetIcon,
   LeafIcon } from
 'lucide-react';
+import { useTranslations } from 'next-intl';
+
 const values = [
 {
   icon: ShieldCheckIcon,
-  title: 'النزاهة المهنية',
-  desc: 'التعامل بشفافية كاملة في كل خطوة.',
+  key: 'professionalIntegrity',
   color: 'bg-gold/10 text-gold'
 },
 {
   icon: LockIcon,
-  title: 'السرية التامة',
-  desc: 'حماية معلومات العملاء كجزء من هويتنا.',
+  key: 'fullConfidentiality',
   color: 'bg-teal/10 text-teal'
 },
 {
   icon: ScaleIcon,
-  title: 'الحوكمة الصارمة',
-  desc: 'الالتزام بالسياسات والمعايير التنظيمية دون استثناء.',
+  key: 'strictGovernance',
   color: 'bg-coral/10 text-coral'
 },
 {
   icon: ZapIcon,
-  title: 'الجودة التشغيلية',
-  desc: 'تنفيذ كل ملف بأعلى درجات الدقة.',
+  key: 'operationalQuality',
   color: 'bg-emerald/10 text-emerald'
 },
 {
   icon: BrainIcon,
-  title: 'المسؤولية المالية',
-  desc: 'اتخاذ قرارات مبنية على تحليل وليس توقع.',
+  key: 'financialResponsibility',
   color: 'bg-gold/10 text-gold'
 },
 {
   icon: ClockIcon,
-  title: 'احترام الوقت',
-  desc: 'تسليم النتائج ضمن إطار زمني واضح.',
+  key: 'respectTime',
   color: 'bg-teal/10 text-teal'
 },
 {
   icon: HeartHandshakeIcon,
-  title: 'الثقة المتبادلة',
-  desc: 'بناء علاقة قائمة على المصداقية والالتزام.',
+  key: 'mutualTrust',
   color: 'bg-coral/10 text-coral'
 },
 {
   icon: StarIcon,
-  title: 'الاحتراف المؤسسي',
-  desc: 'التعامل بمنهجية واضحة في كل مرحلة.',
+  key: 'institutionalProfessionalism',
   color: 'bg-emerald/10 text-emerald'
 },
 {
   icon: LightbulbIcon,
-  title: 'الابتكار المستمر',
-  desc: 'تطوير حلول جديدة تتناسب مع احتياجات السوق.',
+  key: 'continuousInnovation',
   color: 'bg-gold/10 text-gold'
 },
 {
   icon: UserCheckIcon,
-  title: 'خدمة العميل',
-  desc: 'وضع مصلحة العميل في مقدمة كل قرار.',
+  key: 'clientService',
   color: 'bg-teal/10 text-teal'
 },
 {
   icon: TargetIcon,
-  title: 'الالتزام بالنتيجة',
-  desc: 'العمل حتى الوصول إلى أفضل نتيجة ممكنة.',
+  key: 'resultCommitment',
   color: 'bg-coral/10 text-coral'
 },
 {
   icon: LeafIcon,
-  title: 'الاستدامة',
-  desc: 'تقديم حلول طويلة الأمد لا قصيرة المدى.',
+  key: 'sustainability',
   color: 'bg-emerald/10 text-emerald'
 }];
 
 export function Benefits() {
+  const t = useTranslations('financeHome.benefits');
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -118,14 +109,14 @@ export function Benefits() {
           }}
           className="text-center mb-16">
 
-          <span className="inline-block text-teal font-bold text-sm tracking-widest uppercase mb-3 border border-teal/30 rounded-full px-4 py-1">
-            القيم المؤسسية
+          <span className="inline-block text-teal home-badge-text font-bold tracking-widest uppercase mb-3 border border-teal/30 rounded-full px-4 py-1">
+            {t('badge')}
           </span>
-          <h2 className="text-4xl lg:text-5xl font-black text-navy mb-4">
-            قيم تُشكّل <span className="gradient-text">شخصية المؤسسة</span>
+          <h2 className="home-section-heading font-black text-navy mb-4">
+            {t('title')} <span className="gradient-text">{t('titleHighlight')}</span>
           </h2>
-          <p className="text-gray-500   text-lg">
-            قيم تحدد طريقة تعاملنا وتضبط سلوكنا المهني في كل خطوة
+          <p className="text-gray-500 home-section-subtitle">
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -154,18 +145,18 @@ export function Benefits() {
               y: -4,
               boxShadow: '0 20px 40px rgba(15,23,42,0.1)'
             }}
-            className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 cursor-default">
+            className="flex flex-col items-center justify-center md:items-start md:justify-start bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 cursor-default ">
 
               <div
-              className={`w-11 h-11 rounded-xl ${value.color} flex items-center justify-center mb-4`}>
+              className={`w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-xl ${value.color} flex items-center justify-center mb-4`}>
 
-                <value.icon size={20} />
+                <value.icon size={25} />
               </div>
-              <h3 className="font-bold text-navy mb-1.5 text-base">
-                {value.title}
+              <h3 className="font-bold text-navy mb-1.5 home-body-large">
+                {t(`values.${value.key}.title` as any)}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                {value.desc}
+              <p className="text-gray-500 leading-relaxed home-small-label">
+                {t(`values.${value.key}.desc` as any)}
               </p>
             </motion.div>
           )}

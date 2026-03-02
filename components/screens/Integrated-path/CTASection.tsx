@@ -1,124 +1,330 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowLeft, ShieldCheck, Award, Clock } from 'lucide-react';
-interface CTASectionProps {
-  onOpenContact: () => void;
-}
-export function CTASection({ onOpenContact }: CTASectionProps) {
+"use client"
+import React from 'react'
+import { motion } from 'framer-motion'
+import { ArrowLeftIcon, PhoneIcon, MailIcon, SparklesIcon } from 'lucide-react'
+import Link from 'next/link'
+export function CTASection() {
   return (
-    <section className="py-32 relative overflow-hidden bg-gradient-to-br from-kep-green-dark via-kep-green to-kep-green-dark">
-      {/* Animated Background */}
-      <div className="absolute inset-0 opacity-20 mix-blend-overlay">
-        <img
-          src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600"
-          alt="CTA Background"
-          className="w-full h-full object-cover" />
-
+    <section
+      className="relative py-32 px-[5%] overflow-hidden"
+      style={{
+        background: '#ffffff',
+      }}
+      dir="rtl"
+    >
+      {/* Dramatic background */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Main gradient orb */}
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full"
+          style={{
+            background:
+              'radial-gradient(ellipse, rgba(255,107,53,0.2) 0%, rgba(255,200,0,0.1) 40%, transparent 70%)',
+            filter: 'blur(60px)',
+          }}
+        />
+        {/* Side orbs */}
+        <div
+          className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full"
+          style={{
+            background:
+              'radial-gradient(circle, rgba(139,92,246,0.2) 0%, transparent 70%)',
+            filter: 'blur(50px)',
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full"
+          style={{
+            background:
+              'radial-gradient(circle, rgba(6,182,212,0.2) 0%, transparent 70%)',
+            filter: 'blur(50px)',
+          }}
+        />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-20">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <motion.h2
-            initial={{
-              opacity: 0,
-              y: 20
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            className="text-3xl md:text-4xl lg:text-5xl font-cairo font-bold mb-8 leading-tight drop-shadow-lg">
-
-            المسار الرأسمالي المتكامل نموذج تمويلي عالمي يضمن رحلة مالية راقية
-          </motion.h2>
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 20
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              delay: 0.2
-            }}
-            className="mb-16">
-
-            <p className="font-bold text-kep-gold bg-black/20 inline-block px-6 py-3 rounded-2xl backdrop-blur-sm border border-white/10 text-xl md:text-2xl">
-              كيه إي بي للتمويل ش.ذ.م.م ليست مجرد وسيط… بل شريك مالي استراتيجي
-              يصنع للعميل مسارًا رأسماليًا يليق بطموحه.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0.9
-            }}
-            whileInView={{
-              opacity: 1,
-              scale: 1
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              delay: 0.4,
-              type: 'spring',
-              bounce: 0.5
-            }}
-            className="relative inline-block">
-
-            <button
-              onClick={onOpenContact}
-              className="px-12 py-6 bg-white text-kep-green-dark hover:bg-kep-cream rounded-2xl font-cairo font-bold text-2xl transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02] flex items-center gap-4 group">
-
-              <span>ابدأ مسارك الرأسمالي الآن</span>
-              <ArrowLeft className="w-8 h-8 group-hover:-translate-x-3 transition-transform" />
-            </button>
-          </motion.div>
-
-          {/* Trust Badges */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 20
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              delay: 0.6
-            }}
-            className="mt-16 pt-10 border-t border-white/20 flex flex-wrap justify-center gap-8 md:gap-16">
-
-            <div className="flex items-center gap-3 text-white/80">
-              <ShieldCheck className="w-6 h-6 text-kep-gold" />
-              <span className="font-bold text-lg">مرخصة رسمياً</span>
-            </div>
-            <div className="flex items-center gap-3 text-white/80">
-              <Award className="w-6 h-6 text-kep-gold" />
-              <span className="font-bold text-lg">شريك معتمد</span>
-            </div>
-            <div className="flex items-center gap-3 text-white/80">
-              <Clock className="w-6 h-6 text-kep-gold" />
-              <span className="font-bold text-lg">خبرة +15 سنة</span>
-            </div>
-          </motion.div>
-        </div>
+      {/* Geometric decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <svg
+          className="absolute top-10 right-10 w-40 h-40 opacity-10"
+          viewBox="0 0 160 160"
+          fill="none"
+        >
+          <polygon
+            points="80,10 145,50 145,110 80,150 15,110 15,50"
+            stroke="rgba(255,165,0,0.8)"
+            strokeWidth="2"
+            fill="none"
+          />
+          <polygon
+            points="80,30 125,55 125,105 80,130 35,105 35,55"
+            stroke="rgba(255,165,0,0.4)"
+            strokeWidth="1"
+            fill="none"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-10 left-10 w-32 h-32 opacity-10"
+          viewBox="0 0 128 128"
+          fill="none"
+        >
+          {[10, 25, 40, 55].map((r) => (
+            <circle
+              key={r}
+              cx="64"
+              cy="64"
+              r={r}
+              stroke="rgba(6,182,212,0.6)"
+              strokeWidth="1"
+              fill="none"
+            />
+          ))}
+        </svg>
+        <svg
+          className="absolute top-1/2 right-20 w-24 h-24 opacity-10 -translate-y-1/2"
+          viewBox="0 0 96 96"
+          fill="none"
+        >
+          {[0, 1, 2].map((row) =>
+            [0, 1, 2].map((col) => (
+              <polygon
+                key={`${row}-${col}`}
+                points={`${col * 32 + 16},${row * 32 + 4} ${col * 32 + 28},${row * 32 + 28} ${col * 32 + 4},${row * 32 + 28}`}
+                stroke="rgba(236,72,153,0.6)"
+                strokeWidth="1"
+                fill="none"
+              />
+            )),
+          )}
+        </svg>
       </div>
-    </section>);
 
+      <div className="relative z-10 mx-auto text-center">
+        {/* Sparkle badge */}
+        <motion.div
+          initial={{
+            opacity: 0,
+            scale: 0.8,
+          }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.6,
+            ease: [0.34, 1.56, 0.64, 1],
+          }}
+          className="inline-flex items-center gap-2 mb-8"
+        >
+          <div
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full"
+            style={{
+              background:
+                'linear-gradient(135deg, rgba(255,107,53,0.2), rgba(255,200,0,0.2))',
+              border: '1px solid rgba(255,165,0,0.4)',
+            }}
+          >
+            <SparklesIcon
+              size={16}
+              style={{
+                color: '#ffd700',
+              }}
+            />
+            <span
+              className="text-sm font-bold"
+              style={{
+                fontFamily: 'Cairo, sans-serif',
+                color: '#ffd700',
+              }}
+            >
+              ابدأ رحلتك اليوم
+            </span>
+          </div>
+        </motion.div>
+
+        {/* Main heading */}
+        <motion.h2
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.1,
+          }}
+          className="text-5xl md:text-7xl font-black mb-6 leading-tight"
+          style={{
+            fontFamily: 'Cairo, sans-serif',
+          }}
+        >
+          <span
+            style={{
+              color: '#1a1a2e',
+            }}
+          >
+            مستقبلك المالي
+          </span>
+          <br />
+          <span
+            style={{
+              background: 'linear-gradient(135deg, #ff6b35, #f7931e, #ffd700)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            يبدأ هنا
+          </span>
+        </motion.h2>
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.2,
+          }}
+          className="text-xl mb-12 mx-auto leading-relaxed"
+          style={{
+            fontFamily: 'Tajawal, sans-serif',
+            color: 'rgba(0,0,0,0.55)',
+          }}
+        >
+          انضم إلى آلاف العملاء الذين وثقوا في KIB Finance لتحقيق أهدافهم
+          الاستثمارية عبر مسار رأس المال المتكامل
+        </motion.p>
+
+        {/* CTA buttons */}
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+          }}
+          className="flex flex-wrap justify-center gap-4 mb-16"
+        >
+          <Link href="/implementation-mechanism">
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+              }}
+              whileTap={{
+                scale: 0.98,
+              }}
+              className="cursor-pointer flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl text-white"
+              style={{
+                fontFamily: 'Cairo, sans-serif',
+                background: 'linear-gradient(135deg, #ff6b35, #f7931e)',
+                boxShadow:
+                  '0 0 50px rgba(255,107,53,0.5), 0 20px 40px rgba(255,107,53,0.2)',
+              }}
+            >
+              <span>ابدأ رحلتك الآن</span>
+              <ArrowLeftIcon size={20} />
+            </motion.button>
+          </Link>
+        </motion.div>
+
+        {/* Contact info */}
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.4,
+          }}
+          className="flex flex-wrap justify-center gap-8"
+        >
+          <div
+            className="flex items-center gap-3"
+            style={{
+              fontFamily: 'Tajawal, sans-serif',
+              color: 'rgba(0,0,0,0.5)',
+            }}
+          >
+            <PhoneIcon
+              size={16}
+              style={{
+                color: '#00c9b1',
+              }}
+            />
+            <span className="text-sm">+966 11 000 0000</span>
+          </div>
+          <div
+            className="flex items-center gap-3"
+            style={{
+              fontFamily: 'Tajawal, sans-serif',
+              color: 'rgba(0,0,0,0.5)',
+            }}
+          >
+            <MailIcon
+              size={16}
+              style={{
+                color: '#00c9b1',
+              }}
+            />
+            <span className="text-sm">info@kibfinance.com</span>
+          </div>
+        </motion.div>
+
+        {/* Bottom divider line */}
+        <motion.div
+          initial={{
+            scaleX: 0,
+          }}
+          whileInView={{
+            scaleX: 1,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+          }}
+          className="mt-16 h-px w-full max-w-2xl mx-auto"
+          style={{
+            background:
+              'linear-gradient(90deg, transparent, rgba(255,165,0,0.5), transparent)',
+          }}
+        />
+      </div>
+    </section>
+  )
 }

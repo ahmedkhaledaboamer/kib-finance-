@@ -7,10 +7,8 @@ import {
   TrendingUpIcon,
   ZapIcon } from
 'lucide-react';
-interface HeroSectionProps {
-  onOpenForm: () => void;
-}
-export function HeroSection({ onOpenForm }: HeroSectionProps) {
+import Link from 'next/link';
+export function HeroSection() {
   return (
     <section
       id="hero"
@@ -74,7 +72,7 @@ export function HeroSection({ onOpenForm }: HeroSectionProps) {
 
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center text-white pt-20">
+      <div className="relative z-10  mx-auto px-4 sm:px-6 text-center text-white pt-20">
         {/* Badge */}
         <motion.div
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 text-sm font-bold border border-white/30"
@@ -121,7 +119,7 @@ export function HeroSection({ onOpenForm }: HeroSectionProps) {
 
         {/* Subtitle */}
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl text-blue-100 font-medium max-w-3xl mx-auto mb-4 leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl text-blue-100 font-medium mx-auto mb-4 leading-relaxed"
           initial={{
             opacity: 0,
             y: 30
@@ -139,7 +137,7 @@ export function HeroSection({ onOpenForm }: HeroSectionProps) {
         </motion.p>
 
         <motion.p
-          className="text-base sm:text-lg text-blue-200 font-medium max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-lg text-blue-200 font-medium mx-auto mb-10 leading-relaxed"
           initial={{
             opacity: 0,
             y: 30
@@ -203,15 +201,15 @@ export function HeroSection({ onOpenForm }: HeroSectionProps) {
             delay: 0.65
           }}>
 
-          <button
-            onClick={onOpenForm}
+          <Link
+            href="/implementation-mechanism#form"
             className="px-8 py-4 rounded-2xl text-white font-black text-lg shadow-2xl hover:shadow-3xl transition-all hover:scale-105"
             style={{
               background: 'linear-gradient(135deg, #F59E0B, #EF4444)'
             }}>
 
             ابدأ طلبك الآن
-          </button>
+          </Link>
           <a
             href="#process"
             className="px-8 py-4 rounded-2xl font-black text-lg border-2 border-white/40 text-white hover:bg-white/10 transition-all flex items-center justify-center gap-2">
@@ -223,7 +221,7 @@ export function HeroSection({ onOpenForm }: HeroSectionProps) {
 
         {/* Stats row */}
         <motion.div
-          className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto"
+          className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 mx-auto"
           initial={{
             opacity: 0,
             y: 30
