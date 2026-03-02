@@ -2,27 +2,24 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { ServiceItem } from '@/components/screens/service/services';
+import Link from 'next/link';
+import Image from 'next/image';
 interface ServiceModalProps {
   service: ServiceItem | null;
   isOpen: boolean;
   onClose: () => void;
-  onRequestService: (service: ServiceItem) => void;
+  locale: string;
 }
-const categoryMap: Record<string, string> = {
-  corporate: 'شركات',
-  projects: 'مشاريع',
-  realestate: 'عقاري',
-  islamic: 'إسلامي',
-  investment: 'استثمار',
-  advisory: 'استشارات'
-};
 export function ServiceModal({
   service,
   isOpen,
   onClose,
-  onRequestService
+  locale,
 }: ServiceModalProps) {
+  const t = useTranslations('servicesPage.modal');
+  const tService = useTranslations('servicesPage.serviceItems');
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -36,9 +33,16 @@ export function ServiceModal({
       document.body.style.overflow = 'auto';
     };
   }, [isOpen, onClose]);
+
   if (!service) return null;
+
   const Icon = service.icon;
-  const categoryLabel = categoryMap[service.category] || service.category;
+  const categoryLabel = t(`categories.${service.category}`) || service.category;
+  const title = tService(`${service.id}.title`);
+  const desc = tService(`${service.id}.desc`);
+  const items = (tService.raw(`${service.id}.items`) as string[]) || [];
+  const isRTL = locale === "ar";
+
   return (
     <AnimatePresence>
       {isOpen &&
@@ -87,7 +91,7 @@ export function ServiceModal({
             {/* Close Button */}
             <button
             onClick={onClose}
-            className="absolute top-4 left-4 z-20 p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors"
+            className="cursor-pointer absolute top-4 left-4 z-20 p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors"
             aria-label="Close modal">
 
               <X className="w-6 h-6" />
@@ -95,10 +99,13 @@ export function ServiceModal({
 
             {/* Header Image */}
             <div className="relative h-64 sm:h-72 w-full shrink-0 overflow-hidden">
-              <img
-              src={service.image}
-              alt={service.titleAr}
-              className="w-full h-full object-cover" />
+              <Image
+                src={service.image}
+                alt={title}
+                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+              />
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#1E3A5F] via-[#1E3A5F]/60 to-transparent" />
 
@@ -119,7 +126,7 @@ export function ServiceModal({
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-[#D4AF37] font-medium text-sm">
-                        خدمة رقم {service.id}
+                        {t('serviceNumber')} {service.id}
                       </span>
                       <span className="bg-[#D4AF37]/20 text-[#D4AF37] text-xs px-2 py-0.5 rounded-full border border-[#D4AF37]/30">
                         {categoryLabel}
@@ -129,7 +136,7 @@ export function ServiceModal({
                     id="modal-title"
                     className="text-3xl sm:text-4xl font-bold">
 
-                      {service.titleAr}
+                      {title}
                     </h2>
                   </div>
                 </div>
@@ -138,16 +145,16 @@ export function ServiceModal({
 
             {/* Body */}
             <div className="p-6 sm:p-8 overflow-y-auto">
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed font-medium border-r-4 border-[#D4AF37] pr-4">
-                {service.descAr}
+              <p className={`text-xl text-gray-700 mb-8 leading-relaxed font-medium px-2 border-[#D4AF37]  ${!isRTL ? 'border-l-4 border-[#D4AF37]' : 'border-r-4 border-[#D4AF37]'}`}>
+                {desc}
               </p>
 
               <h3 className="text-lg font-bold text-[#1E3A5F] mb-4">
-                يشمل هذا التمويل:
+                {t('includes')}
               </h3>
 
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {service.items.map((item, idx) =>
+                {items.map((item, idx) =>
               <motion.li
                 key={idx}
                 initial={{
@@ -174,19 +181,15 @@ export function ServiceModal({
             <div className="p-6 sm:p-8 bg-gray-50 border-t border-gray-100 mt-auto flex flex-col sm:flex-row justify-end gap-4 shrink-0">
               <button
               onClick={onClose}
-              className="px-6 py-3 rounded-lg font-bold text-gray-600 hover:bg-gray-200 transition-colors">
+              className="cursor-pointer px-6 py-3 rounded-lg font-bold text-gray-600 hover:bg-gray-200 transition-colors">
 
-                إغلاق
+                {t('close')}
               </button>
-              <button
-              onClick={() => {
-                onClose();
-                onRequestService(service);
-              }}
-              className="px-8 py-3 rounded-lg font-bold bg-[#1E3A5F] text-white hover:bg-[#D4AF37] hover:text-[#1E3A5F] transition-colors shadow-lg shadow-[#1E3A5F]/20 flex items-center justify-center gap-2">
-
-                اطلب هذه الخدمة
-              </button>
+              <Link
+              href="/implementation-mechanism"
+              className="cursor-pointer px-8 py-3 rounded-lg font-bold bg-[#1E3A5F] text-white hover:bg-[#D4AF37] hover:text-[#1E3A5F] transition-colors shadow-lg shadow-[#1E3A5F]/20 flex items-center justify-center gap-2">
+                {t('requestService')}
+              </Link>
             </div>
           </motion.div>
         </div>
