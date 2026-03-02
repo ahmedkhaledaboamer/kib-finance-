@@ -1,6 +1,7 @@
+'use client';
 import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { stages, Stage } from '../data/stages';
+import { stages, Stage } from './stages';
 import { Modal } from './Modal';
 import { ArrowLeft, CheckCircle2, LayoutGrid, List } from 'lucide-react';
 const accentColors = ['gold', 'teal', 'amber', 'emerald'];

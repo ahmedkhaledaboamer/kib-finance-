@@ -1,6 +1,7 @@
+'use client';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { useCountUp } from '../hooks/useCountUp';
+import { useCountUp } from '@/hooks/useCountUp';
 import { Banknote, Users, Layers, Clock } from 'lucide-react';
 interface StatItemProps {
   end: number;

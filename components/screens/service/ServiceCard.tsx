@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-import { ServiceItem } from '@/data/services';
+import { ServiceItem } from '@/components/screens/service/services';
 interface ServiceCardProps {
   service: ServiceItem;
   onClick: (service: ServiceItem) => void;

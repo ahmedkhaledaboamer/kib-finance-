@@ -14,20 +14,20 @@
         "href": "/"
       },
       {
-        "label": "الخدمات",
+        "label": "خدماتنا للتمويل",
         "href": "/services"
       },
       {
-        "label": "الجهاز الإداري",
-        "href": "/administrative-apparatus"
+        "label": "المسار الرأسمالي",
+        "href": "/Integrated-path"
       },
       {
-        "label": "الهوية التجارية",
-        "href": "/brand-identity"
+        "label": "مسار التمويل",
+        "href": "/financing-path"
       },
       {
-        "label": "التنفيذ",
-        "href": "/execution"
+        "label": "آلية التنفيذ",
+        "href": "/implementation-mechanism"
       }
     ]
   },
@@ -153,20 +153,20 @@
           "href": "/"
         },
         {
-          "label": "خدماتنا",
+          "label": "خدماتنا للتمويل",
           "href": "/services"
         },
         {
-          "label": "الجهاز الإداري",
-          "href": "/administrative-apparatus"
+          "label": "المسار الرأسمالي",
+          "href": "/Integrated-path"
         },
         {
-          "label": "الهوية التجارية",
-          "href": "/brand-identity"
+          "label": "مسار التمويل",
+          "href": "/financing-path"
         },
         {
-          "label": "التنفيذ",
-          "href": "/execution"
+          "label": "آلية التنفيذ",
+          "href": "/implementation-mechanism"
         }
       ]
     },

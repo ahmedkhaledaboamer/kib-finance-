@@ -14,7 +14,7 @@ import { CTASection } from "./CTASection";
 import { ClosingSection } from "./ClosingSection";
 import { ServiceModal } from "./ServiceModal";
 import { ContactFormModal } from "./ContactFormModal";
-import type { ServiceItem } from "@/data/services";
+import type { ServiceItem } from "./services";
 
 export function ServicesPageContent() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);

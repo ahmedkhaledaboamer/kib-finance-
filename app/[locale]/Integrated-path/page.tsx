@@ -1,16 +1,16 @@
+'use client';
 import React, { useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { HeroSection } from './components/HeroSection';
-import { PrinciplesSection } from './components/PrinciplesSection';
-import { TimelinePath } from './components/TimelinePath';
-import { BenefitsSection } from './components/BenefitsSection';
-import { StatsSection } from './components/StatsSection';
-import { CTASection } from './components/CTASection';
-import { Footer } from './components/Footer';
-import { ContactModal } from './components/ContactModal';
-import { PhaseModal } from './components/PhaseModal';
-import { PhaseData } from './data/phases';
-export function App() {
+import { HeroSection } from '@/components/screens/Integrated-path/HeroSection';
+import { PrinciplesSection } from '@/components/screens/Integrated-path/PrinciplesSection';
+import { TimelinePath } from '@/components/screens/Integrated-path/TimelinePath';
+import { BenefitsSection } from '@/components/screens/Integrated-path/BenefitsSection';
+import { StatsSection } from '@/components/screens/Integrated-path/StatsSection';
+import { CTASection } from '@/components/screens/Integrated-path/CTASection';
+import { Footer } from '@/components/screens/Integrated-path/Footer';
+import { ContactModal } from '@/components/screens/Integrated-path/ContactModal';
+import { PhaseModal } from '@/components/screens/Integrated-path/PhaseModal';
+import { PhaseData } from '@/components/screens/Integrated-path/phases';
+export default function IntegratedPathPage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [selectedPhase, setSelectedPhase] = useState<PhaseData | null>(null);
   return (
@@ -18,7 +18,6 @@ export function App() {
       className="min-h-screen bg-white font-ibm selection:bg-kep-green selection:text-white"
       dir="rtl">
 
-      <Navbar onOpenContact={() => setIsContactModalOpen(true)} />
 
       <main>
         <HeroSection onOpenContact={() => setIsContactModalOpen(true)} />

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, CheckCircle, Landmark } from 'lucide-react';
-import { ServiceItem, servicesData } from '@/data/services';
+import { ServiceItem, servicesData } from '@/components/screens/service/services';
 interface ContactFormModalProps {
   isOpen: boolean;
   onClose: () => void;

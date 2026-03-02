@@ -1,26 +1,24 @@
-import React from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { Stats } from './components/Stats';
-import { Timeline } from './components/Timeline';
-import { WhoItsFor } from './components/WhoItsFor';
-import { Benefits } from './components/Benefits';
-import { Comparison } from './components/Comparison';
-import { Testimonials } from './components/Testimonials';
-import { Partners } from './components/Partners';
-import { FAQ } from './components/FAQ';
-import { CTASection } from './components/CTASection';
-import { Footer } from './components/Footer';
-import { ScrollProgress } from './components/ScrollProgress';
-import { BackToTop } from './components/BackToTop';
-export function App() {
+'use client';
+import { Hero } from '@/components/screens/financing-path/Hero';
+import { Stats } from '@/components/screens/financing-path/Stats';
+import { Timeline } from '@/components/screens/financing-path/Timeline';
+import { WhoItsFor } from '@/components/screens/financing-path/WhoItsFor';
+import { Benefits } from '@/components/screens/financing-path/Benefits';
+import { Comparison } from '@/components/screens/financing-path/Comparison';
+import { Testimonials } from '@/components/screens/financing-path/Testimonials';
+import { Partners } from '@/components/screens/financing-path/Partners';
+import { FAQ } from '@/components/screens/financing-path/FAQ';
+import { CTASection } from '@/components/screens/financing-path/CTASection';
+import { Footer } from '@/components/screens/financing-path/Footer';
+import { ScrollProgress } from '@/components/screens/financing-path/ScrollProgress';
+import { BackToTop } from '@/components/screens/financing-path/BackToTop';
+export default function FinancingPathPage() {
   return (
     <div
       dir="rtl"
       className="min-h-screen bg-white text-dark font-tajawal selection:bg-gold/30 selection:text-dark relative">
 
       <ScrollProgress />
-      <Navbar />
       <main>
         <Hero />
         <Stats />

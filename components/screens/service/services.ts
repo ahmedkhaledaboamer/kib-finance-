@@ -6,28 +6,9 @@ import {
   LineChart,
   Lightbulb,
   TrendingUp,
-  ShieldCheck,
-  Users,
-  Ship,
-  Truck,
-  Factory,
-  Cpu,
-  PieChart,
-  Wallet,
-  CreditCard,
-  BarChart3,
-  FileText,
-  Scale,
-  Gem,
-  Network,
-  Rocket,
-  Handshake,
-  MonitorSmartphone,
-  MapPin,
-  Anchor,
-  Boxes,
   ArrowRightLeft,
   Building,
+  FileText,
 } from "lucide-react";
 
 export interface ServiceItem {
@@ -36,7 +17,7 @@ export interface ServiceItem {
   descAr: string;
   items: string[];
   category: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: React.ComponentType<{ size?: number | string; className?: string }>;
   image: string;
 }
 

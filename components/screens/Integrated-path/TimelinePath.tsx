@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-import { phases, PhaseData } from '../data/phases';
+import { phases, PhaseData } from './phases';
 interface TimelinePathProps {
   onOpenPhase: (phase: PhaseData) => void;
 }

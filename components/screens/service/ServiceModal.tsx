@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2 } from 'lucide-react';
-import { ServiceItem } from '@/data/services';
+import { ServiceItem } from '@/components/screens/service/services';
 interface ServiceModalProps {
   service: ServiceItem | null;
   isOpen: boolean;

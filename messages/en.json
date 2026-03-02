@@ -14,20 +14,20 @@
               "href": "/"
             },
             {
-              "label": "Services",
+              "label": "Financing Services",
               "href": "/services"
             },
             {
-              "label": "Administrative Apparatus",
-              "href": "/administrative-apparatus"
+              "label": "Implementation Mechanism",
+              "href": "/implementation-mechanism"
             },
             {
-              "label": "Brand Identity",
-              "href": "/brand-identity"
+              "label": "Integrated Path",
+              "href": "/Integrated-path"
             },
             {
-              "label": "Execution",
-              "href": "/execution"
+              "label": "Financing Path",
+              "href": "/financing-path"
             }
         ]
     },
@@ -152,23 +152,23 @@
                 {
                     "label": "Home",
                     "href": "/"
-                },
-                {
-                    "label": "Services",
+                  },
+                  {
+                    "label": "Financing Services",
                     "href": "/services"
-                },
-                {
-                    "label": "Administrative Apparatus",
-                    "href": "/administrative-apparatus"
-                },
-                {
-                    "label": "Brand Identity",
-                    "href": "/brand-identity"
-                },
-                {
-                    "label": "Execution",
-                    "href": "/execution"
-                }
+                  },
+                  {
+                    "label": "Implementation Mechanism",
+                    "href": "/implementation-mechanism"
+                  },
+                  {
+                    "label": "Integrated Path",
+                    "href": "/Integrated-path"
+                  },
+                  {
+                    "label": "Financing Path",
+                    "href": "/financing-path"
+                  }
             ]
         },
         "description": "Your executive partner in building influence and shaping strategic decisions through an integrated operational system that delivers clarity, precision execution, and secure growth pathways locally and internationally.",

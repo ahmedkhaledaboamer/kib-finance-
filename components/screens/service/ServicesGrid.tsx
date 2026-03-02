@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
-import { servicesData, categories, ServiceItem } from '@/data/services';
+import { servicesData, categories, ServiceItem } from '@/components/screens/service/services';
 import { ServiceCard } from './ServiceCard';
 interface ServicesGridProps {
   onServiceClick: (service: ServiceItem) => void;

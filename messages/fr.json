@@ -14,20 +14,20 @@
         "href": "/"
       },
       {
-        "label": "Services",
+        "label": "Services de financement",
         "href": "/services"
       },
       {
-        "label": "Apparat administratif",
-        "href": "/administrative-apparatus"
+        "label": "Mécanisme d'exécution",
+        "href": "/implementation-mechanism"
       },
       {
-        "label": "Identité de marque",
-        "href": "/brand-identity"
+        "label": "Chemin intégré",
+        "href": "/Integrated-path"
       },
       {
-        "label": "Exécution",
-        "href": "/execution"
+        "label": "Chemin de financement",
+        "href": "/financing-path"
       }
     ]
   },
@@ -153,20 +153,20 @@
           "href": "/"
         },
         {
-          "label": "Services",
+          "label": "Services de financement",
           "href": "/services"
         },
         {
-          "label": "Apparat administratif",
-          "href": "/administrative-apparatus"
+          "label": "Mécanisme d'exécution",
+          "href": "/implementation-mechanism"
         },
         {
-          "label": "Identité de marque",
-          "href": "/brand-identity"
+          "label": "Chemin intégré",
+          "href": "/Integrated-path"
         },
         {
-          "label": "Exécution",
-          "href": "/execution"
+          "label": "Chemin de financement",
+          "href": "/financing-path"
         }
       ]
     },
