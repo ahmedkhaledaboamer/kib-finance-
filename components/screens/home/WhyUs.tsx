@@ -1,7 +1,9 @@
 "use client";
+import Image from 'next/image';
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import {
   TrendingUpIcon,
   GlobeIcon,
@@ -16,6 +18,7 @@ import {
   ClipboardCheckIcon,
   LayersIcon } from
 'lucide-react';
+
 const legacyVisionItems = [
 {
   icon: CrownIcon,
@@ -101,8 +104,8 @@ const legacyVisionItems = [
   color: 'text-emerald',
   bg: 'bg-emerald'
 }];
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+
+
 const visionItems = [
 {
   icon: CrownIcon,
@@ -277,10 +280,12 @@ export function WhyUs() {
     <section id="why-us" className=" relative overflow-hidden" ref={ref}>
       {/* Background image with blur overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80"
-          alt=""
-          className="w-full h-full object-cover" />
+        <Image
+          src="/imges/home/015.webp"
+          alt="why us"
+          className="w-full h-full object-cover"
+          width={1000}
+          height={1000}/>
 
         <div className="absolute inset-0 bg-zinc-950/85 backdrop-blur-sm" />
         {/* subtle teal gradient tint */}
@@ -410,9 +415,9 @@ export function WhyUs() {
                 )}
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden home-image-tall">
+            <div className="relative w-3/5 mx-auto rounded-2xl overflow-hidden home-image-tall">
               <Image
-                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"
+                src="/imges/home/016.webp"
                 alt="حوكمة كيه إي بي"
                 className="w-full h-full object-cover"
                 width={500}

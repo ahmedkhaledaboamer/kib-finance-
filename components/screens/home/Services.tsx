@@ -32,8 +32,7 @@ const services: Service[] = [
 {
   icon: BuildingIcon,
   key: 'corporateFinance',
-  image:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
+  image: '/imges/home/04.webp',
   color: 'from-navy to-navy-light',
   accent: 'text-gold',
   bg: 'bg-gold/10',
@@ -49,8 +48,7 @@ const services: Service[] = [
 {
   icon: TrendingUpIcon,
   key: 'projectFinance',
-  image:
-  'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80',
+  image: '/imges/home/05.webp',
   color: 'from-teal to-teal-dark',
   accent: 'text-teal',
   bg: 'bg-teal/10',
@@ -66,8 +64,7 @@ const services: Service[] = [
 {
   icon: ShieldIcon,
   key: 'riskManagement',
-  image:
-  'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=600&q=80',
+  image: '/imges/home/06.webp',
   color: 'from-coral to-coral-light',
   accent: 'text-coral',
   bg: 'bg-coral/10',
@@ -83,8 +80,7 @@ const services: Service[] = [
 {
   icon: GlobeIcon,
   key: 'internationalFinance',
-  image:
-  'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&q=80',
+  image: '/imges/home/07.webp',
   color: 'from-emerald to-teal',
   accent: 'text-emerald',
   bg: 'bg-emerald/10',
@@ -100,8 +96,7 @@ const services: Service[] = [
 {
   icon: FileTextIcon,
   key: 'financialAdvisory',
-  image:
-  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
+  image: '/imges/home/08.webp',
   color: 'from-gold to-gold-light',
   accent: 'text-gold',
   bg: 'bg-gold/10',
@@ -117,8 +112,7 @@ const services: Service[] = [
 {
   icon: BarChart2Icon,
   key: 'debtRestructuring',
-  image:
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+  image: '/imges/home/09.webp',
   color: 'from-navy-mid to-navy',
   accent: 'text-teal',
   bg: 'bg-teal/10',
@@ -198,7 +192,7 @@ function ServiceModal({ service, onClose, onContact, locale }: ServiceModalProps
               />
 
               <div
-              className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-75`} />
+              className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-30`} />
 
 
               {/* Icon + title overlay */}
@@ -332,7 +326,7 @@ export function Services({ locale }: { locale: string }) {
         {/* Background image with blur overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+            src="/imges/home/010.webp"
             alt=""
             className="w-full h-full object-cover" />
 
@@ -411,7 +405,7 @@ export function Services({ locale }: { locale: string }) {
                     />
 
                   <div
-                  className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-70`} />
+                  className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-30`} />
 
                   <div
                   className={`absolute top-4 right-4 w-10 h-10 ${service.bg} backdrop-blur-sm rounded-xl flex items-center justify-center`}>

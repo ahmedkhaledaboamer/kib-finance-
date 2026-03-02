@@ -99,7 +99,7 @@ export function About({ locale }: { locale: string }) {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80"
+                    src="/imges/home/011.webp"
                     alt="فريق كيه إي بي"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     width={500}
@@ -109,7 +109,7 @@ export function About({ locale }: { locale: string }) {
                 </div>
                 <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80"
+                    src="/imges/home/012.webp"
                     alt="مكتب كيه إي بي"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     width={500}
@@ -121,7 +121,7 @@ export function About({ locale }: { locale: string }) {
               <div className="space-y-4 mt-8">
                 <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
+                    src="/imges/home/013.webp"
                     alt="اجتماع تمويلي"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     width={500}
@@ -131,7 +131,7 @@ export function About({ locale }: { locale: string }) {
                 </div>
                 <div className="rounded-2xl overflow-hidden home-image-card shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80"
+                    src="/imges/home/014.webp"
                     alt="احترافية كيه إي بي"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     width={500}

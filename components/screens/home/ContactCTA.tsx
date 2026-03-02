@@ -158,13 +158,13 @@ export function ContactCTA({ locale }: { locale: string }) {
                 duration: 0.7,
                 delay: 0.2
               }}
-              className="relative">
+              className="relative w-3/5 mx-auto">
 
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80"
+                  src="/imges/home/017.webp"
                   alt="تواصل مع كيه إي بي"
-                  className="w-full home-image-full object-cover"
+                  className="w-full  home-image-full object-cover"
                   width={500}
                   height={500}
                   />

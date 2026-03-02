@@ -18,22 +18,19 @@ export function Hero({ locale }: { locale: string }) {
   const t = useTranslations('financeHome.hero');
   const slides = [
   {
-    image:
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80',
+    image: '/imges/home/01.webp',
     headline: t('slide1.headline'),
     subheadline: t('slide1.subheadline'),
     highlight: t('slide1.highlight')
   },
   {
-    image:
-    'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&q=80',
+    image: '/imges/home/02.webp',
     headline: t('slide2.headline'),
     subheadline: t('slide2.subheadline'),
     highlight: t('slide2.highlight')
   },
   {
-    image:
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80',
+    image: '/imges/home/03.webp',
     headline: t('slide3.headline'),
     subheadline: t('slide3.subheadline'),
     highlight: t('slide3.highlight')
