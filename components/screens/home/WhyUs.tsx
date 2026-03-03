@@ -287,7 +287,7 @@ export function WhyUs() {
           width={1000}
           height={1000}/>
 
-        <div className="absolute inset-0 bg-zinc-950/85 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-[#1C232D]/85 backdrop-blur-sm" />
         {/* subtle teal gradient tint */}
         <div className="absolute inset-0 bg-gradient-to-tl from-teal/8 via-transparent to-gold/5" />
       </div>
