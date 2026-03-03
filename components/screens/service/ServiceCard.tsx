@@ -39,7 +39,7 @@ export function ServiceCard({ service, onClick, index, locale }: ServiceCardProp
         delay: index * 0.05
       }}
       onClick={() => onClick(service)}
-      className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-pointer transition-all duration-300 flex flex-col min-h-[380px] border border-gray-100">
+      className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-pointer transition-all duration-300 flex flex-col w-[310px] mx-auto sm:w-auto  border border-gray-100 ">
 
       <style>{`
         @keyframes shimmer {
@@ -54,7 +54,7 @@ export function ServiceCard({ service, onClick, index, locale }: ServiceCardProp
       <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:animate-[shimmer_1.5s_infinite] z-30 pointer-events-none" />
 
       {/* Image Container */}
-      <div className="relative home-image-service w-full overflow-hidden shrink-0">
+      <div className="relative w-full overflow-hidden shrink-0"  style={{ height: 'clamp(12rem, 16vw, 34rem)' }}>
         <div className="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center text-[#1E3A5F] font-bold shadow-sm">
           {service.id}
         </div>

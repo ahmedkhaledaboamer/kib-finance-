@@ -15,7 +15,7 @@ export function CTASection({ locale }: CTASectionProps) {
       {/* Background Image & Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1553484771-047a44eee27b?w=1920&q=80"
+          src="/imges/services/014.webp"
           alt={t('imageAlt')}
           className="w-full h-full object-cover" />
 
