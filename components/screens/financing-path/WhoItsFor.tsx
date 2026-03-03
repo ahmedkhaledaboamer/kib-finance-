@@ -2,39 +2,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Building, Globe2, Briefcase } from 'lucide-react';
-const criteria = [
-{
-  icon: Building,
-  title: 'الشركات المتوسطة والكبرى',
-  desc: 'الشركات ذات السجل التجاري القوي والراغبة في توسيع نطاق عملياتها محلياً أو إقليمياً.',
-  color: 'gold',
-  image:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400'
-},
-{
-  icon: TrendingUp,
-  title: 'مشاريع التوسع والنمو',
-  desc: 'الكيانات التي تبحث عن تمويل لعمليات الاستحواذ، أو إطلاق خطوط إنتاج جديدة.',
-  color: 'teal',
-  image:
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400'
-},
-{
-  icon: Globe2,
-  title: 'الشركات متعددة الجنسيات',
-  desc: 'الشركات الأجنبية الباحثة عن هيكلة تمويلية تتوافق مع عملياتها في السوق المحلي.',
-  color: 'amber',
-  image:
-  'https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?auto=format&fit=crop&q=80&w=400'
-},
-{
-  icon: Briefcase,
-  title: 'إعادة الهيكلة المالية',
-  desc: 'الشركات الساعية لتحسين هيكل رأس المال وتقليل تكلفة التمويل الحالية.',
-  color: 'emerald',
-  image:
-  'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=400'
-}];
+import { useTranslations } from 'next-intl';
+
+function useCriteria() {
+  const t = useTranslations('financingPath.whoItsFor');
+  return [
+    { icon: Building, title: t('criteria1Title'), desc: t('criteria1Desc'), color: 'gold', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400' },
+    { icon: TrendingUp, title: t('criteria2Title'), desc: t('criteria2Desc'), color: 'teal', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400' },
+    { icon: Globe2, title: t('criteria3Title'), desc: t('criteria3Desc'), color: 'amber', image: 'https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?auto=format&fit=crop&q=80&w=400' },
+    { icon: Briefcase, title: t('criteria4Title'), desc: t('criteria4Desc'), color: 'emerald', image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=400' },
+  ];
+}
 
 const colorClasses = {
   gold: {
@@ -63,12 +41,14 @@ const colorClasses = {
   }
 };
 export function WhoItsFor() {
+  const t = useTranslations('financingPath.whoItsFor');
+  const criteria = useCriteria();
   return (
     <section
       id="who-its-for"
-      className="py-24 bg-cream relative border-y border-gray-200 overflow-hidden">
+      className="py-24 bg-cream relative border-y border-gray-200 overflow-hidden p-[5%]">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className=" mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2
             initial={{
@@ -82,9 +62,9 @@ export function WhoItsFor() {
             viewport={{
               once: true
             }}
-            className="text-3xl md:text-4xl font-bold text-dark mb-4">
+            className="home-section-heading font-bold text-dark mb-4">
 
-            لمن صُمم هذا <span className="text-teal">المسار؟</span>
+            {t('title')} <span className="text-teal">{t('titleHighlight')}</span>
           </motion.h2>
           <motion.div
             initial={{
@@ -126,7 +106,7 @@ export function WhoItsFor() {
                   className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow group relative overflow-hidden">
 
                   {/* Card Photo */}
-                  <div className="relative h-36 overflow-hidden">
+                  <div className="relative overflow-hidden home-image-card">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -146,10 +126,10 @@ export function WhoItsFor() {
                     <div
                       className={`absolute top-3 left-3 w-2.5 h-2.5 rounded-full ${colors.dot} opacity-50`} />
 
-                    <h3 className="text-xl font-bold text-dark mb-2">
+                    <h3 className="home-body-large font-bold text-dark mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed text-sm">
+                    <p className="text-gray-600 leading-relaxed home-body-large">
                       {item.desc}
                     </p>
                   </div>
@@ -174,25 +154,25 @@ export function WhoItsFor() {
             className="lg:w-1/3 w-full order-1 lg:order-2">
 
             <div className="space-y-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white home-image-tall">
                 <div className="absolute inset-0 border-4 border-teal rounded-2xl z-10 pointer-events-none opacity-50" />
                 <img
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1600"
-                  alt="فريق تخطيط استراتيجي"
-                  className="w-full h-[300px] lg:h-[340px] object-cover" />
+                  alt={t('imageAlt1')}
+                  className="w-full h-full object-cover" />
 
               </div>
               {/* Second supporting photo */}
-              <div className="relative rounded-xl overflow-hidden shadow-lg">
+              <div className="relative rounded-xl overflow-hidden shadow-lg home-image-card">
                 <img
                   src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800"
-                  alt="تحليل بيانات مالية"
-                  className="w-full h-[160px] object-cover" />
+                  alt={t('imageAlt2')}
+                  className="w-full h-full object-cover" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent" />
                 <div className="absolute bottom-3 right-4 left-4">
-                  <p className="text-white text-sm font-bold">
-                    نخدم أكثر من 50 شركة رائدة في المملكة
+                  <p className="text-white home-badge-text font-bold">
+                    {t('badgeText')}
                   </p>
                 </div>
               </div>

@@ -2,6 +2,10 @@
   "page": {
     "title": "KIB Finance | Accueil",
     "description": "Chez KIB Finance, nous concevons et structurons des solutions de financement sur mesure pour les entreprises et les projets, en alliant expertise locale, réseau bancaire solide et exécution rigoureuse afin de transformer les ambitions en croissance durable à long terme.",
+    "integratedPath": {
+      "title": "KIB Finance | Chemin intégré",
+      "description": "Découvrez le parcours du capital intégré : un parcours en neuf phases pour atteindre vos objectifs d'investissement et construire un avenir financier solide. Transparence, efficacité et partenariat stratégique à chaque étape."
+    },
     "services": {
       "title": "KIB Finance | Services de financement",
       "description": "KIB Finance L.L.C. propose une offre intégrée de services financiers pour les entreprises, les institutions, les entrepreneurs et les projets d'investissement. Des solutions de financement structurées, fondées sur une analyse rigoureuse, une vision stratégique et une vaste expertise opérationnelle."
@@ -28,16 +32,16 @@
         "href": "/services"
       },
       {
-        "label": "Mécanisme d'exécution",
-        "href": "/implementation-mechanism"
-      },
-      {
         "label": "Chemin intégré",
         "href": "/Integrated-path"
       },
       {
         "label": "Chemin de financement",
         "href": "/financing-path"
+      },
+      {
+        "label": "Mécanisme d'exécution",
+        "href": "/implementation-mechanism"
       }
     ]
   },
@@ -223,6 +227,64 @@
     "email": "contact@example.com",
     "phone": "+966 50 000 0000"
   },
+  "integratedPath": {
+    "hero": {
+      "titleLine1": "Parcours du capital",
+      "titleLine2": "intégré",
+      "subtitle": "Integrated Capital Pathway",
+      "intro": "Un parcours en neuf phases pour atteindre vos objectifs d'investissement et construire un avenir financier solide.",
+      "stats": [
+        { "value": "9", "label": "Phases intégrées" },
+        { "value": "5", "label": "Principes fondamentaux" },
+        { "value": "100 %", "label": "Transparence et sécurité" }
+      ],
+      "ctaStart": "Commencez votre parcours",
+      "ctaLearnMore": "En savoir plus"
+    },
+    "principles": {
+      "badge": "Principes fondamentaux",
+      "title": "Nos valeurs",
+      "titleHighlight": "essentielles",
+      "subtitle": "Cinq principes qui définissent KIB Finance et guident chacune de nos décisions.",
+      "items": [
+        { "title": "Transparence totale", "subtitle": "Full Transparency" },
+        { "title": "Haute efficacité", "subtitle": "High Efficiency" },
+        { "title": "Relations humaines", "subtitle": "Human Relations" },
+        { "title": "Vision mondiale", "subtitle": "Global Vision" },
+        { "title": "Croissance durable", "subtitle": "Sustainable Growth" }
+      ]
+    },
+    "phaseGrid": {
+      "badge": "Les neuf phases",
+      "title": "Feuille de route vers le",
+      "titleHighlight": "succès",
+      "subtitle": "Chaque phase est conçue pour s'appuyer sur la précédente et préparer la suivante, dans un parcours intégré vers vos objectifs financiers."
+    },
+    "phases": [
+      { "title": "Découverte et évaluation", "subtitle": "Phase 01 — Discovery", "description": "Analyse complète de la situation financière actuelle et identification des opportunités d'investissement sur le marché.", "details": ["Évaluer la situation financière actuelle du client", "Analyser les objectifs d'investissement à court et long terme", "Étudier les opportunités sur les marchés locaux et internationaux", "Définir le niveau de risque acceptable"] },
+      { "title": "Structure du capital", "subtitle": "Phase 02 — Structure", "description": "Construire une structure financière solide qui maximise les rendements tout en gérant le risque efficacement.", "details": ["Concevoir la structure de capital optimale", "Répartir les actifs entre plusieurs classes", "Définir les ratios de financement et d'investissement", "Établir le plan de trésorerie"] },
+      { "title": "Gestion des risques", "subtitle": "Phase 03 — Protection", "description": "Système intégré pour protéger le capital et assurer la durabilité face aux fluctuations du marché.", "details": ["Analyser et classer les risques potentiels", "Mettre en œuvre des stratégies de couverture appropriées", "Créer des fonds d'urgence et de réserve", "Surveillance continue des indicateurs de risque"] },
+      { "title": "Analyse et données", "subtitle": "Phase 04 — Analytics", "description": "Utiliser les derniers outils d'analyse financière et d'IA pour une prise de décision éclairée.", "details": ["Analyse des données financières historiques", "Modélisation des scénarios futurs", "Rapports de performance périodiques et détaillés", "Tableaux de bord interactifs en temps réel"] },
+      { "title": "Définition des objectifs", "subtitle": "Phase 05 — Targeting", "description": "Une feuille de route claire avec des objectifs mesurables et des délais définis.", "details": ["Définir des objectifs financiers SMART", "Définir les indicateurs clés de performance (KPI)", "Créer des calendriers de réalisation", "Revue et mise à jour régulières des objectifs"] },
+      { "title": "Présentation des opportunités", "subtitle": "Phase 06 — Presentation", "description": "Présentation professionnelle des opportunités d'investissement sélectionnées avec analyse complète des rendements.", "details": ["Préparer les dossiers d'opportunités d'investissement", "Analyse du retour sur investissement", "Comparer les alternatives d'investissement disponibles", "Sessions de présentation interactives avec des experts"] },
+      { "title": "Opérations et exécution", "subtitle": "Phase 07 — Operations", "description": "Exécuter le plan d'investissement avec précision et gérer les opérations au quotidien de manière professionnelle.", "details": ["Exécuter les transactions d'investissement approuvées", "Gestion quotidienne du portefeuille", "Suivi des performances et reporting", "Amélioration des processus et réduction des coûts"] },
+      { "title": "Vérification et finalisation", "subtitle": "Phase 08 — Completion", "description": "Vérifier l'atteinte des objectifs fixés et documenter les succès pour un parcours futur renforcé.", "details": ["Revue complète de l'atteinte des objectifs", "Documenter les enseignements tirés", "Célébrer les réalisations", "Mettre à jour le plan pour la phase suivante"] },
+      { "title": "Partenariat stratégique", "subtitle": "Phase 09 — Partnership", "description": "Construire des relations stratégiques à long terme qui ouvrent de nouveaux horizons de croissance et d'expansion.", "details": ["Développer le réseau de partenaires stratégiques", "Négocier les accords de partenariat", "Créer des alliances d'investissement conjointes", "Élargir les opportunités au-delà des frontières"] }
+    ],
+    "cta": {
+      "badge": "Commencez votre parcours aujourd'hui",
+      "titleLine1": "Votre avenir",
+      "titleLine2": "financier commence ici",
+      "subtitle": "Rejoignez les milliers de clients qui ont fait confiance à KIB Finance pour atteindre leurs objectifs d'investissement grâce au parcours du capital intégré.",
+      "cta": "Commencez votre parcours",
+      "phone": "+966 11 000 0000",
+      "email": "info@kibfinance.com"
+    },
+    "phaseCard": {
+      "viewDetails": "Voir les détails",
+      "hideDetails": "Masquer les détails"
+    }
+  },
   "servicesPage": {
     "hero": {
       "badge": "KIB Finance L.L.C.",
@@ -330,8 +392,26 @@
       "8": { "title": "Conseil financier", "desc": "Analyse financière spécialisée pour soutenir la prise de décision.", "items": ["Évaluation des risques", "Plans financiers", "Analyse des flux", "Revue des structures"] },
       "9": { "title": "Financement des entrepreneurs", "desc": "Solutions qui soutiennent l'innovation et la création de nouveaux projets.", "items": ["Création", "Exploitation", "Expansion", "Soutien aux start-ups"] },
       "10": { "title": "Financement de l'expansion", "desc": "Financement qui renforce la capacité des entreprises à croître institutionnellement.", "items": ["Nouvelles filiales", "Lignes de production", "Transformation numérique", "Développement interne"] },
-      "11": { "title": "Financement PME", "desc": "Solutions de financement et de fonds de roulement adaptées aux petites et moyennes entreprises.", "items": ["Facilités de trésorerie", "Financement d'équipements", "Financement des factures", "Solutions de découvert"] },
-      "12": { "title": "Conformité et conseil réglementaire", "desc": "Accompagnement sur les exigences réglementaires et les cadres de conformité pour les opérations financières.", "items": ["Revue de conformité réglementaire", "Soutien aux autorisations", "Préparation aux audits", "Conception de politiques et procédures"] }
+"11": {
+  "title": "Financement PME",
+  "desc": "Solutions de financement et de fonds de roulement adaptées aux petites et moyennes entreprises.",
+  "items": [
+    "Fonds de roulement",
+    "Financement d'équipement",
+    "Financement de factures",
+    "Découvert autorisé"
+  ]
+},
+"12": {
+  "title": "Conformité Financière",
+  "desc": "Conseils sur les exigences réglementaires et les cadres de conformité des opérations financières.",
+  "items": [
+    "Revue conformité réglementaire",
+    "Support de licences",
+    "Préparation à l'audit",
+    "Conception des politiques"
+  ]
+}
     }
   },
   "footer": {
@@ -706,6 +786,181 @@
       "cta": "Obtenir une consultation",
       "responseTitle": "Réponse sous",
       "responseValue": "24 heures"
+    }
+  },
+  "financingPath": {
+    "pageTitle": "KIB Finance | Parcours de financement",
+    "pageDescription": "Parcours de financement exécutif : une démarche de financement premium gérée selon les normes institutionnelles mondiales pour les clients dont les besoins exigent un traitement précis et une vision stratégique.",
+    "hero": {
+      "badge": "Parcours exécutif VIP",
+      "title": "Parcours de financement",
+      "titleHighlight": "exécutif",
+      "subtitle": "Un système de financement premium géré selon les normes institutionnelles mondiales. Un parcours conçu pour les clients dont les besoins financiers exigent un traitement précis et une vision stratégique.",
+      "ctaPrimary": "Demander une consultation exécutive",
+      "ctaSecondary": "Explorer le parcours",
+      "trustConfidentiality": "100 % confidentiel",
+      "trustStages": "8 étapes précises",
+      "trustPartnership": "Partenariat continu",
+      "imageAlt": "Tour du Royaume - Riyad"
+    },
+    "stats": {
+      "label1": "Millions de SAR financés",
+      "label2": "Partenaire stratégique",
+      "label3": "Étapes précises",
+      "label4": "Jours en moyenne pour aboutir",
+      "imageAlt": "Skyline urbain"
+    },
+    "timeline": {
+      "sectionTitle": "Étapes du parcours",
+      "sectionTitleHighlight": "exécutif",
+      "subtitle": "Un parcours capitalistique intégré géré dans la confidentialité, la précision et le professionnalisme, en s'appuyant sur les méthodologies des grandes institutions financières mondiales.",
+      "viewTimeline": "Voir le parcours",
+      "viewGrid": "Voir la grille",
+      "fullDetails": "Détails complets",
+      "details": "Détails",
+      "stageLabel": "Étape",
+      "activitiesTitle": "Activités clés de cette étape :",
+      "stages": {
+        "1": {
+          "title": "Due diligence stratégique complète",
+          "shortDesc": "Résultat : une vision stratégique claire qui définit l'orientation du financement dès le départ.",
+          "fullContent": "Une lecture approfondie de l'activité avant toute étape. Nous commençons par une session privée pour comprendre votre vision, puis nous analysons le modèle opérationnel et évaluons la situation financière avec une grande précision pour identifier le besoin de financement réel et construire une première vision du parcours le plus adapté.",
+          "bullets": ["Session privée avec le client pour comprendre sa vision", "Analyse du modèle opérationnel de l'activité", "Évaluation précise de la situation financière", "Identification du besoin de financement réel", "Construction d'une première vision du meilleur parcours", "Identification des forces sur lesquelles s'appuyer"]
+        },
+        "2": {
+          "title": "Élaboration de l'identité financière de l'activité",
+          "shortDesc": "Résultat : une identité financière solide qui présente le client sous son meilleur jour auprès des financeurs.",
+          "fullContent": "Transformer les données en un dossier financier de niveau premium. Nous rassemblons les données essentielles et les reformulons de manière professionnelle pour produire une cartographie financière précise qui met en valeur les atouts et comble les éventuelles lacunes.",
+          "bullets": ["Collecte des données essentielles uniquement", "Reformulation professionnelle des informations", "Préparation d'une cartographie financière précise", "Mise en valeur des atouts financiers", "Traitement des éventuelles lacunes", "Préparation d'un dossier financier complet prêt pour une présentation institutionnelle"]
+        },
+        "3": {
+          "title": "Préparation du dossier exécutif",
+          "shortDesc": "Résultat : un dossier exécutif rigoureux qui reflète la force et la préparation du client.",
+          "fullContent": "Un dossier de financement conçu pour les grandes institutions. Nous rédigeons un résumé exécutif de haut niveau, construisons « l'histoire financière » du client, préparons un plan de remboursement équilibré et définissons la stratégie de soumission.",
+          "bullets": ["Préparation d'un dossier exécutif complet", "Rédaction d'un résumé exécutif de haut niveau", "Construction de « l'histoire financière » du client", "Préparation d'un plan de remboursement équilibré", "Définition de la stratégie de soumission", "Préparation de la présentation institutionnelle formelle"]
+        },
+        "4": {
+          "title": "Sélection de l'institution de financement idéale",
+          "shortDesc": "Résultat : le choix de l'institution qui offre le meilleur taux d'approbation et les meilleures conditions.",
+          "fullContent": "Un alignement précis entre le besoin du client et les programmes de financement. Nous analysons les politiques des financeurs et comparons les programmes pour identifier le meilleur partenaire et le bon canal de soumission.",
+          "bullets": ["Analyse des politiques des institutions de financement", "Comparaison des programmes et des options", "Identification de l'institution la plus adaptée", "Identification du canal de soumission approprié", "Préparation du plan de communication formel", "Définition du calendrier optimal de soumission"]
+        },
+        "5": {
+          "title": "Soumission institutionnelle formelle",
+          "shortDesc": "Résultat : un dossier suivi pas à pas jusqu'à la décision.",
+          "fullContent": "Soumission et gestion du dossier selon les normes internationales. Nous gérons la communication avec l'institution de financement, répondons aux questions techniques et suivons quotidiennement l'état du dossier pour garantir un examen fluide.",
+          "bullets": ["Soumission du dossier par les canaux officiels", "Présentation du résumé exécutif", "Gestion de la communication avec le financeur", "Réponse aux questions techniques", "Suivi quotidien de l'état du dossier", "Garantie d'un processus d'examen fluide"]
+        },
+        "6": {
+          "title": "Amélioration des conditions de financement",
+          "shortDesc": "Résultat : une offre de financement excellente… avec de meilleures conditions… et des avantages supérieurs.",
+          "fullContent": "Obtenir la meilleure offre de financement possible. Nous travaillons sur l'amélioration du taux, de la durée de remboursement, des frais et des conditions de clôture pour augmenter la valeur du financement pour le client.",
+          "bullets": ["Amélioration du taux de financement", "Amélioration de la durée de remboursement", "Amélioration des frais", "Amélioration des conditions de clôture", "Amélioration des conditions de remboursement", "Augmentation de la valeur du financement pour le client"]
+        },
+        "7": {
+          "title": "Clôture financière exécutive",
+          "shortDesc": "Résultat : une clôture financière fluide, claire et rassurante.",
+          "fullContent": "Finaliser le financement avec clarté et confiance. Nous examinons les contrats et expliquons les termes au client avant d'approuver les accords, de signer la clôture formelle et d'émettre l'approbation finale.",
+          "bullets": ["Examen des contrats", "Explication des termes au client", "Approbation des accords", "Signature de la clôture formelle", "Émission de l'approbation finale", "Préparation du plan d'exécution"]
+        },
+        "8": {
+          "title": "Partenariat après le financement",
+          "shortDesc": "Résultat : un partenariat capitalistique continu qui renforce le client après le financement.",
+          "fullContent": "Une relation capitalistique durable… et non une opération ponctuelle. Nous suivons les engagements et les flux tout en fournissant des conseils financiers continus pour accompagner le client dans toute évolution future.",
+          "bullets": ["Suivi des engagements", "Suivi des flux", "Conseils financiers continus", "Accompagnement du client pour les mises à jour futures", "Renforcement de la stabilité financière", "Construction d'une relation à long terme"]
+        }
+      }
+    },
+    "whoItsFor": {
+      "title": "À qui s'adresse ce",
+      "titleHighlight": "parcours ?",
+      "criteria1Title": "Entreprises de taille moyenne et grande",
+      "criteria1Desc": "Entreprises au bilan solide souhaitant développer leurs opérations localement ou régionalement.",
+      "criteria2Title": "Projets d'expansion et de croissance",
+      "criteria2Desc": "Entités recherchant un financement pour des acquisitions ou de nouvelles lignes de production.",
+      "criteria3Title": "Entreprises multinationales",
+      "criteria3Desc": "Entreprises étrangères recherchant des structures de financement adaptées à leurs opérations sur le marché local.",
+      "criteria4Title": "Restructuration financière",
+      "criteria4Desc": "Entreprises cherchant à améliorer leur structure de capital et à réduire le coût actuel du financement.",
+      "imageAlt1": "Équipe de planification stratégique",
+      "imageAlt2": "Analyse de données financières",
+      "badgeText": "Nous servons plus de 50 entreprises leaders dans le Royaume"
+    },
+    "benefits": {
+      "title": "Pourquoi choisir le",
+      "titleHighlight": "parcours exécutif ?",
+      "intro": "Nous ne nous contentons pas de fournir un financement… nous redessinons votre position financière et construisons un parcours capitalistique qui renforce votre compétitivité et vous donne un pouvoir de négociation exceptionnel.",
+      "benefit1Title": "Plus stable et pérenne",
+      "benefit1Desc": "Nous construisons un parcours capitalistique qui renforce votre compétitivité et votre présence sur le marché.",
+      "benefit2Title": "Plus de valeur et d'impact",
+      "benefit2Desc": "Nous vous donnons un pouvoir de négociation réservé aux clients de premier ordre.",
+      "benefit3Title": "Aligné sur votre ambition",
+      "benefit3Desc": "Un partenariat géré en toute confidentialité, exécuté en toute confiance et conclu avec des résultats qui dépassent les attentes.",
+      "benefit4Title": "Normes internationales",
+      "benefit4Desc": "Au plus près de la précision et du professionnalisme des institutions financières mondiales.",
+      "imageAlt1": "Dirigeant confiant",
+      "imageAlt2": "Poignée de main d'accord",
+      "imageAlt3": "Préparation du dossier exécutif"
+    },
+    "comparison": {
+      "title": "La différence entre le",
+      "titleHighlight": "parcours exécutif",
+      "titleSuffix": "et le parcours traditionnel",
+      "subtitle": "Découvrez pourquoi les clients d'exception choisissent le parcours exécutif plutôt que les voies traditionnelles.",
+      "tabCompare": "Comparaison complète",
+      "tabTraditional": "Parcours traditionnel",
+      "tabExecutive": "Parcours exécutif",
+      "traditionalTitle": "Parcours traditionnel",
+      "traditionalSubtitle": "La voie habituelle pour obtenir un financement",
+      "executiveTitle": "Parcours exécutif",
+      "executiveSubtitle": "Un parcours capitalistique intégré aux normes internationales",
+      "bestBadge": "Meilleur",
+      "executiveFullSubtitle": "Avantages exclusifs pour les clients de premier ordre",
+      "traditionalFullTitle": "Parcours traditionnel",
+      "traditionalFullSubtitle": "Défis et risques auxquels sont confrontés la plupart des demandeurs de financement",
+      "executiveFullTitle": "Parcours exécutif",
+      "ctaStart": "Commencez votre parcours exécutif",
+      "traditionalItems": ["Préparation des dossiers seul sans accompagnement", "Soumettre à un seul organisme et attendre", "Aucune négociation sur les conditions", "Absence de suivi après la soumission", "Conditions de financement standard sans optimisation", "Aucun accompagnement après le décaissement", "Délai d'aboutissement long et indéfini"],
+      "executiveItems": ["Due diligence stratégique complète et dossier exécutif rigoureux", "Choix de l'institution idéale parmi des dizaines d'options", "Négociation professionnelle pour améliorer chaque terme", "Suivi pas à pas jusqu'à la décision", "Conditions de financement optimisées et avantages exclusifs", "Partenariat capitalistique continu après le financement", "Aboutissement moyen en 15 jours ouvrés seulement"],
+      "imageAltTraditional": "Documents papier traditionnels",
+      "imageAltExecutive": "Équipe exécutive professionnelle"
+    },
+    "partners": {
+      "title": "Nos partenaires",
+      "titleHighlight": "stratégiques",
+      "subtitle": "Nous collaborons avec les principales institutions financières pour garantir les meilleures conditions et options à nos clients.",
+      "trustBadge": "Tous nos partenariats sont agréés par la Banque centrale d'Arabie saoudite",
+      "imageAlt": "Quartier financier - Riyad",
+      "names": ["Banque Al Ahli", "Banque Al Rajhi", "Riyad Bank", "Banque Saudi Fransi", "Fonds de développement", "Banque d'exportation", "Monsha'at", "Kafalah"]
+    },
+    "faq": {
+      "title": "Questions",
+      "titleHighlight": "fréquentes",
+      "items": {
+        "1": { "q": "Qu'est-ce que le parcours de financement exécutif ?", "a": "C'est un cadre conçu pour les clients dont les besoins financiers exigent un traitement précis et une vision stratégique. Nous ne proposons pas un financement traditionnel, mais un parcours capitalistique intégré géré dans la confidentialité et le professionnalisme, selon les méthodologies des grandes institutions financières." },
+        "2": { "q": "Combien de temps prend le processus de financement ?", "a": "La durée varie selon le montant du financement et la complexité de la structure. En moyenne, grâce à nos relations directes avec les décideurs, nous réduisons considérablement le délai par rapport aux voies traditionnelles, avec un aboutissement moyen d'environ 15 jours après la complétion du dossier." },
+        "3": { "q": "Garantissez-vous l'approbation du financement ?", "a": "Grâce à la « due diligence stratégique complète » en première phase, nous évaluons précisément les chances de succès. Si nous décidons de poursuivre, notre taux de succès dépasse 95 % grâce à une préparation rigoureuse et au choix de la bonne institution de financement." },
+        "4": { "q": "Quels types d'entreprises servez-vous ?", "a": "Nous servons les entreprises de taille moyenne et grande, les projets d'expansion et de croissance, les multinationales présentes sur le marché local et les entreprises en restructuration financière." },
+        "5": { "q": "Comment garantissez-vous la confidentialité de nos données financières ?", "a": "Nous respectons les plus hauts standards de confidentialité et de protection des données. Un accord de non-divulgation (NDA) strict est signé avant toute consultation de document, et toutes les données sont gérées via des systèmes sécurisés et fermés." }
+      },
+      "imageAlt1": "Conseiller financier donnant des conseils",
+      "imageAlt2": "Poignée de main de partenariat",
+      "sideTitle": "Équipe conseil spécialisée",
+      "sideSubtitle": "Nous répondons à toutes vos questions en toute transparence",
+      "badgeSuccess": "+95 % taux de succès",
+      "badgeDays": "15 jours en moyenne"
+    },
+    "cta": {
+      "imageTitle": "Votre prochaine étape commence ici",
+      "imageSubtitle": "Nous vous attendons pour construire votre parcours capitalistique.",
+      "heading": "Prêt à faire passer votre entreprise au niveau supérieur ?",
+      "paragraph": "Entrez dans un véritable partenariat capitalistique géré en toute confidentialité, exécuté en toute confiance et conclu avec des résultats qui dépassent les attentes.",
+      "ctaButton": "Demander une consultation exécutive",
+      "contactLabel": "Ou contactez-nous directement par :",
+      "whatsapp": "WhatsApp",
+      "call": "Appel",
+      "email": "E-mail",
+      "imageAlt": "Poignée de main exécutive"
     }
   }
 }

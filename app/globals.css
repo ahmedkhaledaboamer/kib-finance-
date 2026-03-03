@@ -205,6 +205,11 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text;
   color: transparent;
 }
+
+/* Gold-to-amber gradient for CTA buttons (financing-path, Hero, etc.) */
+.bg-gradient-gold-amber {
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+}
 .wave-divider {
   overflow: hidden;
   line-height: 0;

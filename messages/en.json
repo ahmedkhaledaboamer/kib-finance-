@@ -2,6 +2,10 @@
     "page": {
         "title": "KIB Finance | Home",
         "description": "At KIB Finance, we design and structure bespoke financing solutions for companies and projects, combining deep local expertise, strong banking relationships and disciplined execution to turn ambitious plans into sustainable, long‑term growth.",
+        "integratedPath": {
+            "title": "KIB Finance | Integrated Path",
+            "description": "Discover the Integrated Capital Pathway: a nine-phase journey to achieve your investment goals and build a solid financial future. Transparency, efficiency and strategic partnership at every step."
+        },
         "services": {
             "title": "KIB Finance | Financing Services",
             "description": "KIB Finance L.L.C. offers an integrated suite of financial services for companies, institutions, entrepreneurs and investment projects. Structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise."
@@ -28,16 +32,16 @@
               "href": "/services"
             },
             {
-              "label": "Implementation Mechanism",
-              "href": "/implementation-mechanism"
-            },
-            {
               "label": "Integrated Path",
               "href": "/Integrated-path"
             },
             {
               "label": "Financing Path",
               "href": "/financing-path"
+            },
+            {
+                "label": "Implementation Mechanism",
+                "href": "/implementation-mechanism"
             }
         ]
     },
@@ -229,6 +233,64 @@
         "cta": "Contact us now",
         "email": "contact@example.com",
         "phone": "+966 50 000 0000"
+    },
+    "integratedPath": {
+        "hero": {
+            "titleLine1": "Integrated Capital",
+            "titleLine2": "Pathway",
+            "subtitle": "Integrated Capital Pathway",
+            "intro": "A nine-phase journey to achieve your investment goals and build a solid financial future.",
+            "stats": [
+                { "value": "9", "label": "Integrated phases" },
+                { "value": "5", "label": "Core principles" },
+                { "value": "100%", "label": "Transparency & security" }
+            ],
+            "ctaStart": "Start your journey now",
+            "ctaLearnMore": "Learn more"
+        },
+        "principles": {
+            "badge": "Core principles",
+            "title": "Our",
+            "titleHighlight": "core values",
+            "subtitle": "Five principles that define KIB Finance and guide every decision we make.",
+            "items": [
+                { "title": "Full transparency", "subtitle": "Full Transparency" },
+                { "title": "High efficiency", "subtitle": "High Efficiency" },
+                { "title": "Human relations", "subtitle": "Human Relations" },
+                { "title": "Global vision", "subtitle": "Global Vision" },
+                { "title": "Sustainable growth", "subtitle": "Sustainable Growth" }
+            ]
+        },
+        "phaseGrid": {
+            "badge": "The nine phases",
+            "title": "Roadmap to",
+            "titleHighlight": "success",
+            "subtitle": "Each phase is designed to build on the previous one and pave the way for the next, in an integrated journey towards your financial goals."
+        },
+        "phases": [
+            { "title": "Discovery & assessment", "subtitle": "Phase 01 — Discovery", "description": "Comprehensive analysis of current financial position and identification of investment opportunities in the market.", "details": ["Assess client's current financial position", "Analyse short and long-term investment goals", "Study opportunities in local and international markets", "Define acceptable risk level"] },
+            { "title": "Capital structure", "subtitle": "Phase 02 — Structure", "description": "Building a solid financial structure that maximises returns while managing risk efficiently.", "details": ["Design optimal capital structure", "Allocate assets across multiple classes", "Define financing and investment ratios", "Establish cash flow plan"] },
+            { "title": "Risk management", "subtitle": "Phase 03 — Protection", "description": "Integrated system to protect capital and ensure sustainability amid market volatility.", "details": ["Analyse and classify potential risks", "Implement appropriate hedging strategies", "Create emergency and reserve funds", "Continuous monitoring of risk indicators"] },
+            { "title": "Analysis & data", "subtitle": "Phase 04 — Analytics", "description": "Using the latest financial analysis and AI tools for informed decision-making.", "details": ["Historical financial data analysis", "Future scenario modelling", "Periodic and detailed performance reports", "Real-time interactive dashboards"] },
+            { "title": "Target setting", "subtitle": "Phase 05 — Targeting", "description": "A clear roadmap with measurable goals and defined timelines for achievement.", "details": ["Set SMART financial goals", "Define key performance indicators (KPIs)", "Create achievement timelines", "Regular goal review and updates"] },
+            { "title": "Opportunity presentation", "subtitle": "Phase 06 — Presentation", "description": "Professional presentation of selected investment opportunities with comprehensive return analysis.", "details": ["Prepare investment opportunity briefs", "ROI analysis", "Compare available investment alternatives", "Interactive presentation sessions with experts"] },
+            { "title": "Operations & execution", "subtitle": "Phase 07 — Operations", "description": "Executing the investment plan with precision and professional day-to-day operations management.", "details": ["Execute approved investment transactions", "Daily portfolio management", "Performance monitoring and reporting", "Process improvement and cost reduction"] },
+            { "title": "Verification & completion", "subtitle": "Phase 08 — Completion", "description": "Verifying achievement of set goals and documenting successes for a stronger future path.", "details": ["Comprehensive review of goal achievement", "Document lessons learned", "Celebrate achievements", "Update plan for next phase"] },
+            { "title": "Strategic partnership", "subtitle": "Phase 09 — Partnership", "description": "Building long-term strategic relationships that open new horizons for growth and expansion.", "details": ["Develop strategic partner network", "Negotiate partnership agreements", "Create joint investment alliances", "Expand opportunities across borders"] }
+        ],
+        "cta": {
+            "badge": "Start your journey today",
+            "titleLine1": "Your financial",
+            "titleLine2": "future starts here",
+            "subtitle": "Join thousands of clients who have trusted KIB Finance to achieve their investment goals through the Integrated Capital Pathway.",
+            "cta": "Start your journey now",
+            "phone": "+966 11 000 0000",
+            "email": "info@kibfinance.com"
+        },
+        "phaseCard": {
+            "viewDetails": "View details",
+            "hideDetails": "Hide details"
+        }
     },
     "footer": {
         "contact": {
@@ -446,8 +508,26 @@
             "8": { "title": "Financial advisory", "desc": "Specialised financial analysis to support decision-making.", "items": ["Risk assessment", "Financial plans", "Cash flow analysis", "Structure review"] },
             "9": { "title": "Entrepreneur finance", "desc": "Solutions that support innovation and building new ventures.", "items": ["Establishment", "Operations", "Expansion", "Start-up support"] },
             "10": { "title": "Expansion finance", "desc": "Financing that strengthens companies' capacity for institutional growth.", "items": ["New branches", "Production lines", "Digital transformation", "Internal development"] },
-            "11": { "title": "SME finance", "desc": "Tailored financing and working capital solutions for small and medium enterprises.", "items": ["Working capital facilities", "Equipment financing", "Invoice financing", "Overdraft solutions"] },
-            "12": { "title": "Compliance & regulatory advisory", "desc": "Guidance on regulatory requirements and compliance frameworks for financial operations.", "items": ["Regulatory compliance review", "Licensing support", "Audit readiness", "Policy and procedure design"] }
+"11": {
+  "title": "Business Finance",
+  "desc": "Tailored financing and working capital solutions for small and medium enterprises.",
+  "items": [
+    "Working capital facilities",
+    "Equipment financing",
+    "Invoice financing",
+    "Overdraft solutions"
+  ]
+},
+"12": {
+  "title": "Financial Compliance",
+  "desc": "Guidance on regulatory requirements and compliance frameworks for financial operations.",
+  "items": [
+    "Regulatory compliance review",
+    "Licensing support",
+    "Audit readiness",
+    "Policy and procedure design"
+  ]
+}
         }
     },
     "financeHome": {
@@ -781,6 +861,198 @@
             "cta": "Get a consultation",
             "responseTitle": "Response within",
             "responseValue": "24 hours"
+        }
+    },
+    "financingPath": {
+        "pageTitle": "KIB Finance | Financing Path",
+        "pageDescription": "Executive financing path: a premium financing journey managed to global institutional standards for clients who require precise treatment and strategic vision.",
+        "hero": {
+            "badge": "Executive VIP Path",
+            "title": "Financing Path",
+            "titleHighlight": "Executive",
+            "subtitle": "A premium financing system managed to global institutional standards. A path designed for clients whose financial needs require precise handling and strategic vision.",
+            "ctaPrimary": "Request executive consultation",
+            "ctaSecondary": "Explore the path",
+            "trustConfidentiality": "100% confidential",
+            "trustStages": "8 precise stages",
+            "trustPartnership": "Ongoing partnership",
+            "imageAlt": "Kingdom Tower - Riyadh"
+        },
+        "stats": {
+            "label1": "Million SAR financed",
+            "label2": "Strategic partner",
+            "label3": "Precise stages",
+            "label4": "Days average completion",
+            "imageAlt": "City skyline"
+        },
+        "timeline": {
+            "sectionTitle": "Executive path",
+            "sectionTitleHighlight": "stages",
+            "subtitle": "An integrated capital journey managed with confidentiality, precision and professionalism, based on methodologies used by major financial institutions worldwide.",
+            "viewTimeline": "View path",
+            "viewGrid": "View grid",
+            "fullDetails": "Full details",
+            "details": "Details",
+            "stageLabel": "Stage",
+            "activitiesTitle": "Key activities in this stage:",
+            "stages": {
+                "1": {
+                    "title": "Comprehensive strategic due diligence",
+                    "shortDesc": "Outcome: A clear strategic vision that defines the financing direction from the start.",
+                    "fullContent": "A deep read of the business before any step. We start with a private session to understand your vision, then analyse the operational model and assess the financial position with high precision to identify the real financing need and build an initial view of the most suitable path.",
+                    "bullets": ["Private session with the client to understand their vision", "Analysis of the business operational model", "High-precision assessment of the financial position", "Identifying the real financing need", "Building an initial view of the best path", "Identifying strengths to build on"]
+                },
+                "2": {
+                    "title": "Crafting the financial identity of the business",
+                    "shortDesc": "Outcome: A strong financial identity that presents the client in an elevated light to financiers.",
+                    "fullContent": "Turning data into a premium-grade financial file. We gather essential data and reframe it professionally to produce an accurate financial map that highlights strengths and addresses any minor gaps.",
+                    "bullets": ["Gathering essential data only", "Reframing information professionally", "Preparing an accurate financial map", "Highlighting financial strengths", "Addressing any minor gaps", "Preparing a complete financial file ready for institutional presentation"]
+                },
+                "3": {
+                    "title": "Preparing the executive file",
+                    "shortDesc": "Outcome: A rigorous executive file that reflects the client's strength and readiness.",
+                    "fullContent": "A financing file designed for major institutions. We draft a high-level executive summary, build the client's 'financial story', prepare a balanced repayment plan and define the submission strategy.",
+                    "bullets": ["Preparing a comprehensive executive file", "Drafting a high-level executive summary", "Building the client's 'financial story'", "Preparing a balanced repayment plan", "Defining the submission strategy", "Preparing the formal institutional presentation"]
+                },
+                "4": {
+                    "title": "Selecting the ideal financing institution",
+                    "shortDesc": "Outcome: Choosing the institution that offers the highest approval rate and best terms.",
+                    "fullContent": "Precise alignment between the client's need and financing programmes. We analyse financiers' policies and compare programmes to identify the best fit and the right submission channel.",
+                    "bullets": ["Analysing financing institutions' policies", "Comparing programmes and options", "Identifying the best-fit institution", "Identifying the right submission channel", "Preparing the formal communication plan", "Setting the optimal submission timing"]
+                },
+                "5": {
+                    "title": "Formal institutional submission",
+                    "shortDesc": "Outcome: A file followed step by step until the decision is issued.",
+                    "fullContent": "Submitting and managing the file to global standards. We manage communication with the financing institution, respond to technical queries and track the application status daily to ensure a smooth review.",
+                    "bullets": ["Submitting the file through official channels", "Presenting the executive summary", "Managing communication with the financier", "Responding to technical queries", "Daily tracking of application status", "Ensuring a smooth review process"]
+                },
+                "6": {
+                    "title": "Improving financing terms",
+                    "shortDesc": "Outcome: An excellent financing offer… with better terms… and higher benefits.",
+                    "fullContent": "Securing the best possible financing offer. We work on improving the financing rate, repayment tenor, fees and closing conditions to increase the client's financing value.",
+                    "bullets": ["Improving the financing rate", "Improving the repayment tenor", "Improving fees", "Improving closing conditions", "Improving repayment terms", "Increasing the client's financing value"]
+                },
+                "7": {
+                    "title": "Executive financial closing",
+                    "shortDesc": "Outcome: A smooth, clear and reassuring financial close.",
+                    "fullContent": "Completing the financing with clarity and confidence. We review contracts and explain terms to the client before approving agreements, signing the formal close and issuing final approval.",
+                    "bullets": ["Reviewing contracts", "Explaining terms to the client", "Approving agreements", "Signing the formal close", "Issuing final approval", "Preparing the execution plan"]
+                },
+                "8": {
+                    "title": "Partnership after financing",
+                    "shortDesc": "Outcome: An ongoing capital partnership that strengthens the client after financing.",
+                    "fullContent": "An ongoing capital relationship… not a one-off transaction. We monitor commitments and track flows while providing ongoing financial advice to support the client with any future updates.",
+                    "bullets": ["Monitoring commitments", "Tracking flows", "Providing ongoing financial advice", "Supporting the client with future updates", "Reinforcing financial stability", "Building a long-term relationship"]
+                }
+            }
+        },
+        "whoItsFor": {
+            "title": "Who is this",
+            "titleHighlight": "path for?",
+            "criteria1Title": "Mid and large-sized companies",
+            "criteria1Desc": "Companies with a strong track record seeking to expand operations locally or regionally.",
+            "criteria2Title": "Expansion and growth projects",
+            "criteria2Desc": "Entities seeking financing for acquisitions or new production lines.",
+            "criteria3Title": "Multinational companies",
+            "criteria3Desc": "Foreign companies seeking financing structures aligned with their local market operations.",
+            "criteria4Title": "Financial restructuring",
+            "criteria4Desc": "Companies seeking to improve their capital structure and reduce current financing costs.",
+            "imageAlt1": "Strategic planning team",
+            "imageAlt2": "Financial data analysis",
+            "badgeText": "We serve more than 50 leading companies in the Kingdom"
+        },
+        "benefits": {
+            "title": "Why choose the",
+            "titleHighlight": "executive path?",
+            "intro": "We don't just provide financing… we reshape your financial position and build a capital path that raises your competitiveness and gives you exceptional negotiating power.",
+            "benefit1Title": "More stable and steady",
+            "benefit1Desc": "We build a capital path that raises your competitiveness and strengthens your market presence.",
+            "benefit2Title": "More value and impact",
+            "benefit2Desc": "We give you negotiating power that only top-tier clients receive.",
+            "benefit3Title": "Aligned with your ambition",
+            "benefit3Desc": "A partnership managed in full confidence, executed with complete trust and closed with results that exceed expectations.",
+            "benefit4Title": "Global standards",
+            "benefit4Desc": "Closest to the precision and professionalism of global financial institutions.",
+            "imageAlt1": "Confident businessperson",
+            "imageAlt2": "Deal handshake",
+            "imageAlt3": "Executive file preparation"
+        },
+        "comparison": {
+            "title": "The difference between the",
+            "titleHighlight": "executive path",
+            "titleSuffix": "and the traditional path",
+            "subtitle": "Discover why distinguished clients choose the executive path over traditional routes.",
+            "tabCompare": "Full comparison",
+            "tabTraditional": "Traditional path",
+            "tabExecutive": "Executive path",
+            "traditionalTitle": "Traditional path",
+            "traditionalSubtitle": "The usual way to obtain financing",
+            "executiveTitle": "Executive path",
+            "executiveSubtitle": "An integrated capital journey to global standards",
+            "bestBadge": "Best",
+            "executiveFullSubtitle": "Exclusive benefits for top-tier clients",
+            "traditionalFullTitle": "Traditional path",
+            "traditionalFullSubtitle": "Challenges and risks facing most financing applicants",
+            "executiveFullTitle": "Executive path",
+            "executiveFullSubtitle": "Exclusive benefits for top-tier clients",
+            "ctaStart": "Start your executive path",
+            "traditionalItems": [
+                "Preparing files on your own with no guidance",
+                "Applying to a single institution and waiting",
+                "No negotiation on terms",
+                "No follow-up after submission",
+                "Standard financing terms with no optimisation",
+                "No support after disbursement",
+                "Long and undefined completion time"
+            ],
+            "executiveItems": [
+                "Comprehensive strategic due diligence and a rigorous executive file",
+                "Choosing the ideal institution from dozens of options",
+                "Professional negotiation to improve every term",
+                "Step-by-step follow-up until the decision is issued",
+                "Optimised financing terms and exclusive benefits",
+                "Ongoing capital partnership after financing",
+                "Average completion of 15 working days only"
+            ],
+            "imageAltTraditional": "Traditional paper documents",
+            "imageAltExecutive": "Professional executive team"
+        },
+        "partners": {
+            "title": "Our",
+            "titleHighlight": "strategic partners",
+            "subtitle": "We work with leading financial institutions to secure the best terms and options for our clients.",
+            "trustBadge": "All our partnerships are licensed and approved by the Saudi Central Bank",
+            "imageAlt": "Financial district - Riyadh",
+            "names": ["Al Ahli Bank", "Al Rajhi Bank", "Riyad Bank", "Banque Saudi Fransi", "Development Fund", "Export Bank", "Monsha'at", "Kafalah"]
+        },
+        "faq": {
+            "title": "Frequently",
+            "titleHighlight": "asked questions",
+            "items": {
+                "1": { "q": "What is the executive financing path?", "a": "It is a framework designed for clients whose financial needs require precise handling and strategic vision. We do not offer traditional financing, but an integrated capital journey managed with confidentiality and professionalism based on methodologies used by major financial institutions." },
+                "2": { "q": "How long does the financing process take?", "a": "The duration varies according to the size of the financing and the complexity of the financial structure. On average, thanks to our direct relationships with decision-makers, we significantly shorten the time compared to traditional routes, with average completion of around 15 days after the file is complete." },
+                "3": { "q": "Do you guarantee financing approval?", "a": "Through 'comprehensive strategic due diligence' in the first stage, we accurately assess the chances of success. If we decide to proceed, our file success rate exceeds 95% thanks to thorough preparation and careful selection of the right financing institution." },
+                "4": { "q": "What types of companies do you serve?", "a": "We serve mid and large-sized companies, expansion and growth projects, multinational companies operating in the local market, and companies seeking financial restructuring." },
+                "5": { "q": "How do you ensure confidentiality of our financial data?", "a": "We adhere to the highest standards of confidentiality and privacy. A strict non-disclosure agreement (NDA) is signed before any document is reviewed, and all data is managed through secure, closed systems." }
+            },
+            "imageAlt1": "Financial consultant giving advice",
+            "imageAlt2": "Partnership handshake",
+            "sideTitle": "Specialised advisory team",
+            "sideSubtitle": "We answer all your enquiries with full transparency",
+            "badgeSuccess": "+95% success rate",
+            "badgeDays": "15 days average"
+        },
+        "cta": {
+            "imageTitle": "Your next step starts here",
+            "imageSubtitle": "We are waiting to build your capital path.",
+            "heading": "Ready to take your business to the next level?",
+            "paragraph": "Enter a real capital partnership managed in full confidence, executed with complete trust and closed with results that exceed expectations.",
+            "ctaButton": "Request executive consultation",
+            "contactLabel": "Or contact us directly via:",
+            "whatsapp": "WhatsApp",
+            "call": "Call",
+            "email": "Email",
+            "imageAlt": "Executive handshake"
         }
     }
 }

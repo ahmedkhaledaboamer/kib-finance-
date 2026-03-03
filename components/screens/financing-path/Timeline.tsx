@@ -1,9 +1,11 @@
 'use client';
-import React, { useState, useRef } from 'react';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { stages, Stage } from './stages';
+import React, { useState, useRef, useMemo } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { stages as stagesData, Stage } from './stages';
 import { Modal } from './Modal';
-import { ArrowLeft, CheckCircle2, LayoutGrid, List } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, LayoutGrid, List } from 'lucide-react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 const accentColors = ['gold', 'teal', 'amber', 'emerald'];
 const accentClasses = {
   gold: {
@@ -31,7 +33,19 @@ const accentClasses = {
     lightBg: 'bg-emerald/20'
   }
 };
-export function Timeline() {
+const STAGE_IDS = [1, 2, 3, 4, 5, 6, 7, 8] as const;
+
+export function Timeline({ locale }: { locale: string }) {
+  const t = useTranslations('financingPath.timeline');
+  const stages: Stage[] = useMemo(() => STAGE_IDS.map((id, i) => ({
+    id,
+    title: t(`stages.${id}.title`),
+    shortDesc: t(`stages.${id}.shortDesc`),
+    fullContent: t(`stages.${id}.fullContent`),
+    bullets: (t.raw(`stages.${id}.bullets`) as string[]) ?? [],
+    imageUrl: stagesData[i].imageUrl,
+  })), [t]);
+  const isRTL = locale === 'ar';
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -65,8 +79,8 @@ export function Timeline() {
     }
   };
   return (
-    <section id="timeline" className="py-24 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative" ref={containerRef}>
+    <section id="timeline" className="py-24 bg-white relative overflow-hidden p-[5%]">
+      <div className=" mx-auto px-6 relative" ref={containerRef}>
         <div className="text-center mb-12">
           <motion.h2
             initial={{
@@ -80,9 +94,9 @@ export function Timeline() {
             viewport={{
               once: true
             }}
-            className="text-4xl md:text-5xl font-bold text-dark mb-4">
+            className="home-section-heading font-bold text-dark mb-4">
 
-            مراحل المسار <span className="text-gold">التنفيذي</span>
+            {t('sectionTitle')} <span className="text-gold">{t('sectionTitleHighlight')}</span>
           </motion.h2>
           <motion.p
             initial={{
@@ -99,27 +113,26 @@ export function Timeline() {
             transition={{
               delay: 0.2
             }}
-            className="text-gray-600 text-lg max-w-2xl mx-auto mb-8">
+            className="text-gray-600 home-section-subtitle mx-auto mb-8">
 
-            رحلة رأسمالية متكاملة تُدار بسرية، ودقة، واحتراف، وتستند إلى منهجيات
-            المؤسسات المالية الكبرى حول العالم.
+            {t('subtitle')}
           </motion.p>
 
           {/* View Toggle */}
           <div className="flex justify-center items-center gap-2 bg-gray-100 p-1 rounded-lg inline-flex mx-auto">
             <button
               onClick={() => setViewMode('timeline')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${viewMode === 'timeline' ? 'bg-white text-dark shadow-sm' : 'text-gray-500 hover:text-dark'}`}>
+              className={`cursor-pointer flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${viewMode === 'timeline' ? 'bg-white text-dark shadow-sm' : 'text-gray-500 hover:text-dark'}`}>
 
               <List className="w-4 h-4" />
-              عرض المسار
+              {t('viewTimeline')}
             </button>
             <button
               onClick={() => setViewMode('grid')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${viewMode === 'grid' ? 'bg-white text-dark shadow-sm' : 'text-gray-500 hover:text-dark'}`}>
+              className={`cursor-pointer flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${viewMode === 'grid' ? 'bg-white text-dark shadow-sm' : 'text-gray-500 hover:text-dark'}`}>
 
               <LayoutGrid className="w-4 h-4" />
-              عرض الشبكة
+              {t('viewGrid')}
             </button>
           </div>
         </div>
@@ -140,7 +153,7 @@ export function Timeline() {
                   <button
                     key={`nav-${stage.id}`}
                     onClick={() => scrollToStage(stage.id)}
-                    className="relative group flex flex-col items-center gap-2">
+                    className="cursor-pointer relative group flex flex-col items-center gap-2">
 
                       <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${isActive ? `${accentClasses[colorKey].bg} text-white shadow-md` : 'bg-white border-2 border-gray-300 text-gray-400 group-hover:border-gray-400'}`}>
@@ -181,8 +194,8 @@ export function Timeline() {
                   key={stage.id}
                   className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 relative">
 
-                    {/* Mobile Line */}
-                    <div className="absolute right-6 top-0 bottom-[-4rem] w-0.5 bg-gray-200 md:hidden" />
+                    {/* Mobile Line — RTL/LTR: line on inline-end side */}
+                    <div className="absolute end-6 top-0 bottom-[-4rem] w-0.5 bg-gray-200 md:hidden" />
 
                     {/* Number Node */}
                     <motion.div
@@ -221,7 +234,7 @@ export function Timeline() {
                     viewport={{
                       once: true
                     }}
-                    className={`absolute right-3 top-6 w-8 h-8 rounded-full bg-white border-2 ${accentClasses[colorKey].text.replace('text-', 'border-')} text-dark font-bold flex items-center justify-center z-20 md:hidden shadow-sm`}>
+                    className={`absolute end-3 top-6 w-8 h-8 rounded-full bg-white border-2 ${accentClasses[colorKey].text.replace('text-', 'border-')} text-dark font-bold flex items-center justify-center z-20 md:hidden shadow-sm`}>
 
                       {stage.id}
                     </motion.div>
@@ -243,13 +256,13 @@ export function Timeline() {
                     transition={{
                       duration: 0.6
                     }}
-                    className={`pl-16 md:pl-0 ${isEven ? 'md:col-start-1 md:pr-16 lg:pr-24 text-right' : 'md:col-start-2 md:pl-16 lg:pl-24 text-right'}`}>
+                    className={`${isRTL ? 'text-right' : 'text-left'} ${isEven ? 'md:col-start-2 md:ps-16 lg:ps-24 md:text-start' : 'md:col-start-1 md:pe-16 lg:pe-24 md:text-end'}`}>
 
                       <div
                       className={`bg-white border border-gray-100 shadow-xl p-6 md:p-8 rounded-xl hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 relative overflow-hidden border-t-4 ${accentClasses[colorKey].border}`}>
 
-                        {/* Watermark Number */}
-                        <div className="absolute -left-4 -bottom-10 text-[150px] font-bold text-gray-50 z-0 select-none pointer-events-none">
+                        {/* Watermark Number — RTL/LTR: inline-start */}
+                        <div className="absolute start-0 -bottom-10 text-[150px] font-bold text-gray-50 z-0 select-none pointer-events-none">
                           0{stage.id}
                         </div>
 
@@ -271,11 +284,12 @@ export function Timeline() {
                             {stage.shortDesc}
                           </p>
                           <button
+                          dir="ltr"
                           onClick={() => setSelectedStage(stage)}
-                          className={`flex items-center gap-2 ${accentClasses[colorKey].text} font-bold hover:opacity-80 transition-opacity group/btn`}>
+                          className={`cursor-pointer flex items-center gap-2 ${accentClasses[colorKey].text} font-bold hover:opacity-80 transition-opacity group/btn ${isRTL ? 'flex-row-reverse' : ''}`}>
 
-                            <span>التفاصيل الكاملة</span>
-                            <ArrowLeft className="w-4 h-4 transform group-hover/btn:-translate-x-2 transition-transform" />
+                            <span>{t('fullDetails')}</span>
+                            {isRTL ? <ArrowLeft className="w-4 h-4 shrink-0 transform group-hover/btn:translate-x-2 transition-transform" /> : <ArrowRight className="w-4 h-4 shrink-0 transform group-hover/btn:-translate-x-2 transition-transform" />}
                           </button>
                         </div>
                       </div>
@@ -322,7 +336,7 @@ export function Timeline() {
 
                   <div className="h-40 relative overflow-hidden">
                     <div
-                    className={`absolute top-3 right-3 w-8 h-8 rounded-full ${accentClasses[colorKey].bg} text-white flex items-center justify-center font-bold z-20 shadow-md`}>
+                    className={`absolute top-3 end-3 w-8 h-8 rounded-full ${accentClasses[colorKey].bg} text-white flex items-center justify-center font-bold z-20 shadow-md`}>
 
                       {stage.id}
                     </div>
@@ -333,7 +347,7 @@ export function Timeline() {
                     className="w-full h-full object-cover" />
 
                   </div>
-                  <div className="p-6 flex flex-col flex-1">
+                  <div className={`p-6 flex flex-col flex-1 ${isRTL ? 'text-right' : 'text-left'}`}>
                     <h3 className="text-xl font-bold text-dark mb-2 line-clamp-2">
                       {stage.title}
                     </h3>
@@ -342,9 +356,9 @@ export function Timeline() {
                     </p>
                     <button
                     onClick={() => setSelectedStage(stage)}
-                    className={`w-full py-2 rounded-md ${accentClasses[colorKey].lightBg} ${accentClasses[colorKey].text} font-bold hover:opacity-80 transition-opacity text-sm`}>
+                    className={`cursor-pointer w-full py-2 rounded-md ${accentClasses[colorKey].lightBg} ${accentClasses[colorKey].text} font-bold hover:opacity-80 transition-opacity text-sm`}>
 
-                      التفاصيل
+                      {t('details')}
                     </button>
                   </div>
                 </motion.div>);
@@ -363,15 +377,17 @@ export function Timeline() {
         <div className="space-y-6">
             <div className="relative">
               {/* Badge in modal */}
-              <div
-              className={`absolute top-4 right-4 z-10 px-3 py-1 rounded-full ${accentClasses[accentColors[(selectedStage.id - 1) % accentColors.length] as keyof typeof accentClasses].bg} text-white font-bold text-sm shadow-md`}>
+                  <div
+              className={`absolute top-4 end-4 z-10 px-3 py-1 rounded-full ${accentClasses[accentColors[(selectedStage.id - 1) % accentColors.length] as keyof typeof accentClasses].bg} text-white font-bold text-sm shadow-md`}>
 
-                المرحلة {selectedStage.id}
+                {t('stageLabel')} {selectedStage.id}
               </div>
-              <img
-              src={selectedStage.imageUrl}
-              alt={selectedStage.title}
-              className="w-full h-64 object-cover rounded-lg shadow-sm" />
+              <Image
+                src={selectedStage.imageUrl}
+                alt={selectedStage.title}
+                width={500}
+                height={500}
+                className="w-full h-90 object-cover rounded-lg shadow-sm" />
 
             </div>
             <p className="text-lg text-gray-700 leading-relaxed font-medium">
@@ -383,11 +399,11 @@ export function Timeline() {
               <h4
               className={`font-bold mb-4 text-lg ${accentClasses[accentColors[(selectedStage.id - 1) % accentColors.length] as keyof typeof accentClasses].text}`}>
 
-                الأنشطة الرئيسية في هذه المرحلة:
+                {t('activitiesTitle')}
               </h4>
               <ul className="space-y-3">
                 {selectedStage.bullets.map((bullet, i) =>
-              <li key={i} className="flex items-start gap-3 text-gray-700">
+              <li key={i} className={`flex items-start gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
                     <CheckCircle2
                   className={`w-5 h-5 shrink-0 mt-0.5 ${accentClasses[accentColors[(selectedStage.id - 1) % accentColors.length] as keyof typeof accentClasses].text}`} />
 

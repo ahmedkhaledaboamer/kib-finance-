@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDownIcon, BoxIcon } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 interface PhaseCardProps {
   phase: number
   title: string
@@ -13,6 +14,7 @@ interface PhaseCardProps {
   Icon: typeof BoxIcon
   index: number
   large?: boolean
+  isRTL: boolean
 }
 export function PhaseCard({
   phase,
@@ -25,7 +27,9 @@ export function PhaseCard({
   Icon,
   index,
   large = false,
+  isRTL = false,
 }: PhaseCardProps) {
+  const t = useTranslations('integratedPath.phaseCard')
   const [expanded, setExpanded] = useState(false)
   return (
     <motion.div
@@ -91,7 +95,7 @@ export function PhaseCard({
 
       <div className="relative z-10 p-6">
         {/* Header row */}
-        <div className="flex items-start justify-between mb-4" dir="rtl">
+        <div className="flex items-start justify-between mb-4" dir={isRTL ? "rtl" : "ltr"}>
           <div className="flex items-start gap-4">
             {/* Phase number badge */}
             <div
@@ -108,7 +112,7 @@ export function PhaseCard({
 
             <div>
               <p
-                className="text-xs font-semibold mb-1 tracking-wider uppercase"
+                className="home-badge-text font-semibold mb-1 tracking-wider uppercase"
                 style={{
                   fontFamily: 'Cairo, sans-serif',
                   background: gradient,
@@ -120,7 +124,7 @@ export function PhaseCard({
                 {subtitle}
               </p>
               <h3
-                className="text-xl font-black leading-tight"
+                className="home-body-large font-black leading-tight"
                 style={{
                   fontFamily: 'Cairo, sans-serif',
                   color: '#1a1a2e',
@@ -151,20 +155,20 @@ export function PhaseCard({
 
         {/* Description */}
         <p
-          className="text-sm leading-relaxed mb-4"
+          className="home-body-large leading-relaxed mb-4"
           style={{
             fontFamily: 'Tajawal, sans-serif',
             color: 'rgba(0,0,0,0.6)',
           }}
-          dir="rtl"
+          dir={isRTL ? "rtl" : "ltr"}
         >
           {description}
         </p>
 
         {/* Expand toggle */}
-        <div className="flex items-center justify-between" dir="rtl">
+        <div className="flex items-center justify-between" dir={isRTL ? "rtl" : "ltr"}>
           <span
-            className="text-xs font-semibold"
+            className="home-small-label font-semibold"
             style={{
               fontFamily: 'Tajawal, sans-serif',
               background: gradient,
@@ -173,7 +177,7 @@ export function PhaseCard({
               backgroundClip: 'text',
             }}
           >
-            {expanded ? 'إخفاء التفاصيل' : 'عرض التفاصيل'}
+            {expanded ? t('hideDetails') : t('viewDetails')}
           </span>
           <motion.div
             animate={{
@@ -219,7 +223,7 @@ export function PhaseCard({
                 style={{
                   borderTop: `1px solid ${glowColor}30`,
                 }}
-                dir="rtl"
+                dir={isRTL ? "rtl" : "ltr"}
               >
                 <ul className="space-y-2">
                   {details.map((detail, i) => (
@@ -236,7 +240,7 @@ export function PhaseCard({
                       transition={{
                         delay: i * 0.05,
                       }}
-                      className="flex items-start gap-3 text-sm"
+                      className="flex items-start gap-3 home-small-label"
                       style={{
                         fontFamily: 'Tajawal, sans-serif',
                         color: 'rgba(0,0,0,0.65)',

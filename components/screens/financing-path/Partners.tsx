@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import {
   Building2,
@@ -9,62 +9,31 @@ import {
   Shield,
   TrendingUp,
   Banknote,
-  Award } from
-'lucide-react';
-const partners = [
-{
-  name: 'البنك الأهلي',
-  icon: Landmark,
-  color: 'text-teal'
-},
-{
-  name: 'مصرف الراجحي',
-  icon: Building2,
-  color: 'text-gold'
-},
-{
-  name: 'بنك الرياض',
-  icon: Banknote,
-  color: 'text-amber'
-},
-{
-  name: 'البنك السعودي الفرنسي',
-  icon: Globe2,
-  color: 'text-royal'
-},
-{
-  name: 'صندوق التنمية',
-  icon: Shield,
-  color: 'text-emerald'
-},
-{
-  name: 'بنك التصدير',
-  icon: TrendingUp,
-  color: 'text-teal'
-},
-{
-  name: 'منشآت',
-  icon: Award,
-  color: 'text-gold'
-},
-{
-  name: 'كفالة',
-  icon: Briefcase,
-  color: 'text-amber'
-}];
+  Award } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
-const allPartners = [...partners, ...partners];
+const PARTNER_ICONS = [Landmark, Building2, Banknote, Globe2, Shield, TrendingUp, Award, Briefcase];
+const PARTNER_COLORS = ['text-teal', 'text-gold', 'text-amber', 'text-royal', 'text-emerald', 'text-teal', 'text-gold', 'text-amber'];
+
 export function Partners() {
+  const t = useTranslations('financingPath.partners');
+  const names = useMemo(() => t.raw('names') as string[], [t]);
+  const partners = useMemo(() => names.map((name, i) => ({
+    name,
+    icon: PARTNER_ICONS[i],
+    color: PARTNER_COLORS[i],
+  })), [names]);
+  const allPartners = [...partners, ...partners];
   return (
     <section className="relative overflow-hidden">
       {/* Full-width photo banner */}
-      <div className="relative h-64 md:h-80 overflow-hidden">
+      <div className="relative overflow-hidden home-image-full">
         <img
           src="https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&q=80&w=2000"
-          alt="المنطقة المالية - الرياض"
+          alt={t('imageAlt')}
           className="w-full h-full object-cover" />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-black" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <motion.h2
@@ -79,9 +48,9 @@ export function Partners() {
               viewport={{
                 once: true
               }}
-              className="text-3xl md:text-4xl font-bold text-white mb-3">
+              className="home-section-heading font-bold text-white mb-3">
 
-              شركاؤنا <span className="text-gold">الاستراتيجيون</span>
+              {t('title')} <span className="text-gold">{t('titleHighlight')}</span>
             </motion.h2>
             <motion.p
               initial={{
@@ -98,10 +67,9 @@ export function Partners() {
               transition={{
                 delay: 0.15
               }}
-              className="text-white/80 text-lg max-w-xl mx-auto px-6">
+              className="home-section-subtitle text-white/80 mx-auto px-6">
 
-              نتعاون مع أبرز المؤسسات المالية لضمان أفضل الشروط والخيارات
-              لعملائنا.
+              {t('subtitle')}
             </motion.p>
           </div>
         </div>
@@ -175,7 +143,7 @@ export function Partners() {
           <div className="inline-flex items-center gap-3 bg-cream px-6 py-3 rounded-full border border-gold/20">
             <Shield className="w-5 h-5 text-emerald" />
             <span className="text-sm font-medium text-gray-600">
-              جميع شراكاتنا مرخصة ومعتمدة من البنك المركزي السعودي
+              {t('trustBadge')}
             </span>
           </div>
         </motion.div>

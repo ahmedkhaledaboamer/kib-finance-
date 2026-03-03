@@ -3,7 +3,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { GeometricPatterns } from './GeometricPatterns'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 export function HeroSection() {
+  const t = useTranslations('integratedPath.hero')
+  const stats = [
+    { value: t('stats.0.value'), label: t('stats.0.label') },
+    { value: t('stats.1.value'), label: t('stats.1.label') },
+    { value: t('stats.2.value'), label: t('stats.2.label') },
+  ] as { value: string; label: string }[]
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -49,35 +56,8 @@ export function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        {/* KEP Finance badge */}
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: -20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.6,
-          }}
-          className="inline-flex items-center gap-3 mb-8"
-        >
-          <span
-            className="px-5 py-2 rounded-full text-sm font-semibold tracking-widest uppercase"
-            style={{
-              background:
-                'linear-gradient(135deg, rgba(255,107,53,0.15), rgba(255,200,0,0.15))',
-              border: '1px solid rgba(255,165,0,0.5)',
-              color: '#c2710c',
-              fontFamily: 'Cairo, sans-serif',
-            }}
-          >
-            KEP Finance
-          </span>
-        </motion.div>
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-[3%]">
+
 
         {/* Main Arabic heading */}
         <motion.h1
@@ -93,44 +73,21 @@ export function HeroSection() {
             duration: 0.8,
             delay: 0.2,
           }}
-          className="text-6xl md:text-8xl font-black mb-6 leading-tight"
+          className="home-hero-heading font-black mb-6 leading-tight"
           style={{
             fontFamily: 'Cairo, sans-serif',
           }}
         >
-          <span className="shimmer-text">مسار رأس المال</span>
+          <span className="shimmer-text">{t('titleLine1')}</span>
           <br />
           <span
             style={{
               color: '#1a1a2e',
             }}
           >
-            المتكامل
+            {t('titleLine2')}
           </span>
         </motion.h1>
-
-        {/* Subtitle */}
-        <motion.p
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.8,
-            delay: 0.4,
-          }}
-          className="text-xl md:text-2xl mb-4 font-medium"
-          style={{
-            fontFamily: 'Tajawal, sans-serif',
-            color: 'rgba(0,0,0,0.55)',
-          }}
-        >
-          Integrated Capital Pathway
-        </motion.p>
 
         <motion.p
           initial={{
@@ -145,14 +102,13 @@ export function HeroSection() {
             duration: 0.8,
             delay: 0.5,
           }}
-          className="text-lg md:text-xl mb-12 mx-auto leading-relaxed"
+          className="home-body-large mb-12 mx-auto leading-relaxed"
           style={{
             fontFamily: 'Tajawal, sans-serif',
             color: 'rgba(0,0,0,0.5)',
           }}
         >
-          رحلة متكاملة من ٩ مراحل لتحقيق أهدافك الاستثمارية وبناء مستقبل مالي
-          متين
+          {t('intro')}
         </motion.p>
 
         {/* Stats row */}
@@ -171,23 +127,10 @@ export function HeroSection() {
           }}
           className="flex flex-wrap justify-center gap-8 mb-12"
         >
-          {[
-            {
-              value: '٩',
-              label: 'مراحل متكاملة',
-            },
-            {
-              value: '٥',
-              label: 'مبادئ أساسية',
-            },
-            {
-              value: '١٠٠٪',
-              label: 'شفافية وأمان',
-            },
-          ].map((stat) => (
+          {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div
-                className="text-4xl font-black mb-1"
+                className="home-stat-number font-black mb-1"
                 style={{
                   fontFamily: 'Cairo, sans-serif',
                   background: 'linear-gradient(135deg, #ff6b35, #f59e0b)',
@@ -199,7 +142,7 @@ export function HeroSection() {
                 {stat.value}
               </div>
               <div
-                className="text-sm"
+                className="home-stat-label"
                 style={{
                   fontFamily: 'Tajawal, sans-serif',
                   color: 'rgba(0,0,0,0.45)',
@@ -228,7 +171,7 @@ export function HeroSection() {
           className="flex flex-wrap justify-center gap-4"
         >
           <button
-            className="cursor-pointer px-8 py-4 rounded-2xl font-bold text-lg text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            className="cursor-pointer px-8 py-4 rounded-2xl font-bold home-body-large text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             style={{
               fontFamily: 'Cairo, sans-serif',
               background: 'linear-gradient(135deg, #ff6b35, #f7931e)',
@@ -241,11 +184,11 @@ export function HeroSection() {
               });
             }}
           >
-            ابدأ رحلتك الآن
+            {t('ctaStart')}
           </button>
           <Link
             href="/implementation-mechanism"
-            className="cursor-pointer px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105"
+            className="cursor-pointer px-8 py-4 rounded-2xl font-bold home-body-large transition-all duration-300 hover:scale-105"
             style={{
               fontFamily: 'Cairo, sans-serif',
               background: 'rgba(0,0,0,0.05)',
@@ -253,7 +196,7 @@ export function HeroSection() {
               color: 'rgba(0,0,0,0.75)',
             }}
           >
-            تعرف على المزيد
+            {t('ctaLearnMore')}
           </Link>
         </motion.div>
       </div>
