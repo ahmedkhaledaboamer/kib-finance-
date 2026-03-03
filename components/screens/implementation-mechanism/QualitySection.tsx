@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
@@ -6,60 +7,39 @@ import {
   TrendingUpIcon,
   UsersIcon,
   ClockIcon,
-  StarIcon } from
-'lucide-react';
+  StarIcon
+} from 'lucide-react';
 import Image from 'next/image';
-const standards = [
-{
-  icon: ShieldCheckIcon,
-  title: 'الحوكمة والامتثال',
-  description:
-  'كل ملف يمر عبر مراجعة امتثال صارمة تضمن التوافق مع المتطلبات التنظيمية',
-  color: '#2563EB'
-},
-{
-  icon: DatabaseIcon,
-  title: 'القرارات المبنية على البيانات',
-  description:
-  'لا يُتخذ أي قرار تمويلي دون تحليل بيانات شامل ودقيق من وحدة التحليل',
-  color: '#4F46E5'
-},
-{
-  icon: TrendingUpIcon,
-  title: 'إدارة المخاطر الاستباقية',
-  description:
-  'تُقيَّم المخاطر قبل اتخاذ القرار وتُوضع خطط تخفيف فعّالة لكل ملف',
-  color: '#06B6D4'
-},
-{
-  icon: UsersIcon,
-  title: 'تجربة عميل استثنائية',
-  description:
-  'مدير تجربة العملاء يضمن تواصلًا احترافيًا ومتابعة مستمرة في كل مرحلة',
-  color: '#059669'
-},
-{
-  icon: ClockIcon,
-  title: 'الكفاءة التشغيلية',
-  description: 'مسار تنفيذي محكم يضمن سرعة الإنجاز دون التنازل عن الجودة',
-  color: '#D97706'
-},
-{
-  icon: StarIcon,
-  title: 'معايير عالمية',
-  description:
-  'كل إجراء يُنفَّذ وفق أعلى المعايير المهنية الدولية في صناعة التمويل',
-  color: '#7C3AED'
-}];
+import { useTranslations } from 'next-intl';
 
-export function QualitySection() {
+const standardMeta = [
+  { icon: ShieldCheckIcon, color: '#2563EB' },
+  { icon: DatabaseIcon, color: '#4F46E5' },
+  { icon: TrendingUpIcon, color: '#06B6D4' },
+  { icon: UsersIcon, color: '#059669' },
+  { icon: ClockIcon, color: '#D97706' },
+  { icon: StarIcon, color: '#7C3AED' }
+];
+
+interface QualityStandard {
+  title: string;
+  description: string;
+}
+
+export function QualitySection({ isRTL }: { isRTL: boolean }) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
     margin: '-60px'
   });
+  const t = useTranslations('implementationMechanism.quality');
+  const standardsFromMessages = t.raw('standards') as QualityStandard[];
+  const standards = standardsFromMessages.map((s, index) => ({
+    ...s,
+    ...standardMeta[index]
+  }));
   return (
-    <section className="py-20 bg-white px-[5%]" dir="rtl" ref={ref}>
+    <section className="py-20 bg-white px-[5%] overflow-x-hidden" dir={isRTL ? 'rtl' : 'ltr'} ref={ref}>
       <div className=" mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -83,7 +63,7 @@ export function QualitySection() {
 
             <Image
               src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-              alt="معايير الجودة"
+              alt="Quality standards"
               className="w-full h-full object-cover"
               width={500}
               height={500}
@@ -114,10 +94,10 @@ export function QualitySection() {
                 </div>
                 <div>
                   <p className="font-black text-gray-900 text-sm">
-                    ضمان الجودة
+                    {t('overlay.badge')}
                   </p>
                   <p className="text-gray-500 text-xs font-medium">
-                    معايير لا تقبل التنازل
+                    {t('overlay.subtitle')}
                   </p>
                 </div>
               </div>
@@ -129,7 +109,9 @@ export function QualitySection() {
                   }}>
 
                   <p className="font-black text-blue-600 text-lg">10</p>
-                  <p className="text-gray-500 text-xs">مراحل</p>
+                  <p className="text-gray-500 text-xs">
+                    {t('overlay.stagesLabel')}
+                  </p>
                 </div>
                 <div
                   className="text-center p-2 rounded-xl"
@@ -138,7 +120,9 @@ export function QualitySection() {
                   }}>
 
                   <p className="font-black text-green-600 text-lg">7</p>
-                  <p className="text-gray-500 text-xs">وحدات</p>
+                  <p className="text-gray-500 text-xs">
+                    {t('overlay.unitsLabel')}
+                  </p>
                 </div>
                 <div
                   className="text-center p-2 rounded-xl"
@@ -147,7 +131,9 @@ export function QualitySection() {
                   }}>
 
                   <p className="font-black text-amber-600 text-lg">100%</p>
-                  <p className="text-gray-500 text-xs">جودة</p>
+                  <p className="text-gray-500 text-xs">
+                    {t('overlay.qualityLabel')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -155,7 +141,11 @@ export function QualitySection() {
 
           {/* Standards */}
           <motion.div
-            className="order-1 lg:order-2"
+            className={
+              (isRTL
+                ? 'text-center lg:text-right'
+                : 'text-center lg:text-left') + ' order-1 lg:order-2'
+            }
             initial={{
               opacity: 0,
               x: 40
@@ -179,23 +169,21 @@ export function QualitySection() {
                 color: '#2563EB'
               }}>
 
-              معايير الجودة والتميز
+              {t('badge')}
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4 leading-tight">
-              معايير لا تقبل
+              {t('title')}
               <br />
               <span
                 style={{
                   color: '#2563EB'
                 }}>
 
-                التنازل
+                {t('titleHighlight')}
               </span>
             </h2>
             <p className="text-gray-500 text-base font-medium mb-8 leading-relaxed">
-              هذا النظام التنفيذي ليس مجرد تنظيم إداري، بل بنية تشغيل عالمية
-              تضمن أن كل ملف يُدار بمعايير احترافية، وكل قرار يُتخذ بناءً على
-              تحليل.
+              {t('paragraph')}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {standards.map((standard, i) =>
@@ -206,14 +194,12 @@ export function QualitySection() {
                   background: standard.color + '06'
                 }}
                 initial={{
-                  opacity: 0,
-                  y: 20
+                  opacity: 0
                 }}
                 animate={
                 isInView ?
                 {
-                  opacity: 1,
-                  y: 0
+                  opacity: 1
                 } :
                 {}
                 }
@@ -222,7 +208,7 @@ export function QualitySection() {
                 }}>
 
                   <div
-                  className="w-9 h-9 rounded-xl flex items-center justify-center mb-3"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center mb-3 mx-auto sm:mx-0"
                   style={{
                     background: standard.color + '20'
                   }}>

@@ -776,16 +776,383 @@
         "description": "Nous travaillons selon un cadre de gouvernance institutionnelle strict qui garantit que chaque décision est prise avec un haut niveau de professionnalisme et une transparence totale."
       }
     },
-    "contactCta": {
-      "badge": "Consultation de financement",
-      "title": "Commencez votre",
-      "titleHighlight": "parcours de financement aujourd'hui",
-      "subtitle": "Notre équipe spécialisée est prête à étudier vos besoins, structurer la meilleure solution de financement et vous accompagner jusqu'à la clôture du dossier.",
-      "phoneLabel": "Appelez-nous",
-      "emailLabel": "Écrivez-nous",
-      "cta": "Obtenir une consultation",
-      "responseTitle": "Réponse sous",
-      "responseValue": "24 heures"
+  "contactCta": {
+  "badge": "Consultation de financement",
+  "title": "Commencez votre",
+  "titleHighlight": "parcours de financement aujourd'hui",
+  "subtitle": "Notre équipe spécialisée est prête à étudier vos besoins, structurer la meilleure solution de financement et vous accompagner jusqu'à la clôture du dossier.",
+  "phoneLabel": "Appelez-nous",
+  "emailLabel": "Écrivez-nous",
+  "cta": "Obtenir une consultation",
+  "responseTitle": "Réponse sous",
+  "responseValue": "24 heures"
+  }
+  },
+  "implementationMechanism": {
+    "pageTitle": "KIB Finance | Mécanisme d'exécution",
+    "pageDescription": "Mécanisme d'exécution institutionnel : un système opératoire mondial géré avec une structure de direction unifiée, des pouvoirs clairement définis et un parcours d'exécution fondé sur les données pour protéger l'entité et maximiser la valeur du financement.",
+    "hero": {
+      "badge": "Système opératoire mondial",
+      "titleLine1": "Mécanisme d'exécution",
+      "titleLine2": "institutionnel",
+      "subtitle": "KIB Finance L.L.C.",
+      "description": "Un système opératoire mondial géré avec une structure de direction unifiée, des pouvoirs précis et un parcours d'exécution fondé sur les données.",
+      "pills": [
+        "Leadership & gouvernance",
+        "Analyse & risques",
+        "Exécution & suivi"
+      ],
+      "cta": "Voir les phases",
+      "stats": [
+        { "value": "10", "label": "Phases d'exécution" },
+        { "value": "7", "label": "Unités spécialisées" },
+        { "value": "10", "label": "Directeurs exécutifs" },
+        { "value": "100%", "label": "Normes internationales" }
+      ]
+    },
+    "intro": {
+      "badge": "Introduction",
+      "title": "Un modèle opératoire de niveau mondial",
+      "titleHighlight": "intégré et rigoureux",
+      "paragraph1": "La réussite de KIB Finance L.L.C. repose sur un système opératoire institutionnel géré selon un modèle mondial qui combine leadership, gouvernance, analyse, gestion des risques, exécution et suivi.",
+      "paragraph2": "Ce modèle ne se limite pas à une « liste d'étapes », mais à une chaîne de centres de décision qui travaillent en parfaite harmonie. Le dossier circule à travers des niveaux de direction clairement définis, où chaque niveau possède des pouvoirs précis, des responsabilités claires et des normes de performance qui ne tolèrent aucun compromis.",
+      "chips": [
+        "Chaque décision fondée sur des données",
+        "Chaque action selon des normes internationales",
+        "Chaque résultat au niveau du conseil d'administration"
+      ],
+      "pillars": [
+        "Leadership",
+        "Gouvernance",
+        "Analyse",
+        "Risques",
+        "Exécution",
+        "Suivi"
+      ],
+      "imageAlt": "Équipe opérationnelle"
+    },
+    "management": {
+      "badge": "Structure de gestion mondiale",
+      "title": "Premièrement : la structure de gestion mondiale",
+      "subtitle": "Un système de direction intégré qui garantit que chaque décision est prise avec une responsabilité claire et des pouvoirs définis.",
+      "overlayStatsNumber": "9",
+      "overlayStatsLabel": "Directeurs exécutifs",
+      "overlayStatsSublabel": "Qui dirigent le système opératoire",
+      "imageAlt": "Structure de gestion",
+      "levelLabel": "Niveau",
+      "responsibilitiesLabel": "Responsabilités",
+      "managers": [
+        {
+          "title": "Conseil d'administration",
+          "role": "Définir l'orientation stratégique de l'entité",
+          "responsibilities": [
+            "Approuver les politiques de haut niveau",
+            "Surveiller la performance institutionnelle",
+            "Superviser la gouvernance",
+            "Approuver les plans financiers",
+            "Examiner les rapports de risques"
+          ],
+          "level": 1
+        },
+        {
+          "title": "Directeur général (CEO)",
+          "role": "Traduire la vision du conseil en réalité opérationnelle",
+          "responsibilities": [
+            "Diriger l'entité",
+            "Prendre les décisions de haut niveau",
+            "Approuver les grands dossiers",
+            "Superviser les directions exécutives",
+            "Représenter l'entreprise auprès des financeurs"
+          ],
+          "level": 2
+        },
+        {
+          "title": "Directeur des opérations (COO)",
+          "role": "Piloter l'ensemble du système opératoire institutionnel",
+          "responsibilities": [
+            "Gérer le parcours d'exécution",
+            "Garantir la fluidité de circulation des dossiers",
+            "Contrôler la qualité d'exécution",
+            "Traiter les obstacles opérationnels",
+            "Améliorer la performance institutionnelle"
+          ],
+          "level": 2
+        },
+        {
+          "title": "Directeur général exécutif",
+          "role": "Gérer les directions opérationnelles et techniques",
+          "responsibilities": [
+            "Suivre la productivité",
+            "Surveiller la performance",
+            "Remonter les rapports à la direction",
+            "Garantir le respect des politiques"
+          ],
+          "level": 3
+        },
+        {
+          "title": "Directeur conformité & gouvernance",
+          "role": "Protéger l'entité des risques réglementaires",
+          "responsibilities": [
+            "Réviser les dossiers",
+            "Contrôler la conformité",
+            "Préparer les rapports de gouvernance",
+            "Suivre les évolutions réglementaires"
+          ],
+          "level": 3
+        },
+        {
+          "title": "Directeur des risques",
+          "role": "Évaluer les risques avant toute décision",
+          "responsibilities": [
+            "Analyser les risques",
+            "Préparer les rapports de risques",
+            "Élaborer des plans d'atténuation",
+            "Revoir les dossiers sensibles"
+          ],
+          "level": 3
+        },
+        {
+          "title": "Directeur financier",
+          "role": "Piloter l'analyse financière",
+          "responsibilities": [
+            "Analyser les données financières",
+            "Préparer les prévisions",
+            "Examiner les flux de trésorerie",
+            "Soutenir les décisions de financement"
+          ],
+          "level": 3
+        },
+        {
+          "title": "Directeur du développement des affaires",
+          "role": "Ouvrir de nouveaux canaux de financement",
+          "responsibilities": [
+            "Développer les relations",
+            "Construire des partenariats",
+            "Étudier les opportunités",
+            "Soutenir l'expansion de l'entreprise"
+          ],
+          "level": 3
+        },
+        {
+          "title": "Directeur des opérations",
+          "role": "Mettre en œuvre le parcours opératoire",
+          "responsibilities": [
+            "Gérer les équipes d'exécution",
+            "Suivre l'avancement des dossiers",
+            "Garantir la qualité des procédures",
+            "Améliorer la performance"
+          ],
+          "level": 3
+        }
+      ]
+    },
+    "process": {
+      "badge": "Mécanisme d'exécution institutionnel",
+      "title": "Troisièmement : comment le dossier circule‑t‑il",
+      "titleHighlight": "à l'intérieur de l'entité ?",
+      "subtitle": "10 phases d'exécution intégrées — cliquez sur n'importe quelle phase pour afficher les détails complets.",
+      "timelineLabel": "Progression du parcours exécutif",
+      "timelineStagePrefix": "Phase",
+      "timelineStageSuffix": "sur 10",
+      "buttonViewDetails": "Voir les détails",
+      "buttonHideDetails": "Masquer les détails",
+      "steps": [
+        {
+          "title": "Centre de réception exécutive",
+          "subtitle": "Point de départ",
+          "manager": "Directeur des opérations",
+          "actions": ["Enregistrement du dossier", "Définition du type de service", "Désignation du responsable du dossier"]
+        },
+        {
+          "title": "Centre de conformité initiale",
+          "subtitle": "Vérification",
+          "manager": "Directeur conformité",
+          "actions": ["Vérification de l'identité", "Contrôle des documents", "Validation de la conformité réglementaire"]
+        },
+        {
+          "title": "Centre d'analyse financière et crédit",
+          "subtitle": "Analyse",
+          "manager": "Directeur financier + directeur crédit",
+          "actions": ["Analyse des flux de trésorerie", "Évaluation des engagements", "Mesure de la capacité de remboursement"]
+        },
+        {
+          "title": "Salle des risques",
+          "subtitle": "Évaluation des risques",
+          "manager": "Directeur des risques",
+          "actions": ["Détermination du niveau de risque", "Préparation du rapport de risques", "Présentation des recommandations"]
+        },
+        {
+          "title": "Unité de préparation des dossiers",
+          "subtitle": "Préparation du dossier exécutif",
+          "manager": "Directeur des opérations",
+          "actions": ["Rédaction du dossier", "Traitement des points faibles", "Préparation de la version finale"]
+        },
+        {
+          "title": "Centre d'appariement de financement",
+          "subtitle": "Appariement",
+          "manager": "Directeur du développement des affaires",
+          "actions": ["Choix de l'institution adaptée", "Ouverture du canal de financement", "Validation du partenaire retenu"]
+        },
+        {
+          "title": "Canal de soumission formelle",
+          "subtitle": "Soumission",
+          "manager": "Directeur des opérations",
+          "actions": ["Dépôt du dossier", "Suivi de la demande", "Réponse aux demandes d'information"]
+        },
+        {
+          "title": "Salle de négociation exécutive",
+          "subtitle": "Négociation",
+          "manager": "Directeur de la négociation",
+          "actions": ["Amélioration des conditions", "Réduction des risques", "Augmentation de la valeur pour le client"]
+        },
+        {
+          "title": "Comité de clôture financière",
+          "subtitle": "Clôture",
+          "manager": "COO + directeur de la clôture",
+          "actions": ["Révision des contrats", "Validation des clauses", "Signature de la clôture"]
+        },
+        {
+          "title": "Centre de suivi post‑financement",
+          "subtitle": "Après financement",
+          "manager": "Directeur de l'expérience client",
+          "actions": ["Suivi des engagements", "Surveillance des flux", "Émission de recommandations"]
+        }
+      ],
+      "modal": {
+        "executiveManagerLabel": "Responsable exécutif",
+        "actionsTitle": "Actions d'exécution",
+        "progressLabel": "Progression du parcours exécutif",
+        "pdfNote": "Téléchargement du PDF du parcours exécutif — bientôt disponible",
+        "closeAriaLabel": "Fermer"
+      }
+    },
+    "executionUnits": {
+      "badge": "Deuxièmement : unités d'exécution",
+      "title": "Unités d'exécution spécialisées",
+      "subtitle": "7 unités d'exécution spécialisées qui travaillent en synergie pour garantir les plus hauts standards de qualité à chaque étape.",
+      "units": [
+        {
+          "title": "Unité d'analyse des données",
+          "description": "Analyse des chiffres et des rapports financiers",
+          "detail": "Analyse les données financières quantitatives et qualitatives pour soutenir la décision de financement avec une grande précision."
+        },
+        {
+          "title": "Unité de préparation des dossiers",
+          "description": "Rédaction professionnelle des dossiers de financement",
+          "detail": "Prépare et rédige les dossiers de financement conformément aux plus hauts standards professionnels internationaux."
+        },
+        {
+          "title": "Unité d'évaluation du crédit",
+          "description": "Évaluation de la capacité de remboursement",
+          "detail": "Réalise une évaluation complète de la solvabilité et de la capacité du client à honorer ses engagements."
+        },
+        {
+          "title": "Unité d'appariement de financement",
+          "description": "Choix de l'institution adéquate",
+          "detail": "Fait correspondre les besoins du client avec les institutions de financement les plus adaptées."
+        },
+        {
+          "title": "Unité de négociation",
+          "description": "Amélioration des conditions",
+          "detail": "Négocie avec un haut niveau de professionnalisme pour obtenir les meilleures conditions et tarifs au bénéfice du client."
+        },
+        {
+          "title": "Unité de clôture financière",
+          "description": "Validation des contrats",
+          "detail": "Supervise la phase de clôture et garantit la solidité des contrats et des clauses contractuelles."
+        },
+        {
+          "title": "Unité post‑financement",
+          "description": "Suivi des engagements",
+          "detail": "Suit les engagements de financement, surveille les flux et émet des recommandations régulières."
+        }
+      ],
+      "summary": {
+        "titleNumber": "7",
+        "titleLabel": "Unités spécialisées",
+        "text": "Travaillent en parfaite intégration pour garantir l'exécution de chaque dossier selon les plus hauts standards de qualité et de professionnalisme.",
+        "qualityStatLabel": "Qualité",
+        "followStatLabel": "Suivi"
+      }
+    },
+    "stats": {
+      "title": "Le système en chiffres",
+      "subtitle": "Des chiffres qui reflètent la force du système opératoire de KIB Finance.",
+      "items": [
+        {
+          "label": "Phases d'exécution",
+          "sublabel": "Un parcours intégré de bout en bout"
+        },
+        {
+          "label": "Unités spécialisées",
+          "sublabel": "Qui travaillent en synergie et en complémentarité"
+        },
+        {
+          "label": "Directeurs exécutifs",
+          "sublabel": "Expérience internationale et haut niveau de compétence"
+        },
+        {
+          "label": "Normes internationales",
+          "sublabel": "Aucun compromis sur la qualité"
+        }
+      ],
+      "quote": "L'entité qui dispose d'une structure de gestion claire, de pouvoirs précis et d'un parcours d'exécution rigoureux est celle qui peut offrir un financement sûr, durable et à forte valeur stratégique."
+    },
+    "quality": {
+      "badge": "Normes de qualité et d'excellence",
+      "title": "Des normes qui ne tolèrent",
+      "titleHighlight": "aucun compromis",
+      "paragraph": "Ce système d'exécution n'est pas qu'une organisation administrative, mais une architecture opératoire de niveau mondial qui garantit que chaque dossier est géré avec professionnalisme et que chaque décision repose sur une analyse solide.",
+      "overlay": {
+        "badge": "Garantie de qualité",
+        "subtitle": "Des normes qui ne tolèrent aucun compromis",
+        "stagesLabel": "Phases",
+        "unitsLabel": "Unités",
+        "qualityLabel": "Qualité"
+      },
+      "standards": [
+        {
+          "title": "Gouvernance & conformité",
+          "description": "Chaque dossier passe par un contrôle de conformité strict pour garantir l'alignement avec les exigences réglementaires."
+        },
+        {
+          "title": "Décision fondée sur les données",
+          "description": "Aucune décision de financement n'est prise sans une analyse complète et précise par l'unité d'analyse."
+        },
+        {
+          "title": "Gestion proactive des risques",
+          "description": "Les risques sont évalués avant toute décision et des plans d'atténuation efficaces sont conçus pour chaque dossier."
+        },
+        {
+          "title": "Expérience client exceptionnelle",
+          "description": "Le directeur de l'expérience client garantit une communication professionnelle et un suivi continu à chaque étape."
+        },
+        {
+          "title": "Efficacité opérationnelle",
+          "description": "Un parcours d'exécution rigoureux qui assure des délais rapides sans sacrifier la qualité."
+        },
+        {
+          "title": "Normes internationales",
+          "description": "Chaque procédure est exécutée selon les plus hauts standards professionnels internationaux du secteur du financement."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Commencez votre parcours de financement",
+      "title": "Prêt pour un financement institutionnel",
+      "titleHighlight": "aux normes internationales ?",
+      "paragraph": "Notre équipe exécutive spécialisée travaille 24h/24 pour concevoir la solution de financement optimale adaptée à vos besoins.",
+      "phoneLabel": "Téléphone direct",
+      "emailLabel": "E‑mail",
+      "locationLabel": "Siège",
+      "locationValue": "Émirats arabes unis",
+      "ctaViewProcess": "Voir les phases",
+      "featureResponseTime": "Délai de réponse",
+      "featureConfidentiality": "Confidentialité totale",
+      "featureExperience": "Années d'expérience",
+      "featureFiles": "Dossiers réussis",
+      "imageAltMain": "Équipe de négociation",
+      "imageAltStats": "Statistiques exécutives"
     }
   },
   "financingPath": {

@@ -1,6 +1,8 @@
+'use client';
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { XIcon, UserIcon, CheckCircleIcon, ImageIcon } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 interface StepData {
   number: number;
   title: string;
@@ -13,8 +15,12 @@ interface StepData {
 interface StepModalProps {
   step: StepData | null;
   onClose: () => void;
+  isRTL: boolean;
 }
-export function StepModal({ step, onClose }: StepModalProps) {
+export function StepModal({ step, onClose, isRTL }: StepModalProps) {
+  const tProcess = useTranslations('implementationMechanism.process');
+  const tModal = useTranslations('implementationMechanism.process.modal');
+
   if (!step) return null;
   return (
     <AnimatePresence>
@@ -57,7 +63,7 @@ export function StepModal({ step, onClose }: StepModalProps) {
             stiffness: 300
           }}
           onClick={(e) => e.stopPropagation()}
-          dir="rtl">
+          dir={isRTL ? 'rtl' : 'ltr'}>
 
           {/* Header image */}
           <div className="relative h-52 rounded-t-3xl overflow-hidden">
@@ -84,7 +90,8 @@ export function StepModal({ step, onClose }: StepModalProps) {
                 </div>
                 <div>
                   <p className="text-white/80 text-sm font-medium">
-                    المرحلة {step.number} من 10
+                    {tProcess('timelineStagePrefix')} {step.number}{' '}
+                    {tProcess('timelineStageSuffix')}
                   </p>
                   <h2 className="text-white text-xl font-bold leading-tight">
                     {step.title}
@@ -95,8 +102,8 @@ export function StepModal({ step, onClose }: StepModalProps) {
             {/* Close button */}
             <button
               onClick={onClose}
-              className="absolute top-4 left-4 w-9 h-9 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-colors"
-              aria-label="إغلاق">
+              className="cursor-pointer absolute top-4 left-4 w-9 h-9 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-colors"
+              aria-label={tModal('closeAriaLabel')}>
 
               <XIcon size={18} />
             </button>
@@ -138,7 +145,7 @@ export function StepModal({ step, onClose }: StepModalProps) {
               </div>
               <div>
                 <p className="text-xs text-gray-500 font-medium">
-                  المسؤول التنفيذي
+                  {tModal('executiveManagerLabel')}
                 </p>
                 <p className="text-gray-800 font-bold">{step.manager}</p>
               </div>
@@ -153,7 +160,7 @@ export function StepModal({ step, onClose }: StepModalProps) {
                     color: step.color
                   }} />
 
-                الإجراءات التنفيذية
+                {tModal('actionsTitle')}
               </h3>
               <div className="space-y-2">
                 {step.actions.map((action, i) =>
@@ -173,7 +180,7 @@ export function StepModal({ step, onClose }: StepModalProps) {
                   }}>
 
                     <div
-                    className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+                    className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
                     style={{
                       backgroundColor: step.color
                     }}>
@@ -189,7 +196,7 @@ export function StepModal({ step, onClose }: StepModalProps) {
             {/* Progress indicator */}
             <div className="pt-2">
               <div className="flex items-center justify-between text-sm text-gray-500 mb-2">
-                <span>تقدم المسار التنفيذي</span>
+                <span>{tModal('progressLabel')}</span>
                 <span>{step.number}/10</span>
               </div>
               <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
@@ -214,9 +221,9 @@ export function StepModal({ step, onClose }: StepModalProps) {
 
             {/* PDF note */}
             <div className="flex items-center gap-2 p-3 bg-amber-50 rounded-xl border border-amber-100">
-              <ImageIcon size={16} className="text-amber-500 flex-shrink-0" />
+              <ImageIcon size={16} className="text-amber-500 shrink-0" />
               <p className="text-amber-700 text-sm font-medium">
-                تحميل ملف PDF للمسار التنفيذي — قريبًا
+                {tModal('pdfNote')}
               </p>
             </div>
           </div>
