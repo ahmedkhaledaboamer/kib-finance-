@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
@@ -7,76 +8,38 @@ import {
   TargetIcon,
   MessageCircleIcon,
   CheckSquareIcon,
-  ClockIcon } from
-'lucide-react';
-const units = [
-{
-  icon: BarChart2Icon,
-  title: 'وحدة تحليل البيانات',
-  description: 'تحليل الأرقام والتقارير المالية',
-  detail:
-  'تعمل على تحليل البيانات المالية الكمية والنوعية لدعم القرار التمويلي بدقة عالية',
-  color: '#2563EB',
-  bg: '#EFF6FF'
-},
-{
-  icon: FileTextIcon,
-  title: 'وحدة إعداد الملفات',
-  description: 'صياغة الملفات التمويلية باحترافية',
-  detail:
-  'تتولى إعداد وصياغة الملفات التمويلية وفق أعلى المعايير المهنية العالمية',
-  color: '#4F46E5',
-  bg: '#EEF2FF'
-},
-{
-  icon: CreditCardIcon,
-  title: 'وحدة التقييم الائتماني',
-  description: 'تقييم قدرة العميل على السداد',
-  detail:
-  'تُجري تقييمًا شاملًا للملاءة الائتمانية وقدرة العميل على الوفاء بالتزاماته',
-  color: '#0891B2',
-  bg: '#ECFEFF'
-},
-{
-  icon: TargetIcon,
-  title: 'وحدة المطابقة التمويلية',
-  description: 'اختيار الجهة المناسبة',
-  detail: 'تعمل على مطابقة احتياجات العميل مع أنسب الجهات التمويلية المتاحة',
-  color: '#059669',
-  bg: '#ECFDF5'
-},
-{
-  icon: MessageCircleIcon,
-  title: 'وحدة التفاوض',
-  description: 'تحسين الشروط',
-  detail:
-  'تتفاوض باحترافية عالية للحصول على أفضل الشروط والمعدلات لصالح العميل',
-  color: '#D97706',
-  bg: '#FFFBEB'
-},
-{
-  icon: CheckSquareIcon,
-  title: 'وحدة الإغلاق المالي',
-  description: 'اعتماد العقود',
-  detail: 'تُشرف على مرحلة الإغلاق وتضمن سلامة العقود والبنود التعاقدية',
-  color: '#DC2626',
-  bg: '#FEF2F2'
-},
-{
-  icon: ClockIcon,
-  title: 'وحدة ما بعد التمويل',
-  description: 'متابعة الالتزامات',
-  detail: 'تتابع الالتزامات التمويلية وتراقب التدفقات وتقدم التوصيات الدورية',
-  color: '#7C3AED',
-  bg: '#F5F3FF'
-}];
+  ClockIcon
+} from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
-export function ExecutionUnits() {
+const unitMeta = [
+  { icon: BarChart2Icon, color: '#2563EB', bg: '#EFF6FF' },
+  { icon: FileTextIcon, color: '#4F46E5', bg: '#EEF2FF' },
+  { icon: CreditCardIcon, color: '#0891B2', bg: '#ECFEFF' },
+  { icon: TargetIcon, color: '#059669', bg: '#ECFDF5' },
+  { icon: MessageCircleIcon, color: '#D97706', bg: '#FFFBEB' },
+  { icon: CheckSquareIcon, color: '#DC2626', bg: '#FEF2F2' },
+  { icon: ClockIcon, color: '#7C3AED', bg: '#F5F3FF' }
+];
+
+interface UnitMessage {
+  title: string;
+  description: string;
+  detail: string;
+}
+
+export function ExecutionUnits({ isRTL }: { isRTL: boolean }) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
     margin: '-60px'
   });
+  const t = useTranslations('implementationMechanism.executionUnits');
+  const unitsFromMessages = t.raw('units') as UnitMessage[];
+  const units = unitsFromMessages.map((u, index) => ({
+    ...u,
+    ...unitMeta[index]
+  }));
   return (
     <section
       id="units"
@@ -85,7 +48,7 @@ export function ExecutionUnits() {
         background:
         'linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 50%, #EFF6FF 100%)'
       }}
-      dir="rtl"
+      dir={isRTL ? 'rtl' : 'ltr'}
       ref={ref}>
 
       <div className="mx-auto px-4 sm:px-6">
@@ -115,14 +78,13 @@ export function ExecutionUnits() {
               color: '#4F46E5'
             }}>
 
-            ثانيًا: وحدات التنفيذ
+            {t('badge')}
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
-            وحدات التنفيذ المتخصصة
+            {t('title')}
           </h2>
           <p className="text-gray-500 text-lg font-medium mx-auto">
-            7 وحدات تنفيذية متخصصة تعمل بتناغم لضمان أعلى معايير الجودة في كل
-            مرحلة
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -131,7 +93,12 @@ export function ExecutionUnits() {
           {units.map((unit, i) =>
           <motion.div
             key={unit.title}
-            className="rounded-2xl p-6 border border-white/60 shadow-sm hover:shadow-lg transition-shadow"
+            className={
+              (isRTL
+                ? 'text-center sm:text-right'
+                : 'text-center sm:text-left') +
+              ' rounded-2xl p-6 border border-white/60 shadow-sm hover:shadow-lg transition-shadow'
+            }
             style={{
               background: unit.bg
             }}
@@ -152,7 +119,7 @@ export function ExecutionUnits() {
             }}>
 
               <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 shadow-sm"
+              className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 shadow-sm mx-auto sm:mx-0"
               style={{
                 background: unit.color
               }}>
@@ -204,19 +171,27 @@ export function ExecutionUnits() {
               delay: 0.6
             }}>
 
-            <div className="text-5xl font-black mb-2">7</div>
-            <p className="text-xl font-bold mb-2">وحدات متخصصة</p>
+            <div className="text-5xl font-black mb-2">
+              {t('summary.titleNumber')}
+            </div>
+            <p className="text-xl font-bold mb-2">
+              {t('summary.titleLabel')}
+            </p>
             <p className="text-blue-200 text-sm font-medium leading-relaxed">
-              تعمل بتكامل تام لضمان تنفيذ كل ملف بأعلى معايير الجودة والاحترافية
+              {t('summary.text')}
             </p>
             <div className="mt-4 grid grid-cols-2 gap-2">
               <div className="bg-white/10 rounded-xl p-2 text-center">
                 <p className="text-lg font-black">100%</p>
-                <p className="text-xs text-blue-200">جودة</p>
+                <p className="text-xs text-blue-200">
+                  {t('summary.qualityStatLabel')}
+                </p>
               </div>
               <div className="bg-white/10 rounded-xl p-2 text-center">
                 <p className="text-lg font-black">24/7</p>
-                <p className="text-xs text-blue-200">متابعة</p>
+                <p className="text-xs text-blue-200">
+                  {t('summary.followStatLabel')}
+                </p>
               </div>
             </div>
           </motion.div>

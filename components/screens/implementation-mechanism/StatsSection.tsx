@@ -1,6 +1,9 @@
+'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { TrendingUpIcon, LayersIcon, UsersIcon, AwardIcon } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+
 interface StatItem {
   value: number;
   suffix: string;
@@ -9,39 +12,13 @@ interface StatItem {
   icon: React.ElementType;
   color: string;
 }
-const stats: StatItem[] = [
-{
-  value: 10,
-  suffix: '',
-  label: 'مراحل تنفيذية',
-  sublabel: 'مسار متكامل من البداية للنهاية',
-  icon: LayersIcon,
-  color: '#2563EB'
-},
-{
-  value: 7,
-  suffix: '',
-  label: 'وحدات متخصصة',
-  sublabel: 'تعمل بتناغم وتكامل',
-  icon: TrendingUpIcon,
-  color: '#4F46E5'
-},
-{
-  value: 10,
-  suffix: '',
-  label: 'مديرين تنفيذيين',
-  sublabel: 'خبرة عالمية وكفاءة عالية',
-  icon: UsersIcon,
-  color: '#06B6D4'
-},
-{
-  value: 100,
-  suffix: '%',
-  label: 'معايير عالمية',
-  sublabel: 'لا تقبل التنازل في الجودة',
-  icon: AwardIcon,
-  color: '#F59E0B'
-}];
+
+const statMeta = [
+  { icon: LayersIcon, color: '#2563EB', value: 10, suffix: '' },
+  { icon: TrendingUpIcon, color: '#4F46E5', value: 7, suffix: '' },
+  { icon: UsersIcon, color: '#06B6D4', value: 10, suffix: '' },
+  { icon: AwardIcon, color: '#F59E0B', value: 100, suffix: '%' }
+];
 
 function CountUp({
   value,
@@ -77,14 +54,29 @@ function CountUp({
     </span>);
 
 }
-export function StatsSection() {
+
+export function StatsSection({ isRTL }: { isRTL: boolean }) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
     margin: '-60px'
   });
+  const t = useTranslations('implementationMechanism.stats');
+  const itemsFromMessages = t.raw('items') as { label: string; sublabel: string }[];
+  const stats: StatItem[] = itemsFromMessages.map((item, index) => ({
+    label: item.label,
+    sublabel: item.sublabel,
+    icon: statMeta[index].icon,
+    color: statMeta[index].color,
+    value: statMeta[index].value,
+    suffix: statMeta[index].suffix
+  }));
+
   return (
-    <section className="py-20 relative overflow-hidden px-[5%]" dir="rtl" ref={ref}>
+    <section
+      className="py-20 relative overflow-hidden px-[5%]"
+      dir={isRTL ? 'rtl' : 'ltr'}
+      ref={ref}>
       {/* Amber gradient background */}
       <div
         className="absolute inset-0"
@@ -124,10 +116,10 @@ export function StatsSection() {
           }}>
 
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">
-            المنظومة بالأرقام
+            {t('title')}
           </h2>
           <p className="text-amber-100 text-lg font-medium">
-            أرقام تعكس قوة المنظومة التشغيلية لكيه إي بي للتمويل
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -207,11 +199,7 @@ export function StatsSection() {
           }}>
 
           <p className="text-white text-lg sm:text-xl font-black leading-relaxed">
-            "المؤسسة التي تمتلك هيكلًا إداريًا واضحًا، وصلاحيات دقيقة، ومسارًا
-            تنفيذيًا محكمًا،
-            <br className="hidden sm:block" />
-            هي المؤسسة القادرة على تقديم تمويل آمن، مستدام، وذو قيمة
-            استراتيجية."
+            {t('quote')}
           </p>
         </motion.div>
       </div>

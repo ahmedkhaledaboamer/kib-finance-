@@ -1,25 +1,35 @@
+'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  ChevronDownIcon,
   PlayCircleIcon,
   ShieldCheckIcon,
   TrendingUpIcon,
-  ZapIcon } from
-'lucide-react';
+  ZapIcon
+} from 'lucide-react';
 import Link from 'next/link';
-export function HeroSection() {
+import { useTranslations } from 'next-intl';
+
+interface HeroSectionProps {
+  isRTL: boolean;
+}
+
+export function HeroSection({ isRTL }: HeroSectionProps) {
+  const t = useTranslations('implementationMechanism.hero');
+  const pills = t.raw('pills') as string[];
+  const stats = t.raw('stats') as { value: string; label: string }[];
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      dir="rtl">
+      dir={isRTL ? 'rtl' : 'ltr'}>
 
       {/* Background image */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
-          alt="آلية التنفيذ"
+          alt={t('subtitle')}
           className="w-full h-full object-cover" />
 
         <div
@@ -75,7 +85,7 @@ export function HeroSection() {
       <div className="relative z-10  mx-auto px-4 sm:px-6 text-center text-white pt-20">
         {/* Badge */}
         <motion.div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 text-sm font-bold border border-white/30"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 home-badge-text font-bold border border-white/30"
           style={{
             background: 'rgba(255,255,255,0.15)'
           }}
@@ -92,13 +102,13 @@ export function HeroSection() {
           }}>
 
           <ZapIcon size={14} className="text-amber-300" />
-          <span>منظومة تشغيل عالمية</span>
+          <span>{t('badge')}</span>
           <ZapIcon size={14} className="text-amber-300" />
         </motion.div>
 
         {/* Main title */}
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-6"
+          className="home-hero-heading font-black leading-tight mb-6"
           initial={{
             opacity: 0,
             y: 40
@@ -112,14 +122,14 @@ export function HeroSection() {
             delay: 0.15
           }}>
 
-          آلية التنفيذ
+          {t('titleLine1')}
           <br />
-          <span className="text-cyan-300">المؤسسية</span>
+          <span className="text-cyan-300">{t('titleLine2')}</span>
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl text-blue-100 font-medium mx-auto mb-4 leading-relaxed"
+          className="home-section-subtitle text-blue-100 font-medium mx-auto mb-4 leading-relaxed"
           initial={{
             opacity: 0,
             y: 30
@@ -133,11 +143,11 @@ export function HeroSection() {
             delay: 0.3
           }}>
 
-          كيه إي بي للتمويل ش.ذ.م.م
+          {t('subtitle')}
         </motion.p>
 
         <motion.p
-          className="text-base sm:text-lg text-blue-200 font-medium mx-auto mb-10 leading-relaxed"
+          className="home-body-large text-blue-200 font-medium mx-auto mb-10 leading-relaxed"
           initial={{
             opacity: 0,
             y: 30
@@ -151,8 +161,7 @@ export function HeroSection() {
             delay: 0.45
           }}>
 
-          منظومة تشغيل عالمية تُدار بهيكل قيادي موحّد… وصلاحيات دقيقة… ومسار
-          تنفيذي قائم على البيانات
+          {t('description')}
         </motion.p>
 
         {/* Feature pills */}
@@ -171,18 +180,21 @@ export function HeroSection() {
             delay: 0.55
           }}>
 
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-semibold">
-            <ShieldCheckIcon size={14} className="text-cyan-300" />
-            القيادة والحوكمة
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-semibold">
-            <TrendingUpIcon size={14} className="text-amber-300" />
-            التحليل والمخاطر
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-semibold">
-            <ZapIcon size={14} className="text-green-300" />
-            التنفيذ والمتابعة
-          </div>
+          {pills[0] &&
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-semibold">
+              <ShieldCheckIcon size={14} className="text-cyan-300" />
+              {pills[0]}
+            </div>}
+          {pills[1] &&
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-semibold">
+              <TrendingUpIcon size={14} className="text-amber-300" />
+              {pills[1]}
+            </div>}
+          {pills[2] &&
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-semibold">
+              <ZapIcon size={14} className="text-green-300" />
+              {pills[2]}
+            </div>}
         </motion.div>
 
         {/* CTA buttons */}
@@ -200,23 +212,13 @@ export function HeroSection() {
             duration: 0.8,
             delay: 0.65
           }}>
-
           <Link
-            href="/implementation-mechanism#form"
-            className="px-8 py-4 rounded-2xl text-white font-black text-lg shadow-2xl hover:shadow-3xl transition-all hover:scale-105"
-            style={{
-              background: 'linear-gradient(135deg, #F59E0B, #EF4444)'
-            }}>
-
-            ابدأ طلبك الآن
-          </Link>
-          <a
             href="#process"
             className="px-8 py-4 rounded-2xl font-black text-lg border-2 border-white/40 text-white hover:bg-white/10 transition-all flex items-center justify-center gap-2">
 
             <PlayCircleIcon size={20} />
-            استعرض المراحل
-          </a>
+            {t('cta')}
+          </Link>
         </motion.div>
 
         {/* Stats row */}
@@ -235,47 +237,31 @@ export function HeroSection() {
             delay: 0.8
           }}>
 
-          <div className="text-center p-3 rounded-2xl bg-white/10 border border-white/20">
-            <p className="text-3xl font-black text-cyan-300">10</p>
-            <p className="text-xs text-blue-200 font-medium mt-1">
-              مراحل تنفيذية
-            </p>
-          </div>
-          <div className="text-center p-3 rounded-2xl bg-white/10 border border-white/20">
-            <p className="text-3xl font-black text-amber-300">7</p>
-            <p className="text-xs text-blue-200 font-medium mt-1">
-              وحدات متخصصة
-            </p>
-          </div>
-          <div className="text-center p-3 rounded-2xl bg-white/10 border border-white/20">
-            <p className="text-3xl font-black text-green-300">10</p>
-            <p className="text-xs text-blue-200 font-medium mt-1">
-              مديرين تنفيذيين
-            </p>
-          </div>
-          <div className="text-center p-3 rounded-2xl bg-white/10 border border-white/20">
-            <p className="text-3xl font-black text-pink-300">100%</p>
-            <p className="text-xs text-blue-200 font-medium mt-1">
-              معايير عالمية
-            </p>
-          </div>
+          {stats.map((stat, index) => (
+            <div
+              key={stat.label}
+              className="text-center p-3 rounded-2xl bg-white/10 border border-white/20">
+              <p
+                className={
+                  'home-stat-number font-black ' +
+                  (index === 0
+                    ? 'text-cyan-300'
+                    : index === 1
+                      ? 'text-amber-300'
+                      : index === 2
+                        ? 'text-green-300'
+                        : 'text-pink-300')
+                }>
+                {stat.value}
+              </p>
+              <p className="home-small-label text-blue-200 font-medium mt-1">
+                {stat.label}
+              </p>
+            </div>
+          ))}
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60"
-        animate={{
-          y: [0, 8, 0]
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity
-        }}>
-
-        <span className="text-xs font-medium">اسحب للأسفل</span>
-        <ChevronDownIcon size={20} />
-      </motion.div>
     </section>);
 
 }

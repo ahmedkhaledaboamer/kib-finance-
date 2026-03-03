@@ -863,6 +863,413 @@
             "responseValue": "24 hours"
         }
     },
+    "implementationMechanism": {
+        "pageTitle": "KIB Finance | Implementation Mechanism",
+        "pageDescription": "An institutional execution mechanism: a global operating system run under a unified leadership structure, precise authorities and a data‑driven path that protects the entity and maximises financing value.",
+        "hero": {
+            "badge": "Global operating system",
+            "titleLine1": "Institutional execution",
+            "titleLine2": "mechanism",
+            "subtitle": "KIB Finance L.L.C.",
+            "description": "A global operating system run under a unified leadership structure, precise authorities and a data‑driven execution path.",
+            "pills": [
+                "Leadership & governance",
+                "Analysis & risk",
+                "Execution & follow‑up"
+            ],
+            "cta": "View the stages",
+            "stats": [
+                { "value": "10", "label": "Execution stages" },
+                { "value": "7", "label": "Specialised units" },
+                { "value": "10", "label": "Executive directors" },
+                { "value": "100%", "label": "Global standards" }
+            ]
+        },
+        "intro": {
+            "badge": "Introduction",
+            "title": "A world‑class operating model",
+            "titleHighlight": "integrated and disciplined",
+            "paragraph1": "The success of KIB Finance L.L.C. relies on an institutional operating system built on a global model that combines leadership, governance, analysis, risk, execution and follow‑up.",
+            "paragraph2": "This model is not just a list of operational steps, but a chain of decision‑making centres that work in harmony. Each file moves through clear leadership levels, where every level has defined authority, precise responsibilities and uncompromising performance standards.",
+            "chips": [
+                "Every decision built on data",
+                "Every action to global standards",
+                "Every result with board‑level confidence"
+            ],
+            "pillars": [
+                "Leadership",
+                "Governance",
+                "Analysis",
+                "Risk",
+                "Execution",
+                "Follow‑up"
+            ],
+            "imageAlt": "Executive team working"
+        },
+        "management": {
+            "badge": "Global management structure",
+            "title": "First: The global management structure",
+            "subtitle": "An integrated leadership system that guarantees every decision is taken with clear responsibility and defined authority.",
+            "overlayStatsNumber": "9",
+            "overlayStatsLabel": "Executive directors",
+            "overlayStatsSublabel": "Leading the operating system",
+            "imageAlt": "Management structure",
+            "levelLabel": "Level",
+            "responsibilitiesLabel": "Responsibilities",
+            "managers": [
+                {
+                    "title": "Board of Directors",
+                    "role": "Defining the institution’s strategic direction",
+                    "responsibilities": [
+                        "Approving high‑level policies",
+                        "Monitoring institutional performance",
+                        "Overseeing governance",
+                        "Approving financial plans",
+                        "Reviewing risk reports"
+                    ],
+                    "level": 1
+                },
+                {
+                    "title": "Chief Executive Officer (CEO)",
+                    "role": "Turning the Board’s vision into operational reality",
+                    "responsibilities": [
+                        "Leading the institution",
+                        "Taking top‑level decisions",
+                        "Approving major files",
+                        "Overseeing executive departments",
+                        "Representing the company before financiers"
+                    ],
+                    "level": 2
+                },
+                {
+                    "title": "Chief Operating Officer (COO)",
+                    "role": "Leading the entire institutional operating system",
+                    "responsibilities": [
+                        "Managing the execution path",
+                        "Ensuring smooth file movement",
+                        "Monitoring execution quality",
+                        "Resolving operational bottlenecks",
+                        "Improving institutional performance"
+                    ],
+                    "level": 2
+                },
+                {
+                    "title": "General Manager",
+                    "role": "Managing operational and technical departments",
+                    "responsibilities": [
+                        "Monitoring productivity",
+                        "Tracking performance",
+                        "Reporting to senior management",
+                        "Ensuring policy compliance"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "Compliance & Governance Director",
+                    "role": "Protecting the institution from regulatory risk",
+                    "responsibilities": [
+                        "Reviewing files",
+                        "Monitoring compliance",
+                        "Preparing governance reports",
+                        "Following regulatory changes"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "Risk Director",
+                    "role": "Assessing risk before decisions are taken",
+                    "responsibilities": [
+                        "Analysing risks",
+                        "Preparing risk reports",
+                        "Designing mitigation plans",
+                        "Reviewing sensitive files"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "Finance Director",
+                    "role": "Leading financial analysis",
+                    "responsibilities": [
+                        "Analysing financial data",
+                        "Preparing forecasts",
+                        "Reviewing cash flows",
+                        "Supporting financing decisions"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "Business Development Director",
+                    "role": "Opening new financing channels",
+                    "responsibilities": [
+                        "Building relationships",
+                        "Developing partnerships",
+                        "Studying opportunities",
+                        "Supporting company expansion"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "Operations Director",
+                    "role": "Executing the operating path",
+                    "responsibilities": [
+                        "Managing execution teams",
+                        "Tracking files",
+                        "Ensuring procedural quality",
+                        "Improving performance"
+                    ],
+                    "level": 3
+                }
+            ]
+        },
+        "process": {
+            "badge": "Institutional execution mechanism",
+            "title": "Third: How does the file move",
+            "titleHighlight": "inside the institution?",
+            "subtitle": "10 integrated execution stages – click any stage to view the full details.",
+            "timelineLabel": "Execution path progress",
+            "timelineStagePrefix": "Stage",
+            "timelineStageSuffix": "of 10",
+            "buttonViewDetails": "View details",
+            "buttonHideDetails": "Hide details",
+            "steps": [
+                {
+                    "title": "Executive reception centre",
+                    "subtitle": "Starting point",
+                    "manager": "Operations Director",
+                    "actions": [
+                        "Registering the file",
+                        "Defining service type",
+                        "Assigning a file owner"
+                    ]
+                },
+                {
+                    "title": "Initial compliance centre",
+                    "subtitle": "Verification",
+                    "manager": "Compliance Director",
+                    "actions": [
+                        "Verifying identity",
+                        "Reviewing documents",
+                        "Ensuring regulatory alignment"
+                    ]
+                },
+                {
+                    "title": "Financial & credit analysis centre",
+                    "subtitle": "Analysis",
+                    "manager": "Finance Director & Credit Director",
+                    "actions": [
+                        "Analysing cash flows",
+                        "Assessing obligations",
+                        "Measuring repayment capacity"
+                    ]
+                },
+                {
+                    "title": "Risk room",
+                    "subtitle": "Risk assessment",
+                    "manager": "Risk Director",
+                    "actions": [
+                        "Defining risk level",
+                        "Preparing risk report",
+                        "Raising recommendations"
+                    ]
+                },
+                {
+                    "title": "File preparation unit",
+                    "subtitle": "Executive file preparation",
+                    "manager": "Operations Director",
+                    "actions": [
+                        "Drafting the file",
+                        "Addressing weak points",
+                        "Preparing the final version"
+                    ]
+                },
+                {
+                    "title": "Financing‑match centre",
+                    "subtitle": "Matching",
+                    "manager": "Business Development Director",
+                    "actions": [
+                        "Choosing the right institution",
+                        "Opening the financing channel",
+                        "Confirming the chosen institution"
+                    ]
+                },
+                {
+                    "title": "Formal submission channel",
+                    "subtitle": "Submission",
+                    "manager": "Operations Director",
+                    "actions": [
+                        "Submitting the file",
+                        "Tracking the application",
+                        "Responding to enquiries"
+                    ]
+                },
+                {
+                    "title": "Executive negotiation room",
+                    "subtitle": "Negotiation",
+                    "manager": "Negotiation Director",
+                    "actions": [
+                        "Improving terms",
+                        "Reducing risks",
+                        "Maximising client value"
+                    ]
+                },
+                {
+                    "title": "Financial closing board",
+                    "subtitle": "Closing",
+                    "manager": "COO & Closing Director",
+                    "actions": [
+                        "Reviewing contracts",
+                        "Approving clauses",
+                        "Signing the closing"
+                    ]
+                },
+                {
+                    "title": "Post‑financing follow‑up centre",
+                    "subtitle": "After financing",
+                    "manager": "Client Experience Director",
+                    "actions": [
+                        "Monitoring obligations",
+                        "Tracking cash flows",
+                        "Providing recommendations"
+                    ]
+                }
+            ],
+            "modal": {
+                "executiveManagerLabel": "Executive owner",
+                "actionsTitle": "Execution actions",
+                "progressLabel": "Execution path progress",
+                "pdfNote": "Downloadable PDF of the execution path — coming soon",
+                "closeAriaLabel": "Close"
+            }
+        },
+        "executionUnits": {
+            "badge": "Second: Execution units",
+            "title": "Specialised execution units",
+            "subtitle": "7 specialised execution units working in harmony to guarantee the highest quality standards at every stage.",
+            "units": [
+                {
+                    "title": "Data analysis unit",
+                    "description": "Analysing figures and financial reports",
+                    "detail": "Analyses quantitative and qualitative financial data to support financing decisions with high precision."
+                },
+                {
+                    "title": "File preparation unit",
+                    "description": "Professionally drafting financing files",
+                    "detail": "Prepares and drafts financing files in line with the highest international professional standards."
+                },
+                {
+                    "title": "Credit assessment unit",
+                    "description": "Assessing the client’s repayment capacity",
+                    "detail": "Performs a comprehensive assessment of creditworthiness and the client’s ability to meet obligations."
+                },
+                {
+                    "title": "Financing‑match unit",
+                    "description": "Choosing the right institution",
+                    "detail": "Matches client needs with the most suitable available financing institutions."
+                },
+                {
+                    "title": "Negotiation unit",
+                    "description": "Improving terms",
+                    "detail": "Negotiates with a high level of professionalism to secure the best possible terms and pricing for the client."
+                },
+                {
+                    "title": "Financial closing unit",
+                    "description": "Approving contracts",
+                    "detail": "Oversees the closing phase and ensures the soundness of contracts and contractual clauses."
+                },
+                {
+                    "title": "Post‑financing unit",
+                    "description": "Monitoring obligations",
+                    "detail": "Monitors financing obligations, tracks flows and issues regular recommendations."
+                }
+            ],
+            "summary": {
+                "titleNumber": "7",
+                "titleLabel": "Specialised units",
+                "text": "Working in full integration to ensure every file is executed to the highest standards of quality and professionalism.",
+                "qualityStatLabel": "Quality",
+                "followStatLabel": "Follow‑up"
+            }
+        },
+        "stats": {
+            "title": "The system in numbers",
+            "subtitle": "Figures that reflect the strength of KIB Finance’s operating system.",
+            "items": [
+                {
+                    "label": "Execution stages",
+                    "sublabel": "An end‑to‑end integrated path"
+                },
+                {
+                    "label": "Specialised units",
+                    "sublabel": "Working in harmony and integration"
+                },
+                {
+                    "label": "Executive directors",
+                    "sublabel": "With global experience and high competence"
+                },
+                {
+                    "label": "Global standards",
+                    "sublabel": "No compromise on quality"
+                }
+            ],
+            "quote": "An institution with a clear management structure, precise authorities and a disciplined execution path is the institution capable of providing safe, sustainable and strategically valuable financing."
+        },
+        "quality": {
+            "badge": "Quality & excellence standards",
+            "title": "Standards that do not accept",
+            "titleHighlight": "compromise",
+            "paragraph": "This execution system is not just administrative organisation, but a world‑class operating architecture that ensures every file is managed professionally and every decision is based on analysis.",
+            "overlay": {
+                "badge": "Quality assurance",
+                "subtitle": "Standards that do not accept compromise",
+                "stagesLabel": "Stages",
+                "unitsLabel": "Units",
+                "qualityLabel": "Quality"
+            },
+            "standards": [
+                {
+                    "title": "Governance & compliance",
+                    "description": "Every file passes through strict compliance review to ensure alignment with regulatory requirements."
+                },
+                {
+                    "title": "Data‑driven decisions",
+                    "description": "No financing decision is taken without comprehensive, precise analysis from the analytics unit."
+                },
+                {
+                    "title": "Proactive risk management",
+                    "description": "Risks are assessed before decisions are taken and effective mitigation plans are designed for each file."
+                },
+                {
+                    "title": "Exceptional client experience",
+                    "description": "The client‑experience director guarantees professional communication and continuous follow‑up at every stage."
+                },
+                {
+                    "title": "Operational efficiency",
+                    "description": "A disciplined execution path that ensures speed of completion without compromising quality."
+                },
+                {
+                    "title": "Global standards",
+                    "description": "Every procedure is executed according to the highest international professional standards in financing."
+                }
+            ]
+        },
+        "cta": {
+            "badge": "Start your financing journey",
+            "title": "Ready for institutional financing",
+            "titleHighlight": "to global standards?",
+            "paragraph": "Our specialised executive team works around the clock to design the optimal financing solution for your needs.",
+            "phoneLabel": "Direct phone",
+            "emailLabel": "Email",
+            "locationLabel": "Head office",
+            "locationValue": "United Arab Emirates",
+            "ctaViewProcess": "View the stages",
+            "featureResponseTime": "Response time",
+            "featureConfidentiality": "Total confidentiality",
+            "featureExperience": "Years of experience",
+            "featureFiles": "Successful files",
+            "imageAltMain": "Negotiation team",
+            "imageAltStats": "Executive statistics"
+        }
+    },
     "financingPath": {
         "pageTitle": "KIB Finance | Financing Path",
         "pageDescription": "Executive financing path: a premium financing journey managed to global institutional standards for clients who require precise treatment and strategic vision.",
