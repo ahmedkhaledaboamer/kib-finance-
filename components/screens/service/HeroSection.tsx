@@ -36,7 +36,7 @@ export function HeroSection({ locale }: { locale: string }) {
         className="absolute inset-0 z-0">
 
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
+          src="/imges/services/01.webp"
           alt={t('imageAlt')}
           className="w-full h-full object-cover" />
 

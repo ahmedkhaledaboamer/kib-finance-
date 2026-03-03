@@ -21,16 +21,16 @@ export interface ServiceItem {
 }
 
 export const servicesData: ServiceItem[] = [
-  { id: 1, category: "corporate", icon: Building2, image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80" },
-  { id: 2, category: "projects", icon: Briefcase, image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" },
-  { id: 3, category: "realestate", icon: Building, image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" },
-  { id: 4, category: "realestate", icon: ArrowRightLeft, image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" },
-  { id: 5, category: "islamic", icon: Landmark, image: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=800&q=80" },
-  { id: 6, category: "islamic", icon: Globe, image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=800&q=80" },
-  { id: 7, category: "investment", icon: LineChart, image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" },
-  { id: 8, category: "advisory", icon: FileText, image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" },
-  { id: 9, category: "advisory", icon: Lightbulb, image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" },
-  { id: 10, category: "advisory", icon: TrendingUp, image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" },
-  { id: 11, category: "corporate", icon: Wallet, image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80" },
-  { id: 12, category: "advisory", icon: ShieldCheck, image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" },
+  { id: 1, category: "corporate", icon: Building2, image: "/imges/services/02.webp" },
+  { id: 2, category: "projects", icon: Briefcase, image: "/imges/services/03.webp" },
+  { id: 3, category: "realestate", icon: Building, image: "/imges/services/04.webp" },
+  { id: 4, category: "realestate", icon: ArrowRightLeft, image: "/imges/services/05.webp" },
+  { id: 5, category: "islamic", icon: Landmark, image: "/imges/services/06.webp" },
+  { id: 6, category: "islamic", icon: Globe, image: "/imges/services/07.webp" },
+  { id: 7, category: "investment", icon: LineChart, image: "/imges/services/08.webp" },
+  { id: 8, category: "advisory", icon: FileText, image: "/imges/services/09.webp" },
+  { id: 9, category: "advisory", icon: Lightbulb, image: "/imges/services/010.webp" },
+  { id: 10, category: "advisory", icon: TrendingUp, image: "/imges/services/011.webp" },
+  { id: 11, category: "corporate", icon: Wallet, image: "/imges/services/012.webp" },
+  { id: 12, category: "advisory", icon: ShieldCheck, image: "/imges/services/013.webp" },
 ];

@@ -86,7 +86,7 @@ export function ServicesGrid({ onServiceClick, locale }: ServicesGridProps) {
         </div>
 
         {/* Desktop Grid (hidden on mobile) */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           <AnimatePresence mode="popLayout">
             {servicesData.map((service, index) =>
             <motion.div
