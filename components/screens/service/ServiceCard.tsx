@@ -39,7 +39,7 @@ export function ServiceCard({ service, onClick, index, locale }: ServiceCardProp
         delay: index * 0.05
       }}
       onClick={() => onClick(service)}
-      className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-pointer transition-all duration-300 flex flex-col w-[310px] mx-auto sm:w-auto  border border-gray-100 ">
+      className="h-full group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-pointer transition-all duration-300 flex flex-col w-[310px] mx-auto sm:w-auto  border border-gray-100 ">
 
       <style>{`
         @keyframes shimmer {

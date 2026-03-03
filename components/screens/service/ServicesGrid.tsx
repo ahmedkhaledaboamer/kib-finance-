@@ -11,6 +11,7 @@ interface ServicesGridProps {
 }
 export function ServicesGrid({ onServiceClick, locale }: ServicesGridProps) {
   const t = useTranslations('servicesPage.servicesGrid');
+  const isRTL = locale === "ar";
   const scrollRef = useRef<HTMLDivElement>(null);
   const scrollCarousel = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -146,20 +147,20 @@ export function ServicesGrid({ onServiceClick, locale }: ServicesGridProps) {
             )}
           </div>
           {/* Carousel Navigation Arrows */}
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="flex justify-center gap-4 mt-4" >
             <button
               onClick={() => scrollCarousel('right')}
               className="w-10 h-10 rounded-full bg-[#1E3A5F] text-white flex items-center justify-center shadow-md hover:bg-[#D4AF37] transition-colors"
               aria-label={t('carouselPrev')}>
 
-              <ChevronRightIcon className="w-5 h-5" />
+              {isRTL ? <ChevronRightIcon className="w-5 h-5" /> : <ChevronLeftIcon className="w-5 h-5" />}
             </button>
             <button
               onClick={() => scrollCarousel('left')}
               className="w-10 h-10 rounded-full bg-[#1E3A5F] text-white flex items-center justify-center shadow-md hover:bg-[#D4AF37] transition-colors"
               aria-label={t('carouselNext')}>
 
-              <ChevronLeftIcon className="w-5 h-5" />
+              {isRTL ? <ChevronLeftIcon className="w-5 h-5" /> : <ChevronRightIcon className="w-5 h-5" />} 
             </button>
           </div>
         </div>
