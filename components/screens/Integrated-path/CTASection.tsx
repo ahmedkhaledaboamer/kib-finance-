@@ -1,16 +1,18 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeftIcon, PhoneIcon, MailIcon, SparklesIcon } from 'lucide-react'
+import { ArrowLeftIcon, ArrowRightIcon, PhoneIcon, MailIcon, SparklesIcon } from 'lucide-react'
 import Link from 'next/link'
-export function CTASection() {
+import { useTranslations } from 'next-intl'
+export function CTASection({ isRTL }: { isRTL: boolean }) {
+  const t = useTranslations('integratedPath.cta')
   return (
     <section
       className="relative py-32 px-[5%] overflow-hidden"
       style={{
         background: '#ffffff',
       }}
-      dir="rtl"
+      dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Dramatic background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -133,13 +135,13 @@ export function CTASection() {
               }}
             />
             <span
-              className="text-sm font-bold"
+              className="home-badge-text font-bold"
               style={{
                 fontFamily: 'Cairo, sans-serif',
                 color: '#ffd700',
               }}
             >
-              ابدأ رحلتك اليوم
+              {t('badge')}
             </span>
           </div>
         </motion.div>
@@ -161,7 +163,7 @@ export function CTASection() {
             duration: 0.8,
             delay: 0.1,
           }}
-          className="text-5xl md:text-7xl font-black mb-6 leading-tight"
+          className="home-hero-heading font-black mb-6 leading-tight"
           style={{
             fontFamily: 'Cairo, sans-serif',
           }}
@@ -171,7 +173,7 @@ export function CTASection() {
               color: '#1a1a2e',
             }}
           >
-            مستقبلك المالي
+            {t('titleLine1')}
           </span>
           <br />
           <span
@@ -182,7 +184,7 @@ export function CTASection() {
               backgroundClip: 'text',
             }}
           >
-            يبدأ هنا
+            {t('titleLine2')}
           </span>
         </motion.h2>
 
@@ -203,14 +205,13 @@ export function CTASection() {
             duration: 0.8,
             delay: 0.2,
           }}
-          className="text-xl mb-12 mx-auto leading-relaxed"
+          className="home-body-large mb-12 mx-auto leading-relaxed"
           style={{
             fontFamily: 'Tajawal, sans-serif',
             color: 'rgba(0,0,0,0.55)',
           }}
         >
-          انضم إلى آلاف العملاء الذين وثقوا في KIB Finance لتحقيق أهدافهم
-          الاستثمارية عبر مسار رأس المال المتكامل
+          {t('subtitle')}
         </motion.p>
 
         {/* CTA buttons */}
@@ -240,7 +241,7 @@ export function CTASection() {
               whileTap={{
                 scale: 0.98,
               }}
-              className="cursor-pointer flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl text-white"
+              className="cursor-pointer flex items-center gap-3 px-10 py-5 rounded-2xl font-black home-body-large text-white"
               style={{
                 fontFamily: 'Cairo, sans-serif',
                 background: 'linear-gradient(135deg, #ff6b35, #f7931e)',
@@ -248,8 +249,8 @@ export function CTASection() {
                   '0 0 50px rgba(255,107,53,0.5), 0 20px 40px rgba(255,107,53,0.2)',
               }}
             >
-              <span>ابدأ رحلتك الآن</span>
-              <ArrowLeftIcon size={20} />
+              <span>{t('cta')}</span>
+              {isRTL ? <ArrowLeftIcon size={20} /> : <ArrowRightIcon size={20} />}
             </motion.button>
           </Link>
         </motion.div>
@@ -284,7 +285,7 @@ export function CTASection() {
                 color: '#00c9b1',
               }}
             />
-            <span className="text-sm">+966 11 000 0000</span>
+            <span className="home-small-label">{t('phone')}</span>
           </div>
           <div
             className="flex items-center gap-3"
@@ -299,7 +300,7 @@ export function CTASection() {
                 color: '#00c9b1',
               }}
             />
-            <span className="text-sm">info@kibfinance.com</span>
+            <span className="home-small-label">{t('email')}</span>
           </div>
         </motion.div>
 

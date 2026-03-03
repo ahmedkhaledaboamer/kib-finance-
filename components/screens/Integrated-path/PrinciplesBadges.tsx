@@ -8,44 +8,27 @@ import {
   GlobeIcon,
   TrendingUpIcon,
 } from 'lucide-react'
-const principles = [
-  {
-    icon: StarIcon,
-    title: 'الشفافية الكاملة',
-    subtitle: 'Full Transparency',
-    gradient: 'linear-gradient(135deg, #ff6b35, #f7931e)',
-    glow: '#ff6b35',
-  },
-  {
-    icon: ZapIcon,
-    title: 'الكفاءة العالية',
-    subtitle: 'High Efficiency',
-    gradient: 'linear-gradient(135deg, #00c9b1, #00e676)',
-    glow: '#00c9b1',
-  },
-  {
-    icon: HeartIcon,
-    title: 'العلاقات الإنسانية',
-    subtitle: 'Human Relations',
-    gradient: 'linear-gradient(135deg, #ec4899, #f43f5e)',
-    glow: '#ec4899',
-  },
-  {
-    icon: GlobeIcon,
-    title: 'الرؤية العالمية',
-    subtitle: 'Global Vision',
-    gradient: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
-    glow: '#06b6d4',
-  },
-  {
-    icon: TrendingUpIcon,
-    title: 'النمو المستدام',
-    subtitle: 'Sustainable Growth',
-    gradient: 'linear-gradient(135deg, #f59e0b, #f97316)',
-    glow: '#f59e0b',
-  },
+import { useTranslations } from 'next-intl'
+
+const icons = [StarIcon, ZapIcon, HeartIcon, GlobeIcon, TrendingUpIcon]
+const gradients = [
+  'linear-gradient(135deg, #ff6b35, #f7931e)',
+  'linear-gradient(135deg, #00c9b1, #00e676)',
+  'linear-gradient(135deg, #ec4899, #f43f5e)',
+  'linear-gradient(135deg, #06b6d4, #3b82f6)',
+  'linear-gradient(135deg, #f59e0b, #f97316)',
 ]
+const glows = ['#ff6b35', '#00c9b1', '#ec4899', '#06b6d4', '#f59e0b']
+
 export function PrinciplesBadges() {
+  const t = useTranslations('integratedPath.principles')
+  const principles = [0, 1, 2, 3, 4].map((i) => ({
+    icon: icons[i],
+    title: t(`items.${i}.title`),
+    subtitle: t(`items.${i}.subtitle`),
+    gradient: gradients[i],
+    glow: glows[i],
+  }))
   return (
     <section
       className="relative py-20 overflow-hidden px-[5%]"
@@ -86,7 +69,7 @@ export function PrinciplesBadges() {
           className="text-center mb-12"
         >
           <span
-            className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4"
+            className="inline-block px-4 py-1.5 rounded-full home-badge-text font-bold tracking-widest uppercase mb-4"
             style={{
               fontFamily: 'Cairo, sans-serif',
               background:
@@ -95,16 +78,16 @@ export function PrinciplesBadges() {
               color: '#06b6d4',
             }}
           >
-            المبادئ الأساسية
+            {t('badge')}
           </span>
           <h2
-            className="text-4xl md:text-5xl font-black mb-4"
+            className="home-section-heading font-black mb-4"
             style={{
               fontFamily: 'Cairo, sans-serif',
               color: '#1a1a2e',
             }}
           >
-            قيمنا
+            {t('title')}
             <span
               className="mx-3"
               style={{
@@ -114,17 +97,17 @@ export function PrinciplesBadges() {
                 backgroundClip: 'text',
               }}
             >
-              الجوهرية
+              {t('titleHighlight')}
             </span>
           </h2>
           <p
-            className="text-lg"
+            className="home-body-large"
             style={{
               fontFamily: 'Tajawal, sans-serif',
               color: 'rgba(0,0,0,0.5)',
             }}
           >
-            خمسة مبادئ راسخة تشكل هوية KIB Finance وتوجه كل قراراتنا
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -144,7 +127,7 @@ export function PrinciplesBadges() {
               duration: 0.6,
               delay: 0.2,
             }}
-            className="flex gap-5 mx-auto justify-evenly flex-wrap md:flex-nowrap"
+            className="flex gap-5 mx-auto justify-center flex-wrap md:flex-nowrap"
           >
             {principles.map((principle, i) => (
               <motion.div
@@ -176,12 +159,12 @@ export function PrinciplesBadges() {
                   background: 'rgba(0,0,0,0.025)',
                   border: `1px solid ${principle.glow}30`,
                   boxShadow: `0 0 30px ${principle.glow}10`,
-                  minWidth: '180px',
+                  width: "100%"
                 }}
               >
                 {/* Gradient top accent */}
                 <div
-                  className="absolute top-0 left-0 right-0 h-0.5 rounded-t-3xl"
+                  className="absolute top-0 left-0 right-0 h-0.5 rounded-t-3xl w-[80%] mx-auto"
                   style={{
                     background: principle.gradient,
                   }}
@@ -207,25 +190,13 @@ export function PrinciplesBadges() {
                 {/* Text */}
                 <div className="text-center">
                   <p
-                    className="text-base font-black mb-1"
+                    className="home-body-large font-black mb-1"
                     style={{
                       fontFamily: 'Cairo, sans-serif',
                       color: '#1a1a2e',
                     }}
                   >
                     {principle.title}
-                  </p>
-                  <p
-                    className="text-xs"
-                    style={{
-                      fontFamily: 'Tajawal, sans-serif',
-                      background: principle.gradient,
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    {principle.subtitle}
                   </p>
                 </div>
               </motion.div>

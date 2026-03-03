@@ -76,7 +76,7 @@ export default async function Footer() {
       <div className="container">
         {/* Main Footer Content */}
         <div
-          className="flex flex-col items-center justify-center md:grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:align-start"
+          className="flex flex-col items-start justify-center md:grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:align-start"
           style={{
             gap: "clamp(2rem, 3vw, 4rem)",
             marginBottom: "clamp(2rem, 3vw, 4rem)",

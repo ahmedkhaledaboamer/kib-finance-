@@ -2,39 +2,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Clock, Zap, Target } from 'lucide-react';
-const benefits = [
-{
-  icon: Clock,
-  title: 'أكثر ثباتًا واستقرارًا',
-  desc: 'نبني مسارًا رأسماليًا يرفع قدرتك التنافسية ويعزز حضورك في السوق.',
-  color: 'gold',
-  image:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400'
-},
-{
-  icon: Target,
-  title: 'أكثر قيمة وتأثيرًا',
-  desc: 'نمنحك قوة تفاوضية لا يحصل عليها إلا أصحاب الفئة العليا من العملاء.',
-  color: 'teal',
-  image:
-  'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=400'
-},
-{
-  icon: Zap,
-  title: 'متوافق مع طموحك',
-  desc: 'شراكة تُدار بسرية تامة وتُنفّذ بثقة كاملة وتُغلق بنتيجة تتجاوز التوقع.',
-  color: 'amber',
-  image:
-  'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=400'
-},
-{
-  icon: ShieldCheck,
-  title: 'معايير عالمية',
-  desc: 'أقرب إلى مستوى المؤسسات المالية العالمية في الدقة والاحترافية.',
-  color: 'emerald',
-  image:
-  'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&q=80&w=400'
-}];
+import { useTranslations } from 'next-intl';
+
+function useBenefits() {
+  const t = useTranslations('financingPath.benefits');
+  return [
+    { icon: Clock, title: t('benefit1Title'), desc: t('benefit1Desc'), color: 'gold', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400' },
+    { icon: Target, title: t('benefit2Title'), desc: t('benefit2Desc'), color: 'teal', image: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=400' },
+    { icon: Zap, title: t('benefit3Title'), desc: t('benefit3Desc'), color: 'amber', image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=400' },
+    { icon: ShieldCheck, title: t('benefit4Title'), desc: t('benefit4Desc'), color: 'emerald', image: 'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&q=80&w=400' },
+  ];
+}
 
 const borderColors = {
   gold: 'border-s-gold',
@@ -55,9 +33,11 @@ const iconBgColors = {
   emerald: 'bg-emerald/20'
 };
 export function Benefits() {
+  const t = useTranslations('financingPath.benefits');
+  const benefits = useBenefits();
   return (
-    <section id="benefits" className="py-24 bg-white text-dark relative">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="benefits" className="py-24 bg-white text-dark relative p-[5%]">
+      <div className=" mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Text and Photos Column */}
           <motion.div
@@ -74,39 +54,37 @@ export function Benefits() {
             }}
             className="lg:w-1/3">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-dark leading-tight">
-              لماذا تختار <br />
-              <span className="text-gradient-gold">المسار التنفيذي؟</span>
+            <h2 className="home-section-heading font-bold mb-6 text-dark leading-tight">
+              {t('title')} <br />
+              <span className="text-gradient-gold">{t('titleHighlight')}</span>
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              نحن لا نوفّر تمويلًا... نحن نعيد صياغة موقعك المالي، ونبني لك
-              مسارًا رأسماليًا يرفع قدرتك التنافسية ويمنحك قوة تفاوضية
-              استثنائية.
+            <p className="home-body-large text-gray-600 mb-8 leading-relaxed">
+              {t('intro')}
             </p>
 
             {/* Stacked photos */}
             <div className="space-y-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl home-image-tall">
                 <div className="absolute inset-0 bg-gradient-to-tr from-gold/20 to-teal/20 mix-blend-multiply z-10" />
                 <img
                   src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1600"
-                  alt="رجل أعمال واثق"
-                  className="w-full h-52 object-cover" />
+                  alt={t('imageAlt1')}
+                  className="w-full h-full object-cover" />
 
               </div>
               <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-xl overflow-hidden shadow-md">
+                <div className="rounded-xl overflow-hidden shadow-md home-image-card">
                   <img
                     src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=400"
-                    alt="مصافحة اتفاق"
-                    className="w-full h-28 object-cover" />
+                    alt={t('imageAlt2')}
+                    className="w-full h-full object-cover" />
 
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-md">
+                <div className="rounded-xl overflow-hidden shadow-md home-image-card">
                   <img
                     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400"
-                    alt="إعداد ملف تنفيذي"
-                    className="w-full h-28 object-cover" />
+                    alt={t('imageAlt3')}
+                    className="w-full h-full object-cover" />
 
                 </div>
               </div>
@@ -141,7 +119,7 @@ export function Benefits() {
                   className={`bg-cream rounded-xl shadow-sm border-s-4 ${bColor} hover:-translate-y-2 hover:shadow-md transition-all duration-300 relative overflow-hidden group`}>
 
                   {/* Card Photo */}
-                  <div className="relative h-32 overflow-hidden">
+                  <div className="relative overflow-hidden home-image-card">
                     <img
                       src={benefit.image}
                       alt={benefit.title}
@@ -156,10 +134,10 @@ export function Benefits() {
                   </div>
 
                   <div className="p-6 pt-2">
-                    <h3 className="text-xl font-bold mb-2 text-dark">
+                    <h3 className="home-body-large font-bold mb-2 text-dark">
                       {benefit.title}
                     </h3>
-                    <p className="text-gray-600 text-sm">{benefit.desc}</p>
+                    <p className="text-gray-600 home-body-large">{benefit.desc}</p>
                   </div>
 
                   {/* Decorative progress bar at bottom */}
