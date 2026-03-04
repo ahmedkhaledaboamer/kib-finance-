@@ -18,18 +18,19 @@ export function CTASection({ locale }: { locale: string }) {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-teal to-amber opacity-50" />
 
       <div className="mx-auto px-6">
-        <div className="bg-cream rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
+        <div className="bg-cream rounded-3xl shadow-2xl overflow-hidden  flex flex-col md:flex-row border border-gray-100">
+          
           {/* Image Side */}
           <div className="md:w-1/2 relative home-image-full" dir={isRTL ? "rtl" : "ltr"}>
-            <Image
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=1600"
+          <Image
+              src="/imges/financing-path/040.webp"
               alt={t('imageAlt')}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover "
               width={500}
               height={500}
               />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent md:bg-gradient-to-r md:from-dark/80 md:to-transparent" />
+            <div className="absolute inset-0  to-transparent bg-gradient-to-t from-black to-transparent" />
 
             <div className={`absolute bottom-8 ${!isRTL ? 'left-8' : 'right-8'} text-white z-10`}>
               <h3 className={`home-body-large font-bold mb-2 ${isRTL ? 'text-right' : 'text-left'}`}>

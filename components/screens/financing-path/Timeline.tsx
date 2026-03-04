@@ -267,12 +267,14 @@ export function Timeline({ locale }: { locale: string }) {
                         </div>
 
                         <div className="relative z-10">
-                          <div className="overflow-hidden rounded-lg mb-6 h-56 relative shadow-inner">
+                          <div className="overflow-hidden rounded-lg mb-6 h-56 lg:h-64 xl:h-90 2xl:h-150 relative shadow-inner">
                             <div className="absolute inset-0 bg-dark/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
-                            <img
-                            src={stage.imageUrl}
-                            alt={stage.title}
-                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            <Image
+                              src={stage.imageUrl}
+                              alt={stage.title}
+                              width={500}
+                              height={500}
+                              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
 
                           </div>
                           <h3
@@ -309,7 +311,7 @@ export function Timeline({ locale }: { locale: string }) {
           animate={{
             opacity: 1
           }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
 
             {stages.map((stage, index) => {
             const colorKey = accentColors[
@@ -334,17 +336,19 @@ export function Timeline({ locale }: { locale: string }) {
                 }}
                 className={`bg-white rounded-xl shadow-lg border-t-4 ${accentClasses[colorKey].border} overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col`}>
 
-                  <div className="h-40 relative overflow-hidden">
+                  <div className="relative mb-6 h-56 lg:h-64 xl:h-90 2xl:h-100 overflow-hidden">
                     <div
                     className={`absolute top-3 end-3 w-8 h-8 rounded-full ${accentClasses[colorKey].bg} text-white flex items-center justify-center font-bold z-20 shadow-md`}>
 
                       {stage.id}
                     </div>
                     <div className="absolute inset-0 bg-dark/20 z-10" />
-                    <img
+                    <Image
                     src={stage.imageUrl}
                     alt={stage.title}
-                    className="w-full h-full object-cover" />
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover object-bottom" />
 
                   </div>
                   <div className={`p-6 flex flex-col flex-1 ${isRTL ? 'text-right' : 'text-left'}`}>
@@ -375,7 +379,7 @@ export function Timeline({ locale }: { locale: string }) {
 
         {selectedStage &&
         <div className="space-y-6">
-            <div className="relative">
+            <div className="relative ">
               {/* Badge in modal */}
                   <div
               className={`absolute top-4 end-4 z-10 px-3 py-1 rounded-full ${accentClasses[accentColors[(selectedStage.id - 1) % accentColors.length] as keyof typeof accentClasses].bg} text-white font-bold text-sm shadow-md`}>
@@ -387,7 +391,7 @@ export function Timeline({ locale }: { locale: string }) {
                 alt={selectedStage.title}
                 width={500}
                 height={500}
-                className="w-full h-90 object-cover rounded-lg shadow-sm" />
+                className="w-full mb-6 h-56 lg:h-64 xl:h-90 2xl:h-130 object-cover rounded-lg shadow-sm" />
 
             </div>
             <p className="text-lg text-gray-700 leading-relaxed font-medium">

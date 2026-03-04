@@ -115,7 +115,7 @@ export function Stats() {
     margin: '-80px'
   });
   return (
-    <section className=" bg-zinc-950 relative overflow-hidden" ref={ref}>
+    <section className=" bg-[#1e242e] relative overflow-hidden" ref={ref}>
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold/8 rounded-full blur-3xl" />

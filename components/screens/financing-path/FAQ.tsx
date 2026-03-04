@@ -68,12 +68,13 @@ export function FAQ({ locale }: { locale: string }) {
             }}
             className="lg:w-5/12 w-full">
 
-            <div className="sticky top-32 space-y-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl home-image-tall">
+            <div className="sticky top-32 space-y-6 ">
+              <div className="relative rounded-2xl overflow-hidden  shadow-xl home-image-tall">
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                 <Image
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
+                  src="/imges/financing-path/06.jpg"
                   alt={t('imageAlt1')}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                   width={500}
                   height={500}
                   />
@@ -89,8 +90,9 @@ export function FAQ({ locale }: { locale: string }) {
 
               {/* Second smaller photo */}
               <div className="relative rounded-xl overflow-hidden shadow-lg home-image-card">
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                 <Image
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+                  src="/imges/financing-path/015.jpg"
                   alt={t('imageAlt2')}
                   className="w-full h-full object-cover"
                   width={500}

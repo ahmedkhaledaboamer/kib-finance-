@@ -63,7 +63,7 @@ export function About({ locale }: { locale: string }) {
   });
   return (
     <section id="about" className=" bg-white overflow-hidden" ref={ref}>
-      <div className=" px-[5%] pt-[5%]">
+      <div className=" p-[5%] ">
         {/* Section header */}
         <motion.div
           variants={fadeUp}
@@ -251,19 +251,7 @@ export function About({ locale }: { locale: string }) {
         </div>
       </div>
 
-      {/* Wave divider → Services (zinc-950) */}
-      <div className="wave-divider mt-16">
-        <svg
-          viewBox="0 0 1440 80"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-
-          <path
-            d="M0 0L48 8C96 16 192 32 288 40C384 48 480 48 576 42.7C672 37 768 27 864 24C960 21 1056 27 1152 32C1248 37 1344 43 1392 45.3L1440 48V80H1392C1344 80 1248 80 1152 80C1056 80 960 80 864 80C768 80 672 80 576 80C480 80 384 80 288 80C192 80 96 80 48 80H0Z"
-            fill="#09090b" />
-
-        </svg>
-      </div>
+      
     </section>);
 
 }

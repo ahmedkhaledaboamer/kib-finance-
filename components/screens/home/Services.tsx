@@ -330,7 +330,7 @@ export function Services({ locale }: { locale: string }) {
             alt=""
             className="w-full h-full object-cover" />
 
-          <div className="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-[#1C232D] backdrop-blur-sm" />
           {/* subtle gold gradient tint */}
           <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-teal/5" />
         </div>

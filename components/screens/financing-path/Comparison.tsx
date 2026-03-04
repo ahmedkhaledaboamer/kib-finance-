@@ -21,7 +21,7 @@ export function Comparison() {
       {/* Background Photo with subtle overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=2000"
+          src="/imges/financing-path/038.webp"
           alt="Office"
           className="w-full h-full object-cover opacity-[0.04]" />
 
@@ -133,13 +133,13 @@ export function Comparison() {
               {/* Traditional Column */}
               <div className="bg-white rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden">
                 {/* Column Photo */}
-                <div className="relative overflow-hidden home-image-card">
+                <div className="relative overflow-hidden ">
                   <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+                  src="/imges/financing-path/441.webp"
                   alt={t('imageAltTraditional')}
-                  className="w-full h-full object-cover grayscale opacity-60" />
+                  className="w-full h-full object-cover"  style={{ height: 'clamp(14rem,20vw,26rem)' }}  />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                   <div className="absolute bottom-4 right-6">
                     <h3 className="home-body-large font-bold text-gray-400">
                       {t('traditionalTitle')}
@@ -180,13 +180,13 @@ export function Comparison() {
               {/* Executive Column */}
               <div className="bg-white rounded-2xl shadow-lg border-2 border-gold/30 relative overflow-hidden">
                 {/* Column Photo */}
-                <div className="relative overflow-hidden home-image-card">
+                <div className="relative overflow-hidden">
                   <img
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=800"
+                  src="/imges/financing-path/442.webp"
                   alt={t('imageAltExecutive')}
-                  className="w-full h-full object-cover" />
+                  className="w-full h-full object-cover"  style={{ height: 'clamp(14rem,20vw,26rem)' }}  />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                   <div className="absolute top-4 left-4 z-10">
                     <div className="bg-gold text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                       <Sparkles className="w-3 h-3" />
@@ -194,7 +194,7 @@ export function Comparison() {
                     </div>
                   </div>
                   <div className="absolute bottom-4 right-6">
-                    <h3 className="text-2xl font-bold text-dark">
+                    <h3 className="text-2xl font-bold text-gray-400">
                       {t('executiveTitle')}
                     </h3>
                     <p className="text-sm text-gray-500">
@@ -256,7 +256,7 @@ export function Comparison() {
                 {/* Full-width photo */}
                 <div className="relative h-52 overflow-hidden">
                   <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1200"
+                  src="/imges/financing-path/010.webp"
                   alt={t('imageAltTraditional')}
                   className="w-full h-full object-cover grayscale opacity-50" />
 
@@ -327,7 +327,7 @@ export function Comparison() {
                 {/* Full-width photo */}
                 <div className="relative h-52 overflow-hidden">
                   <img
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=1200"
+                  src="/imges/financing-path/011.webp"
                   alt={t('imageAltExecutive')}
                   className="w-full h-full object-cover" />
 

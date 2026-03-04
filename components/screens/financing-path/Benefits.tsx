@@ -3,14 +3,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Clock, Zap, Target } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 function useBenefits() {
   const t = useTranslations('financingPath.benefits');
   return [
-    { icon: Clock, title: t('benefit1Title'), desc: t('benefit1Desc'), color: 'gold', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400' },
-    { icon: Target, title: t('benefit2Title'), desc: t('benefit2Desc'), color: 'teal', image: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=400' },
-    { icon: Zap, title: t('benefit3Title'), desc: t('benefit3Desc'), color: 'amber', image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=400' },
-    { icon: ShieldCheck, title: t('benefit4Title'), desc: t('benefit4Desc'), color: 'emerald', image: 'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&q=80&w=400' },
+    { icon: Clock, title: t('benefit1Title'), desc: t('benefit1Desc'), color: 'gold', image: '/imges/financing-path/0445.webp' },
+    { icon: Target, title: t('benefit2Title'), desc: t('benefit2Desc'), color: 'teal', image: '/imges/financing-path/0446.webp' },
+    { icon: Zap, title: t('benefit3Title'), desc: t('benefit3Desc'), color: 'amber', image: '/imges/financing-path/0447.webp' },
+    { icon: ShieldCheck, title: t('benefit4Title'), desc: t('benefit4Desc'), color: 'emerald', image: '/imges/financing-path/0448.webp' },
   ];
 }
 
@@ -64,26 +65,32 @@ export function Benefits() {
 
             {/* Stacked photos */}
             <div className="space-y-4">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl home-image-tall">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl ">
                 <div className="absolute inset-0 bg-gradient-to-tr from-gold/20 to-teal/20 mix-blend-multiply z-10" />
-                <img
-                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1600"
+                <Image
+                  src="/imges/financing-path/06.jpg"
                   alt={t('imageAlt1')}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover" />
 
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="rounded-xl overflow-hidden shadow-md home-image-card">
-                  <img
-                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=400"
+                  <Image
+                    src="/imges/financing-path/015.jpg"
                     alt={t('imageAlt2')}
+                    width={500}
+                    height={500}
                     className="w-full h-full object-cover" />
 
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-md home-image-card">
-                  <img
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400"
+                  <Image
+                    src="/imges/financing-path/036.jpg"
                     alt={t('imageAlt3')}
+                    width={500}
+                    height={500}
                     className="w-full h-full object-cover" />
 
                 </div>
@@ -119,13 +126,13 @@ export function Benefits() {
                   className={`bg-cream rounded-xl shadow-sm border-s-4 ${bColor} hover:-translate-y-2 hover:shadow-md transition-all duration-300 relative overflow-hidden group`}>
 
                   {/* Card Photo */}
-                  <div className="relative overflow-hidden home-image-card">
+                  <div className="relative overflow-hidden ">
                     <img
                       src={benefit.image}
                       alt={benefit.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"   style={{ height: 'clamp(14rem,20vw,24rem)' }}  />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                     <div
                       className={`absolute top-3 right-3 w-10 h-10 rounded-lg ${iconBg} flex items-center justify-center shadow-sm`}>
 

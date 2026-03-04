@@ -23,7 +23,7 @@ export const stages: Stage[] = [
   'تحديد نقاط القوة التي يمكن البناء عليها'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0221.webp'
 },
 {
   id: 2,
@@ -41,7 +41,7 @@ export const stages: Stage[] = [
   'تجهيز ملف مالي متكامل جاهز للعرض المؤسسي'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0228.webp'
 },
 {
   id: 3,
@@ -58,7 +58,7 @@ export const stages: Stage[] = [
   'تجهيز العرض المؤسسي الرسمي'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0231.webp'
 },
 {
   id: 4,
@@ -75,7 +75,7 @@ export const stages: Stage[] = [
   'تحديد التوقيت الأمثل للتقديم'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0225.webp'
 },
 {
   id: 5,
@@ -92,7 +92,7 @@ export const stages: Stage[] = [
   'ضمان انسيابية المراجعة'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0226.webp'
 },
 {
   id: 6,
@@ -109,7 +109,7 @@ export const stages: Stage[] = [
   'رفع القيمة التمويلية للعميل'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0227.webp'
 },
 {
   id: 7,
@@ -126,7 +126,7 @@ export const stages: Stage[] = [
   'تجهيز خطة التنفيذ'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0232.webp'
 },
 {
   id: 8,
@@ -143,5 +143,5 @@ export const stages: Stage[] = [
   'بناء علاقة طويلة المدى'],
 
   imageUrl:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600'
+  '/imges/financing-path/0229.webp'
 }];
