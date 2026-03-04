@@ -26,7 +26,7 @@ export function Hero({ locale }: { locale: string }) {
         className="absolute inset-0 w-full h-[120%]">
 
         <img
-          src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&q=80&w=2000"
+          src="/imges/financing-path/01.webp"
           alt={t('imageAlt')}
           className="w-full h-full object-cover" />
 

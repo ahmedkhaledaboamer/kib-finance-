@@ -56,9 +56,9 @@ export function Stats() {
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000"
+          src="/imges/financing-path/0222.webp"
           alt={t('imageAlt')}
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover " />
 
         <div className="absolute inset-0 bg-gradient-teal-dark mix-blend-multiply" />
         <div className="absolute inset-0 bg-dark/60" />

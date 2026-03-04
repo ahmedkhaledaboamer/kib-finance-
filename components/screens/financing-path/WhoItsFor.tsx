@@ -7,10 +7,10 @@ import { useTranslations } from 'next-intl';
 function useCriteria() {
   const t = useTranslations('financingPath.whoItsFor');
   return [
-    { icon: Building, title: t('criteria1Title'), desc: t('criteria1Desc'), color: 'gold', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400' },
-    { icon: TrendingUp, title: t('criteria2Title'), desc: t('criteria2Desc'), color: 'teal', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400' },
-    { icon: Globe2, title: t('criteria3Title'), desc: t('criteria3Desc'), color: 'amber', image: 'https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?auto=format&fit=crop&q=80&w=400' },
-    { icon: Briefcase, title: t('criteria4Title'), desc: t('criteria4Desc'), color: 'emerald', image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=400' },
+    { icon: Building, title: t('criteria1Title'), desc: t('criteria1Desc'), color: 'gold', image: '/imges/financing-path/0441.webp' },
+    { icon: TrendingUp, title: t('criteria2Title'), desc: t('criteria2Desc'), color: 'teal', image: '/imges/financing-path/0442.webp' },
+    { icon: Globe2, title: t('criteria3Title'), desc: t('criteria3Desc'), color: 'amber', image: '/imges/financing-path/0443.webp' },
+    { icon: Briefcase, title: t('criteria4Title'), desc: t('criteria4Desc'), color: 'emerald', image: '/imges/financing-path/0444.webp' },
   ];
 }
 
@@ -106,13 +106,13 @@ export function WhoItsFor() {
                   className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow group relative overflow-hidden">
 
                   {/* Card Photo */}
-                  <div className="relative overflow-hidden home-image-card">
+                  <div className="relative overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                      className="w-full object-cover group-hover:scale-105 transition-transform duration-700  " style={{ height: 'clamp(14rem,20vw,24rem)' }}  />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+                    <div className="absolute  inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                     <div
                       className={`absolute top-3 right-3 w-10 h-10 rounded-lg flex items-center justify-center ${colors.bg} shadow-sm`}>
 
@@ -157,7 +157,7 @@ export function WhoItsFor() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white home-image-tall">
                 <div className="absolute inset-0 border-4 border-teal rounded-2xl z-10 pointer-events-none opacity-50" />
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1600"
+                  src="/imges/financing-path/014.webp"
                   alt={t('imageAlt1')}
                   className="w-full h-full object-cover" />
 
@@ -165,7 +165,7 @@ export function WhoItsFor() {
               {/* Second supporting photo */}
               <div className="relative rounded-xl overflow-hidden shadow-lg home-image-card">
                 <img
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800"
+                  src="/imges/financing-path/037.webp"
                   alt={t('imageAlt2')}
                   className="w-full h-full object-cover" />
 

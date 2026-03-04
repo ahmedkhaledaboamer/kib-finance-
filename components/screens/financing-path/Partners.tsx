@@ -29,11 +29,11 @@ export function Partners() {
       {/* Full-width photo banner */}
       <div className="relative overflow-hidden home-image-full">
         <img
-          src="https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&q=80&w=2000"
+          src="/imges/financing-path/443.webp"
           alt={t('imageAlt')}
           className="w-full h-full object-cover" />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <motion.h2
@@ -48,7 +48,7 @@ export function Partners() {
               viewport={{
                 once: true
               }}
-              className="home-section-heading font-bold text-white mb-3">
+              className="home-section-heading font-bold text-white mb-3 drop-shadow-lg">
 
               {t('title')} <span className="text-gold">{t('titleHighlight')}</span>
             </motion.h2>
@@ -67,7 +67,7 @@ export function Partners() {
               transition={{
                 delay: 0.15
               }}
-              className="home-section-subtitle text-white/80 mx-auto px-6">
+              className="home-section-subtitle text-white mx-auto px-6 drop-shadow-lg">
 
               {t('subtitle')}
             </motion.p>
