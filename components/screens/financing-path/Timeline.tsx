@@ -33,7 +33,7 @@ const accentClasses = {
     lightBg: 'bg-emerald/20'
   }
 };
-const STAGE_IDS = [1, 2, 3, 4, 5, 6, 7, 8] as const;
+const STAGE_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9] as const;
 
 export function Timeline({ locale }: { locale: string }) {
   const t = useTranslations('financingPath.timeline');

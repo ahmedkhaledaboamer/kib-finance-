@@ -1,4 +1,4 @@
-'use client';
+
 import { HeroSection } from '@/components/screens/implementation-mechanism/HeroSection';
 import { IntroSection } from '@/components/screens/implementation-mechanism/IntroSection';
 import { ManagementStructure } from '@/components/screens/implementation-mechanism/ManagementStructure';
@@ -7,10 +7,19 @@ import { ExecutionUnits } from '@/components/screens/implementation-mechanism/Ex
 import { StatsSection } from '@/components/screens/implementation-mechanism/StatsSection';
 import { QualitySection } from '@/components/screens/implementation-mechanism/QualitySection';
 import { CTASection } from '@/components/screens/implementation-mechanism/CTASection';
-import { useLocale } from 'next-intl';
+import { getLocale, getTranslations } from 'next-intl/server';
 
-export default function ImplementationMechanismPage() {
-  const locale = useLocale();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'implementationMechanism' });
+  return {
+    title: t('pageTitle'),
+    description: t('pageDescription')
+  };
+}
+
+export default async function ImplementationMechanismPage() {
+  const locale = await getLocale();
   const isRTL = locale === 'ar';
 
   return (
