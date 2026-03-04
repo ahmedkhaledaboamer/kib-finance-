@@ -1350,7 +1350,20 @@
                     "shortDesc": "Outcome: An ongoing capital partnership that strengthens the client after financing.",
                     "fullContent": "An ongoing capital relationship… not a one-off transaction. We monitor commitments and track flows while providing ongoing financial advice to support the client with any future updates.",
                     "bullets": ["Monitoring commitments", "Tracking flows", "Providing ongoing financial advice", "Supporting the client with future updates", "Reinforcing financial stability", "Building a long-term relationship"]
-                }
+                },
+                "9": {
+  "title": "Capital Growth & Expansion Strategy",
+  "shortDesc": "Outcome: A structured expansion plan that increases the company’s value and market impact.",
+  "fullContent": "After achieving financial stability, we move into the growth phase. We analyze expansion opportunities, restructure capital when necessary, and evaluate refinancing or strategic partnership options to enhance the company’s market valuation and support its long-term sustainability.",
+  "bullets": [
+    "Analyzing market expansion opportunities",
+    "Evaluating refinancing options",
+    "Restructuring capital when needed",
+    "Assessing strategic partnership opportunities",
+    "Increasing market valuation",
+    "Building a long-term growth plan"
+  ]
+}
             }
         },
         "whoItsFor": {

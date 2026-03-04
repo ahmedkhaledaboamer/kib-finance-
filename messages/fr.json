@@ -1235,7 +1235,20 @@
           "shortDesc": "Résultat : un partenariat capitalistique continu qui renforce le client après le financement.",
           "fullContent": "Une relation capitalistique durable… et non une opération ponctuelle. Nous suivons les engagements et les flux tout en fournissant des conseils financiers continus pour accompagner le client dans toute évolution future.",
           "bullets": ["Suivi des engagements", "Suivi des flux", "Conseils financiers continus", "Accompagnement du client pour les mises à jour futures", "Renforcement de la stabilité financière", "Construction d'une relation à long terme"]
-        }
+        },
+        "9": {
+  "title": "Stratégie de Croissance et d’Expansion du Capital",
+  "shortDesc": "Résultat : Un plan d’expansion structuré qui augmente la valeur et l’impact de l’entreprise sur le marché.",
+  "fullContent": "Après avoir atteint la stabilité financière, nous passons à la phase de croissance. Nous analysons les opportunités d’expansion, restructurons le capital si nécessaire et évaluons les options de refinancement ou de partenariats stratégiques afin d’améliorer la valorisation de l’entreprise et de soutenir sa pérennité à long terme.",
+  "bullets": [
+    "Analyse des opportunités d’expansion sur le marché",
+    "Évaluation des options de refinancement",
+    "Restructuration du capital si nécessaire",
+    "Analyse des opportunités de partenariats stratégiques",
+    "Augmentation de la valorisation de l’entreprise",
+    "Élaboration d’un plan de croissance à long terme"
+  ]
+}
       }
     },
     "whoItsFor": {
