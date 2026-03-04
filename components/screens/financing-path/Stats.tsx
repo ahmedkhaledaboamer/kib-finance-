@@ -56,7 +56,7 @@ export function Stats() {
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/imges/financing-path/0222.webp"
+          src="/imges/financing-path/02.webp"
           alt={t('imageAlt')}
           className="w-full h-full object-cover " />
 
