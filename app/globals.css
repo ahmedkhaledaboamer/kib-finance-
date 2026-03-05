@@ -56,11 +56,16 @@
   --spacing-3xl: clamp(3rem, 4vw, 6rem);
 }
 
-/* Global font: IBM Plex Sans Arabic for all pages (Arabic, English, French) */
+/* Global font: Cairo for all pages (Arabic, English, French) */
 .font-ibm,
 body,
 html {
-  font-family: var(--font-ibm-plex-sans-arabic), "IBM Plex Sans Arabic", sans-serif;
+  font-family: var(--font-ibm-plex-sans-arabic), "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+/* Ensure all elements inherit the global Cairo font, overriding component-specific fonts */
+* {
+  font-family: inherit !important;
 }
 
 /* Global base font size with scaling on very large screens */
@@ -123,11 +128,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Typography helper classes (legacy) */
 .font-cairo {
-  font-family: var(--font-ibm-plex-sans-arabic), "IBM Plex Sans Arabic", sans-serif;
+  font-family: var(--font-ibm-plex-sans-arabic), "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
 .font-tajawal {
-  font-family: var(--font-ibm-plex-sans-arabic), "IBM Plex Sans Arabic", sans-serif;
+  font-family: var(--font-ibm-plex-sans-arabic), "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
 .navbar-text {

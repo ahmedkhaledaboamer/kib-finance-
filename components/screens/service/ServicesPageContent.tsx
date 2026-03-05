@@ -6,7 +6,6 @@ import { HeroSection } from "./HeroSection";
 import { ServicesGrid } from "./ServicesGrid";
 import { ProcessSection } from "./ProcessSection";
 import { WhyChooseUs } from "./WhyChooseUs";
- import { PartnersSection } from "./PartnersSection";
 import { FAQSection } from "./FAQSection";
 import { CTASection } from "./CTASection";
  import { ServiceModal } from "./ServiceModal";
@@ -32,8 +31,7 @@ export function ServicesPageContent({ locale }: { locale: string }) {
         <HeroSection locale={locale} />
         <ServicesGrid onServiceClick={handleOpenServiceModal} locale={locale} />
         <ProcessSection />
-        <WhyChooseUs />
-        <PartnersSection />
+        <WhyChooseUs locale={locale} />
         <FAQSection />
         <CTASection locale={locale}/>
       </main>

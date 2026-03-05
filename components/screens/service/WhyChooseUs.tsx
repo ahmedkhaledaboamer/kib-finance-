@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Clock, Users, Target, Globe, Award } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 const icons = [ShieldCheck, Clock, Users, Target, Globe, Award];
-export function WhyChooseUs() {
+export function WhyChooseUs({ locale }: { locale: string }) {
+  const isRTL = locale === 'ar';
   const t = useTranslations('servicesPage.whyChooseUs');
   const featuresRaw = t.raw('features') as { title: string; desc: string }[];
   const features = featuresRaw.map((f, i) => ({ ...f, icon: icons[i] }));
@@ -117,7 +118,7 @@ export function WhyChooseUs() {
                 className="relative bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
 
                 {/* Numbered Watermark */}
-                <div className="absolute top-4 left-6 text-5xl font-extrabold text-[#059669]/10 select-none pointer-events-none">
+                <div className={`absolute top-4 ${!isRTL ? 'right-6' : 'left-6'} text-5xl font-extrabold text-[#059669]/10 select-none pointer-events-none`}>
                   {numStr}
                 </div>
 

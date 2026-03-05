@@ -143,7 +143,7 @@ export function FAQ({ locale }: { locale: string }) {
 
                   <button
                     onClick={() => toggleFaq(faq.id)}
-                    className="w-full px-6 py-5 flex justify-between items-center text-right focus:outline-none">
+                    className={`cursor-pointer w-full px-6 py-5 flex justify-between items-center  focus:outline-none ${!isRTL ? 'text-left' : 'text-right'}`}>
 
                     <span
                       className={`font-bold text-dark home-body-large border-transparent ${!isRTL ? 'border-l-4 pl-4 border-transparent' : 'border-r-4 pr-4 border-transparent'}`}

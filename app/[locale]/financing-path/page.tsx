@@ -4,7 +4,6 @@ import { Timeline } from '@/components/screens/financing-path/Timeline';
 import { WhoItsFor } from '@/components/screens/financing-path/WhoItsFor';
 import { Benefits } from '@/components/screens/financing-path/Benefits';
 import { Comparison } from '@/components/screens/financing-path/Comparison';
-import { Partners } from '@/components/screens/financing-path/Partners';
 import { FAQ } from '@/components/screens/financing-path/FAQ';
 import { CTASection } from '@/components/screens/financing-path/CTASection';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -25,7 +24,6 @@ export default async function FinancingPathPage() {
         <WhoItsFor />
         <Benefits />
         <Comparison />
-        <Partners />
         <FAQ locale={locale} />
         <CTASection locale={locale} />
       </main>);

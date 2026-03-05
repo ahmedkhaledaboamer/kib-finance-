@@ -97,7 +97,7 @@ export function ExecutionUnits({ isRTL }: { isRTL: boolean }) {
               (isRTL
                 ? 'text-center sm:text-right'
                 : 'text-center sm:text-left') +
-              ' rounded-2xl p-6 border border-white/60 shadow-sm hover:shadow-lg transition-shadow'
+              ' rounded-2xl p-6 border border-white/60 shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between'
             }
             style={{
               background: unit.bg

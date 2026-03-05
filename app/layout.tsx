@@ -1,10 +1,10 @@
-import { IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 
-const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
+const cairo = Cairo({
   variable: "--font-ibm-plex-sans-arabic",
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning>
-      <body className={`${ibmPlexSansArabic.variable} ${ibmPlexSansArabic.className} antialiased`} suppressHydrationWarning>
+      <body className={`${cairo.variable} ${cairo.className} antialiased`} suppressHydrationWarning>
         {children}
       </body>
     </html>

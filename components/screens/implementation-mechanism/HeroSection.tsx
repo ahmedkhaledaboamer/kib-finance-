@@ -22,7 +22,7 @@ export function HeroSection({ isRTL }: HeroSectionProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pb-[2%]"
       dir={isRTL ? 'rtl' : 'ltr'}>
 
       {/* Background image */}
