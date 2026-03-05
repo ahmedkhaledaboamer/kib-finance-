@@ -61,8 +61,8 @@ export function QualitySection({ isRTL }: { isRTL: boolean }) {
               duration: 0.7
             }}>
 
-            <Image
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+            <img    
+              src="/imges/implementation-mechanism/4.webp"
               alt="Quality standards"
               className="w-full h-full object-cover"
               width={500}
@@ -70,11 +70,7 @@ export function QualitySection({ isRTL }: { isRTL: boolean }) {
               />
 
             <div
-              className="absolute inset-0"
-              style={{
-                background:
-                'linear-gradient(135deg, rgba(37,99,235,0.3), rgba(79,70,229,0.2))'
-              }} />
+              className="absolute inset-0" />
 
             {/* Overlay card */}
             <div className="absolute bottom-6 right-6 left-6 bg-white/95 rounded-2xl p-5 shadow-xl">

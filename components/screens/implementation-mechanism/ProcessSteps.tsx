@@ -18,43 +18,43 @@ interface StepData {
 
 const stepMeta = [
   {
-    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80',
+    image: '/imges/implementation-mechanism/09.webp',
     color: '#2563EB'
   },
   {
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
+    image: '/imges/implementation-mechanism/010.webp',
     color: '#4F46E5'
   },
   {
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    image: '/imges/implementation-mechanism/02.webp',
     color: '#0891B2'
   },
   {
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+    image: '/imges/implementation-mechanism/01.webp',
     color: '#DC2626'
   },
   {
-    image: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&q=80',
+    image: '/imges/implementation-mechanism/03.webp',
     color: '#7C3AED'
   },
   {
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
+    image: '/imges/implementation-mechanism/05.webp',
     color: '#059669'
   },
   {
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80',
+    image: '/imges/implementation-mechanism/04.webp',
     color: '#D97706'
   },
   {
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80',
+    image: '/imges/implementation-mechanism/07.webp',
     color: '#EA580C'
   },
   {
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+    image: '/imges/implementation-mechanism/08.webp',
     color: '#0F766E'
   },
   {
-    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&q=80',
+    image: '/imges/implementation-mechanism/06.webp',
     color: '#2563EB'
   }
 ];
@@ -111,7 +111,7 @@ function StepCard({
             <div
               className="absolute inset-0 opacity-60"
               style={{
-                background: `linear-gradient(135deg, ${step.color}80, transparent)`
+                background: `linear-gradient(135deg,transparent)`
               }} />
 
             {/* Step number badge */}

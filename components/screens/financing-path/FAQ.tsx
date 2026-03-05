@@ -72,7 +72,7 @@ export function FAQ({ locale }: { locale: string }) {
               <div className="relative rounded-2xl overflow-hidden  shadow-xl home-image-tall">
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                 <Image
-                  src="/imges/financing-path/06.jpg"
+                  src="/imges/financing-path/06.webp"
                   alt={t('imageAlt1')}
                   className="w-full h-full object-cover "
                   width={500}
@@ -92,7 +92,7 @@ export function FAQ({ locale }: { locale: string }) {
               <div className="relative rounded-xl overflow-hidden shadow-lg home-image-card">
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/5 to-transparent" />
                 <Image
-                  src="/imges/financing-path/015.jpg"
+                  src="/imges/financing-path/0155.webp"
                   alt={t('imageAlt2')}
                   className="w-full h-full object-cover"
                   width={500}

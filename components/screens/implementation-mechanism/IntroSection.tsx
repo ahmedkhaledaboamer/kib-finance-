@@ -218,8 +218,8 @@ export function IntroSection({ isRTL }: { isRTL: boolean }) {
                 delay: 0.7
               }}>
 
-              <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+              <img    
+                src="/imges/implementation-mechanism/2.webp"
                 alt={t('imageAlt')}
                 className="w-full h-full object-cover"
                 width={500}

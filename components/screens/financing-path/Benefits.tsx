@@ -68,7 +68,7 @@ export function Benefits() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl ">
                 <div className="absolute inset-0 bg-gradient-to-tr from-gold/20 to-teal/20 mix-blend-multiply z-10" />
                 <Image
-                  src="/imges/financing-path/06.jpg"
+                  src="/imges/financing-path/06.webp"
                   alt={t('imageAlt1')}
                   width={500}
                   height={500}
@@ -78,7 +78,7 @@ export function Benefits() {
               <div className="grid grid-cols-2 gap-3">
                 <div className="rounded-xl overflow-hidden shadow-md home-image-card">
                   <Image
-                    src="/imges/financing-path/015.jpg"
+                    src="/imges/financing-path/0155.webp"
                     alt={t('imageAlt2')}
                     width={500}
                     height={500}
@@ -87,7 +87,7 @@ export function Benefits() {
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-md home-image-card">
                   <Image
-                    src="/imges/financing-path/036.jpg"
+                    src="/imges/financing-path/0366.webp"
                     alt={t('imageAlt3')}
                     width={500}
                     height={500}
