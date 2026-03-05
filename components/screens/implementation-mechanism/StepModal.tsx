@@ -3,6 +3,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { XIcon, UserIcon, CheckCircleIcon, ImageIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 interface StepData {
   number: number;
   title: string;
@@ -66,17 +67,16 @@ export function StepModal({ step, onClose, isRTL }: StepModalProps) {
           dir={isRTL ? 'rtl' : 'ltr'}>
 
           {/* Header image */}
-          <div className="relative h-52 rounded-t-3xl overflow-hidden">
-            <img
-              src={step.image}
-              alt={step.title}
-              className="w-full h-full object-cover" />
+          <div className="relative  rounded-t-3xl overflow-hidden" style={{ height: 'clamp(14rem,30vw,24rem)' }}>
+  <Image  
+    src={step.image}
+    alt={step.title}
+    className="w-full h-full object-cover"
+    width={500}
+    height={500}
+  />  
 
-            <div
-              className="absolute inset-0"
-              style={{
-                background: `linear-gradient(to bottom, ${step.color}99, ${step.color}dd)`
-              }} />
+          
 
             <div className="absolute inset-0 flex flex-col justify-end p-6">
               <div className="flex items-center gap-3">

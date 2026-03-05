@@ -107,8 +107,8 @@ export function ManagementStructure({ isRTL }: { isRTL: boolean }) {
             delay: 0.2
           }}>
 
-          <Image
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+          <img    
+            src="/imges/implementation-mechanism/33.webp"
             alt={t('imageAlt')}
             className="w-full h-full object-cover"
             width={500}

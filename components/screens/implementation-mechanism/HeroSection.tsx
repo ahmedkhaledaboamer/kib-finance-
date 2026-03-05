@@ -28,7 +28,7 @@ export function HeroSection({ isRTL }: HeroSectionProps) {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+          src="/imges/implementation-mechanism/1.webp"
           alt={t('subtitle')}
           className="w-full h-full object-cover" />
 
@@ -36,7 +36,7 @@ export function HeroSection({ isRTL }: HeroSectionProps) {
           className="absolute inset-0"
           style={{
             background:
-            'linear-gradient(160deg, rgba(10,15,40,0.93) 0%, rgba(37,99,235,0.80) 50%, rgba(6,182,212,0.70) 100%)'
+            'linear-gradient(100deg, rgba(10,15,40,0.93) 0%, rgba(37,99,235,0.80) 50%, rgba(6,182,212,0.70) 100%)'
           }} />
 
         {/* Animated mesh overlay */}

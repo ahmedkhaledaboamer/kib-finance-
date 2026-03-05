@@ -22,10 +22,10 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
 
       {/* Background image */}
       <div className="absolute inset-0">
-        <Image
-          src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
+        <img    
+          src="/imges/implementation-mechanism/55.webp"
           alt={t('imageAltMain')}
-          className="w-full h-full object-cover"
+          className="w-full h-full"
           width={500}
           height={500}
           />
@@ -129,16 +129,7 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
               delay: 0.2
             }}>
 
-            <div className="col-span-2 rounded-2xl overflow-hidden h-48">
-              <Image
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80"
-                alt={t('imageAltMain')}
-                className="w-full h-full object-cover"
-                width={500}
-                height={500}
-                />
-
-            </div>
+          
             <div
               className="p-5 rounded-2xl text-center"
               style={{
