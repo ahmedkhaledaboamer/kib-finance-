@@ -16,7 +16,7 @@ export function Hero({ locale }: { locale: string }) {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen w-full overflow-hidden bg-dark">
+      className="relative h-100vh  w-full overflow-hidden bg-dark">
 
       {/* Parallax Background — fully visible */}
       <motion.div

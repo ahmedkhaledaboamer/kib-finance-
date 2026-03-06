@@ -20,7 +20,7 @@ export function HeroSection({ locale }: { locale: string }) {
     return () => clearInterval(timer);
   }, [fullText]);
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-100vh   flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax-like scale */}
       <motion.div
         initial={{
@@ -135,7 +135,7 @@ export function HeroSection({ locale }: { locale: string }) {
         className="absolute top-[30%] left-[60%] w-2 h-2 rounded-full bg-[#D4AF37]/30 z-0" />
 
 
-      <div className="relative z-10 p-[5%] w-full pt-20 flex items-center justify-center">
+      <div className="relative z-10 p-[5%]  w-full pt-[15%] flex items-center justify-center">
         <div className="max-w-4xl w-full text-center">
           <motion.div
             initial={{
@@ -151,7 +151,7 @@ export function HeroSection({ locale }: { locale: string }) {
               delay: 0.2
             }}>
 
-            <span className="inline-block py-1.5 px-4 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/30 text-sm font-bold mb-6 tracking-wider backdrop-blur-sm">
+            <span className="inline-block py-1.5 px-4 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/30 text-[clamp(0.5rem, 0.75vw, 1rem)] font-bold mb-6 tracking-wider backdrop-blur-sm">
               {t('badge')}
             </span>
           </motion.div>
@@ -169,10 +169,10 @@ export function HeroSection({ locale }: { locale: string }) {
               duration: 0.8,
               delay: 0.4
             }}
-            className="home-hero-heading font-black text-white mb-6 leading-tight drop-shadow-lg text-center">
+            className="home-hero-heading font-black text-white mb-6 leading-tight drop-shadow-lg text-center text-[clamp(1rem, 1.5vw, 4rem)]">
 
             {t('title')}{' '}
-            <span className="text-[#D4AF37] relative">
+            <span className="text-[#D4AF37] relative text-[clamp(1rem, 1.5vw, 4rem)]">
               {t('titleHighlight')}
               <motion.span
                 initial={{
@@ -201,7 +201,7 @@ export function HeroSection({ locale }: { locale: string }) {
               duration: 0.8,
               delay: 0.6
             }}
-            className={`home-section-subtitle text-gray-200 font-medium mb-8 leading-relaxed px-2 border-[#D4AF37] h-16 md:h-auto ${!isRTL ? 'border-l-4 border-[#D4AF37]' : 'border-r-4 border-[#D4AF37]'}`}>
+            className={`home-section-subtitle text-gray-200 font-medium mb-4 leading-relaxed px-2 border-[#D4AF37] h-16 md:h-auto ${!isRTL ? 'border-l-4 border-[#D4AF37]' : 'border-r-4 border-[#D4AF37]'}`}>
 
             {text}
             <motion.span
@@ -229,7 +229,7 @@ export function HeroSection({ locale }: { locale: string }) {
               duration: 0.8,
               delay: 0.8
             }}
-            className="home-body-large text-gray-300 mb-10 leading-relaxed">
+            className="home-body-large text-gray-300 mb-4 leading-relaxed text-[clamp(1rem, 1vw, 2rem)]">
 
             {t('paragraph')}
           </motion.p>
@@ -255,13 +255,13 @@ export function HeroSection({ locale }: { locale: string }) {
                 behavior: 'smooth'
               })
               }
-              className="cursor-pointer bg-[#D4AF37] hover:bg-white text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 flex items-center gap-2 group shadow-lg shadow-[#D4AF37]/20">
+              className="cursor-pointer bg-[#D4AF37] hover:bg-white text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-[clamp(1rem, 1.5vw, 2rem)] transition-all duration-300 flex items-center gap-2 group shadow-lg shadow-[#D4AF37]/20">
 
               {t('exploreServices')}
             </button>
 
             {/* New Secondary CTA */}
-            <Link href="/implementation-mechanism" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 flex items-center gap-2">
+            <Link href="/implementation-mechanism" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#1E3A5F] px-8 py-4 rounded-md font-bold text-[clamp(1rem, 1.5vw, 2rem)] transition-all duration-300 flex items-center gap-2">
               {t('contactUs')}
               {!isRTL ? <ArrowRight className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> : <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />}
             </Link>

@@ -13,7 +13,7 @@ export function HeroSection() {
   ] as { value: string; label: string }[]
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-100vh  pt-[10%]   flex items-center justify-center overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #3F51B5 0%, #00bcd47a 50%, #EFF6FF 100%)',
       }}
@@ -56,7 +56,7 @@ export function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-[3%]">
+      <div className="relative z-10 text-center px-6  ">
 
 
         {/* Main Arabic heading */}
@@ -73,7 +73,7 @@ export function HeroSection() {
             duration: 0.8,
             delay: 0.2,
           }}
-          className="home-hero-heading font-black mb-6 leading-tight"
+          className="home-hero-heading font-black mb-4 leading-tight text-[clamp(1rem, 1.5vw, 2rem)]"
           style={{
             fontFamily: 'Cairo, sans-serif',
           }}
@@ -171,7 +171,7 @@ export function HeroSection() {
           className="flex flex-wrap justify-center gap-4"
         >
           <button
-            className="cursor-pointer px-8 py-4 rounded-2xl font-bold home-body-large text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            className="cursor-pointer px-8 py-4 rounded-2xl font-bold home-body-large text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl text-[clamp(1rem, 1.5vw, 2rem)]"
             style={{
               fontFamily: 'Cairo, sans-serif',
               background: 'linear-gradient(135deg, #ff6b35, #f7931e)',
@@ -188,7 +188,7 @@ export function HeroSection() {
           </button>
           <Link
             href="/implementation-mechanism"
-            className="cursor-pointer px-8 py-4 rounded-2xl font-bold home-body-large transition-all duration-300 hover:scale-105"
+            className="cursor-pointer px-8 py-4 rounded-2xl font-bold home-body-large transition-all duration-300 hover:scale-105 text-[clamp(1rem, 1.5vw, 2rem)]"
             style={{
               fontFamily: 'Cairo, sans-serif',
               background: 'rgba(0,0,0,0.05)',
@@ -209,37 +209,7 @@ export function HeroSection() {
         }}
       />
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer"
-        animate={{
-          y: [0, 10, 0],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-        }}
-        onClick={() => {
-          window.scrollTo({
-            top: window.innerHeight,
-            behavior: 'smooth',
-          });
-        }}
-      >
-        <div
-          className="w-6 h-10 rounded-full border-2 flex items-start justify-center pt-2"
-          style={{
-            borderColor: 'rgba(255,165,0,0.4)',
-          }}
-        >
-          <div
-            className="w-1.5 h-3 rounded-full"
-            style={{
-              background: 'rgba(255,165,0,0.6)',
-            }}
-          />
-        </div>
-      </motion.div>
+     
     </section>
   )
 }

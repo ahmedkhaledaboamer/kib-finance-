@@ -22,7 +22,7 @@ export function HeroSection({ isRTL }: HeroSectionProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pb-[2%]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pb-[2%] pt-[5%]"
       dir={isRTL ? 'rtl' : 'ltr'}>
 
       {/* Background image */}
@@ -108,7 +108,7 @@ export function HeroSection({ isRTL }: HeroSectionProps) {
 
         {/* Main title */}
         <motion.h1
-          className="home-hero-heading font-black leading-tight mb-6"
+          className="home-hero-heading font-black leading-tight mb-6 text-[clamp(1rem, 1vw, 2rem)]"
           initial={{
             opacity: 0,
             y: 40
