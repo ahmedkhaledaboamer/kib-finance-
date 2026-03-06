@@ -9,7 +9,7 @@ function getBaseUrl() {
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
 
-  const locales = ["ar", "en", "fr"] as const;
+  const locales = ["ar", "en", "fr", "es", "de", "ru", "pt", "it", "zh-hans", "ja", "hi"] as const;
 
   const paths = [
     "",
