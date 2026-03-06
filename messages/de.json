@@ -1,0 +1,1478 @@
+{
+  "page": {
+      "title": "KIB Financing | Startseite",
+      "description": "Bei KIB Financing entwerfen und strukturieren wir maßgeschneiderte Finanzierungslösungen für Unternehmen und Projekte, die tiefe lokale Expertise, starke Bankbeziehungen und disziplinierte Umsetzung kombinieren, um ambitionierte Pläne in nachhaltiges, langfristiges Wachstum umzusetzen.",
+      "integratedPath": {
+          "title": "KIB Financing | Integrierter Pfad",
+          "description": "Entdecken Sie den Integrierten Kapitalpfad: eine neunphasige Reise, um Ihre Investitionsziele zu erreichen und eine solide finanzielle Zukunft aufzubauen. Transparenz, Effizienz und strategische Partnerschaft in jedem Schritt."
+      },
+      "services": {
+          "title": "KIB Financing | Finanzierungsdienste",
+          "description": "KIB Financing L.L.C. bietet eine integrierte Suite von Finanzdienstleistungen für Unternehmen, Institutionen, Unternehmer und Investitionsprojekte. Strukturierte Finanzierungslösungen basierend auf rigoroser Analyse, strategischer Vision und breiter operativer Expertise."
+      }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde möglicherweise verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+    "cta": "Zurück zur Startseite",
+    "badge": "Nicht gefunden"
+  },
+  "navbar": {
+      "cta": "Buchen Sie Ihren Service",
+      "openMenu": "Menü öffnen",
+      "closeMenu": "Menü schließen",
+      "navMenu": "Hauptmenü",
+      "routes": [
+          {
+            "label": "Startseite",
+            "href": "/"
+          },
+          {
+            "label": "Finanzierungsdienste",
+            "href": "/services"
+          },
+          {
+            "label": "Integrierter Pfad",
+            "href": "/Integrated-path"
+          },
+          {
+            "label": "Finanzierungspfad",
+            "href": "/financing-path"
+          },
+          {
+              "label": "Umsetzungsmechanismus",
+              "href": "/implementation-mechanism"
+          }
+      ]
+  },
+  "content": {
+      "title": "Meine Komponente",
+      "description": "Beschreibung meiner Komponente"
+  },
+  "header": {
+      "badge": "Die ausführende Macht, die Sie brauchen",
+      "titleLine1": "Ihr ausführender Partner beim",
+      "titleHighlight": "Aufbau von Einfluss",
+      "titleLine2": "und Gestaltung von Entscheidungen",
+      "description": "In einer Geschäftsumgebung, in der sich die Dynamiken rasch ändern und der Druck auf Geschäftsleiter zunimmt, präzise Entscheidungen in kurzer Zeit zu treffen, brauchen echte Führungskräfte mehr als einen Dienstleister — sie brauchen einen Umsetzungspartner, der ihnen Macht vor Ort und einen klaren Weg nach vorne gibt.",
+      "ctaPrimary": "Beginnen Sie jetzt Ihre Reise",
+      "ctaSecondary": "Entdecken Sie unsere Dienste",
+      "statsClients": "Zufriedene Kunden",
+      "statsExperience": "Jahre Erfahrung",
+      "statsConfidentiality": "Totale Vertraulichkeit"
+  },
+  "about": {
+      "label": "Wer sind wir?",
+      "title": "Eine spezialisierte Einheit, die",
+      "titleHighlight": "Geschäftsleiter unterstützt",
+      "intro": "Wir sind eine spezialisierte Einheit, die Geschäftsleiter durch ein integriertes operatives System unterstützt, das tiefe Analyse, klare Vision und präzise Umsetzung kombiniert.",
+      "quote": "Wir liefern ausführenden Wert, der Geschäftsleiter das Gefühl gibt, mit einem Partner zu tun zu haben, der die Sensibilität ihrer Zeit versteht.",
+      "pillars": [
+          { "title": "Tiefe Analyse", "desc": "Genaue Lektüre des Marktes und der Chancen" },
+          { "title": "Totale Vertraulichkeit", "desc": "Vollständiger Schutz Ihrer sensiblen Dateien" },
+          { "title": "Präzise Umsetzung", "desc": "Echte Partnerschaft, nicht nur Beratung" }
+      ],
+      "bannerText": "Ausführende Macht",
+      "badgeStat": "Zufriedene Kunden",
+      "badgeStatSub": "15+ Jahre Erfahrung",
+      "imageAlt1": "Professionelles Büro",
+      "imageAlt2": "Strategisches Team"
+  },
+  "services": {
+      "badge": "Über unsere Dienste",
+      "title": "Außergewöhnliche",
+      "titleHighlight": "Dienste für Geschäftsleiter",
+      "subtitle": "Eine integrierte Suite von Diensten, die auf Ihre Bedürfnisse abgestimmt sind",
+      "items": [
+          { "title": "Analyse und Entscheidungsfindung", "description": "Einsichten, die über Daten hinausgehen." },
+          { "title": "Schutz hoch sensibler Interessen", "description": "Festigung Ihres Geschäfts vor Risiken." },
+          { "title": "Strategische Expansion im Inland und Ausland", "description": "Öffnung kalkulierter Expansionspfade." },
+          { "title": "Entwicklung operativer Strukturen", "description": "Erhöhung Ihrer operativen Effizienz von innen." },
+          { "title": "Erleichterung offizieller Transaktionen", "description": "Beschleunigung, was andere verzögern." },
+          { "title": "Paralleles Einflussnetzwerk", "description": "Beziehungen, die Ihnen dienen, bevor Sie sie brauchen." }
+      ]
+  },
+  "offer": {
+      "whatWeOfferLabel": "Was bieten wir?",
+      "whatWeOfferTitle": "Ein integriertes",
+      "whatWeOfferHighlight": "Unterstützungssystem",
+      "offers": ["Aufbau einer klaren Entscheidungsumgebung", "Schutz der Einheit vor Risiken", "Öffnung von Expansions- und Einflusspfaden", "Entwicklung von Strukturen und Prozessen", "Erleichterung von Regierungstransaktionen", "Bereitstellung eines Netzwerks, das Ihren Zielen dient"],
+      "whatYouGetLabel": "Was bekommen Sie bei uns?",
+      "whatYouGetTitle": "Echter",
+      "whatYouGetHighlight": "greifbarer Wert",
+      "benefits": ["Ein Partner, der für Sie denkt und für Sie ausführt", "Vollständiger Schutz Ihrer Interessen", "Schnellerer Zugang zu Chancen", "Professionelle Handhabung sensibler Angelegenheiten", "Greifbare Ergebnisse ohne Ihre direkte Beteiligung", "Reduzierung von Risiken, bevor sie zu Krisen werden"]
+  },
+  "clients": {
+      "badge": "Wen bedienen wir?",
+      "title": "Unsere",
+      "titleHighlight": "ausgezeichneten Kunden",
+      "subtitle": "Wir sind stolz darauf, eine Elite von Geschäftsleitern und führenden Institutionen zu bedienen",
+      "items": [
+          { "title": "Geschäftsleiter und Investitionspioniere", "description": "Umfassende Unterstützung für strategische Entscheidungsfindung" },
+          { "title": "Familienunternehmen", "description": "Schutz des Erbes und Sicherstellung der Kontinuität" },
+          { "title": "Ausländische Investoren", "description": "Erleichterung des Eintritts in den lokalen Markt" },
+          { "title": "Einheiten, die Expansion oder Umstrukturierung suchen", "description": "Sichere und studierte Wachstumspfade" },
+          { "title": "Institutionen, die Entwicklung suchen", "description": "Prozessverbesserung und Identitätsaufbau" },
+          { "title": "Start-ups und vielversprechende Projekte", "description": "Aufbau solider rechtlicher und administrativer Grundlagen vom ersten Tag an" }
+      ]
+  },
+  "quality": {
+      "columns": [
+          { "title": "Interne Qualitätsstandards", "subtitle": "Standards, die wenige kennen", "items": ["100% operative Genauigkeit", "Vollständige Dokumentation jedes Schritts", "Echtzeit-Nachverfolgung", "Kontinuierliche Analyse", "Interne Qualitätskontrollen", "Überprüfung der Ausführung vor und nach", "Unsichtbares Risikoüberwachungssystem"] },
+          { "title": "Sprache der Einheit", "subtitle": "Wir sprechen eine andere Sprache", "items": ["Klare Sprache", "Sprache ohne Rauschen", "Sprache, die Ihre Zeit respektiert", "Sprache basierend auf Informationen, nicht Eindruck", "Sprache, die die Wahrheit enthüllt, nicht versteckt"] },
+          { "title": "Prinzipien der Beteiligung", "subtitle": "Unsere Prinzipien ändern sich nicht", "items": ["Wir verpflichten uns, bevor wir versprechen", "Wir zeigen, bevor wir sprechen", "Wir führen aus, bevor wir bewerben", "Wir respektieren, bevor wir fragen", "Wir klären, bevor wir fragen"] }
+      ]
+  },
+  "vision": {
+      "visionBadge": "Unsere Zukunftsvision",
+      "visionTitle": "Der",
+      "visionHighlight": "erste Partner",
+      "visionTitle2": "für Geschäftsleiter in der Region zu werden",
+      "visionDesc": "Und der Anlaufpartner für große Investoren beim Aufbau von Einfluss und nachhaltigem Wachstum.",
+      "promiseBadge": "Unser Versprechen an Sie",
+      "promiseTitle": "Wir verpflichten uns, der",
+      "promiseHighlight": "Partner",
+      "promiseTitle2": "zu sein, der Ihre Interessen schützt",
+      "promiseDesc": "Und Ihren Einfluss stärkt, indem er einen sicheren Pfad für Wachstum und Expansion schafft.",
+      "imageAlt": "Strategische Vision",
+      "visionChip": "Vision · Einfluss · Ausführung"
+  },
+      "whyUs": {
+          "badge": "Warum wir?",
+          "title": "Was uns von",
+          "titleHighlight": "anderen unterscheidet",
+          "subtitle": "Wir bieten Ihnen außergewöhnliche Vorteile, die uns zur idealen Wahl für ambitionierte Geschäftsleiter machen",
+          "features": [
+              "Eine geschlossene Methodik, die das höchste Maß an Vertraulichkeit gewährleistet",
+              "Schnelle Reaktion ohne Verzögerung",
+              "Ein Netzwerk von Beziehungen, das geschlossene Türen öffnet",
+              "Mehrdisziplinäre Expertise",
+              "Vollständige Verpflichtung zu Ergebnissen",
+              "Ausführung, die auf Handlung basiert, nicht auf Worten"
+          ],
+          "vision": {
+              "financialLeadership": {
+                  "title": "Finanzielle Führung",
+                  "desc": "Der primäre Bezugspunkt für spezialisierte Finanzierungslösungen zu werden."
+              },
+              "strategicPartnerships": {
+                  "title": "Strategische Partnerschaften",
+                  "desc": "Aufbau langfristiger Beziehungen mit Kunden und Finanzierungsinstitutionen."
+              },
+              "regionalExpansion": {
+                  "title": "Regionale Expansion",
+                  "desc": "Erweiterung unserer Dienste innerhalb des Landes und in der Region."
+              },
+              "innovativeSolutions": {
+                  "title": "Innovative Lösungen",
+                  "desc": "Entwicklung von Finanzierungsprodukten, die wirtschaftlichen Transformationen entsprechen."
+              },
+              "sustainableFinance": {
+                  "title": "Nachhaltige Finanzierung",
+                  "desc": "Bereitstellung von Lösungen, die langfristiges Wachstum unterstützen und Risiken reduzieren."
+              },
+              "operationalStrength": {
+                  "title": "Operative Stärke",
+                  "desc": "Aufbau eines Systems basierend auf Genauigkeit, Geschwindigkeit und Compliance."
+              },
+              "institutionalPresence": {
+                  "title": "Institutionelle Präsenz",
+                  "desc": "Stärkung der Position des Unternehmens als vertrauenswürdige Finanzinstitution."
+              },
+              "continuousDevelopment": {
+                  "title": "Kontinuierliche Entwicklung",
+                  "desc": "Kontinuierliche Verbesserung von Systemen und Prozessen."
+              },
+              "marketLeadership": {
+                  "title": "Marktführung",
+                  "desc": "Die erste Wahl für Unternehmen und Investitionsprojekte zu werden."
+              },
+              "economicImpact": {
+                  "title": "Wirtschaftliche Auswirkungen",
+                  "desc": "Beitrag zur nationalen Wirtschaft und Stärkung der Geschäftsumgebung."
+              },
+              "futureReadiness": {
+                  "title": "Zukunftsbereitschaft",
+                  "desc": "Vorbereitung auf kommende wirtschaftliche und technologische Veränderungen."
+              },
+              "globalExpansion": {
+                  "title": "Globale Expansion",
+                  "desc": "Öffnung externer Finanzierungskanäle zur Unterstützung internationaler Projekte der Kunden."
+              }
+          },
+          "governance": {
+              "clearFramework": {
+                  "title": "Klarer Governance-Rahmen",
+                  "desc": "Eine organisatorische Struktur, die Befugnisse und Verantwortlichkeiten präzise definiert."
+              },
+              "internalControl": {
+                  "title": "Laufende interne Kontrolle",
+                  "desc": "Enge Überwachung zur Sicherstellung der Einhaltung von Standards."
+              },
+              "advancedRiskManagement": {
+                  "title": "Fortgeschrittenes Risikomanagement",
+                  "desc": "Umfassende Risikobewertung vor jeder Finanzierungsentscheidung."
+              },
+              "fullCompliance": {
+                  "title": "Vollständige regulatorische Compliance",
+                  "desc": "Ausrichtung auf lokale und internationale Vorschriften."
+              }
+          },
+          "governanceSection": {
+              "badge": "Governance-Rahmen",
+              "title": "Governance, die Entscheidungen leitet",
+              "titleHighlight": "und Compliance garantiert",
+              "description": "Wir operieren unter einem strengen institutionellen Governance-Rahmen, der sicherstellt, dass jede Entscheidung mit hohen professionellen Standards und voller Transparenz getroffen wird."
+          }
+      },
+  "contact": {
+      "badge": "Kontaktieren Sie uns",
+      "title": "Beginnen Sie mit dem Aufbau eines Entscheidungspfads",
+      "titleHighlight": "der Ihre Einheit stärkt",
+      "subtitle": "Wir sind hier, um Sie vor die richtigen Chancen zu stellen und Sie vor unsichtbaren Risiken zu schützen.",
+      "cta": "Kontaktieren Sie uns jetzt",
+      "email": "contact@example.com",
+      "phone": "+966 50 000 0000"
+  },
+  "integratedPath": {
+      "hero": {
+          "titleLine1": "Integrierter Kapital-",
+          "titleLine2": "Pfad",
+          "subtitle": "Integrierter Kapitalpfad",
+          "intro": "Eine neunphasige Reise, um Ihre Investitionsziele zu erreichen und eine solide finanzielle Zukunft aufzubauen.",
+          "stats": [
+              { "value": "9", "label": "Integrierte Phasen" },
+              { "value": "5", "label": "Kernprinzipien" },
+              { "value": "100%", "label": "Transparenz & Sicherheit" }
+          ],
+          "ctaStart": "Beginnen Sie jetzt Ihre Reise",
+          "ctaLearnMore": "Mehr erfahren"
+      },
+      "principles": {
+          "badge": "Kernprinzipien",
+          "title": "Unsere",
+          "titleHighlight": "Kernwerte",
+          "subtitle": "Fünf Prinzipien, die KIB Financing definieren und jede Entscheidung leiten, die wir treffen.",
+          "items": [
+              { "title": "Vollständige Transparenz", "subtitle": "Vollständige Transparenz" },
+              { "title": "Hohe Effizienz", "subtitle": "Hohe Effizienz" },
+              { "title": "Menschliche Beziehungen", "subtitle": "Menschliche Beziehungen" },
+              { "title": "Globale Vision", "subtitle": "Globale Vision" },
+              { "title": "Nachhaltiges Wachstum", "subtitle": "Nachhaltiges Wachstum" }
+          ]
+      },
+      "phaseGrid": {
+          "badge": "Die neun Phasen",
+          "title": "Roadmap zum",
+          "titleHighlight": "Erfolg",
+          "subtitle": "Jede Phase ist so gestaltet, dass sie auf der vorherigen aufbaut und den Weg für die nächste ebnet, in einer integrierten Reise zu Ihren finanziellen Zielen."
+      },
+      "phases": [
+          { "title": "Entdeckung & Bewertung", "subtitle": "Phase 01 — Entdeckung", "description": "Umfassende Analyse der aktuellen finanziellen Position und Identifikation von Investitionschancen auf dem Markt.", "details": ["Bewertung der aktuellen finanziellen Position des Kunden", "Analyse kurz- und langfristiger Investitionsziele", "Studie von Chancen in lokalen und internationalen Märkten", "Definition des akzeptablen Risikolevels"] },
+          { "title": "Kapitalstruktur", "subtitle": "Phase 02 — Struktur", "description": "Aufbau einer soliden finanziellen Struktur, die Renditen maximiert und Risiken effizient managt.", "details": ["Design optimaler Kapitalstruktur", "Verteilung von Assets über mehrere Klassen", "Definition von Finanzierungs- und Investitionsquoten", "Erstellung eines Cashflow-Plans"] },
+          { "title": "Risikomanagement", "subtitle": "Phase 03 — Schutz", "description": "Integriertes System zum Schutz des Kapitals und Sicherstellung der Nachhaltigkeit inmitten von Marktschwankungen.", "details": ["Analyse und Klassifikation potenzieller Risiken", "Implementierung geeigneter Hedging-Strategien", "Erstellung von Notfall- und Reservefonds", "Kontinuierliche Überwachung von Risikoindikatoren"] },
+          { "title": "Analyse & Daten", "subtitle": "Phase 04 — Analytics", "description": "Nutzung der neuesten Finanzanalyse- und KI-Tools für informierte Entscheidungsfindung.", "details": ["Analyse historischer Finanzdaten", "Modellierung zukünftiger Szenarien", "Periodische und detaillierte Leistungsberichte", "Echtzeit interaktive Dashboards"] },
+          { "title": "Zielsetzung", "subtitle": "Phase 05 — Targeting", "description": "Eine klare Roadmap mit messbaren Zielen und definierten Zeitplänen zur Erreichung.", "details": ["Setzen von SMART-finanziellen Zielen", "Definition von Key Performance Indicators (KPIs)", "Erstellung von Erreichungszeitplänen", "Regelmäßige Überprüfung und Aktualisierung der Ziele"] },
+          { "title": "Präsentation von Chancen", "subtitle": "Phase 06 — Präsentation", "description": "Professionelle Präsentation ausgewählter Investitionschancen mit umfassender Renditeanalyse.", "details": ["Vorbereitung von Investitionschancen-Briefs", "ROI-Analyse", "Vergleich verfügbarer Investitionsalternativen", "Interaktive Präsentationssitzungen mit Experten"] },
+          { "title": "Betrieb & Ausführung", "subtitle": "Phase 07 — Betrieb", "description": "Ausführung des Investitionsplans mit Präzision und professionellem täglichen Betriebsmanagement.", "details": ["Ausführung genehmigter Investitionstransaktionen", "Tägliches Portfoliomanagement", "Leistungsüberwachung und Berichterstattung", "Prozessverbesserung und Kostenreduktion"] },
+          { "title": "Überprüfung & Abschluss", "subtitle": "Phase 08 — Abschluss", "description": "Überprüfung der Erreichung der gesetzten Ziele und Dokumentation von Erfolgen für einen stärkeren zukünftigen Pfad.", "details": ["Umfassende Überprüfung der Zielerreichung", "Dokumentation der gelernten Lektionen", "Feiern der Erfolge", "Aktualisierung des Plans für die nächste Phase"] },
+          { "title": "Strategische Partnerschaft", "subtitle": "Phase 09 — Partnerschaft", "description": "Aufbau langfristiger strategischer Beziehungen, die neue Horizonte für Wachstum und Expansion eröffnen.", "details": ["Entwicklung eines strategischen Partnernetzwerks", "Verhandlung von Partnerschaftsverträgen", "Erstellung gemeinsamer Investitionsallianzen", "Erweiterung von Chancen über Grenzen hinweg"] }
+      ],
+      "cta": {
+          "badge": "Beginnen Sie heute Ihre Reise",
+          "titleLine1": "Ihre finanzielle",
+          "titleLine2": "Zukunft beginnt hier",
+          "subtitle": "Schließen Sie sich Tausenden von Kunden an, die KIB Financing vertraut haben, um ihre Investitionsziele durch den Integrierten Kapitalpfad zu erreichen.",
+          "cta": "Beginnen Sie jetzt Ihre Reise",
+          "phone": "+966 11 000 0000",
+          "email": "info@kibfinance.com"
+      },
+      "phaseCard": {
+          "viewDetails": "Details anzeigen",
+          "hideDetails": "Details ausblenden"
+      }
+  },
+  "footer": {
+      "contact": {
+          "title": "Kontaktieren Sie uns",
+          "phone": "+971 521068882",
+          "email": "info@shazmlc.com",
+          "location": "Vereinigte Arabische Emirate"
+      },
+      "quickLinks": {
+          "title": "Schnelle Links",
+          "links": [
+              {
+                  "label": "Startseite",
+                  "href": "/"
+                },
+                {
+                  "label": "Finanzierungsdienste",
+                  "href": "/services"
+                },
+                {
+                  "label": "Umsetzungsmechanismus",
+                  "href": "/implementation-mechanism"
+                },
+                {
+                  "label": "Integrierter Pfad",
+                  "href": "/Integrated-path"
+                },
+                {
+                  "label": "Finanzierungspfad",
+                  "href": "/financing-path"
+                }
+          ]
+      },
+      "description": "KIB Financing L.L.C. ist eine integrierte institutionelle Finanzeinheit, die auf klarer Vision, stabilen Werten und disziplinierter Governance aufgebaut ist. Wir glauben, dass Finanzierung kein schnelles Produkt ist, das verkauft werden soll, sondern eine Verantwortung, die zu managen ist, und eine strategische Partnerschaft, die die Zukunft von Unternehmen und Projekten formt.", 
+      "copyright": "© 2026 KIB Financing L.L.C. Alle Rechte vorbehalten.",
+      "socialMedia": {
+          "linkedin": "LinkedIn",
+          "twitter": "Twitter",
+          "instagram": "Instagram",
+          "facebook": "Facebook"
+      }
+  },
+  "execution": {
+      "hero": {
+          "words": ["Ihr", "Ausführender"],
+          "intro": "In einer Welt, in der sich die Regeln des Spiels jeden Tag ändern, und das Rauschen zunimmt, während die Handlung abnimmt, haben wir uns entschieden, die Einheit zu sein, die ihre Stimme nicht erhebt… sondern ihr Arbeitsniveau.",
+          "tagline": "Die Einheit, die Chancen nicht jagt… sondern sie schafft. Der Partner, der keinen Dienst anbietet… sondern einen ausführenden Pfad baut, der eines Geschäftsleiters würdig ist, der seinen Wert kennt.",
+          "cta": "Mehr entdecken",
+          "stats": [
+              {"num": "8+", "label": "Jahre Erfahrung"},
+              {"num": "200+", "label": "Ausführende Kunden"},
+              {"num": "100%", "label": "Verpflichtung"}
+          ]
+      },
+      "closing": {
+          "title": "Kontaktieren Sie uns",
+          "subtitle": "Wir sind bereit, Ihren ausführenden Pfad aufzubauen. Kontaktieren Sie uns, um die Partnerschaft zu beginnen.",
+          "phone": "Direkttelefon",
+          "email": "E-Mail",
+          "headquarters": "Hauptsitz",
+          "location": "Riyadh, Königreich Saudi-Arabien",
+          "sendMessage": "Direkte Nachricht senden",
+          "name": "Ihr Name",
+          "namePlaceholder": "Geben Sie Ihren Namen ein",
+          "phoneLabel": "Telefonnummer",
+          "phonePlaceholder": "Geben Sie Ihre Nummer ein",
+          "emailLabel": "E-Mail",
+          "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+          "message": "Ihre Nachricht",
+          "messagePlaceholder": "Wie können wir Ihnen dienen?",
+          "submit": "Anfrage senden"
+      },
+      "services": {
+          "title": "Unsere Dienste",
+          "intro": "Wir bieten Ihnen integrierte ausführende Dienste",
+          "imageAlt": "Moderner Büroraum",
+          "items": [
+              {"title": "Persönliche Einflussentwicklung", "desc": "Wir schaffen eine wirkungsvolle Präsenz für Sie in den Kreisen, die Entscheidungen treffen."},
+              {"title": "Handhabung hoch sensibler Dateien", "desc": "Wir handhaben Ihre Dateien, die niemand sehen sollte… mit Präzision, die keinen Raum für Fehler lässt."},
+              {"title": "Tiefe Szenarioanalyse", "desc": "Wir lesen die Zukunft Ihres Geschäfts, bevor sie sich bewegt."},
+              {"title": "Aufbau eines parallelen Einflussnetzwerks", "desc": "Wir arrangieren Beziehungen, die Ihnen dienen, bevor Sie sie brauchen."},
+              {"title": "Überwachung verborgener Risiken", "desc": "Wir erkennen die Bedrohung, bevor sie erscheint."},
+              {"title": "Professionelle Imageentwicklung für Geschäftsleiter", "desc": "Wir schaffen eine elegante Präsenz, die Ihren wahren Wert widerspiegelt."},
+              {"title": "Handhabung hochrangiger Regierungsbeziehungen", "desc": "Wir erleichtern Ihren Zugang zu offiziellen Einheiten und überwinden Komplexitäten."},
+              {"title": "Entwurf sicherer Expansionspfade", "desc": "Wir öffnen neue Türen für Sie… ohne unkalkuliertes Risiko."}
+          ]
+      },
+      "quality": {
+          "columns": [
+              {"title": "Interne Qualitätsstandards", "subtitle": "Wir operieren nach Standards, die wenige kennen:", "items": ["100% operative Genauigkeit", "Vollständige Dokumentation jedes Schritts", "Echtzeit-Nachverfolgung", "Kontinuierliche Analyse", "Interne Qualitätskontrollen"]},
+              {"title": "Sprache der Einheit", "subtitle": "Wir sprechen eine andere Sprache:", "items": ["Klare Sprache", "Sprache ohne Rauschen", "Sprache, die Ihre Zeit respektiert", "Sprache basierend auf Informationen, nicht Eindruck", "Sprache, die die Wahrheit enthüllt, nicht versteckt"]},
+              {"title": "Prinzipien der Beteiligung", "subtitle": "Unsere Prinzipien ändern sich nicht:", "items": ["Wir verpflichten uns, bevor wir versprechen", "Wir zeigen, bevor wir sprechen", "Wir führen aus, bevor wir bewerben", "Wir respektieren, bevor wir fragen", "Wir klären, bevor wir fragen"]}
+          ]
+      }
+  },
+  "brandIdentity": {
+      "hero": {"title": "Unsere Identität", "intro": "Wir schreiben keine Definition, um Platz zu füllen…", "tagline": "Wir schreiben unsere Identität durch die Art und Weise, wie wir arbeiten: mit Vertrauen, das gefühlt wird, bevor es gelesen wird", "cta": "Entdecken Sie unsere Identität"},
+      "intro": {"text": "Wir sind eine Einheit, die entworfen wurde, um die Kraft hinter dem Geschäftsleiter zu sein"},
+      "closing": {"words": "Diese Einheit ist nicht nur ein Unternehmen…", "line1": "Wir sind hier, um einen Unterschied zu machen..", "line2": "Um ein Erbe aufzubauen, das nicht gelöscht werden kann..", "line3": "Sie sind hier… am richtigen Ort.", "cta": "Kontaktieren Sie uns jetzt", "backHome": "Zurück zur Startseite", "success": "Erfolgreich gesendet", "successMsg": "Wir werden Sie bald kontaktieren, um Ihre Erfolgsreise zu beginnen.", "formTitle": "Beginnen Sie Ihre Reise mit uns", "formSubtitle": "Lassen Sie uns mit dem Aufbau Ihrer nächsten Strategie beginnen.", "fullName": "Vollständiger Name", "namePlaceholder": "Geben Sie Ihren Namen ein", "company": "Unternehmen / Institution", "companyPlaceholder": "Ihr Unternehmensname", "phone": "Telefonnummer", "message": "Nachricht", "messagePlaceholder": "Wie können wir Ihnen helfen?", "sending": "Wird gesendet...", "submit": "Anfrage senden"},
+      "services": {"sectionTitle": "Dienste, die unsere Identität widerspiegeln", "sectionSubtitle": "Strategische Lösungen für die Elite", "cta": "Beratung anfordern", "items": [{"title": "Ausführendes Einflussmanagement", "desc": "Stärkung des Einflusses in Vorständen", "detail": "Wir befähigen ausführende Leiter, ihre Präsenz und Wirkung in Vorständen durch fortgeschrittene Kommunikationsstrategien und starke Allianzen zu stärken."}, {"title": "Aufbau strategischer Pfade", "desc": "Langfristige Planung für nachhaltiges Wachstum", "detail": "Wir entwerfen maßgeschneiderte strategische Roadmaps, die wirtschaftliche und geopolitische Variablen berücksichtigen, für nachhaltiges Wachstum und sichere Expansion."}, {"title": "Handhabung hoch sensibler Beziehungen", "desc": "Umgang mit Partnern und Schlüsselkunden", "detail": "Wir handhaben komplexe und sensible Beziehungsnetzwerke mit diplomatischem Geschick und agieren als vertrauenswürdige Vermittler, um Konflikte zu lösen und Brücken des Vertrauens aufzubauen."}, {"title": "Digitale Reputationsüberwachung", "desc": "Schutz des mentalen Images im digitalen Raum", "detail": "Wir nutzen die neuesten Überwachungs- und Analysetools, um Ihr mentales Image rund um die Uhr zu schützen, mit schnellen Reaktionsplänen für Krisen."}, {"title": "Zukünftige Risikoanalyse", "desc": "Vorausschau auf Herausforderungen und proaktive Planung", "detail": "Wir bieten genaue Vorausschau-Lesungen potenzieller Risiken und proaktive Notfallpläne zur Sicherstellung der Geschäftskontinuität."}, {"title": "Handhabung hoch vertraulicher Dateien", "desc": "Schutz sensibler Informationen nach höchsten Standards", "detail": "Wir bieten eine vollständig sichere Umgebung und strenge Protokolle für die Handhabung hoch sensibler Dokumente und Informationen."}]},
+      "whoWeServe": {"title": "Für wen schreiben wir diese Identität?", "subtitle": "Wir arbeiten nicht mit jedem; wir wählen unsere Partner sorgfältig. Unsere Dienste sind für die Elite konzipiert, die den Wert von Zeit, Qualität und strategischem Impact versteht.", "labels": ["Geschäftsleiter", "Familienunternehmen", "Investor", "Umstrukturierung", "Vorstandsvorsitzende", "Große Familienunternehmen", "Ausländische Investoren", "Einheiten in Umstrukturierung", "Öffentliche und einflussreiche Figuren", "Institutionen, die Expansion suchen"], "tags": ["Klarheit", "Verpflichtung", "Qualität", "Respekt"]},
+      "statement": {"title": "Erklärung der Einheit", "intro": "Wir glauben, dass Erfolg kein Zufall ist, sondern das Ergebnis präziser Planung, professioneller Ausführung und klarer Vision. Diese Einheit existiert, um der strategische Partner zu sein, der Ihre Interessen schützt und Ihr Geschäft an die Spitze treibt.", "points": ["Wir verpflichten uns zu den höchsten Standards von Qualität und Professionalität", "Wir bieten innovative Lösungen, die Marktherausforderungen entsprechen", "Wir bauen langfristige Beziehungen basierend auf gegenseitigem Vertrauen"]},
+      "stats": {"items": [{"label": "Kunde"}, {"label": "Zufriedenheitsrate"}, {"label": "Jahre Erfahrung"}, {"label": "Projekt"}]}
+  },
+  "administrativeApparatus": {
+      "hero": {"badge": "Ausführendes Betriebssystem", "title": "Verwaltungsapparat", "titleHighlight": "verfeinert", "suffix": "der nur für Sie arbeitet", "intro": "Ein integriertes Ausführungssystem, das entworfen wurde, um den Geschäftsleiter zu bedienen, seine Interessen zu managen und seinen Einfluss zu schützen", "cta": "Jetzt beginnen", "services": "Dienste"},
+      "stats": {"items": [{"value": 20, "label": "Ausführende Positionen", "icon": "Users"}, {"value": 100, "label": "Operative Genauigkeit", "suffix": "%", "icon": "Target"}, {"value": 5, "label": "Service-Level", "icon": "Layers"}, {"value": 0, "label": "Fehlermarge", "icon": "AlertCircle"}]},
+      "positions": {"all": "Alle", "categories": {"management": "Management", "protection": "Schutz", "relations": "Beziehungen", "analysis": "Analyse", "financial": "Finanziell", "international": "International"}, "title": "Ausführende Positionen", "subtitle": "Jede Position spielt eine spezifische Rolle… während Sie nur im Entscheidungssitz bleiben", "viewDetails": "Details anzeigen", "tasks": "Aufgaben und Verantwortlichkeiten:", "close": "Schließen", "items": [{"title": "Direktor für Krisenmanagement", "category": "protection", "desc": "Sofortige Intervention zur Lösung jeder Krise, bevor sie Ihren Schreibtisch erreicht.", "details": ["Frühe Risikoüberwachung", "Schnelle und effektive Intervention", "Schutz des institutionellen Rufes"]}, {"title": "Direktor für interne Audit", "category": "analysis", "desc": "Genaue Überwachung aller Operationen zur Sicherstellung der Integrität.", "details": ["Überprüfung finanzieller Aussagen", "Bewertung operativer Leistung", "Sicherstellung der Compliance"]}, {"title": "Direktor für externe Beziehungen", "category": "relations", "desc": "Aufbau von Kommunikationsbrücken mit Regierungs- und privaten Einheiten.", "details": ["Management von Regierungsbeziehungen", "Institutionelle Repräsentation", "Erweiterung des Partnernetzwerks"]}, {"title": "Direktor für strategischen Schutz", "category": "protection", "desc": "Sicherung rechtlicher und operativer Interessen.", "details": ["Rechtlicher Schutz", "Sicherung von Assets", "Verteidigungsstrategien"]}, {"title": "Direktor für Studien und Analyse", "category": "analysis", "desc": "Bereitstellung genauer Daten zur Unterstützung Ihrer Entscheidungen.", "details": ["Marktanalyse", "Machbarkeitsstudien", "Zukunftsvorausschau"]}, {"title": "Direktor für ausführende Operationen", "category": "management", "desc": "Überwachung der Projektausführung mit Präzision.", "details": ["Projektmanagement", "Nachverfolgung der Ausführung", "Qualitätssicherung"]}, {"title": "Direktor für Geschäftsentwicklung", "category": "management", "desc": "Ergreifen von Chancen und Erweiterung des Geschäftsumfangs.", "details": ["Identifikation neuer Chancen", "Aufbau von Partnerschaften", "Wachstumsstrategien"]}, {"title": "Direktor für Identität und Kommunikation", "category": "relations", "desc": "Schaffung eines mentalen Images, das Ihres Ranges würdig ist.", "details": ["Markenmanagement", "Öffentliche Beziehungen", "Strategische Kommunikationen"]}, {"title": "Direktor für Risikomanagement", "category": "protection", "desc": "Vorausschau auf Risiken und proaktive Planung.", "details": ["Risikobewertung", "Notfallpläne", "Geschäftskontinuität"]}, {"title": "Finanzdirektor", "category": "financial", "desc": "Vermögensmanagement und Investitionsleitung.", "details": ["Finanzplanung", "Investitionsmanagement", "Finanzanalyse"]}, {"title": "Direktor für große Projekte", "category": "management", "desc": "Führung massiver und komplexer Initiativen.", "details": ["Projektplanung", "Ressourcenmanagement", "Projektlieferung"]}, {"title": "Direktor für internationale Operationen", "category": "international", "desc": "Management von Interessen jenseits der Grenzen.", "details": ["Internationale Expansion", "Management ausländischer Niederlassungen", "Internationale Compliance"]}, {"title": "Direktor für Compliance", "category": "protection", "desc": "Sicherstellung der Einhaltung von Gesetzen und Vorschriften.", "details": ["Rechtliche Überprüfung", "Implementierung von Vorschriften", "Compliance-Schulung"]}, {"title": "Direktor für Informationssicherheit", "category": "protection", "desc": "Schutz von Daten und vertraulichen Dateien.", "details": ["Cybersicherheit", "Datenschutz", "Zugangsmanagement"]}, {"title": "Direktor für Qualität", "category": "analysis", "desc": "Sicherstellung der höchsten Leistungsstandards.", "details": ["Qualitätsüberwachung", "Prozessverbesserung", "Anwendung von Standards"]}, {"title": "Direktor für VIP-Beziehungen", "category": "relations", "desc": "Management privater und elitärer Beziehungsnetzwerke.", "details": ["Management privater Beziehungen", "Organisation von Meetings", "Protokoll"]}, {"title": "Direktor für strategische Verhandlungen", "category": "management", "desc": "Management großer Deals zur Sicherstellung der besten Bedingungen.", "details": ["Verhandlungsmanagement", "Abschluss von Deals", "Konfliktlösung"]}, {"title": "Direktor für spezielle Privilegien", "category": "relations", "desc": "Bereitstellung außergewöhnlicher exklusiver Dienste.", "details": ["Exklusive Dienste", "Reisemanagement", "Spezielle Anfragen"]}, {"title": "Direktor für vertrauliche Dateien", "category": "protection", "desc": "Management sensibler Angelegenheiten mit vollständiger Diskretion.", "details": ["Geheimhaltung", "Management sensibler Krisen", "Private Untersuchungen"]}, {"title": "Direktor für ausführende Nachverfolgung", "category": "management", "desc": "Überwachung der Ausführung Ihrer Direktiven mit Präzision.", "details": ["Nachverfolgung von Entscheidungen", "Leistungsberichte", "Sicherstellung der Ausführung"]}]},
+      "cta": {"title": "Ein vollständiger Verwaltungsapparat, der", "titleHighlight": "für Sie arbeitet…", "subtitle": "Weil Ihre Zeit zu wertvoll ist, um sie mit Details zu verschwenden.", "cta": "Jetzt beginnen", "contact": "Sprechen Sie mit uns", "confidentiality": "Totale Vertraulichkeit", "experience": "Globale Erfahrung", "guaranteed": "Garantierte Ergebnisse", "formTitle": "Kontaktmanagement", "formSubtitle": "Hinterlassen Sie Ihre Details und einer unserer ausführenden Direktoren wird Sie", "formSubtitle2": "sofort kontaktieren.", "name": "Ihr Name", "namePlaceholder": "Geben Sie Ihren Namen ein", "phone": "Telefonnummer", "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein", "message": "Ihre Nachricht (optional)", "messagePlaceholder": "Wie können wir Ihnen dienen?", "submit": "Anfrage senden", "success": "Ihre Anfrage wurde erfolgreich erhalten", "successMsg": "Wir werden Sie so schnell wie möglich kontaktieren."}
+  },
+  "servicesPage": {
+      "hero": {
+          "badge": "KIB Financing L.L.C.",
+          "title": "Unsere",
+          "titleHighlight": "Finanzierungsdienste",
+          "typingLine": "Spezialisierte finanzielle Lösungen, die mit Präzision entworfen… professionell ausgeführt… zu Vorstandsebene-Standards gemanagt werden",
+          "paragraph": "KIB Financing L.L.C. bietet eine integrierte Suite von Finanzdienstleistungen, die auf die Bedürfnisse von Unternehmen, Institutionen, Unternehmern und Investitionsprojekten im Inland und Ausland abgestimmt sind. Wir bieten keine traditionellen Dienste, sondern strukturierte Finanzierungslösungen basierend auf rigoroser Analyse, strategischer Vision und breiter operativer Expertise.",
+          "exploreServices": "Entdecken Sie unsere Dienste",
+          "contactUs": "Kontaktieren Sie uns",
+          "imageAlt": "Dubai Financial District"
+      },
+      "nav": {"title": "Service-Abschnitte", "subtitle": "Wählen Sie einen Abschnitt für schnelles Browsen", "count": "Abschnitt", "service": "Dienst"},
+      "servicesGrid": {
+          "heading": "Unsere",
+          "headingHighlight": "integrierten",
+          "headingSuffix": "Dienste",
+          "subtitle": "Wählen Sie aus über 12 Finanzierungsdiensten, die auf Ihre Bedürfnisse abgestimmt sind und Ihr Geschäftswachstum unterstützen",
+          "categories": {
+              "all": "Alle",
+              "corporate": "Unternehmensfinanzierung",
+              "projects": "Projekte & Industrie",
+              "realestate": "Immobilien & Handel",
+              "islamic": "Islamisch & International",
+              "investment": "Investition & Partnerschaften",
+              "advisory": "Beratung & Entwicklung"
+          },
+          "carouselPrev": "Vorheriger",
+          "carouselNext": "Nächster",
+          "readMore": "Mehr lesen",
+          "details": "Details"
+      },
+      "process": {
+          "heading": "Wie wir",
+          "headingHighlight": "arbeiten",
+          "steps": [
+              { "title": "Analyse", "subtitle": "Analyse", "shortDesc": "Rigorose Analyse Ihrer finanziellen Bedürfnisse", "desc": "Wir beginnen mit einem tiefen Verständnis Ihrer finanziellen Position und Ziele" },
+              { "title": "Design", "subtitle": "Design", "shortDesc": "Maßgeschneiderte Finanzierungslösung entwerfen", "desc": "Wir entwerfen eine einzigartige Lösung, die Ihren Bedürfnissen entspricht" },
+              { "title": "Ausführung", "subtitle": "Ausführung", "shortDesc": "Professionelle, schnelle Ausführung", "desc": "Wir führen mit Geschwindigkeit und Präzision aus, während wir volle Compliance sicherstellen" },
+              { "title": "Nachverfolgung", "subtitle": "Nachverfolgung", "shortDesc": "Laufende Nachverfolgung und institutionelles Management", "desc": "Wir bieten kontinuierliche Nachverfolgung und periodische Berichterstattung" },
+              { "title": "Bewertung", "subtitle": "Bewertung", "shortDesc": "Umfassende Ergebnisbewertung", "desc": "Wir bewerten Ergebnisse und verbessern Lösungen kontinuierlich" }
+          ]
+      },
+      "whyChooseUs": {
+          "heading": "Warum",
+          "headingHighlight": "uns wählen",
+          "subtitle": "Wir liefern echten Wert jenseits traditioneller Finanzierung",
+          "features": [
+              { "title": "Compliance und Governance", "desc": "Wir halten uns an die höchsten Standards von Compliance und institutioneller Governance in allen unseren Finanzierungsoperationen" },
+              { "title": "Geschwindigkeit der Ausführung", "desc": "Wir gewährleisten schnelle Bearbeitung und Genehmigungen, während wir die höchsten Standards von Qualität und Genauigkeit beibehalten" },
+              { "title": "Spezialisiertes Team", "desc": "Unser Team umfasst Finanzexperten und Berater mit über 15 Jahren Erfahrung im Finanzsektor" },
+              { "title": "Maßgeschneiderte Lösungen", "desc": "Wir entwerfen jede Finanzierungslösung basierend auf einer rigorosen Analyse der Bedürfnisse und strategischen Ziele des Kunden" },
+              { "title": "Umfassende Abdeckung", "desc": "Wir liefern unsere Dienste im Inland und Ausland mit einem Partnernetzwerk, das die Region und die Welt umspannt" },
+              { "title": "Bewährte Erfolgsbilanz", "desc": "Über 500 Kunden und 2 Milliarden Dirham in erfolgreicher Finanzierung bezeugen unser Engagement für Exzellenz" }
+          ]
+      },
+      "partners": {
+          "heading": "Unsere Partner im",
+          "headingHighlight": "Erfolg",
+          "subtitle": "Wir sind stolz auf das Vertrauen unserer Kunden und Partner weltweit",
+          "names": ["Emirates NBD", "Abu Dhabi Islamic Bank", "Mashreq Bank", "Commercial Bank of Dubai", "Al Futtaim Group", "Emaar Properties", "Al Habtoor Group", "DAMAC Properties", "Majid Al Futtaim Group", "Aldar Properties"]
+      },
+      "faq": {
+          "heading": "Häufig",
+          "headingHighlight": "gestellte Fragen",
+          "subtitle": "Antworten auf die häufigsten Fragen zu unseren Finanzierungsdiensten",
+          "items": [
+              { "q": "Welche Arten von Finanzierung sind verfügbar?", "a": "Wir bieten über 30 Finanzierungsdienste an, einschließlich Unternehmensfinanzierung, Projektfinanzierung, Immobilien, islamischer Finanzierung, internationaler Finanzierung, Finanzberatung und mehr. Jeder Dienst ist auf spezifische Bedürfnisse abgestimmt." },
+              { "q": "Wie lange dauert die Genehmigung?", "a": "Genehmigungszeiten variieren je nach Art und Größe der Finanzierung, aber wir verpflichten uns, erste Antworten innerhalb von 48 Geschäftsstunden zu geben, wobei die meisten Transaktionen innerhalb von 2–4 Wochen abgeschlossen werden." },
+              { "q": "Bedienen Sie Start-ups?", "a": "Ja, wir haben ein dediziertes Programm für Unternehmer und Start-ups, das Gründung, Betrieb und Expansion abdeckt, mit integrierter beratender Unterstützung." },
+              { "q": "Welche Dokumente sind erforderlich?", "a": "Dokumente variieren je nach Art der Finanzierung, aber im Allgemeinen fordern wir: Handelslizenz, Finanzausweise, Geschäftsplan und Ausweis. Unser Team leitet Sie durch jeden Schritt." },
+              { "q": "Bieten Sie sharia-konforme Finanzierung an?", "a": "Ja, wir bieten eine vollständige Palette sharia-konformer Produkte an, einschließlich Murabaha, Mudaraba, Ijara und Istisna, alle vom Sharia-Aufsichtsrat genehmigt." },
+              { "q": "Können Sie Projekte außerhalb des Landes finanzieren?", "a": "Absolut. Wir bieten internationale und grenzüberschreitende Finanzierungslösungen an, einschließlich regionaler und globaler Projekte, mit umfangreicher Erfahrung im grenzüberschreitenden Handel und globalen Lieferketten." }
+          ]
+      },
+      "cta": {
+          "heading": "Suchen Sie nach einer maßgeschneiderten Finanzierungslösung?",
+          "paragraph1": "Kontaktieren Sie uns heute und lassen Sie uns die optimale Lösung entwerfen, die Ihren Ambitionen entspricht und Ihre institutionellen Ziele mit Effizienz und Professionalität erreicht.",
+          "paragraph2": "Unser Team ist bereit, Ihnen bei der Auswahl der besten Finanzierungslösung zu helfen",
+          "cta": "Kontaktieren Sie uns jetzt",
+          "imageAlt": "Finanzberatungstreffen"
+      },
+      "modal": {
+          "backToTop": "Zurück nach oben",
+          "serviceNumber": "Dienst",
+          "includes": "Diese Finanzierung umfasst:",
+          "close": "Schließen",
+          "requestService": "Diesen Dienst anfordern",
+          "categories": {
+              "corporate": "Unternehmen",
+              "projects": "Projekte",
+              "realestate": "Immobilien",
+              "islamic": "Islamisch",
+              "investment": "Investition",
+              "advisory": "Beratung"
+          }
+      },
+      "serviceItems": {
+          "1": { "title": "Unternehmensfinanzierung", "desc": "Finanzielle Lösungen, die institutionelles Wachstum unterstützen.", "items": ["Betriebskapital", "Betriebserweiterung", "Umstrukturierung", "Unterstützung des Cashflows"] },
+          "2": { "title": "Projektfinanzierung", "desc": "Integrierte Finanzierung für kommerzielle und industrielle Projekte.", "items": ["Produktionslinien", "Ausrüstung", "Betriebsinfrastruktur", "Gründung"] },
+          "3": { "title": "Immobilienfinanzierung", "desc": "Immobilienfinanzierungslösungen für Wohn- und Gewerbeprojekte.", "items": ["Immobilienkauf", "Entwicklung", "Refinanzierung", "Grundstücksfinanzierung"] },
+          "4": { "title": "Handelsfinanzierung", "desc": "Unterstützung für Kauf- und Verkaufsoperationen im Inland und international.", "items": ["Deals", "Lieferanten", "Kunden", "Lieferkette"] },
+          "5": { "title": "Islamische Finanzierung", "desc": "Produkte, die den Sharia-Bestimmungen entsprechen.", "items": ["Murabaha", "Mudaraba", "Ijara", "Istisna"] },
+          "6": { "title": "Externe Kredite", "desc": "Sichere Lösungen für internationalen Handel.", "items": ["Dokumentäre Akkreditive", "Versandgarantien", "Importfinanzierung", "Exportfinanzierung"] },
+          "7": { "title": "Investitionsfinanzierung", "desc": "Verbindung von Investitionsprojekten mit den richtigen Finanzierern.", "items": ["Große Projekte", "Allianzen", "Immobilienentwicklung", "Portfolios"] },
+          "8": { "title": "Finanzberatung", "desc": "Spezialisierte Finanzanalyse zur Unterstützung der Entscheidungsfindung.", "items": ["Risikobewertung", "Finanzpläne", "Cashflow-Analyse", "Strukturüberprüfung"] },
+          "9": { "title": "Unternehmerfinanzierung", "desc": "Lösungen, die Innovation und Aufbau neuer Ventures unterstützen.", "items": ["Gründung", "Betrieb", "Expansion", "Start-up-Unterstützung"] },
+          "10": { "title": "Expansionsfinanzierung", "desc": "Finanzierung, die die Kapazität von Unternehmen für institutionelles Wachstum stärkt.", "items": ["Neue Filialen", "Produktionslinien", "Digitale Transformation", "Interne Entwicklung"] },
+"11": {
+"title": "Geschäftsfinanzierung",
+"desc": "Maßgeschneiderte Finanzierung und Betriebskapitallösungen für kleine und mittlere Unternehmen.",
+"items": [
+  "Betriebskapitalfazilitäten",
+  "Ausrüstungsfinanzierung",
+  "Rechnungsfinanzierung",
+  "Überziehungslösungen"
+]
+},
+"12": {
+"title": "Finanzielle Compliance",
+"desc": "Leitlinien zu regulatorischen Anforderungen und Compliance-Frameworks für finanzielle Operationen.",
+"items": [
+  "Überprüfung regulatorischer Compliance",
+  "Lizenzierungsunterstützung",
+  "Audit-Bereitschaft",
+  "Design von Richtlinien und Verfahren"
+]
+}
+      }
+  },
+  "financeHome": {
+      "hero": {
+          "slide1": {
+              "headline": "KIB Financing",
+              "subheadline": "Ihr strategischer Partner in der Welt der Finanzierung",
+              "highlight": "Finanzielle Führung mit globalen Standards"
+          },
+          "slide2": {
+              "headline": "Spezialisierte Finanzierungslösungen",
+              "subheadline": "Wir entwickeln präzise Strukturen, die auf Ihren Sektor und Ihre Cashflow-Realität abgestimmt sind",
+              "highlight": "Tiefe operative Expertise"
+          },
+          "slide3": {
+              "headline": "Strategische Partnerschaften",
+              "subheadline": "Langfristige Beziehungen mit Banken und Finanzierungsinstitutionen",
+              "highlight": "Ein breites, zuverlässiges Finanzierungsnetzwerk"
+          },
+          "primaryCta": "Beratung anfordern",
+          "secondaryCta": "Mehr über uns erfahren",
+          "stats": {
+              "files": "Abgeschlossene Finanzierungsdateien",
+              "experience": "Jahre Erfahrung",
+              "clients": "Zufriedene Kunden",
+              "successRate": "Erfolgsrate"
+          }
+      },
+      "about": {
+          "badge": "Unternehmensidentität",
+          "title": "Wer wir sind und was",
+          "titleHighlight": "wir repräsentieren",
+          "paragraph1": "KIB Financing ist keine weitere Brokerage-Firma; es ist eine spezialisierte Finanzinstitution, die auf klarer Governance, starker Risikodisziplin und tiefem Wissen über die regionale Finanzierungslandschaft aufgebaut ist.",
+          "paragraph2": "Wir glauben, dass Finanzierung kein schnelles Produkt ist, das verkauft werden soll, sondern eine strategische Verantwortung, die die Zukunft von Unternehmen und Projekten formt.",
+          "bullet1": "Eine starke professionelle Präsenz, die die Stärke des Unternehmens und das Markvertrauen widerspiegelt",
+          "bullet2": "Hohe analytische Fähigkeit – Lesen von Zahlen, Risiken und Cashflows mit Präzision",
+          "bullet3": "Operative Vertraulichkeit – voller Schutz für jede Datei und Information",
+          "bullet4": "Eine langfristige Vision – wir betrachten den Kunden als Partner, nicht als einzelne Transaktion",
+          "floatingBadgeTitle": "Vertrauenswürdige Institution",
+      "floatingBadgeSubtitle": "15+ Jahre im Finanzsektor",
+    "introLabel": "Einführung",
+    "introCompanyName": "KIB Financing L.L.C.",
+    "introParagraph1": "Wir glauben, dass Finanzierung nicht lediglich ein Dienst ist, der erbracht wird, sondern eine Verantwortung, die gemanagt werden muss, eine Partnerschaft, die aufgebaut werden muss, und eine strategische Entscheidung, die die Zukunft von Unternehmen und Projekten formt.",
+      "introParagraph2": "Der Vorstand hat einen umfassenden konzeptionellen Rahmen angenommen, der unsere institutionelle Identität definiert, unsere Werte verankert, Governance-Mechanismen stärkt und die Grundlagen legt, auf denen jede Beziehung, Dienst und Entscheidung aufgebaut wird.",
+      "identity": {
+          "1": {
+              "title": "Unabhängige Finanzeinheit",
+              "desc": "Wir haben eine klare institutionelle Struktur und gut definierte operative Befugnisse."
+          },
+          "2": {
+              "title": "Strategischer Partner",
+              "desc": "Wir begleiten unsere Kunden in jeder Phase ihres finanziellen Wachstums."
+          },
+          "3": {
+              "title": "Tiefe operative Expertise",
+              "desc": "Umfangreiches Wissen über den Finanz- und Finanzierungssektor, aufgebaut über Jahre der Erfahrung."
+          },
+          "4": {
+              "title": "Umfangreiches Finanzierungsnetzwerk",
+              "desc": "Starke Beziehungen zu Banken und Finanzierungsinstitutionen im Inland und Ausland."
+          },
+          "5": {
+              "title": "Spezialisierte Lösungen",
+              "desc": "Wir entwerfen präzise Finanzierungslösungen, die auf die Natur jeder Aktivität abgestimmt sind."
+          },
+          "6": {
+              "title": "Institutionelle Verpflichtung",
+              "desc": "Wir operieren nach klaren Richtlinien und konsistenten, unveränderlichen Standards."
+          }
+      }
+      },
+      "services": {
+          "badge": "Unsere Dienste",
+          "title": "Spezialisierte",
+          "titleHighlight": "Finanzierungslösungen",
+          "subtitle": "Wir entwerfen integrierte Finanzierungsstrukturen für Institutionen, Projekte und Investoren.",
+          "learnMore": "Mehr erfahren",
+          "modalFeaturesTitle": "Was dieser Dienst umfasst",
+          "modalConsultCta": "Beratung für diesen Dienst erhalten",
+          "modalClose": "Schließen",
+          "items": {
+            "corporateFinance": {
+              "title": "Unternehmensfinanzierung",
+              "desc": "Integrierte Finanzierungslösungen für große Unternehmen und Institutionen, die mit hohen professionellen Standards geliefert werden.",
+              "fullDesc": "Wir bieten institutionelle Finanzierungslösungen, die für Unternehmen und große Organisationen maßgeschneidert sind, die ihre Expansions- und operativen Ziele erreichen wollen. Wir agieren als strategischer Partner, der die Anforderungen jeder Organisation versteht und die optimale Finanzierungsstruktur entwirft, die besten Bedingungen und Preise durch unser breites Netzwerk von Finanzierungspartnern sichert.",
+              "features": {
+                "1": "Betriebskapital und operative Finanzierung",
+                "2": "Expansions- und langfristige Investitionskredite",
+                "3": "Akquisitions- und Fusionsfinanzierung",
+                "4": "Multi-Quellen-Finanzierungsstrukturen",
+                "5": "Verhandlung mit Banken und Finanzierungsinstitutionen"
+              }
+            },
+            "projectFinance": {
+              "title": "Projektfinanzierung",
+              "desc": "Unterstützung von Investitionsprojekten von der Planung bis zur vollständigen Ausführung.",
+              "fullDesc": "Wir begleiten Investitionsprojekte in jeder Phase, von Machbarkeitsstudien und Finanzierungsstrukturen bis zum Abschluss des Deals und Start des Projekts. Unsere umfangreiche Erfahrung in der Projektfinanzierung ermöglicht es uns, innovative Lösungen zu liefern, die der Natur, Größe und Branche jedes Projekts entsprechen.",
+              "features": {
+                "1": "Finanzielle und wirtschaftliche Machbarkeitsstudien",
+                "2": "Strukturierung der Finanzierung für großskalige Projekte",
+                "3": "Finanzierung von Immobilien- und Infrastrukturprojekten",
+                "4": "Energie- und Industrieprojekte",
+                "5": "Nachverfolgung bis zum erfolgreichen Abschluss"
+              }
+            },
+            "riskManagement": {
+              "title": "Risikomanagement",
+              "desc": "Umfassende Bewertung finanzieller Risiken und Entwurf geeigneter Schutzstrategien.",
+              "fullDesc": "Wir erkennen, dass Risikomanagement ein zentraler Pfeiler jeder erfolgreichen Finanzierungsentscheidung ist. Unser spezialisiertes Team führt eine gründliche Analyse finanzieller und operativer Risiken durch und entwickelt klare Strategien, um sie zu mindern, die Assets des Kunden zu schützen und die Geschäftskontinuität zu gewährleisten.",
+              "features": {
+                "1": "Bewertung von Kredit- und finanziellen Risiken",
+                "2": "Analyse von Markt- und Liquiditätsrisiken",
+                "3": "Entwurf von Risikomanagementrichtlinien",
+                "4": "Stress-Tests und Szenarioanalyse",
+                "5": "Periodische Risikoberichte und Empfehlungen"
+              }
+            },
+            "internationalFinance": {
+              "title": "Internationale Finanzierung",
+              "desc": "Öffnung externer Finanzierungskanäle zur Unterstützung globaler Projekte der Kunden.",
+              "fullDesc": "Wir unterhalten ein breites internationales Netzwerk von Finanzinstitutionen und regionalen und globalen Banken, das es uns ermöglicht, externe Finanzierungskanäle für unsere Kunden zu öffnen. Wir helfen Unternehmen, Zugang zu internationalen Kapitalmärkten zu erhalten und Finanzierung zu wettbewerbsfähigen Bedingungen zu sichern.",
+              "features": {
+                "1": "Finanzierung von regionalen und internationalen Banken",
+                "2": "Investitionsfonds und Private Equity",
+                "3": "Internationale islamische Finanzierung",
+                "4": "Akkreditive und internationale Garantien",
+                "5": "Handelsfinanzierung und Exportfinanzierung"
+              }
+            },
+            "financialAdvisory": {
+              "title": "Finanzberatung",
+              "desc": "Spezialisierte Finanzberatung basierend auf rigorosen Daten und Zahlenanalyse.",
+              "fullDesc": "Unser Finanzberatungsdienst bietet eine tiefe und objektive Analyse der finanziellen Position eines Unternehmens und legt eine klare Roadmap fest, um seine finanziellen Ziele zu erreichen. Jede Empfehlung, die wir geben, basiert auf realen Daten und Zahlen, fern von Vermutungen oder ungetesteten Annahmen.",
+              "features": {
+                "1": "Umfassende Finanzanalyse des Unternehmens",
+                "2": "Bewertung von Assets und Investitionsportfolios",
+                "3": "Entwicklung strategischer Finanzpläne",
+                "4": "Investitionsberatung und Asset-Allokation",
+                "5": "Finanzleistungsberichte und Benchmarking"
+              }
+            },
+            "debtRestructuring": {
+              "title": "Schuldenumstrukturierung",
+              "desc": "Reorganisation finanzieller Verpflichtungen zur Verbesserung des Cashflows und Reduzierung der Belastungen.",
+              "fullDesc": "Wir unterstützen Unternehmen, die unter Druck ihrer finanziellen Verpflichtungen stehen, indem wir ihre Schulden so umstrukturieren, dass der Cashflow verbessert und die finanzielle Belastung reduziert wird. Wir verhandeln im Namen des Kunden mit Gläubigern, um nachhaltige Lösungen zu erreichen, die die Geschäftskontinuität schützen.",
+              "features": {
+                "1": "Analyse der aktuellen Schuldenstruktur",
+                "2": "Verhandlung mit Banken und Gläubigern",
+                "3": "Umschuldung von Krediten und Verpflichtungen",
+                "4": "Schuldenkonsolidierung und Kostensenkung",
+                "5": "Langfristige finanzielle Erholungsplanung"
+              }
+            }
+          }
+      },
+      "benefits": {
+          "badge": "Institutionelle Werte",
+          "title": "Werte, die",
+          "titleHighlight": "unseren Charakter formen",
+          "subtitle": "Prinzipien, die unser Verhalten regeln und die Art und Weise, wie wir jede Finanzierungsdatei managen.",
+          "values": {
+            "professionalIntegrity": {
+              "title": "Professionelle Integrität",
+              "desc": "Handeln mit voller Transparenz in jedem Schritt."
+            },
+            "fullConfidentiality": {
+              "title": "Totale Vertraulichkeit",
+              "desc": "Schutz der Kundeninformationen als zentraler Teil unserer Identität."
+            },
+            "strictGovernance": {
+              "title": "Strenge Governance",
+              "desc": "Einhaltung von Richtlinien und regulatorischen Standards ohne Ausnahme."
+            },
+            "operationalQuality": {
+              "title": "Operative Qualität",
+              "desc": "Ausführung jeder Datei mit dem höchsten Maß an Präzision."
+            },
+            "financialResponsibility": {
+              "title": "Finanzielle Verantwortung",
+              "desc": "Treffen von Entscheidungen basierend auf Analyse, nicht Annahme."
+            },
+            "respectTime": {
+              "title": "Respekt vor der Zeit",
+              "desc": "Lieferung von Ergebnissen innerhalb eines klaren Zeitrahmens."
+            },
+            "mutualTrust": {
+              "title": "Gegenseitiges Vertrauen",
+              "desc": "Aufbau von Beziehungen basierend auf Glaubwürdigkeit und Verpflichtung."
+            },
+            "institutionalProfessionalism": {
+              "title": "Institutionelle Professionalität",
+              "desc": "Operieren mit einer klaren Methodik in jeder Phase."
+            },
+            "continuousInnovation": {
+              "title": "Kontinuierliche Innovation",
+              "desc": "Entwicklung neuer Lösungen, die Marktanforderungen entsprechen."
+            },
+            "clientService": {
+              "title": "Kundenservice",
+              "desc": "Stellen der Interessen des Kunden in den Vordergrund jeder Entscheidung."
+            },
+            "resultCommitment": {
+              "title": "Verpflichtung zu Ergebnissen",
+              "desc": "Arbeiten, bis wir das beste mögliche Ergebnis erreichen."
+            },
+            "sustainability": {
+              "title": "Nachhaltigkeit",
+              "desc": "Bereitstellung langfristiger Lösungen, nicht kurzfristiger Fixes."
+            }
+          }
+      },
+      "stats": {
+          "badge": "Unsere Zahlen sprechen",
+          "title": "Echte",
+          "titleHighlight": "Ergebnisse",
+          "subtitle": "Zahlen, die das Vertrauen unserer Kunden und unsere gesammelte Erfahrung im Finanzsektor widerspiegeln.",
+          "items": {
+            "files": {
+              "label": "Finanzierungsdateien",
+              "sublabel": "Erfolgreich abgeschlossen"
+            },
+            "clients": {
+              "label": "Zufriedene Kunden",
+              "sublabel": "Die unseren Diensten vertrauen"
+            },
+            "experience": {
+              "label": "Jahre Erfahrung",
+              "sublabel": "Im Finanzsektor"
+            },
+            "funders": {
+              "label": "Finanzierungsinstitutionen",
+              "sublabel": "Strategische Partner"
+            },
+            "successRate": {
+              "label": "Erfolgsrate",
+              "sublabel": "Beim Abschluss von Finanzierungsmandaten"
+            },
+            "responseTime": {
+              "label": "Durchschnittliche Reaktionszeit",
+              "sublabel": "Für jede Finanzierungsanfrage"
+            }
+          }
+      },
+      "whyUs": {
+          "badge": "Institutionelle Vision",
+          "title": "Warum",
+          "titleHighlight": "KIB Financing?",
+          "subtitle": "Eine Vision, die auf Nachhaltigkeit aufbaut, auf Führung ausgerichtet ist und mit internationalen Standards ausgeführt wird.",
+          "vision": {
+              "financialLeadership": {
+                  "title": "Finanzielle Führung",
+                  "desc": "Der primäre Bezugspunkt für spezialisierte Finanzierungslösungen zu werden."
+              },
+              "strategicPartnerships": {
+                  "title": "Strategische Partnerschaften",
+                  "desc": "Aufbau langfristiger Beziehungen mit Kunden und Finanzierungsinstitutionen."
+              },
+              "regionalExpansion": {
+                  "title": "Regionale Expansion",
+                  "desc": "Erweiterung unserer Dienste innerhalb des Landes und in der Region."
+              },
+              "innovativeSolutions": {
+                  "title": "Innovative Lösungen",
+                  "desc": "Entwicklung von Finanzierungsprodukten, die wirtschaftlichen Transformationen entsprechen."
+              },
+              "sustainableFinance": {
+                  "title": "Nachhaltige Finanzierung",
+                  "desc": "Bereitstellung von Lösungen, die langfristiges Wachstum unterstützen und Risiken reduzieren."
+              },
+              "operationalStrength": {
+                  "title": "Operative Stärke",
+                  "desc": "Aufbau eines Systems basierend auf Genauigkeit, Geschwindigkeit und Compliance."
+              },
+              "institutionalPresence": {
+                  "title": "Institutionelle Präsenz",
+                  "desc": "Stärkung der Position des Unternehmens als vertrauenswürdige Finanzinstitution."
+              },
+              "continuousDevelopment": {
+                  "title": "Kontinuierliche Entwicklung",
+                  "desc": "Kontinuierliche Verbesserung von Systemen und Prozessen."
+              },
+              "marketLeadership": {
+                  "title": "Marktführung",
+                  "desc": "Die erste Wahl für Unternehmen und Investitionsprojekte zu werden."
+              },
+              "economicImpact": {
+                  "title": "Wirtschaftliche Auswirkungen",
+                  "desc": "Beitrag zur nationalen Wirtschaft und Stärkung der Geschäftsumgebung."
+              },
+              "futureReadiness": {
+                  "title": "Zukunftsbereitschaft",
+                  "desc": "Vorbereitung auf kommende wirtschaftliche und technologische Veränderungen."
+              },
+              "globalExpansion": {
+                  "title": "Globale Expansion",
+                  "desc": "Öffnung externer Finanzierungskanäle zur Unterstützung internationaler Projekte der Kunden."
+              }
+          },
+          "governance": {
+              "clearFramework": {
+                  "title": "Klarer Governance-Rahmen",
+                  "desc": "Eine organisatorische Struktur, die Befugnisse und Verantwortlichkeiten präzise definiert."
+              },
+              "internalControl": {
+                  "title": "Laufende interne Kontrolle",
+                  "desc": "Enge Überwachung zur Sicherstellung der Einhaltung von Standards."
+              },
+              "advancedRiskManagement": {
+                  "title": "Fortgeschrittenes Risikomanagement",
+                  "desc": "Umfassende Risikobewertung vor jeder Finanzierungsentscheidung."
+              },
+              "fullCompliance": {
+                  "title": "Vollständige regulatorische Compliance",
+                  "desc": "Ausrichtung auf lokale und internationale Vorschriften."
+              }
+          },
+          "governanceSection": {
+              "badge": "Governance-Rahmen",
+              "title": "Governance, die Entscheidungen leitet",
+              "titleHighlight": "und Compliance garantiert",
+              "description": "Wir operieren unter einem strengen institutionellen Governance-Rahmen, der sicherstellt, dass jede Entscheidung mit hohen professionellen Standards und voller Transparenz getroffen wird."
+          }
+      },
+      "contactCta": {
+          "badge": "Finanzierungsberatung",
+          "title": "Beginnen Sie Ihre",
+          "titleHighlight": "Finanzierungsreise heute",
+          "subtitle": "Unser spezialisiertes Team ist bereit, Ihre Bedürfnisse zu studieren, die optimale Lösung zu strukturieren und Sie bis zum Abschluss zu begleiten.",
+          "phoneLabel": "Rufen Sie uns an",
+          "emailLabel": "Schreiben Sie uns",
+          "cta": "Beratung erhalten",
+          "responseTitle": "Antwort innerhalb",
+          "responseValue": "24 Stunden"
+      }
+  },
+  "implementationMechanism": {
+      "pageTitle": "KIB Financing | Umsetzungsmechanismus",
+      "pageDescription": "Institutioneller Ausführungsmechanismus: ein globales Betriebssystem, das unter einer einheitlichen Führungsstruktur, präzisen Befugnissen und einem datenbasierten Pfad betrieben wird, der die Einheit schützt und den Finanzierungswert maximiert.",
+      "hero": {
+          "badge": "Globales Betriebssystem",
+          "titleLine1": "Institutioneller Ausführungs-",
+          "titleLine2": "mechanismus",
+          "subtitle": "KIB Financing L.L.C.",
+          "description": "Ein globales Betriebssystem, das unter einer einheitlichen Führungsstruktur, präzisen Befugnissen und einem datenbasierten Ausführungspfad betrieben wird.",
+          "pills": [
+              "Führung & Governance",
+              "Analyse & Risiko",
+              "Ausführung & Nachverfolgung"
+          ],
+          "cta": "Die Phasen anzeigen",
+          "stats": [
+              { "value": "10", "label": "Ausführungsphasen" },
+              { "value": "7", "label": "Spezialisierte Einheiten" },
+              { "value": "10", "label": "Ausführende Direktoren" },
+              { "value": "100%", "label": "Globale Standards" }
+          ]
+      },
+      "intro": {
+          "badge": "Einführung",
+          "title": "Ein Weltklasse-Betriebsmodell",
+          "titleHighlight": "integriert und diszipliniert",
+          "paragraph1": "Der Erfolg von KIB Financing L.L.C. basiert auf einem institutionellen Betriebssystem, das auf einem globalen Modell aufgebaut ist, das Führung, Governance, Analyse, Risiko, Ausführung und Nachverfolgung kombiniert.",
+          "paragraph2": "Dieses Modell ist nicht nur eine Liste operativer Schritte, sondern eine Kette von Entscheidungszentren, die in Harmonie arbeiten. Jede Datei bewegt sich durch klare Führungsebenen, bei denen jede Ebene definierte Befugnisse, präzise Verantwortlichkeiten und kompromisslose Leistungsstandards hat.",
+          "chips": [
+              "Jede Entscheidung basierend auf Daten",
+              "Jede Handlung nach globalen Standards",
+              "Jedes Ergebnis mit Vorstandsvertrauen"
+          ],
+          "pillars": [
+              "Führung",
+              "Governance",
+              "Analyse",
+              "Risiko",
+              "Ausführung",
+              "Nachverfolgung"
+          ],
+          "imageAlt": "Ausführendes Team bei der Arbeit"
+      },
+      "management": {
+          "badge": "Globale Managementstruktur",
+          "title": "Erstens: Die globale Managementstruktur",
+          "subtitle": "Ein integriertes Führungssystem, das garantiert, dass jede Entscheidung mit klarer Verantwortung und definierter Befugnis getroffen wird.",
+          "overlayStatsNumber": "9",
+          "overlayStatsLabel": "Ausführende Direktoren",
+          "overlayStatsSublabel": "Führung des Betriebssystems",
+          "imageAlt": "Managementstruktur",
+          "levelLabel": "Ebene",
+          "responsibilitiesLabel": "Verantwortlichkeiten",
+          "managers": [
+              {
+                  "title": "Vorstand",
+                  "role": "Definition der strategischen Richtung der Institution",
+                  "responsibilities": [
+                      "Genehmigung hochrangiger Richtlinien",
+                      "Überwachung der institutionellen Leistung",
+                      "Überwachung der Governance",
+                      "Genehmigung finanzieller Pläne",
+                      "Überprüfung von Risikoberichten"
+                  ],
+                  "level": 1
+              },
+              {
+                  "title": "Chief Executive Officer (CEO)",
+                  "role": "Umwandlung der Vision des Vorstands in operative Realität",
+                  "responsibilities": [
+                      "Führung der Institution",
+                      "Treffen hochrangiger Entscheidungen",
+                      "Genehmigung großer Dateien",
+                      "Überwachung ausführender Abteilungen",
+                      "Repräsentation des Unternehmens vor Finanziers"
+                  ],
+                  "level": 2
+              },
+              {
+                  "title": "Chief Operating Officer (COO)",
+                  "role": "Führung des gesamten institutionellen Betriebssystems",
+                  "responsibilities": [
+                      "Management des Ausführungspfads",
+                      "Sicherstellung des reibungslosen Dateibewegungs",
+                      "Überwachung der Ausführungsqualität",
+                      "Lösung operativer Engpässe",
+                      "Verbesserung der institutionellen Leistung"
+                  ],
+                  "level": 2
+              },
+              {
+                  "title": "General Manager",
+                  "role": "Management operativer und technischer Abteilungen",
+                  "responsibilities": [
+                      "Überwachung der Produktivität",
+                      "Verfolgung der Leistung",
+                      "Berichterstattung an das Senior Management",
+                      "Sicherstellung der Richtlinieneinhaltung"
+                  ],
+                  "level": 3
+              },
+              {
+                  "title": "Direktor für Compliance & Governance",
+                  "role": "Schutz der Institution vor regulatorischem Risiko",
+                  "responsibilities": [
+                      "Überprüfung von Dateien",
+                      "Überwachung der Compliance",
+                      "Vorbereitung von Governance-Berichten",
+                      "Verfolgung regulatorischer Veränderungen"
+                  ],
+                  "level": 3
+              },
+              {
+                  "title": "Risikodirektor",
+                  "role": "Bewertung des Risikos vor dem Treffen von Entscheidungen",
+                  "responsibilities": [
+                      "Analyse von Risiken",
+                      "Vorbereitung von Risikoberichten",
+                      "Entwurf von Minderungsplänen",
+                      "Überprüfung sensibler Dateien"
+                  ],
+                  "level": 3
+              },
+              {
+                  "title": "Finanzdirektor",
+                  "role": "Führung der Finanzanalyse",
+                  "responsibilities": [
+                      "Analyse finanzieller Daten",
+                      "Vorbereitung von Prognosen",
+                      "Überprüfung von Cashflows",
+                      "Unterstützung von Finanzierungsentscheidungen"
+                  ],
+                  "level": 3
+              },
+              {
+                  "title": "Direktor für Geschäftsentwicklung",
+                  "role": "Öffnung neuer Finanzierungskanäle",
+                  "responsibilities": [
+                      "Aufbau von Beziehungen",
+                      "Entwicklung von Partnerschaften",
+                      "Studie von Chancen",
+                      "Unterstützung der Unternehmensexpansion"
+                  ],
+                  "level": 3
+              },
+              {
+                  "title": "Operationsdirektor",
+                  "role": "Ausführung des Ausführungspfads",
+                  "responsibilities": [
+                      "Management von Ausführungsteams",
+                      "Verfolgung von Dateien",
+                      "Sicherstellung der Verfahrensqualität",
+                      "Verbesserung der Leistung"
+                  ],
+                  "level": 3
+              }
+          ]
+      },
+      "process": {
+          "badge": "Institutioneller Ausführungsmechanismus",
+          "title": "Drittens: Wie bewegt sich die Datei",
+          "titleHighlight": "innerhalb der Institution?",
+          "subtitle": "10 integrierte Ausführungsphasen – klicken Sie auf jede Phase, um die vollständigen Details anzuzeigen.",
+          "timelineLabel": "Fortschritt des Ausführungspfads",
+          "timelineStagePrefix": "Phase",
+          "timelineStageSuffix": "von 10",
+          "buttonViewDetails": "Details anzeigen",
+          "buttonHideDetails": "Details ausblenden",
+          "steps": [
+              {
+                  "title": "Ausführendes Empfangszentrum",
+                  "subtitle": "Startpunkt",
+                  "manager": "Operationsdirektor",
+                  "actions": [
+                      "Registrierung der Datei",
+                      "Definition des Diensttyps",
+                      "Zuweisung eines Dateieigentümers"
+                  ]
+              },
+              {
+                  "title": "Initiales Compliance-Zentrum",
+                  "subtitle": "Überprüfung",
+                  "manager": "Compliance-Direktor",
+                  "actions": [
+                      "Überprüfung der Identität",
+                      "Überprüfung von Dokumenten",
+                      "Sicherstellung der regulatorischen Ausrichtung"
+                  ]
+              },
+              {
+                  "title": "Finanz- & Kreditanalyse-Zentrum",
+                  "subtitle": "Analyse",
+                  "manager": "Finanzdirektor & Kreditdirektor",
+                  "actions": [
+                      "Analyse von Cashflows",
+                      "Bewertung von Verpflichtungen",
+                      "Messung der Rückzahlungsfähigkeit"
+                  ]
+              },
+              {
+                  "title": "Risikoraum",
+                  "subtitle": "Risikobewertung",
+                  "manager": "Risikodirektor",
+                  "actions": [
+                      "Definition des Risikolevels",
+                      "Vorbereitung des Risikoberichts",
+                      "Erhebung von Empfehlungen"
+                  ]
+              },
+              {
+                  "title": "Dateivorbereitungseinheit",
+                  "subtitle": "Ausführende Dateivorbereitung",
+                  "manager": "Operationsdirektor",
+                  "actions": [
+                      "Entwurf der Datei",
+                      "Ansprechen schwacher Punkte",
+                      "Vorbereitung der finalen Version"
+                  ]
+              },
+              {
+                  "title": "Finanzierungs-Match-Zentrum",
+                  "subtitle": "Matching",
+                  "manager": "Direktor für Geschäftsentwicklung",
+                  "actions": [
+                      "Auswahl der richtigen Institution",
+                      "Öffnung des Finanzierungskanals",
+                      "Bestätigung der ausgewählten Institution"
+                  ]
+              },
+              {
+                  "title": "Formeller Einreichungskanal",
+                  "subtitle": "Einreichung",
+                  "manager": "Operationsdirektor",
+                  "actions": [
+                      "Einreichung der Datei",
+                      "Verfolgung der Anwendung",
+                      "Antwort auf Anfragen"
+                  ]
+              },
+              {
+                  "title": "Ausführender Verhandlungsraum",
+                  "subtitle": "Verhandlung",
+                  "manager": "Verhandlungsdirektor",
+                  "actions": [
+                      "Verbesserung der Bedingungen",
+                      "Reduzierung von Risiken",
+                      "Maximierung des Kundenwerts"
+                  ]
+              },
+              {
+                  "title": "Finanzabschlussvorstand",
+                  "subtitle": "Abschluss",
+                  "manager": "COO & Abschlussdirektor",
+                  "actions": [
+                      "Überprüfung von Verträgen",
+                      "Genehmigung von Klauseln",
+                      "Unterzeichnung des Abschlusses"
+                  ]
+              },
+              {
+                  "title": "Nach-Finanzierungs-Nachverfolgungs-Zentrum",
+                  "subtitle": "Nach Finanzierung",
+                  "manager": "Direktor für Kundenerfahrung",
+                  "actions": [
+                      "Überwachung von Verpflichtungen",
+                      "Verfolgung von Cashflows",
+                      "Bereitstellung von Empfehlungen"
+                  ]
+              }
+          ],
+          "modal": {
+              "executiveManagerLabel": "Ausführender Eigentümer",
+              "actionsTitle": "Ausführungsaktionen",
+              "progressLabel": "Fortschritt des Ausführungspfads",
+              "pdfNote": "Herunterladbares PDF des Ausführungspfads — bald verfügbar",
+              "closeAriaLabel": "Schließen"
+          }
+      },
+      "executionUnits": {
+          "badge": "Zweitens: Ausführungseinheiten",
+          "title": "Spezialisierte Ausführungseinheiten",
+          "subtitle": "7 spezialisierte Ausführungseinheiten, die in Harmonie arbeiten, um die höchsten Qualitätsstandards in jeder Phase zu garantieren.",
+          "units": [
+              {
+                  "title": "Datenanalyse-Einheit",
+                  "description": "Analyse von Zahlen und Finanzberichten",
+                  "detail": "Analysiert quantitative und qualitative Finanzdaten, um Finanzierungsentscheidungen mit hoher Präzision zu unterstützen."
+              },
+              {
+                  "title": "Dateivorbereitungseinheit",
+                  "description": "Professionelles Entwerfen von Finanzierungsdateien",
+                  "detail": "Vorbereitet und entwirft Finanzierungsdateien in Übereinstimmung mit den höchsten internationalen professionellen Standards."
+              },
+              {
+                  "title": "Kreditbewertungseinheit",
+                  "description": "Bewertung der Rückzahlungsfähigkeit des Kunden",
+                  "detail": "Führt eine umfassende Bewertung der Kreditwürdigkeit und der Fähigkeit des Kunden durch, Verpflichtungen zu erfüllen."
+              },
+              {
+                  "title": "Finanzierungs-Match-Einheit",
+                  "description": "Auswahl der richtigen Institution",
+                  "detail": "Passt die Bedürfnisse des Kunden an die am besten geeigneten verfügbaren Finanzierungsinstitutionen an."
+              },
+              {
+                  "title": "Verhandlungseinheit",
+                  "description": "Verbesserung der Bedingungen",
+                  "detail": "Verhandelt mit hohem Professionalismus, um die besten möglichen Bedingungen und Preise für den Kunden zu sichern."
+              },
+              {
+                  "title": "Finanzabschlusseinheit",
+                  "description": "Genehmigung von Verträgen",
+                  "detail": "Überwacht die Abschlussphase und stellt die Korrektheit von Verträgen und vertraglichen Klauseln sicher."
+              },
+              {
+                  "title": "Nach-Finanzierungseinheit",
+                  "description": "Überwachung von Verpflichtungen",
+                  "detail": "Überwacht Finanzierungsverpflichtungen, verfolgt Flows und gibt regelmäßige Empfehlungen ab."
+              }
+          ],
+          "summary": {
+              "titleNumber": "7",
+              "titleLabel": "Spezialisierte Einheiten",
+              "text": "Arbeiten in voller Integration, um sicherzustellen, dass jede Datei nach den höchsten Standards von Qualität und Professionalität ausgeführt wird.",
+              "qualityStatLabel": "Qualität",
+              "followStatLabel": "Nachverfolgung"
+          }
+      },
+      "stats": {
+          "title": "Das System in Zahlen",
+          "subtitle": "Zahlen, die die Stärke des Betriebssystems von KIB Financing widerspiegeln.",
+          "items": [
+              {
+                  "label": "Ausführungsphasen",
+                  "sublabel": "Ein end-to-end integrierter Pfad"
+              },
+              {
+                  "label": "Spezialisierte Einheiten",
+                  "sublabel": "Arbeiten in Harmonie und Integration"
+              },
+              {
+                  "label": "Ausführende Direktoren",
+                  "sublabel": "Mit globaler Erfahrung und hoher Kompetenz"
+              },
+              {
+                  "label": "Globale Standards",
+                  "sublabel": "Kein Kompromiss bei der Qualität"
+              }
+          ],
+          "quote": "Eine Institution mit klarer Managementstruktur, präzisen Befugnissen und einem disziplinierten Ausführungspfad ist die Institution, die in der Lage ist, sichere, nachhaltige und strategisch wertvolle Finanzierung bereitzustellen."
+      },
+      "quality": {
+          "badge": "Qualitäts- & Exzellenzstandards",
+          "title": "Standards, die kein",
+          "titleHighlight": "Kompromiss akzeptieren",
+          "paragraph": "Dieses Ausführungssystem ist nicht nur administrative Organisation, sondern eine Weltklasse-Betriebsarchitektur, die sicherstellt, dass jede Datei professionell gemanagt wird und jede Entscheidung auf Analyse basiert.",
+          "overlay": {
+              "badge": "Qualitätssicherung",
+              "subtitle": "Standards, die kein Kompromiss akzeptieren",
+              "stagesLabel": "Phasen",
+              "unitsLabel": "Einheiten",
+              "qualityLabel": "Qualität"
+          },
+          "standards": [
+              {
+                  "title": "Governance & Compliance",
+                  "description": "Jede Datei durchläuft eine strenge Compliance-Überprüfung, um die Ausrichtung auf regulatorische Anforderungen zu gewährleisten."
+              },
+              {
+                  "title": "Datenbasierte Entscheidungen",
+                  "description": "Keine Finanzierungsentscheidung wird ohne umfassende, präzise Analyse aus der Analyseeinheit getroffen."
+              },
+              {
+                  "title": "Proaktives Risikomanagement",
+                  "description": "Risiken werden vor dem Treffen von Entscheidungen bewertet und effektive Minderungspläne für jede Datei entworfen."
+              },
+              {
+                  "title": "Außergewöhnliche Kundenerfahrung",
+                  "description": "Der Direktor für Kundenerfahrung garantiert professionelle Kommunikation und kontinuierliche Nachverfolgung in jeder Phase."
+              },
+              {
+                  "title": "Operative Effizienz",
+                  "description": "Ein disziplinierter Ausführungspfad, der Geschwindigkeit der Fertigstellung ohne Kompromiss bei der Qualität gewährleistet."
+              },
+              {
+                  "title": "Globale Standards",
+                  "description": "Jedes Verfahren wird nach den höchsten internationalen professionellen Standards in der Finanzierung ausgeführt."
+              }
+          ]
+      },
+      "cta": {
+          "badge": "Beginnen Sie Ihre Finanzierungsreise",
+          "title": "Bereit für institutionelle Finanzierung",
+          "titleHighlight": "nach globalen Standards?",
+          "paragraph": "Unser spezialisiertes ausführendes Team arbeitet rund um die Uhr, um die optimale Finanzierungslösung für Ihre Bedürfnisse zu entwerfen.",
+          "phoneLabel": "Direkttelefon",
+          "emailLabel": "E-Mail",
+          "locationLabel": "Hauptsitz",
+          "locationValue": "Vereinigte Arabische Emirate",
+          "ctaViewProcess": "Die Phasen anzeigen",
+          "featureResponseTime": "Reaktionszeit",
+          "featureConfidentiality": "Totale Vertraulichkeit",
+          "featureExperience": "Jahre Erfahrung",
+          "featureFiles": "Erfolgreiche Dateien",
+          "imageAltMain": "Verhandlungsteam",
+          "imageAltStats": "Ausführende Statistiken"
+      }
+  },
+    "financingPath": {
+        "pageTitle": "KIB Financing | Finanzierungspfad",
+        "pageDescription": "Ausführender Finanzierungspfad: eine Premium-Finanzierungsreise, die nach globalen institutionellen Standards gemanagt wird für Kunden, die präzise Behandlung und strategische Vision erfordern.",
+        "hero": {
+            "badge": "Ausführender VIP-Pfad",
+            "title": "Finanzierungspfad",
+            "titleHighlight": "Ausführend",
+            "subtitle": "Ein Premium-Finanzierungssystem, das nach globalen institutionellen Standards gemanagt wird. Ein Pfad, der für Kunden entworfen wurde, deren finanzielle Bedürfnisse präzise Handhabung und strategische Vision erfordern.",
+            "ctaPrimary": "Ausführende Beratung anfordern",
+            "ctaSecondary": "Den Pfad erkunden",
+            "trustConfidentiality": "100% vertraulich",
+            "trustStages": "8 präzise Phasen",
+            "trustPartnership": "Laufende Partnerschaft",
+            "imageAlt": "Kingdom Tower - Riyadh"
+        },
+        "stats": {
+            "label1": "Million SAR finanziert",
+            "label2": "Strategischer Partner",
+            "label3": "Präzise Phasen",
+            "label4": "Durchschnittliche Fertigstellungstage",
+            "imageAlt": "Stadt-Skyline"
+        },
+        "timeline": {
+            "sectionTitle": "Ausführender Pfad",
+            "sectionTitleHighlight": "Phasen",
+            "subtitle": "Eine integrierte Kapitalreise, die mit Vertraulichkeit, Präzision und Professionalität gemanagt wird, basierend auf Methodiken, die von großen Finanzinstitutionen weltweit verwendet werden.",
+            "viewTimeline": "Pfad anzeigen",
+            "viewGrid": "Grid anzeigen",
+            "fullDetails": "Vollständige Details",
+            "details": "Details",
+            "stageLabel": "Phase",
+            "activitiesTitle": "Schlüsselaktivitäten in dieser Phase:",
+            "stages": {
+                "1": {
+                    "title": "Umfassende strategische Due Diligence",
+                    "shortDesc": "Ergebnis: Eine klare strategische Vision, die die Finanzierungsrichtung von Anfang an definiert.",
+                    "fullContent": "Eine tiefe Lektüre des Geschäfts vor jedem Schritt. Wir beginnen mit einer privaten Sitzung, um Ihre Vision zu verstehen, analysieren dann das operative Modell und bewerten die finanzielle Position mit hoher Präzision, um den realen Finanzierungsbedarf zu identifizieren und eine anfängliche Sicht auf den am besten geeigneten Pfad aufzubauen.",
+                    "bullets": ["Private Sitzung mit dem Kunden, um seine Vision zu verstehen", "Analyse des operativen Modells des Geschäfts", "Bewertung der finanziellen Position mit hoher Präzision", "Identifikation des realen Finanzierungsbedarfs", "Aufbau einer anfänglichen Sicht auf den besten Pfad", "Identifikation von Stärken, auf die aufgebaut werden kann"]
+                },
+                "2": {
+                    "title": "Gestaltung der finanziellen Identität des Geschäfts",
+                    "shortDesc": "Ergebnis: Eine starke finanzielle Identität, die den Kunden in einem erhöhten Licht vor Finanziers präsentiert.",
+                    "fullContent": "Umwandlung von Daten in eine Premium-Grade-Finanzdatei. Wir sammeln wesentliche Daten und reframen sie professionell, um eine genaue finanzielle Karte zu erzeugen, die Stärken hervorhebt und eventuelle kleine Lücken anspricht.",
+                    "bullets": ["Sammeln wesentlicher Daten nur", "Professionelles Reframing von Informationen", "Vorbereitung einer genauen finanziellen Karte", "Hervorhebung finanzieller Stärken", "Ansprechen eventueller kleiner Lücken", "Vorbereitung einer vollständigen Finanzdatei, bereit für institutionelle Präsentation"]
+                },
+                "3": {
+                    "title": "Vorbereitung der ausführenden Datei",
+                    "shortDesc": "Ergebnis: Eine rigorose ausführende Datei, die die Stärke und Bereitschaft des Kunden widerspiegelt.",
+                    "fullContent": "Eine Finanzierungsdatei, die für große Institutionen entworfen wurde. Wir entwerfen eine hochrangige ausführende Zusammenfassung, bauen die 'finanzielle Geschichte' des Kunden auf, bereiten einen ausgewogenen Rückzahlungsplan vor und definieren die Einreichungsstrategie.",
+                    "bullets": ["Vorbereitung einer umfassenden ausführenden Datei", "Entwurf einer hochrangigen ausführenden Zusammenfassung", "Aufbau der 'finanziellen Geschichte' des Kunden", "Vorbereitung eines ausgewogenen Rückzahlungsplans", "Definition der Einreichungsstrategie", "Vorbereitung der formellen institutionellen Präsentation"]
+                },
+                "4": {
+                    "title": "Auswahl der idealen Finanzierungsinstitution",
+                    "shortDesc": "Ergebnis: Auswahl der Institution, die die höchste Genehmigungsrate und besten Bedingungen bietet.",
+                    "fullContent": "Präzise Ausrichtung zwischen dem Bedarf des Kunden und Finanzierungsprogrammen. Wir analysieren die Richtlinien der Finanziers und vergleichen Programme, um die beste Passung und den richtigen Einreichungskanal zu identifizieren.",
+                    "bullets": ["Analyse der Richtlinien von Finanzierungsinstitutionen", "Vergleich von Programmen und Optionen", "Identifikation der am besten passenden Institution", "Identifikation des richtigen Einreichungskanals", "Vorbereitung des formellen Kommunikationsplans", "Festlegung des optimalen Einreichungszeitpunkts"]
+                },
+                "5": {
+                    "title": "Formelle institutionelle Einreichung",
+                    "shortDesc": "Ergebnis: Eine Datei, die Schritt für Schritt verfolgt wird, bis die Entscheidung erlassen wird.",
+                    "fullContent": "Einreichung und Management der Datei nach globalen Standards. Wir managen die Kommunikation mit der Finanzierungsinstitution, antworten auf technische Anfragen und verfolgen den Antragsstatus täglich, um einen reibungslosen Überprüfungsprozess zu gewährleisten.",
+                    "bullets": ["Einreichung der Datei durch offizielle Kanäle", "Präsentation der ausführenden Zusammenfassung", "Management der Kommunikation mit dem Finanzier", "Antwort auf technische Anfragen", "Tägliche Verfolgung des Antragsstatus", "Sicherstellung eines reibungslosen Überprüfungsprozesses"]
+                },
+                "6": {
+                    "title": "Verbesserung der Finanzierungsbedingungen",
+                    "shortDesc": "Ergebnis: Ein exzellentes Finanzierungsangebot… mit besseren Bedingungen… und höheren Vorteilen.",
+                    "fullContent": "Sicherung des besten möglichen Finanzierungsangebots. Wir arbeiten daran, die Finanzierungsrate, die Rückzahlungsdauer, Gebühren und Abschlussbedingungen zu verbessern, um den Finanzierungswert des Kunden zu erhöhen.",
+                    "bullets": ["Verbesserung der Finanzierungsrate", "Verbesserung der Rückzahlungsdauer", "Verbesserung der Gebühren", "Verbesserung der Abschlussbedingungen", "Verbesserung der Rückzahlungsbedingungen", "Erhöhung des Finanzierungswerts des Kunden"]
+                },
+                "7": {
+                    "title": "Ausführender finanzieller Abschluss",
+                    "shortDesc": "Ergebnis: Ein reibungsloser, klarer und beruhigender finanzieller Abschluss.",
+                    "fullContent": "Abschluss der Finanzierung mit Klarheit und Vertrauen. Wir überprüfen Verträge und erklären Bedingungen dem Kunden vor der Genehmigung von Vereinbarungen, Unterzeichnung des formellen Abschlusses und Erteilung der finalen Genehmigung.",
+                    "bullets": ["Überprüfung von Verträgen", "Erklärung der Bedingungen dem Kunden", "Genehmigung von Vereinbarungen", "Unterzeichnung des formellen Abschlusses", "Erteilung der finalen Genehmigung", "Vorbereitung des Ausführungsplans"]
+                },
+                "8": {
+                    "title": "Partnerschaft nach Finanzierung",
+                    "shortDesc": "Ergebnis: Eine laufende Kapitalpartnerschaft, die den Kunden nach Finanzierung stärkt.",
+                    "fullContent": "Eine laufende Kapitalbeziehung… keine einmalige Transaktion. Wir überwachen Verpflichtungen und verfolgen Flows, während wir laufende Finanzberatung bieten, um den Kunden bei zukünftigen Updates zu unterstützen.",
+                    "bullets": ["Überwachung von Verpflichtungen", "Verfolgung von Flows", "Bereitstellung laufender Finanzberatung", "Unterstützung des Kunden bei zukünftigen Updates", "Verstärkung der finanziellen Stabilität", "Aufbau einer langfristigen Beziehung"]
+                },
+                "9": {
+                    "title": "Kapitalwachstum & Expansionsstrategie",
+                    "shortDesc": "Ergebnis: Ein strukturierter Expansionsplan, der den Wert des Unternehmens und seine Marktwirkung erhöht.",
+                    "fullContent": "Nach Erreichung finanzieller Stabilität gehen wir in die Wachstumsphase über. Wir analysieren Expansionschancen, restrukturieren Kapital bei Bedarf und bewerten Refinanzierungs- oder strategische Partnerschaftsoptionen, um die Marktbewertung des Unternehmens zu erhöhen und seine langfristige Nachhaltigkeit zu unterstützen.",
+                    "bullets": [
+                        "Analyse von Marktexpansionschancen",
+                        "Bewertung von Refinanzierungsoptionen",
+                        "Restrukturierung von Kapital bei Bedarf",
+                        "Bewertung von strategischen Partnerschaftschancen",
+                        "Erhöhung der Marktbewertung",
+                        "Aufbau eines langfristigen Wachstumsplans"
+                    ]
+                }
+            }
+        },
+        "whoItsFor": {
+            "title": "Für wen ist dieser",
+            "titleHighlight": "Pfad?",
+            "criteria1Title": "Mittel- und Großunternehmen",
+            "criteria1Desc": "Unternehmen mit einer starken Erfolgsbilanz, die ihre Operationen lokal oder regional erweitern wollen.",
+            "criteria2Title": "Expansions- und Wachstumsprojekte",
+            "criteria2Desc": "Einheiten, die Finanzierung für Akquisitionen oder neue Produktionslinien suchen.",
+            "criteria3Title": "Multinationale Unternehmen",
+            "criteria3Desc": "Ausländische Unternehmen, die Finanzierungsstrukturen suchen, die mit ihren lokalen Markteinsätzen ausgerichtet sind.",
+            "criteria4Title": "Finanzielle Umstrukturierung",
+            "criteria4Desc": "Unternehmen, die ihre Kapitalstruktur verbessern und aktuelle Finanzierungskosten reduzieren wollen.",
+            "imageAlt1": "Strategisches Planungsteam",
+            "imageAlt2": "Finanzdatenanalyse",
+            "badgeText": "Wir bedienen mehr als 50 führende Unternehmen im Königreich"
+        },
+        "benefits": {
+            "title": "Warum den",
+            "titleHighlight": "ausführenden Pfad wählen?",
+            "intro": "Wir bieten nicht nur Finanzierung… wir formen Ihre finanzielle Position um und bauen einen Kapitalpfad auf, der Ihre Wettbewerbsfähigkeit erhöht und Ihnen außergewöhnliche Verhandlungsmacht gibt.",
+            "benefit1Title": "Stabiler und beständiger",
+            "benefit1Desc": "Wir bauen einen Kapitalpfad auf, der Ihre Wettbewerbsfähigkeit erhöht und Ihre Markpräsenz stärkt.",
+            "benefit2Title": "Mehr Wert und Impact",
+            "benefit2Desc": "Wir geben Ihnen Verhandlungsmacht, die nur Top-Tier-Kunden erhalten.",
+            "benefit3Title": "Ausgerichtet auf Ihre Ambition",
+            "benefit3Desc": "Eine Partnerschaft, die in vollem Vertrauen gemanagt, mit vollständigem Vertrauen ausgeführt und mit Ergebnissen abgeschlossen wird, die Erwartungen übertreffen.",
+            "benefit4Title": "Globale Standards",
+            "benefit4Desc": "Am nächsten an der Präzision und Professionalität globaler Finanzinstitutionen.",
+            "imageAlt1": "Selbstbewusster Geschäftsmann",
+            "imageAlt2": "Deal-Handschlag",
+            "imageAlt3": "Vorbereitung ausführender Datei"
+        },
+        "comparison": {
+            "title": "Der Unterschied zwischen dem",
+            "titleHighlight": "ausführenden Pfad",
+            "titleSuffix": "und dem traditionellen Pfad",
+            "subtitle": "Entdecken Sie, warum ausgezeichnete Kunden den ausführenden Pfad den traditionellen Routen vorziehen.",
+            "tabCompare": "Vollständiger Vergleich",
+            "tabTraditional": "Traditioneller Pfad",
+            "tabExecutive": "Ausführender Pfad",
+            "traditionalTitle": "Traditioneller Pfad",
+            "traditionalSubtitle": "Der übliche Weg, Finanzierung zu erhalten",
+            "executiveTitle": "Ausführender Pfad",
+            "executiveSubtitle": "Eine integrierte Kapitalreise nach globalen Standards",
+            "bestBadge": "Beste",
+            "executiveFullSubtitle": "Exklusive Vorteile für Top-Tier-Kunden",
+            "traditionalFullTitle": "Traditioneller Pfad",
+            "traditionalFullSubtitle": "Herausforderungen und Risiken, denen die meisten Finanzierungsantragsteller gegenüberstehen",
+            "executiveFullTitle": "Ausführender Pfad",
+            "executiveFullSubtitle": "Exklusive Vorteile für Top-Tier-Kunden",
+            "ctaStart": "Beginnen Sie Ihren ausführenden Pfad",
+            "traditionalItems": [
+                "Vorbereitung von Dateien allein ohne Anleitung",
+                "Bewerbung bei einer einzigen Institution und Warten",
+                "Keine Verhandlung über Bedingungen",
+                "Keine Nachverfolgung nach Einreichung",
+                "Standardfinanzierungsbedingungen ohne Optimierung",
+                "Keine Unterstützung nach Auszahlung",
+                "Lange und undefinierte Fertigstellungszeit"
+            ],
+            "executiveItems": [
+                "Umfassende strategische Due Diligence und eine rigorose ausführende Datei",
+                "Auswahl der idealen Institution aus Dutzenden Optionen",
+                "Professionelle Verhandlung zur Verbesserung jeder Bedingung",
+                "Schritt-für-Schritt-Nachverfolgung bis zur Erteilung der Entscheidung",
+                "Optimierte Finanzierungsbedingungen und exklusive Vorteile",
+                "Laufende Kapitalpartnerschaft nach Finanzierung",
+                "Durchschnittliche Fertigstellung von nur 15 Arbeitstagen"
+            ],
+            "imageAltTraditional": "Traditionelle Papierdokumente",
+            "imageAltExecutive": "Professionelles ausführendes Team"
+        },
+        "partners": {
+            "title": "Unsere",
+            "titleHighlight": "strategischen Partner",
+            "subtitle": "Wir arbeiten mit führenden Finanzinstitutionen zusammen, um die besten Bedingungen und Optionen für unsere Kunden zu sichern.",
+            "trustBadge": "Alle unsere Partnerschaften sind lizenziert und von der Saudi Central Bank genehmigt",
+            "imageAlt": "Finanzdistrikt - Riyadh",
+            "names": ["Al Ahli Bank", "Al Rajhi Bank", "Riyad Bank", "Banque Saudi Fransi", "Development Fund", "Export Bank", "Monsha'at", "Kafalah"]
+        },
+        "faq": {
+            "title": "Häufig",
+            "titleHighlight": "gestellte Fragen",
+            "items": {
+                "1": { "q": "Was ist der ausführende Finanzierungspfad?", "a": "Es ist ein Rahmen, der für Kunden entworfen wurde, deren finanzielle Bedürfnisse präzise Handhabung und strategische Vision erfordern. Wir bieten keine traditionelle Finanzierung, sondern eine integrierte Kapitalreise, die mit Vertraulichkeit und Professionalität gemanagt wird, basierend auf Methodiken, die von großen Finanzinstitutionen verwendet werden." },
+                "2": { "q": "Wie lange dauert der Finanzierungsprozess?", "a": "Die Dauer variiert je nach Größe der Finanzierung und Komplexität der Finanzstruktur. Im Durchschnitt verkürzen wir dank unserer direkten Beziehungen zu Entscheidungsträgern die Zeit im Vergleich zu traditionellen Routen erheblich, mit einer durchschnittlichen Fertigstellung von etwa 15 Tagen nach Abschluss der Datei." },
+                "3": { "q": "Garantieren Sie die Genehmigung der Finanzierung?", "a": "Durch 'umfassende strategische Due Diligence' in der ersten Phase bewerten wir die Erfolgschancen genau. Wenn wir entscheiden, fortzufahren, übersteigt unsere Dateierfolgsrate 95% dank gründlicher Vorbereitung und sorgfältiger Auswahl der richtigen Finanzierungsinstitution." },
+                "4": { "q": "Welche Arten von Unternehmen bedienen Sie?", "a": "Wir bedienen mittel- und große Unternehmen, Expansions- und Wachstumsprojekte, multinationale Unternehmen, die im lokalen Markt operieren, und Unternehmen, die finanzielle Umstrukturierung suchen." },
+                "5": { "q": "Wie gewährleisten Sie die Vertraulichkeit unserer Finanzdaten?", "a": "Wir halten uns an die höchsten Standards von Vertraulichkeit und Datenschutz. Ein strenges Nicht-Offenlegungsabkommen (NDA) wird vor der Überprüfung eines Dokuments unterzeichnet, und alle Daten werden durch sichere, geschlossene Systeme gemanagt." }
+            },
+            "imageAlt1": "Finanzberater gibt Rat",
+            "imageAlt2": "Partnerschafts-Handschlag",
+            "sideTitle": "Spezialisiertes Beratungsteam",
+            "sideSubtitle": "Wir beantworten alle Ihre Anfragen mit voller Transparenz",
+            "badgeSuccess": "+95% Erfolgsrate",
+            "badgeDays": "15 Tage Durchschnitt"
+        },
+        "cta": {
+            "imageTitle": "Ihr nächster Schritt beginnt hier",
+            "imageSubtitle": "Wir warten darauf, Ihren Kapitalpfad aufzubauen.",
+            "heading": "Bereit, Ihr Geschäft auf das nächste Level zu heben?",
+            "paragraph": "Treten Sie in eine echte Kapitalpartnerschaft ein, die in vollem Vertrauen gemanagt, mit vollständigem Vertrauen ausgeführt und mit Ergebnissen abgeschlossen wird, die Erwartungen übertreffen.",
+            "ctaButton": "Ausführende Beratung anfordern",
+            "contactLabel": "Oder kontaktieren Sie uns direkt über:",
+            "whatsapp": "WhatsApp",
+            "call": "Anruf",
+            "email": "E-Mail",
+            "imageAlt": "Ausführender Handschlag"
+        }
+    }
+}

@@ -1,14 +1,14 @@
 {
     "page": {
-        "title": "KIB Finance | Home",
-        "description": "At KIB Finance, we design and structure bespoke financing solutions for companies and projects, combining deep local expertise, strong banking relationships and disciplined execution to turn ambitious plans into sustainable, long‑term growth.",
+        "title": "KIB Financing | Home",
+        "description": "At KIB Financing, we design and structure bespoke financing solutions for companies and projects, combining deep local expertise, strong banking relationships and disciplined execution to turn ambitious plans into sustainable, long‑term growth.",
         "integratedPath": {
-            "title": "KIB Finance | Integrated Path",
+            "title": "KIB Financing | Integrated Path",
             "description": "Discover the Integrated Capital Pathway: a nine-phase journey to achieve your investment goals and build a solid financial future. Transparency, efficiency and strategic partnership at every step."
         },
         "services": {
-            "title": "KIB Finance | Financing Services",
-            "description": "KIB Finance L.L.C. offers an integrated suite of financial services for companies, institutions, entrepreneurs and investment projects. Structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise."
+            "title": "KIB Financing | Financing Services",
+            "description": "KIB Financing L.L.C. offers an integrated suite of financial services for companies, institutions, entrepreneurs and investment projects. Structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise."
         }
     },
     "notFound": {
@@ -252,7 +252,7 @@
             "badge": "Core principles",
             "title": "Our",
             "titleHighlight": "core values",
-            "subtitle": "Five principles that define KIB Finance and guide every decision we make.",
+            "subtitle": "Five principles that define KIB Financing and guide every decision we make.",
             "items": [
                 { "title": "Full transparency", "subtitle": "Full Transparency" },
                 { "title": "High efficiency", "subtitle": "High Efficiency" },
@@ -282,7 +282,7 @@
             "badge": "Start your journey today",
             "titleLine1": "Your financial",
             "titleLine2": "future starts here",
-            "subtitle": "Join thousands of clients who have trusted KIB Finance to achieve their investment goals through the Integrated Capital Pathway.",
+            "subtitle": "Join thousands of clients who have trusted KIB Financing to achieve their investment goals through the Integrated Capital Pathway.",
             "cta": "Start your journey now",
             "phone": "+966 11 000 0000",
             "email": "info@kibfinance.com"
@@ -324,8 +324,8 @@
                   }
             ]
         },
-        "description": "KIB Finance L.L.C. is an integrated institutional financial entity built on clear vision, stable values and disciplined governance. We believe financing is not a quick product to be sold, but a responsibility to manage and a strategic partnership that shapes the future of companies and projects.", 
-        "copyright": "© 2026 KIB Finance L.L.C. All Rights Reserved.",
+        "description": "KIB Financing L.L.C. is an integrated institutional financial entity built on clear vision, stable values and disciplined governance. We believe financing is not a quick product to be sold, but a responsibility to manage and a strategic partnership that shapes the future of companies and projects.", 
+        "copyright": "© 2026 KIB Financing L.L.C. All Rights Reserved.",
         "socialMedia": {
             "linkedin": "LinkedIn",
             "twitter": "Twitter",
@@ -403,11 +403,11 @@
     },
     "servicesPage": {
         "hero": {
-            "badge": "KIB Finance L.L.C.",
+            "badge": "KIB Financing L.L.C.",
             "title": "Our",
             "titleHighlight": "Financing Services",
             "typingLine": "Specialised financial solutions designed with precision… executed professionally… managed to board-level standards",
-            "paragraph": "KIB Finance L.L.C. offers an integrated suite of financial services designed to meet the needs of companies, institutions, entrepreneurs and investment projects at home and abroad. We do not provide traditional services, but structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise.",
+            "paragraph": "KIB Financing L.L.C. offers an integrated suite of financial services designed to meet the needs of companies, institutions, entrepreneurs and investment projects at home and abroad. We do not provide traditional services, but structured financing solutions built on rigorous analysis, strategic vision and broad operational expertise.",
             "exploreServices": "Explore our services",
             "contactUs": "Contact us",
             "imageAlt": "Dubai Financial District"
@@ -533,7 +533,7 @@
     "financeHome": {
         "hero": {
             "slide1": {
-                "headline": "KIB Finance",
+                "headline": "KIB Financing",
                 "subheadline": "Your strategic partner in the world of financing",
                 "highlight": "Financial leadership with global standards"
             },
@@ -560,7 +560,7 @@
             "badge": "Corporate identity",
             "title": "Who we are and what",
             "titleHighlight": "we represent",
-            "paragraph1": "KIB Finance is not just another brokerage firm; it is a specialised financial institution built on clear governance, strong risk discipline and deep knowledge of the regional financing landscape.",
+            "paragraph1": "KIB Financing is not just another brokerage firm; it is a specialised financial institution built on clear governance, strong risk discipline and deep knowledge of the regional financing landscape.",
             "paragraph2": "We believe that financing is not a quick product to be sold, but a strategic responsibility that shapes the future of companies and projects.",
             "bullet1": "A strong professional presence that reflects the strength of the company and market trust",
             "bullet2": "High analytical capability – reading numbers, risks and cash flows with precision",
@@ -569,7 +569,7 @@
             "floatingBadgeTitle": "Trusted institution",
         "floatingBadgeSubtitle": "15+ years in the financial sector",
       "introLabel": "Introduction",
-      "introCompanyName": "KIB Finance L.L.C.",
+      "introCompanyName": "KIB Financing L.L.C.",
       "introParagraph1": "We believe that financing is not merely a service to be delivered, but a responsibility to be managed, a partnership to be built, and a strategic decision that shapes the future of companies and projects.",
         "introParagraph2": "The Board of Directors has adopted a comprehensive conceptual framework that defines our institutional identity, anchors our values, strengthens governance mechanisms and lays the foundations on which every relationship, service and decision is built.",
         "identity": {
@@ -774,7 +774,7 @@
         "whyUs": {
             "badge": "Institutional vision",
             "title": "Why",
-            "titleHighlight": "KIB Finance?",
+            "titleHighlight": "KIB Financing?",
             "subtitle": "A vision built on sustainability, driven toward leadership and executed with international‑grade standards.",
             "vision": {
                 "financialLeadership": {
@@ -864,13 +864,13 @@
         }
     },
     "implementationMechanism": {
-        "pageTitle": "KIB Finance | Implementation Mechanism",
+        "pageTitle": "KIB Financing | Implementation Mechanism",
         "pageDescription": "An institutional execution mechanism: a global operating system run under a unified leadership structure, precise authorities and a data‑driven path that protects the entity and maximises financing value.",
         "hero": {
             "badge": "Global operating system",
             "titleLine1": "Institutional execution",
             "titleLine2": "mechanism",
-            "subtitle": "KIB Finance L.L.C.",
+            "subtitle": "KIB Financing L.L.C.",
             "description": "A global operating system run under a unified leadership structure, precise authorities and a data‑driven execution path.",
             "pills": [
                 "Leadership & governance",
@@ -889,7 +889,7 @@
             "badge": "Introduction",
             "title": "A world‑class operating model",
             "titleHighlight": "integrated and disciplined",
-            "paragraph1": "The success of KIB Finance L.L.C. relies on an institutional operating system built on a global model that combines leadership, governance, analysis, risk, execution and follow‑up.",
+            "paragraph1": "The success of KIB Financing L.L.C. relies on an institutional operating system built on a global model that combines leadership, governance, analysis, risk, execution and follow‑up.",
             "paragraph2": "This model is not just a list of operational steps, but a chain of decision‑making centres that work in harmony. Each file moves through clear leadership levels, where every level has defined authority, precise responsibilities and uncompromising performance standards.",
             "chips": [
                 "Every decision built on data",
@@ -1192,7 +1192,7 @@
         },
         "stats": {
             "title": "The system in numbers",
-            "subtitle": "Figures that reflect the strength of KIB Finance’s operating system.",
+            "subtitle": "Figures that reflect the strength of KIB Financing’s operating system.",
             "items": [
                 {
                     "label": "Execution stages",
@@ -1271,7 +1271,7 @@
         }
     },
     "financingPath": {
-        "pageTitle": "KIB Finance | Financing Path",
+        "pageTitle": "KIB Financing | Financing Path",
         "pageDescription": "Executive financing path: a premium financing journey managed to global institutional standards for clients who require precise treatment and strategic vision.",
         "hero": {
             "badge": "Executive VIP Path",

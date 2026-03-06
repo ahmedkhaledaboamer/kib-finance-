@@ -1,0 +1,2384 @@
+{
+    "page": {
+        "title": "KIB Financing | 首页",
+        "description": "在KIB Financing，我们为企业和项目设计并构建定制融资方案，结合深厚的本地专业知识、强大的银行关系和严谨的执行力，将宏伟计划转化为可持续的长期增长。",
+        "integratedPath": {
+            "title": "KIB Financing | 综合路径",
+            "description": "探索综合资本路径：一段九阶段的旅程，助您实现投资目标并构建稳固的财务未来。每一步均体现透明度、效率与战略合作。"
+        },
+        "services": {
+            "title": "KIB Financing | 融资服务",
+            "description": "KIB Financing有限责任公司为企业、机构、创业者和投资项目提供一体化金融服务。基于严谨分析、战略远见和广泛运营专长构建的结构化融资解决方案。"
+        }
+    },
+    "notFound": {
+        "title": "页面未找到",
+        "description": "您查找的页面不存在或已被移动，请尝试返回首页。",
+        "cta": "返回首页",
+        "badge": "未找到"
+    },
+    "navbar": {
+        "cta": "预约服务",
+        "openMenu": "打开菜单",
+        "closeMenu": "关闭菜单",
+        "navMenu": "主菜单",
+        "routes": [
+            {
+                "label": "首页",
+                "href": "/"
+            },
+            {
+                "label": "融资服务",
+                "href": "/services"
+            },
+            {
+                "label": "综合路径",
+                "href": "/Integrated-path"
+            },
+            {
+                "label": "融资路径",
+                "href": "/financing-path"
+            },
+            {
+                "label": "实施机制",
+                "href": "/implementation-mechanism"
+            }
+        ]
+    },
+    "content": {
+        "title": "我的组件",
+        "description": "我的组件描述"
+    },
+    "header": {
+        "badge": "您所需的执行力",
+        "titleLine1": "您在以下方面的执行合作伙伴",
+        "titleHighlight": "建立影响力",
+        "titleLine2": "与塑造决策",
+        "description": "在商业环境瞬息万变、商业领袖面临在短时间内做出精准决策压力的背景下，真正的领袖不仅仅需要服务提供商——他们需要一个能给予他们实际执行力和清晰前进路径的执行合作伙伴。",
+        "ctaPrimary": "立即开始您的旅程",
+        "ctaSecondary": "探索我们的服务",
+        "statsClients": "满意客户",
+        "statsExperience": "多年经验",
+        "statsConfidentiality": "完全保密"
+    },
+    "about": {
+        "label": "我们是谁？",
+        "title": "支持以下群体的专业机构",
+        "titleHighlight": "商业领袖",
+        "intro": "我们是一家专业机构，通过结合深度分析、清晰愿景和精准执行的一体化运营系统支持商业领袖。",
+        "quote": "我们提供卓越的执行价值，让商业领袖感受到他们正在与一个理解其时间敏感性的合作伙伴打交道。",
+        "pillars": [
+            {
+                "title": "深度分析",
+                "desc": "准确解读市场与机遇"
+            },
+            {
+                "title": "完全保密",
+                "desc": "全面保护您的敏感档案"
+            },
+            {
+                "title": "精准执行",
+                "desc": "真正的合作，而非仅仅咨询"
+            }
+        ],
+        "bannerText": "执行力量",
+        "badgeStat": "满意客户",
+        "badgeStatSub": "15年以上经验",
+        "imageAlt1": "专业办公室",
+        "imageAlt2": "战略团队"
+    },
+    "services": {
+        "badge": "关于我们的服务",
+        "title": "卓越的",
+        "titleHighlight": "商业领袖服务",
+        "subtitle": "专为满足您需求而设计的一体化服务套件",
+        "items": [
+            {
+                "title": "分析与决策",
+                "description": "超越数据的洞察。"
+            },
+            {
+                "title": "保护高度敏感利益",
+                "description": "在风险来临之前巩固您的业务。"
+            },
+            {
+                "title": "国内外战略扩张",
+                "description": "开辟经过深思熟虑的扩张路径。"
+            },
+            {
+                "title": "运营结构发展",
+                "description": "从内部提升您的运营效率。"
+            },
+            {
+                "title": "促进官方交易",
+                "description": "加速他人拖延之事。"
+            },
+            {
+                "title": "平行影响力网络",
+                "description": "在您需要之前就为您服务的关系网络。"
+            }
+        ]
+    },
+    "offer": {
+        "whatWeOfferLabel": "我们提供什么？",
+        "whatWeOfferTitle": "一体化",
+        "whatWeOfferHighlight": "支持系统",
+        "offers": [
+            "构建清晰的决策环境",
+            "保护机构免受风险",
+            "开辟扩张和影响力通道",
+            "发展结构与流程",
+            "促进政府事务",
+            "提供服务于您目标的网络"
+        ],
+        "whatYouGetLabel": "与我们合作您将获得什么？",
+        "whatYouGetTitle": "真实的",
+        "whatYouGetHighlight": "切实价值",
+        "benefits": [
+            "一个为您思考并为您执行的合作伙伴",
+            "全面保护您的利益",
+            "更快获取机遇",
+            "专业管理敏感事务",
+            "无需您直接参与即可获得切实成果",
+            "在风险演变为危机前加以控制"
+        ]
+    },
+    "clients": {
+        "badge": "我们服务于谁？",
+        "title": "我们的",
+        "titleHighlight": "尊贵客户",
+        "subtitle": "我们自豪地服务于商业领袖和领先机构的精英群体",
+        "items": [
+            {
+                "title": "商业领袖与投资先驱",
+                "description": "战略决策的全面支持"
+            },
+            {
+                "title": "家族企业",
+                "description": "保护传承并确保延续"
+            },
+            {
+                "title": "外国投资者",
+                "description": "促进进入本地市场"
+            },
+            {
+                "title": "寻求扩张或重组的机构",
+                "description": "安全且经过深思熟虑的增长路径"
+            },
+            {
+                "title": "寻求发展的机构",
+                "description": "流程改进与身份塑造"
+            },
+            {
+                "title": "初创企业与有前景的项目",
+                "description": "从第一天起构建坚实的法律和行政基础"
+            }
+        ]
+    },
+    "quality": {
+        "columns": [
+            {
+                "title": "内部质量标准",
+                "subtitle": "鲜为人知的标准",
+                "items": [
+                    "100%运营精准度",
+                    "每一步骤的完整记录",
+                    "实时跟进",
+                    "持续分析",
+                    "内部质量检查",
+                    "执行前后审查",
+                    "隐性风险监控系统"
+                ]
+            },
+            {
+                "title": "机构语言",
+                "subtitle": "我们说一种不同的语言",
+                "items": [
+                    "清晰的语言",
+                    "无噪音的语言",
+                    "尊重您时间的语言",
+                    "基于信息而非印象的语言",
+                    "揭示真相而非隐藏它的语言"
+                ]
+            },
+            {
+                "title": "参与原则",
+                "subtitle": "我们的原则不会改变",
+                "items": [
+                    "我们在承诺之前先做到",
+                    "我们先展示后发言",
+                    "我们先执行后推广",
+                    "我们先尊重后请求",
+                    "我们先澄清后质疑"
+                ]
+            }
+        ]
+    },
+    "vision": {
+        "visionBadge": "我们的未来愿景",
+        "visionTitle": "成为",
+        "visionHighlight": "首选合作伙伴",
+        "visionTitle2": "服务于该地区商业领袖",
+        "visionDesc": "以及主要投资者在建立影响力和可持续增长方面的首选合作伙伴。",
+        "promiseBadge": "我们对您的承诺",
+        "promiseTitle": "我们承诺成为",
+        "promiseHighlight": "合作伙伴",
+        "promiseTitle2": "保护您利益的",
+        "promiseDesc": "并加强您的影响力，为增长和扩张创造安全路径。",
+        "imageAlt": "战略愿景",
+        "visionChip": "愿景 · 影响力 · 执行"
+    },
+    "whyUs": {
+        "badge": "为什么选择我们？",
+        "title": "使我们有别于",
+        "titleHighlight": "其他人的是什么",
+        "subtitle": "我们为您提供卓越优势，使我们成为雄心勃勃的商业领袖的理想选择",
+        "features": [
+            "确保最高保密级别的封闭方法论",
+            "快速响应，无延迟",
+            "能打开紧闭之门的关系网络",
+            "多学科专业知识",
+            "全力承诺结果",
+            "依靠行动而非言辞的执行"
+        ],
+        "vision": {
+            "financialLeadership": {
+                "title": "金融领导力",
+                "desc": "成为专业融资解决方案的首要参考机构。"
+            },
+            "strategicPartnerships": {
+                "title": "战略合作伙伴关系",
+                "desc": "与客户和融资机构建立长期关系。"
+            },
+            "regionalExpansion": {
+                "title": "区域扩张",
+                "desc": "在国内及整个地区扩展我们的服务。"
+            },
+            "innovativeSolutions": {
+                "title": "创新解决方案",
+                "desc": "开发与经济转型相匹配的融资产品。"
+            },
+            "sustainableFinance": {
+                "title": "可持续金融",
+                "desc": "提供支持长期增长并降低风险的解决方案。"
+            },
+            "operationalStrength": {
+                "title": "运营实力",
+                "desc": "构建基于精准、速度和合规的系统。"
+            },
+            "institutionalPresence": {
+                "title": "机构存在",
+                "desc": "加强公司作为受信任金融机构的地位。"
+            },
+            "continuousDevelopment": {
+                "title": "持续发展",
+                "desc": "持续改进系统和流程。"
+            },
+            "marketLeadership": {
+                "title": "市场领导力",
+                "desc": "成为企业和投资项目的首选。"
+            },
+            "economicImpact": {
+                "title": "经济影响",
+                "desc": "为国家经济做出贡献并加强商业环境。"
+            },
+            "futureReadiness": {
+                "title": "未来准备",
+                "desc": "为即将到来的经济和技术变革做好准备。"
+            },
+            "globalExpansion": {
+                "title": "全球扩张",
+                "desc": "开辟外部融资渠道，支持客户的国际项目。"
+            }
+        },
+        "governance": {
+            "clearFramework": {
+                "title": "清晰的治理框架",
+                "desc": "精确界定权限和职责的组织结构。"
+            },
+            "internalControl": {
+                "title": "持续内部控制",
+                "desc": "密切监控以确保符合标准。"
+            },
+            "advancedRiskManagement": {
+                "title": "高级风险管理",
+                "desc": "在任何融资决策前进行全面风险评估。"
+            },
+            "fullCompliance": {
+                "title": "完全合规",
+                "desc": "与本地和国际法规保持一致。"
+            }
+        },
+        "governanceSection": {
+            "badge": "治理框架",
+            "title": "指导决策的治理",
+            "titleHighlight": "并保证合规",
+            "description": "我们在严格的机构治理框架下运营，确保每项决策都以高度专业标准和完全透明的方式作出。"
+        }
+    },
+    "contact": {
+        "badge": "联系我们",
+        "title": "开始构建决策路径",
+        "titleHighlight": "以加强您的机构",
+        "subtitle": "我们在这里为您提供正确的机遇并保护您免受隐性风险。",
+        "cta": "立即联系我们",
+        "email": "contact@example.com",
+        "phone": "+966 50 000 0000"
+    },
+    "integratedPath": {
+        "hero": {
+            "titleLine1": "综合资本",
+            "titleLine2": "路径",
+            "subtitle": "综合资本路径",
+            "intro": "一段九阶段的旅程，助您实现投资目标并构建稳固的财务未来。",
+            "stats": [
+                {
+                    "value": "9",
+                    "label": "综合阶段"
+                },
+                {
+                    "value": "5",
+                    "label": "核心原则"
+                },
+                {
+                    "value": "100%",
+                    "label": "透明度与安全"
+                }
+            ],
+            "ctaStart": "立即开始您的旅程",
+            "ctaLearnMore": "了解更多"
+        },
+        "principles": {
+            "badge": "核心原则",
+            "title": "我们的",
+            "titleHighlight": "核心价值观",
+            "subtitle": "定义KIB Financing并指导我们每项决策的五项原则。",
+            "items": [
+                {
+                    "title": "完全透明",
+                    "subtitle": "完全透明"
+                },
+                {
+                    "title": "高效率",
+                    "subtitle": "高效率"
+                },
+                {
+                    "title": "人际关系",
+                    "subtitle": "人际关系"
+                },
+                {
+                    "title": "全球视野",
+                    "subtitle": "全球视野"
+                },
+                {
+                    "title": "可持续增长",
+                    "subtitle": "可持续增长"
+                }
+            ]
+        },
+        "phaseGrid": {
+            "badge": "九个阶段",
+            "title": "通往",
+            "titleHighlight": "成功的路线图",
+            "subtitle": "每个阶段都旨在建立在前一阶段的基础上，并为下一阶段铺平道路，在通往您财务目标的综合旅程中。"
+        },
+        "phases": [
+            {
+                "title": "发现与评估",
+                "subtitle": "第01阶段 — 发现",
+                "description": "全面分析当前财务状况并识别市场中的投资机会。",
+                "details": [
+                    "评估客户当前财务状况",
+                    "分析短期和长期投资目标",
+                    "研究本地和国际市场的机会",
+                    "确定可接受的风险级别"
+                ]
+            },
+            {
+                "title": "资本结构",
+                "subtitle": "第02阶段 — 结构",
+                "description": "构建能够最大化回报同时有效管理风险的稳固金融结构。",
+                "details": [
+                    "设计最优资本结构",
+                    "跨多个资产类别进行资产配置",
+                    "确定融资和投资比率",
+                    "制定现金流计划"
+                ]
+            },
+            {
+                "title": "风险管理",
+                "subtitle": "第03阶段 — 保护",
+                "description": "在市场波动中保护资本并确保可持续性的综合系统。",
+                "details": [
+                    "分析和分类潜在风险",
+                    "实施适当的对冲策略",
+                    "创建应急和储备基金",
+                    "持续监控风险指标"
+                ]
+            },
+            {
+                "title": "分析与数据",
+                "subtitle": "第04阶段 — 分析",
+                "description": "使用最新的财务分析和人工智能工具进行明智的决策。",
+                "details": [
+                    "历史财务数据分析",
+                    "未来情景建模",
+                    "定期详细绩效报告",
+                    "实时交互式仪表板"
+                ]
+            },
+            {
+                "title": "目标设定",
+                "subtitle": "第05阶段 — 定向",
+                "description": "具有可衡量目标和明确实现时间表的清晰路线图。",
+                "details": [
+                    "设定SMART财务目标",
+                    "确定关键绩效指标（KPI）",
+                    "制定实现时间表",
+                    "定期目标审查和更新"
+                ]
+            },
+            {
+                "title": "机会展示",
+                "subtitle": "第06阶段 — 展示",
+                "description": "专业展示精选投资机会并进行全面回报分析。",
+                "details": [
+                    "准备投资机会简报",
+                    "投资回报率分析",
+                    "比较可用投资替代方案",
+                    "与专家进行互动展示会议"
+                ]
+            },
+            {
+                "title": "运营与执行",
+                "subtitle": "第07阶段 — 运营",
+                "description": "精准执行投资计划并进行专业的日常运营管理。",
+                "details": [
+                    "执行已批准的投资交易",
+                    "日常投资组合管理",
+                    "绩效监控和报告",
+                    "流程改进和成本降低"
+                ]
+            },
+            {
+                "title": "验证与完成",
+                "subtitle": "第08阶段 — 完成",
+                "description": "验证既定目标的实现并记录成功，为更强大的未来路径奠定基础。",
+                "details": [
+                    "全面审查目标实现情况",
+                    "记录经验教训",
+                    "庆祝成就",
+                    "更新下一阶段计划"
+                ]
+            },
+            {
+                "title": "战略合作",
+                "subtitle": "第09阶段 — 合作",
+                "description": "建立开辟增长和扩张新视野的长期战略关系。",
+                "details": [
+                    "发展战略合作伙伴网络",
+                    "谈判合作协议",
+                    "创建联合投资联盟",
+                    "跨境扩展机会"
+                ]
+            }
+        ],
+        "cta": {
+            "badge": "今天开始您的旅程",
+            "titleLine1": "您的财务",
+            "titleLine2": "未来从这里开始",
+            "subtitle": "加入数千名信任KIB Financing通过综合资本路径实现投资目标的客户。",
+            "cta": "立即开始您的旅程",
+            "phone": "+966 11 000 0000",
+            "email": "info@kibfinance.com"
+        },
+        "phaseCard": {
+            "viewDetails": "查看详情",
+            "hideDetails": "隐藏详情"
+        }
+    },
+    "footer": {
+        "contact": {
+            "title": "联系我们",
+            "phone": "+971 521068882",
+            "email": "info@shazmlc.com",
+            "location": "阿拉伯联合酋长国"
+        },
+        "quickLinks": {
+            "title": "快速链接",
+            "links": [
+                {
+                    "label": "首页",
+                    "href": "/"
+                },
+                {
+                    "label": "融资服务",
+                    "href": "/services"
+                },
+                {
+                    "label": "实施机制",
+                    "href": "/implementation-mechanism"
+                },
+                {
+                    "label": "综合路径",
+                    "href": "/Integrated-path"
+                },
+                {
+                    "label": "融资路径",
+                    "href": "/financing-path"
+                }
+            ]
+        },
+        "description": "KIB Financing有限责任公司是一家建立在清晰愿景、稳定价值观和严谨治理基础上的一体化机构金融实体。我们相信融资不是一个可以快速出售的产品，而是一种需要管理的责任和塑造企业和项目未来的战略伙伴关系。",
+        "copyright": "© 2026 KIB Financing有限责任公司 版权所有。",
+        "socialMedia": {
+            "linkedin": "领英",
+            "twitter": "推特",
+            "instagram": "Instagram",
+            "facebook": "脸书"
+        }
+    },
+    "execution": {
+        "hero": {
+            "words": [
+                "Your",
+                "执行"
+            ],
+            "intro": "在一个游戏规则每天都在改变、噪音增加而行动减少的世界中，我们选择成为不提高声音……而是提升工作水平的机构。",
+            "tagline": "不追逐机遇……而是创造机遇的机构。不提供服务……而是为知道自身价值的商业领袖构建执行路径的合作伙伴。",
+            "cta": "探索更多",
+            "stats": [
+                {
+                    "num": "8+",
+                    "label": "多年经验"
+                },
+                {
+                    "num": "200+",
+                    "label": "高管客户"
+                },
+                {
+                    "num": "100%",
+                    "label": "承诺"
+                }
+            ]
+        },
+        "closing": {
+            "title": "联系我们",
+            "subtitle": "我们准备好构建您的执行路径。联系我们开始合作。",
+            "phone": "直线电话",
+            "email": "电子邮件",
+            "headquarters": "总部",
+            "location": "沙特阿拉伯王国利雅得",
+            "sendMessage": "发送直接消息",
+            "name": "您的姓名",
+            "namePlaceholder": "输入您的姓名",
+            "phoneLabel": "电话号码",
+            "phonePlaceholder": "输入您的号码",
+            "emailLabel": "电子邮件",
+            "emailPlaceholder": "输入您的电子邮件",
+            "message": "您的消息",
+            "messagePlaceholder": "我们如何为您服务？",
+            "submit": "发送请求"
+        },
+        "services": {
+            "title": "我们的服务",
+            "intro": "我们为您提供一体化执行服务",
+            "imageAlt": "现代办公空间",
+            "items": [
+                {
+                    "title": "个人影响力工程",
+                    "desc": "我们在决策圈中为您创造有影响力的存在。"
+                },
+                {
+                    "title": "高度敏感档案管理",
+                    "desc": "我们管理那些无人应看到的档案……以不留任何错误空间的精准度。"
+                },
+                {
+                    "title": "深度情景分析",
+                    "desc": "我们在商业未来发生变化之前就能洞察它。"
+                },
+                {
+                    "title": "构建平行影响力网络",
+                    "desc": "我们安排在您需要之前就能为您服务的关系。"
+                },
+                {
+                    "title": "监控隐性风险",
+                    "desc": "我们在威胁出现之前就能发现它。"
+                },
+                {
+                    "title": "商业领袖专业形象发展",
+                    "desc": "我们创造反映您真实价值的优雅存在。"
+                },
+                {
+                    "title": "高级政府关系管理",
+                    "desc": "我们促进您与官方机构的接触并克服复杂性。"
+                },
+                {
+                    "title": "设计安全扩张路径",
+                    "desc": "我们为您打开新的大门……没有未经计算的风险。"
+                }
+            ]
+        },
+        "quality": {
+            "columns": [
+                {
+                    "title": "内部质量标准",
+                    "subtitle": "我们按照鲜为人知的标准运营：",
+                    "items": [
+                        "100%运营精准度",
+                        "每一步骤的完整记录",
+                        "实时跟进",
+                        "持续分析",
+                        "内部质量检查"
+                    ]
+                },
+                {
+                    "title": "机构语言",
+                    "subtitle": "我们说一种不同的语言：",
+                    "items": [
+                        "清晰的语言",
+                        "无噪音的语言",
+                        "尊重您时间的语言",
+                        "基于信息而非印象的语言",
+                        "揭示真相而非隐藏它的语言"
+                    ]
+                },
+                {
+                    "title": "参与原则",
+                    "subtitle": "我们的原则不会改变：",
+                    "items": [
+                        "我们在承诺之前先做到",
+                        "我们先展示后发言",
+                        "我们先执行后推广",
+                        "我们先尊重后请求",
+                        "我们先澄清后质疑"
+                    ]
+                }
+            ]
+        }
+    },
+    "brandIdentity": {
+        "hero": {
+            "title": "我们的身份",
+            "intro": "我们不写定义来填充空间……",
+            "tagline": "我们通过工作方式来书写身份：以在阅读之前就能感受到的自信",
+            "cta": "探索我们的身份"
+        },
+        "intro": {
+            "text": "我们是一个旨在成为商业领袖背后力量的机构"
+        },
+        "closing": {
+            "words": "这个机构不只是一家公司……",
+            "line1": "我们在这里创造不同……",
+            "line2": "构建无法抹去的遗产……",
+            "line3": "您在这里……在正确的地方。",
+            "cta": "立即联系我们",
+            "backHome": "返回首页",
+            "success": "发送成功",
+            "successMsg": "我们将很快与您联系，开始您的成功之旅。",
+            "formTitle": "与我们开始您的旅程",
+            "formSubtitle": "让我们开始构建您的下一个战略。",
+            "fullName": "全名",
+            "namePlaceholder": "输入您的姓名",
+            "company": "公司/机构",
+            "companyPlaceholder": "您的公司名称",
+            "phone": "电话号码",
+            "message": "消息",
+            "messagePlaceholder": "How can we help you?",
+            "sending": "发送中……",
+            "submit": "发送请求"
+        },
+        "services": {
+            "sectionTitle": "反映我们身份的服务",
+            "sectionSubtitle": "为精英设计的战略解决方案",
+            "cta": "申请咨询",
+            "items": [
+                {
+                    "title": "高管影响力管理",
+                    "desc": "提升董事会影响力",
+                    "detail": "我们通过高级沟通策略和建立强大联盟，赋能高管领导者加强其在董事会内的存在感和影响力。"
+                },
+                {
+                    "title": "构建战略路径",
+                    "desc": "可持续增长的长期规划",
+                    "detail": "我们设计定制化的战略路线图，考虑经济和地缘政治变量，以实现可持续增长和安全扩张。"
+                },
+                {
+                    "title": "高敏感度关系管理",
+                    "desc": "与合作伙伴和关键客户打交道",
+                    "detail": "我们以外交技巧管理复杂和敏感的关系网络，作为可信赖的调解者解决冲突并建立信任桥梁。"
+                },
+                {
+                    "title": "数字声誉监控",
+                    "desc": "保护数字空间中的形象",
+                    "detail": "我们使用最新的监控和分析工具全天候保护您的形象，并制定快速危机响应计划。"
+                },
+                {
+                    "title": "未来风险分析",
+                    "desc": "预见挑战并主动规划",
+                    "detail": "我们提供对潜在风险的准确预见性分析和主动应急计划，以确保业务连续性。"
+                },
+                {
+                    "title": "高度机密档案管理",
+                    "desc": "以最高标准保护敏感信息",
+                    "detail": "我们提供完全安全的环境和严格的协议，用于管理高度敏感的文件和信息。"
+                }
+            ]
+        },
+        "whoWeServe": {
+            "title": "我们为谁书写这个身份？",
+            "subtitle": "我们不与所有人合作；我们仔细选择合作伙伴。我们的服务专为理解时间、质量和战略影响价值的精英设计。",
+            "labels": [
+                "商业领袖",
+                "家族公司",
+                "投资者",
+                "重组",
+                "董事会主席",
+                "大型家族公司",
+                "外国投资者",
+                "正在重组的机构",
+                "公众和有影响力的人物",
+                "寻求扩张的机构"
+            ],
+            "tags": [
+                "清晰度",
+                "承诺",
+                "质量",
+                "尊重"
+            ]
+        },
+        "statement": {
+            "title": "机构声明",
+            "intro": "我们相信成功不是巧合，而是精准规划、专业执行和清晰愿景的结果。这个机构的存在是为了成为保护您利益并推动您的业务走向顶端的战略合作伙伴。",
+            "points": [
+                "我们承诺达到最高质量和专业标准",
+                "我们提供与市场挑战相匹配的创新解决方案",
+                "我们建立基于相互信任的长期关系"
+            ]
+        },
+        "stats": {
+            "items": [
+                {
+                    "label": "客户"
+                },
+                {
+                    "label": "满意率"
+                },
+                {
+                    "label": "多年经验"
+                },
+                {
+                    "label": "项目"
+                }
+            ]
+        }
+    },
+    "administrativeApparatus": {
+        "hero": {
+            "badge": "执行操作系统",
+            "title": "行政机构",
+            "titleHighlight": "精炼的",
+            "suffix": "只为您服务的",
+            "intro": "专为服务商业领袖、管理其利益并保护其影响力而设计的一体化执行系统",
+            "cta": "立即开始",
+            "services": "服务"
+        },
+        "stats": {
+            "items": [
+                {
+                    "value": 20,
+                    "label": "高管职位",
+                    "icon": "Users"
+                },
+                {
+                    "value": 100,
+                    "label": "运营精准度",
+                    "suffix": "%",
+                    "icon": "Target"
+                },
+                {
+                    "value": 5,
+                    "label": "服务级别",
+                    "icon": "Layers"
+                },
+                {
+                    "value": 0,
+                    "label": "错误容许度",
+                    "icon": "AlertCircle"
+                }
+            ]
+        },
+        "positions": {
+            "all": "全部",
+            "categories": {
+                "management": "管理",
+                "protection": "保护",
+                "relations": "关系",
+                "analysis": "分析",
+                "financial": "财务",
+                "international": "国际"
+            },
+            "title": "高管职位",
+            "subtitle": "每个职位都扮演特定角色……而您只需坐在决策席上",
+            "viewDetails": "查看详情",
+            "tasks": "任务与职责：",
+            "close": "关闭",
+            "items": [
+                {
+                    "title": "危机管理总监",
+                    "category": "protection",
+                    "desc": "在危机到达您的办公桌之前立即干预解决。",
+                    "details": [
+                        "早期风险监控",
+                        "快速有效的干预",
+                        "机构声誉保护"
+                    ]
+                },
+                {
+                    "title": "内部审计总监",
+                    "category": "analysis",
+                    "desc": "准确监控所有运营以确保诚信。",
+                    "details": [
+                        "财务报表审查",
+                        "运营绩效评估",
+                        "合规保证"
+                    ]
+                },
+                {
+                    "title": "对外关系总监",
+                    "category": "relations",
+                    "desc": "与政府和私人机构建立沟通桥梁。",
+                    "details": [
+                        "政府关系管理",
+                        "机构代表",
+                        "合作伙伴网络扩展"
+                    ]
+                },
+                {
+                    "title": "战略保护总监",
+                    "category": "protection",
+                    "desc": "保护法律和运营利益。",
+                    "details": [
+                        "法律保护",
+                        "资产安全",
+                        "防御策略"
+                    ]
+                },
+                {
+                    "title": "研究与分析总监",
+                    "category": "analysis",
+                    "desc": "提供准确数据以支持您的决策。",
+                    "details": [
+                        "市场分析",
+                        "可行性研究",
+                        "未来展望"
+                    ]
+                },
+                {
+                    "title": "运营执行总监",
+                    "category": "management",
+                    "desc": "精准监督项目执行。",
+                    "details": [
+                        "项目管理",
+                        "执行跟进",
+                        "质量保证"
+                    ]
+                },
+                {
+                    "title": "业务发展总监",
+                    "category": "management",
+                    "desc": "抓住机遇并扩大业务范围。",
+                    "details": [
+                        "识别新机遇",
+                        "建立合作伙伴关系",
+                        "增长策略"
+                    ]
+                },
+                {
+                    "title": "身份与传播总监",
+                    "category": "relations",
+                    "desc": "创造与您地位相称的形象。",
+                    "details": [
+                        "品牌管理",
+                        "公共关系",
+                        "战略传播"
+                    ]
+                },
+                {
+                    "title": "风险管理总监",
+                    "category": "protection",
+                    "desc": "预测风险并主动规划。",
+                    "details": [
+                        "风险评估",
+                        "应急计划",
+                        "业务连续性"
+                    ]
+                },
+                {
+                    "title": "财务总监",
+                    "category": "financial",
+                    "desc": "财富管理和投资指导。",
+                    "details": [
+                        "财务规划",
+                        "投资管理",
+                        "财务分析"
+                    ]
+                },
+                {
+                    "title": "重大项目总监",
+                    "category": "management",
+                    "desc": "领导大规模复杂项目。",
+                    "details": [
+                        "项目规划",
+                        "资源管理",
+                        "项目交付"
+                    ]
+                },
+                {
+                    "title": "国际运营总监",
+                    "category": "international",
+                    "desc": "管理跨境利益。",
+                    "details": [
+                        "国际扩张",
+                        "海外分支机构管理",
+                        "国际合规"
+                    ]
+                },
+                {
+                    "title": "合规总监",
+                    "category": "protection",
+                    "desc": "确保遵守法律法规。",
+                    "details": [
+                        "法律审查",
+                        "法规实施",
+                        "合规培训"
+                    ]
+                },
+                {
+                    "title": "信息安全总监",
+                    "category": "protection",
+                    "desc": "保护数据和机密文件。",
+                    "details": [
+                        "网络安全",
+                        "数据保护",
+                        "访问管理"
+                    ]
+                },
+                {
+                    "title": "质量总监",
+                    "category": "analysis",
+                    "desc": "确保最高绩效标准。",
+                    "details": [
+                        "质量监控",
+                        "流程改进",
+                        "标准应用"
+                    ]
+                },
+                {
+                    "title": "VIP关系总监",
+                    "category": "relations",
+                    "desc": "管理私人和精英关系网络。",
+                    "details": [
+                        "私人关系管理",
+                        "会议组织",
+                        "礼宾程序"
+                    ]
+                },
+                {
+                    "title": "战略谈判总监",
+                    "category": "management",
+                    "desc": "管理重大交易以确保最佳条款。",
+                    "details": [
+                        "谈判管理",
+                        "交易完成",
+                        "冲突解决"
+                    ]
+                },
+                {
+                    "title": "特别特权总监",
+                    "category": "relations",
+                    "desc": "提供卓越的专属服务。",
+                    "details": [
+                        "专属服务",
+                        "差旅管理",
+                        "特殊请求"
+                    ]
+                },
+                {
+                    "title": "机密档案总监",
+                    "category": "protection",
+                    "desc": "以完全审慎的态度管理敏感事务。",
+                    "details": [
+                        "保守秘密",
+                        "敏感危机管理",
+                        "私人调查"
+                    ]
+                },
+                {
+                    "title": "执行跟进总监",
+                    "category": "management",
+                    "desc": "精准监控您指令的执行情况。",
+                    "details": [
+                        "决策跟进",
+                        "绩效报告",
+                        "执行保证"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "title": "完整的行政机构正在运作",
+            "titleHighlight": "为您……",
+            "subtitle": "因为您的时间太宝贵，不能浪费在细节上。",
+            "cta": "立即开始",
+            "contact": "与我们交流",
+            "confidentiality": "完全保密",
+            "experience": "全球经验",
+            "guaranteed": "保证结果",
+            "formTitle": "联系管理层",
+            "formSubtitle": "留下您的详细信息，我们的一位执行总监将联系您",
+            "formSubtitle2": "立即。",
+            "name": "您的姓名",
+            "namePlaceholder": "输入您的姓名",
+            "phone": "电话号码",
+            "phonePlaceholder": "输入您的电话号码",
+            "message": "您的消息（可选）",
+            "messagePlaceholder": "我们如何为您服务？",
+            "submit": "发送请求",
+            "success": "您的请求已成功接收",
+            "successMsg": "我们将尽快与您联系。"
+        }
+    },
+    "servicesPage": {
+        "hero": {
+            "badge": "KIB Financing有限责任公司",
+            "title": "我们的",
+            "titleHighlight": "融资服务",
+            "typingLine": "精心设计的专业金融解决方案……专业执行……按董事会级别标准管理",
+            "paragraph": "KIB Financing有限责任公司提供一体化金融服务套件，旨在满足国内外企业、机构、创业者和投资项目的需求。我们不提供传统服务，而是建立在严格分析、战略远见和广泛运营专长基础上的结构化融资解决方案。",
+            "exploreServices": "探索我们的服务",
+            "contactUs": "联系我们",
+            "imageAlt": "迪拜金融区"
+        },
+        "nav": {
+            "title": "服务板块",
+            "subtitle": "选择一个板块快速浏览",
+            "count": "板块",
+            "service": "服务"
+        },
+        "servicesGrid": {
+            "heading": "我们的",
+            "headingHighlight": "一体化",
+            "headingSuffix": "services",
+            "subtitle": "从超过12项融资服务中选择，旨在满足您的需求并支持您的业务增长",
+            "categories": {
+                "all": "全部",
+                "corporate": "企业融资",
+                "projects": "项目与产业",
+                "realestate": "房地产与贸易",
+                "islamic": "伊斯兰与国际",
+                "investment": "投资与合作",
+                "advisory": "咨询与发展"
+            },
+            "carouselPrev": "上一个",
+            "carouselNext": "下一个",
+            "readMore": "阅读更多",
+            "details": "详情"
+        },
+        "process": {
+            "heading": "我们如何",
+            "headingHighlight": "工作",
+            "steps": [
+                {
+                    "title": "分析",
+                    "subtitle": "分析",
+                    "shortDesc": "对您财务需求的严格分析",
+                    "desc": "我们从深入了解您的财务状况和目标开始"
+                },
+                {
+                    "title": "设计",
+                    "subtitle": "设计",
+                    "shortDesc": "定制融资解决方案设计",
+                    "desc": "我们设计适合您需求的独特解决方案"
+                },
+                {
+                    "title": "执行",
+                    "subtitle": "执行",
+                    "shortDesc": "专业、快速执行",
+                    "desc": "我们以速度和精准执行，同时确保完全合规"
+                },
+                {
+                    "title": "跟进",
+                    "subtitle": "跟进",
+                    "shortDesc": "持续跟进和机构管理",
+                    "desc": "我们提供持续跟进和定期报告"
+                },
+                {
+                    "title": "评估",
+                    "subtitle": "评估",
+                    "shortDesc": "全面结果评估",
+                    "desc": "我们评估结果并持续改进解决方案"
+                }
+            ]
+        },
+        "whyChooseUs": {
+            "heading": "为什么",
+            "headingHighlight": "选择我们",
+            "subtitle": "我们提供超越传统融资的真实价值",
+            "features": [
+                {
+                    "title": "合规与治理",
+                    "desc": "我们在所有融资运营中遵守最高合规和机构治理标准"
+                },
+                {
+                    "title": "执行速度",
+                    "desc": "我们确保快速处理和审批，同时保持最高质量和准确标准"
+                },
+                {
+                    "title": "专业团队",
+                    "desc": "我们的团队包括在金融领域拥有超过15年经验的金融专家和顾问"
+                },
+                {
+                    "title": "定制解决方案",
+                    "desc": "我们根据对客户需求和战略目标的严格分析设计每个融资解决方案"
+                },
+                {
+                    "title": "全面覆盖",
+                    "desc": "我们在国内外提供服务，合作伙伴网络遍及该地区和全球"
+                },
+                {
+                    "title": "良好业绩记录",
+                    "desc": "超过500个客户和20亿迪拉姆的成功融资证明了我们对卓越的承诺"
+                }
+            ]
+        },
+        "partners": {
+            "heading": "我们的合作伙伴",
+            "headingHighlight": "成功的路线图",
+            "subtitle": "我们为世界各地客户和合作伙伴的信任而自豪",
+            "names": [
+                "Emirates NBD",
+                "Abu Dhabi Islamic Bank",
+                "Mashreq Bank",
+                "Commercial Bank of Dubai",
+                "Al Futtaim Group",
+                "Emaar Properties",
+                "Al Habtoor Group",
+                "DAMAC Properties",
+                "Majid Al Futtaim Group",
+                "Aldar Properties"
+            ]
+        },
+        "faq": {
+            "heading": "常见",
+            "headingHighlight": "问题",
+            "subtitle": "关于我们融资服务最常见问题的解答",
+            "items": [
+                {
+                    "q": "有哪些类型的融资？",
+                    "a": "我们提供超过30种融资服务，包括企业融资、项目融资、房地产、伊斯兰融资、国际融资、财务咨询等。每种服务都旨在满足特定需求。"
+                },
+                {
+                    "q": "审批需要多长时间？",
+                    "a": "审批时间因融资类型和规模而异，但我们承诺在48个工作小时内提供初步回复，大多数交易在2-4周内完成。"
+                },
+                {
+                    "q": "您们服务初创企业吗？",
+                    "a": "是的，我们有专门针对创业者和初创企业的项目，涵盖成立、运营和扩张，并提供一体化咨询支持。"
+                },
+                {
+                    "q": "需要哪些文件？",
+                    "a": "文件因融资类型而异，但一般我们需要：营业执照、财务报表、商业计划书和身份证明。我们的团队将引导您完成每一步。"
+                },
+                {
+                    "q": "您们提供符合伊斯兰教法的融资吗？",
+                    "a": "是的，我们提供全系列符合伊斯兰教法的产品，包括穆拉巴哈、穆达拉巴、伊贾拉和伊斯提斯纳，均经伊斯兰教法监督委员会批准。"
+                },
+                {
+                    "q": "您们能为境外项目提供融资吗？",
+                    "a": "当然可以。我们提供国际和跨境融资解决方案，包括区域和全球项目，在跨境贸易和全球供应链方面拥有丰富经验。"
+                }
+            ]
+        },
+        "cta": {
+            "heading": "正在寻找定制融资解决方案？",
+            "paragraph1": "今天联系我们，让我们设计满足您雄心壮志并以效率和专业精神实现您机构目标的最优解决方案。",
+            "paragraph2": "我们的团队已准备好帮助您选择最佳融资解决方案",
+            "cta": "立即联系我们",
+            "imageAlt": "财务咨询会议"
+        },
+        "modal": {
+            "backToTop": "回到顶部",
+            "serviceNumber": "服务",
+            "includes": "此融资包括：",
+            "close": "关闭",
+            "requestService": "申请此服务",
+            "categories": {
+                "corporate": "企业",
+                "projects": "项目",
+                "realestate": "房地产",
+                "islamic": "伊斯兰",
+                "investment": "投资",
+                "advisory": "咨询"
+            }
+        },
+        "serviceItems": {
+            "1": {
+                "title": "企业融资",
+                "desc": "支持机构增长的金融解决方案。",
+                "items": [
+                    "营运资金",
+                    "运营扩张",
+                    "重组",
+                    "现金流支持"
+                ]
+            },
+            "2": {
+                "title": "项目融资",
+                "desc": "商业和工业项目的一体化融资。",
+                "items": [
+                    "生产线",
+                    "设备",
+                    "运营基础设施",
+                    "成立"
+                ]
+            },
+            "3": {
+                "title": "房地产融资",
+                "desc": "住宅和商业项目的房地产融资解决方案。",
+                "items": [
+                    "房产购买",
+                    "开发",
+                    "再融资",
+                    "土地融资"
+                ]
+            },
+            "4": {
+                "title": "贸易融资",
+                "desc": "支持国内外买卖操作。",
+                "items": [
+                    "交易",
+                    "供应商",
+                    "客户",
+                    "供应链"
+                ]
+            },
+            "5": {
+                "title": "伊斯兰融资",
+                "desc": "符合伊斯兰教法规定的产品。",
+                "items": [
+                    "穆拉巴哈",
+                    "穆达拉巴",
+                    "伊贾拉",
+                    "伊斯提斯纳"
+                ]
+            },
+            "6": {
+                "title": "外部信贷",
+                "desc": "国际贸易的安全解决方案。",
+                "items": [
+                    "跟单信用证",
+                    "航运担保",
+                    "进口融资",
+                    "出口融资"
+                ]
+            },
+            "7": {
+                "title": "投资融资",
+                "desc": "将投资项目与合适的资助者联系起来。",
+                "items": [
+                    "重大项目",
+                    "联盟",
+                    "房地产开发",
+                    "投资组合"
+                ]
+            },
+            "8": {
+                "title": "财务咨询",
+                "desc": "支持决策的专业财务分析。",
+                "items": [
+                    "风险评估",
+                    "财务计划",
+                    "现金流分析",
+                    "结构审查"
+                ]
+            },
+            "9": {
+                "title": "创业者融资",
+                "desc": "支持创新和建立新企业的解决方案。",
+                "items": [
+                    "成立",
+                    "运营",
+                    "扩张",
+                    "初创企业支持"
+                ]
+            },
+            "10": {
+                "title": "扩张融资",
+                "desc": "加强企业机构增长能力的融资。",
+                "items": [
+                    "新分支机构",
+                    "生产线",
+                    "数字化转型",
+                    "内部发展"
+                ]
+            },
+            "11": {
+                "title": "商业融资",
+                "desc": "为中小企业量身定制的融资和营运资金解决方案。",
+                "items": [
+                    "营运资金设施",
+                    "设备融资",
+                    "发票融资",
+                    "透支解决方案"
+                ]
+            },
+            "12": {
+                "title": "财务合规",
+                "desc": "金融运营的监管要求和合规框架指导。",
+                "items": [
+                    "监管合规审查",
+                    "许可支持",
+                    "审计准备",
+                    "政策和程序设计"
+                ]
+            }
+        }
+    },
+    "financeHome": {
+        "hero": {
+            "slide1": {
+                "headline": "KIB Financing",
+                "subheadline": "您在融资世界中的战略合作伙伴",
+                "highlight": "具有全球标准的金融领导力"
+            },
+            "slide2": {
+                "headline": "专业融资解决方案",
+                "subheadline": "我们为您的行业和现金流实际情况量身定制精准的融资结构",
+                "highlight": "深厚的运营专业知识"
+            },
+            "slide3": {
+                "headline": "战略合作伙伴关系",
+                "subheadline": "与银行和融资机构的长期关系",
+                "highlight": "广泛可靠的融资网络"
+            },
+            "primaryCta": "申请咨询",
+            "secondaryCta": "了解更多关于我们",
+            "stats": {
+                "files": "已完成融资档案",
+                "experience": "多年经验",
+                "clients": "满意客户",
+                "successRate": "成功率"
+            }
+        },
+        "about": {
+            "badge": "企业身份",
+            "title": "我们是谁以及",
+            "titleHighlight": "我们代表什么",
+            "paragraph1": "KIB Financing不只是另一家经纪公司；它是一家建立在清晰治理、强大风险纪律和对区域融资格局深入了解基础上的专业金融机构。",
+            "paragraph2": "我们相信融资不是一个可以快速出售的产品，而是一种塑造企业和项目未来的战略责任。",
+            "bullet1": "反映公司实力和市场信任的强大专业存在",
+            "bullet2": "高分析能力——精准解读数字、风险和现金流",
+            "bullet3": "运营保密——对每份档案和信息的全面保护",
+            "bullet4": "长远愿景——我们将客户视为合作伙伴，而非单次交易",
+            "floatingBadgeTitle": "受信任的机构",
+            "floatingBadgeSubtitle": "15年以上金融行业经验",
+            "introLabel": "介绍",
+            "introCompanyName": "KIB Financing有限责任公司",
+            "introParagraph1": "我们相信融资不仅仅是要提供的服务，而是要管理的责任、要建立的伙伴关系，以及塑造企业和项目未来的战略决策。",
+            "introParagraph2": "董事会采用了一个全面的概念框架，界定我们的机构身份，锚定我们的价值观，加强治理机制，并为每一段关系、服务和决策奠定基础。",
+            "identity": {
+                "1": {
+                    "title": "独立金融实体",
+                    "desc": "我们有清晰的机构结构和明确的运营权限。"
+                },
+                "2": {
+                    "title": "战略合作伙伴",
+                    "desc": "我们陪伴客户走过财务增长的每个阶段。"
+                },
+                "3": {
+                    "title": "深厚的运营专业知识",
+                    "desc": "多年经验积累的对金融和融资领域的广泛知识。"
+                },
+                "4": {
+                    "title": "广泛融资网络",
+                    "desc": "与国内外银行和融资机构的强大关系。"
+                },
+                "5": {
+                    "title": "专业解决方案",
+                    "desc": "我们设计针对每种活动性质的精准融资解决方案。"
+                },
+                "6": {
+                    "title": "机构承诺",
+                    "desc": "我们按照清晰的政策和一致的、不变的标准运营。"
+                }
+            }
+        },
+        "services": {
+            "badge": "我们的服务",
+            "title": "专业的",
+            "titleHighlight": "融资解决方案",
+            "subtitle": "我们为机构、项目和投资者设计一体化融资结构。",
+            "learnMore": "了解更多",
+            "modalFeaturesTitle": "此服务包括",
+            "modalConsultCta": "获取此服务咨询",
+            "modalClose": "关闭",
+            "items": {
+                "corporateFinance": {
+                    "title": "企业融资",
+                    "desc": "以高度专业标准为大型公司和机构提供一体化融资解决方案。",
+                    "fullDesc": "我们为寻求实现扩张和运营目标的公司和大型组织提供定制的机构融资解决方案。我们充当了解每个组织需求并设计最优融资结构的战略合作伙伴，通过我们广泛的融资合作伙伴网络获得最佳条款和定价。",
+                    "features": {
+                        "1": "营运资金和运营融资",
+                        "2": "扩张和长期投资贷款",
+                        "3": "收购和兼并融资",
+                        "4": "多来源融资结构",
+                        "5": "与银行和融资机构谈判"
+                    }
+                },
+                "projectFinance": {
+                    "title": "项目融资",
+                    "desc": "支持投资项目从规划到全面执行。",
+                    "fullDesc": "我们陪伴投资项目走过每个阶段，从可行性研究和融资结构到交易完成和项目启动。我们在项目融资方面的丰富经验使我们能够提供适合每个项目性质、规模和行业的创新解决方案。",
+                    "features": {
+                        "1": "财务和经济可行性研究",
+                        "2": "为大型项目构建融资",
+                        "3": "房地产和基础设施项目融资",
+                        "4": "能源和工业项目",
+                        "5": "跟进直至成功完成"
+                    }
+                },
+                "riskManagement": {
+                    "title": "风险管理",
+                    "desc": "对金融风险的全面评估和适当保护策略的设计。",
+                    "fullDesc": "我们认识到风险管理是每项成功融资决策的核心支柱。我们的专业团队对金融和运营风险进行深入分析，并制定明确的策略来降低风险、保护客户资产并确保业务连续性。",
+                    "features": {
+                        "1": "信用和金融风险评估",
+                        "2": "市场和流动性风险分析",
+                        "3": "设计风险管理政策",
+                        "4": "压力测试和情景分析",
+                        "5": "定期风险报告和建议"
+                    }
+                },
+                "internationalFinance": {
+                    "title": "International finance",
+                    "desc": "开辟外部融资渠道，在全球范围内支持客户项目。",
+                    "fullDesc": "我们维护着广泛的国际金融机构和区域及全球银行网络，使我们能够为客户开辟外部融资渠道。我们帮助企业进入国际资本市场并以具有竞争力的条款获得资金。",
+                    "features": {
+                        "1": "来自区域和国际银行的融资",
+                        "2": "投资基金和私募股权",
+                        "3": "国际伊斯兰融资",
+                        "4": "信用证和国际担保",
+                        "5": "贸易融资和出口融资"
+                    }
+                },
+                "financialAdvisory": {
+                    "title": "财务咨询",
+                    "desc": "基于严格数据和数字分析的专业财务咨询。",
+                    "fullDesc": "我们的财务咨询服务提供对公司财务状况的深入客观分析，并制定清晰的路线图以实现其财务目标。我们提出的每项建议都以真实数据和数字为基础，远离猜测或未经验证的假设。",
+                    "features": {
+                        "1": "公司的全面财务分析",
+                        "2": "资产和投资组合估值",
+                        "3": "战略财务计划的制定",
+                        "4": "投资咨询和资产配置",
+                        "5": "财务绩效报告和基准测试"
+                    }
+                },
+                "debtRestructuring": {
+                    "title": "Debt restructuring",
+                    "desc": "重组金融义务以改善现金流并减轻负担。",
+                    "fullDesc": "我们通过以改善现金流和减轻财务压力的方式重组债务来支持面临财务义务压力的公司。我们代表客户与债权人谈判，以达到保障业务连续性的可持续解决方案。",
+                    "features": {
+                        "1": "当前债务结构分析",
+                        "2": "与银行和债权人谈判",
+                        "3": "贷款和义务的重新安排",
+                        "4": "债务整合和成本降低",
+                        "5": "长期财务恢复规划"
+                    }
+                }
+            }
+        },
+        "benefits": {
+            "badge": "机构价值观",
+            "title": "塑造",
+            "titleHighlight": "我们品格的价值观",
+            "subtitle": "管理我们行为以及我们管理每份融资档案方式的原则。",
+            "values": {
+                "professionalIntegrity": {
+                    "title": "职业诚信",
+                    "desc": "在每一步都以完全透明的态度行事。"
+                },
+                "fullConfidentiality": {
+                    "title": "完全保密",
+                    "desc": "将保护客户信息作为我们身份的核心部分。"
+                },
+                "strictGovernance": {
+                    "title": "严格治理",
+                    "desc": "毫无例外地遵守政策和监管标准。"
+                },
+                "operationalQuality": {
+                    "title": "运营质量",
+                    "desc": "以最高精准度执行每份档案。"
+                },
+                "financialResponsibility": {
+                    "title": "财务责任",
+                    "desc": "基于分析而非假设做出决策。"
+                },
+                "respectTime": {
+                    "title": "尊重时间",
+                    "desc": "在明确的时间框架内交付结果。"
+                },
+                "mutualTrust": {
+                    "title": "相互信任",
+                    "desc": "建立基于可信度和承诺的关系。"
+                },
+                "institutionalProfessionalism": {
+                    "title": "机构专业主义",
+                    "desc": "在每个阶段都以清晰的方法论运营。"
+                },
+                "continuousInnovation": {
+                    "title": "持续创新",
+                    "desc": "开发与市场需求相匹配的新解决方案。"
+                },
+                "clientService": {
+                    "title": "客户服务",
+                    "desc": "Putting the client’s interests at the forefront of every decision."
+                },
+                "resultCommitment": {
+                    "title": "对结果的承诺",
+                    "desc": "工作直到达到最佳可能结果。"
+                },
+                "sustainability": {
+                    "title": "可持续性",
+                    "desc": "提供长期解决方案，而非短期修复。"
+                }
+            }
+        },
+        "stats": {
+            "badge": "我们的数字说话",
+            "title": "真实的",
+            "titleHighlight": "结果",
+            "subtitle": "反映我们客户信任和我们在金融领域积累经验的数字。",
+            "items": {
+                "files": {
+                    "label": "融资档案",
+                    "sublabel": "成功完成"
+                },
+                "clients": {
+                    "label": "满意客户",
+                    "sublabel": "信任我们服务的"
+                },
+                "experience": {
+                    "label": "多年经验",
+                    "sublabel": "在金融领域"
+                },
+                "funders": {
+                    "label": "融资机构",
+                    "sublabel": "Strategic partners"
+                },
+                "successRate": {
+                    "label": "成功率",
+                    "sublabel": "在完成融资授权方面"
+                },
+                "responseTime": {
+                    "label": "平均响应时间",
+                    "sublabel": "对每项融资请求"
+                }
+            }
+        },
+        "whyUs": {
+            "badge": "机构愿景",
+            "title": "为什么",
+            "titleHighlight": "选择KIB Financing？",
+            "subtitle": "建立在可持续性上、驱向领导力并以国际级标准执行的愿景。",
+            "vision": {
+                "financialLeadership": {
+                    "title": "金融领导力",
+                    "desc": "成为专业融资解决方案的首要参考机构。"
+                },
+                "strategicPartnerships": {
+                    "title": "战略合作伙伴关系",
+                    "desc": "与客户和融资机构建立长期关系。"
+                },
+                "regionalExpansion": {
+                    "title": "区域扩张",
+                    "desc": "在国内及整个地区扩展我们的服务。"
+                },
+                "innovativeSolutions": {
+                    "title": "创新解决方案",
+                    "desc": "开发与经济转型相匹配的融资产品。"
+                },
+                "sustainableFinance": {
+                    "title": "可持续金融",
+                    "desc": "提供支持长期增长并降低风险的解决方案。"
+                },
+                "operationalStrength": {
+                    "title": "运营实力",
+                    "desc": "构建基于精准、速度和合规的系统。"
+                },
+                "institutionalPresence": {
+                    "title": "机构存在",
+                    "desc": "加强公司作为受信任金融机构的地位。"
+                },
+                "continuousDevelopment": {
+                    "title": "持续发展",
+                    "desc": "持续改进系统和流程。"
+                },
+                "marketLeadership": {
+                    "title": "市场领导力",
+                    "desc": "成为企业和投资项目的首选。"
+                },
+                "economicImpact": {
+                    "title": "经济影响",
+                    "desc": "为国家经济做出贡献并加强商业环境。"
+                },
+                "futureReadiness": {
+                    "title": "未来准备",
+                    "desc": "为即将到来的经济和技术变革做好准备。"
+                },
+                "globalExpansion": {
+                    "title": "全球扩张",
+                    "desc": "开辟外部融资渠道，支持客户的国际项目。"
+                }
+            },
+            "governance": {
+                "clearFramework": {
+                    "title": "清晰的治理框架",
+                    "desc": "精确界定权限和职责的组织结构。"
+                },
+                "internalControl": {
+                    "title": "持续内部控制",
+                    "desc": "密切监控以确保符合标准。"
+                },
+                "advancedRiskManagement": {
+                    "title": "高级风险管理",
+                    "desc": "在任何融资决策前进行全面风险评估。"
+                },
+                "fullCompliance": {
+                    "title": "完全合规",
+                    "desc": "与本地和国际法规保持一致。"
+                }
+            },
+            "governanceSection": {
+                "badge": "治理框架",
+                "title": "指导决策的治理",
+                "titleHighlight": "并保证合规",
+                "description": "我们在严格的机构治理框架下运营，确保每项决策都以高度专业标准和完全透明的方式作出。"
+            }
+        },
+        "contactCta": {
+            "badge": "融资咨询",
+            "title": "开始您的",
+            "titleHighlight": "融资旅程",
+            "subtitle": "我们的专业团队准备好研究您的需求，构建最优解决方案，并陪伴您直到完成。",
+            "phoneLabel": "致电我们",
+            "emailLabel": "写信给我们",
+            "cta": "获取咨询",
+            "responseTitle": "响应时间",
+            "responseValue": "24小时"
+        }
+    },
+    "implementationMechanism": {
+        "pageTitle": "KIB Financing | 实施机制",
+        "pageDescription": "机构执行机制：在统一领导结构、精准权限和数据驱动路径下运行的全球操作系统，保护机构并最大化融资价值。",
+        "hero": {
+            "badge": "全球操作系统",
+            "titleLine1": "机构执行",
+            "titleLine2": "机制",
+            "subtitle": "KIB Financing有限责任公司",
+            "description": "在统一领导结构、精准权限和数据驱动执行路径下运行的全球操作系统。",
+            "pills": [
+                "领导与治理",
+                "分析与风险",
+                "执行与跟进"
+            ],
+            "cta": "查看阶段",
+            "stats": [
+                {
+                    "value": "10",
+                    "label": "执行阶段"
+                },
+                {
+                    "value": "7",
+                    "label": "专业单位"
+                },
+                {
+                    "value": "10",
+                    "label": "执行总监"
+                },
+                {
+                    "value": "100%",
+                    "label": "全球标准"
+                }
+            ]
+        },
+        "intro": {
+            "badge": "介绍",
+            "title": "世界级运营模式",
+            "titleHighlight": "一体化和有纪律的",
+            "paragraph1": "KIB Financing有限责任公司的成功依赖于建立在将领导、治理、分析、风险、执行和跟进相结合的全球模式上的机构运营系统。",
+            "paragraph2": "这个模式不只是一系列运营步骤，而是和谐运作的决策中心链条。每份档案都通过清晰的领导层级流转，每个层级都有明确的权限、精准的职责和不妥协的绩效标准。",
+            "chips": [
+                "每项决策都建立在数据基础上",
+                "每项行动都达到全球标准",
+                "每项结果都有董事会级别的信心"
+            ],
+            "pillars": [
+                "领导",
+                "治理",
+                "分析",
+                "风险",
+                "执行",
+                "跟进"
+            ],
+            "imageAlt": "高管团队工作"
+        },
+        "management": {
+            "badge": "全球管理结构",
+            "title": "第一：全球管理结构",
+            "subtitle": "保证每项决策都以清晰责任和明确权限做出的一体化领导系统。",
+            "overlayStatsNumber": "9",
+            "overlayStatsLabel": "执行总监",
+            "overlayStatsSublabel": "领导操作系统",
+            "imageAlt": "管理结构",
+            "levelLabel": "级别",
+            "responsibilitiesLabel": "职责",
+            "managers": [
+                {
+                    "title": "董事会",
+                    "role": "Defining the institution’s strategic direction",
+                    "responsibilities": [
+                        "批准高级政策",
+                        "监控机构绩效",
+                        "监督治理",
+                        "批准财务计划",
+                        "审查风险报告"
+                    ],
+                    "level": 1
+                },
+                {
+                    "title": "首席执行官（CEO）",
+                    "role": "Turning the Board’s vision into operational reality",
+                    "responsibilities": [
+                        "领导机构",
+                        "做出最高级别决策",
+                        "批准重大档案",
+                        "监督执行部门",
+                        "代表公司面对融资方"
+                    ],
+                    "level": 2
+                },
+                {
+                    "title": "首席运营官（COO）",
+                    "role": "领导整个机构运营系统",
+                    "responsibilities": [
+                        "管理执行路径",
+                        "确保档案顺畅流转",
+                        "监控执行质量",
+                        "解决运营瓶颈",
+                        "改善机构绩效"
+                    ],
+                    "level": 2
+                },
+                {
+                    "title": "总经理",
+                    "role": "管理运营和技术部门",
+                    "responsibilities": [
+                        "监控生产力",
+                        "跟踪绩效",
+                        "向高级管理层报告",
+                        "确保政策合规"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "合规与治理总监",
+                    "role": "保护机构免受监管风险",
+                    "responsibilities": [
+                        "审查档案",
+                        "监控合规",
+                        "准备治理报告",
+                        "跟踪监管变化"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "风险总监",
+                    "role": "在做出决策前评估风险",
+                    "responsibilities": [
+                        "分析风险",
+                        "准备风险报告",
+                        "设计缓解计划",
+                        "审查敏感档案"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "财务总监",
+                    "role": "领导财务分析",
+                    "responsibilities": [
+                        "分析财务数据",
+                        "准备预测",
+                        "审查现金流",
+                        "支持融资决策"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "业务发展总监",
+                    "role": "开辟新融资渠道",
+                    "responsibilities": [
+                        "建立关系",
+                        "发展合作伙伴关系",
+                        "研究机会",
+                        "支持公司扩张"
+                    ],
+                    "level": 3
+                },
+                {
+                    "title": "运营总监",
+                    "role": "执行运营路径",
+                    "responsibilities": [
+                        "管理执行团队",
+                        "跟踪档案",
+                        "确保程序质量",
+                        "改善绩效"
+                    ],
+                    "level": 3
+                }
+            ]
+        },
+        "process": {
+            "badge": "机构执行机制",
+            "title": "第三：档案如何流转",
+            "titleHighlight": "机构内部？",
+            "subtitle": "10个一体化执行阶段——点击任意阶段查看完整详情。",
+            "timelineLabel": "执行路径进度",
+            "timelineStagePrefix": "阶段",
+            "timelineStageSuffix": "共10个",
+            "buttonViewDetails": "查看详情",
+            "buttonHideDetails": "隐藏详情",
+            "steps": [
+                {
+                    "title": "执行接待中心",
+                    "subtitle": "起点",
+                    "manager": "运营总监",
+                    "actions": [
+                        "登记档案",
+                        "确定服务类型",
+                        "分配档案负责人"
+                    ]
+                },
+                {
+                    "title": "初步合规中心",
+                    "subtitle": "验证",
+                    "manager": "合规总监",
+                    "actions": [
+                        "验证身份",
+                        "审查文件",
+                        "确保监管一致性"
+                    ]
+                },
+                {
+                    "title": "财务与信用分析中心",
+                    "subtitle": "分析",
+                    "manager": "财务总监与信用总监",
+                    "actions": [
+                        "分析现金流",
+                        "评估义务",
+                        "衡量还款能力"
+                    ]
+                },
+                {
+                    "title": "风险室",
+                    "subtitle": "风险评估",
+                    "manager": "风险总监",
+                    "actions": [
+                        "确定风险级别",
+                        "准备风险报告",
+                        "提出建议"
+                    ]
+                },
+                {
+                    "title": "档案准备单位",
+                    "subtitle": "执行档案准备",
+                    "manager": "运营总监",
+                    "actions": [
+                        "起草档案",
+                        "解决薄弱点",
+                        "准备最终版本"
+                    ]
+                },
+                {
+                    "title": "融资匹配中心",
+                    "subtitle": "匹配",
+                    "manager": "业务发展总监",
+                    "actions": [
+                        "选择合适的机构",
+                        "开辟融资渠道",
+                        "确认所选机构"
+                    ]
+                },
+                {
+                    "title": "正式提交渠道",
+                    "subtitle": "提交",
+                    "manager": "运营总监",
+                    "actions": [
+                        "提交档案",
+                        "跟踪申请",
+                        "回应询问"
+                    ]
+                },
+                {
+                    "title": "执行谈判室",
+                    "subtitle": "谈判",
+                    "manager": "谈判总监",
+                    "actions": [
+                        "改善条款",
+                        "降低风险",
+                        "最大化客户价值"
+                    ]
+                },
+                {
+                    "title": "财务完成委员会",
+                    "subtitle": "完成",
+                    "manager": "首席运营官与完成总监",
+                    "actions": [
+                        "审查合同",
+                        "批准条款",
+                        "签署完成"
+                    ]
+                },
+                {
+                    "title": "融资后跟进中心",
+                    "subtitle": "融资后",
+                    "manager": "客户体验总监",
+                    "actions": [
+                        "监控义务",
+                        "跟踪现金流",
+                        "提供建议"
+                    ]
+                }
+            ],
+            "modal": {
+                "executiveManagerLabel": "执行负责人",
+                "actionsTitle": "执行行动",
+                "progressLabel": "执行路径进度",
+                "pdfNote": "可下载的执行路径PDF——即将推出",
+                "closeAriaLabel": "关闭"
+            }
+        },
+        "executionUnits": {
+            "badge": "第二：执行单位",
+            "title": "Specialised execution units",
+            "subtitle": "7个专业执行单位和谐运作，确保每个阶段的最高质量标准。",
+            "units": [
+                {
+                    "title": "数据分析单位",
+                    "description": "分析数字和财务报告",
+                    "detail": "分析定量和定性财务数据，以高精准度支持融资决策。"
+                },
+                {
+                    "title": "档案准备单位",
+                    "description": "专业起草融资档案",
+                    "detail": "按照最高国际专业标准准备和起草融资档案。"
+                },
+                {
+                    "title": "信用评估单位",
+                    "description": "Assessing the client’s repayment capacity",
+                    "detail": "Performs a comprehensive assessment of creditworthiness and the client’s ability to meet obligations."
+                },
+                {
+                    "title": "融资匹配单位",
+                    "description": "选择合适的机构",
+                    "detail": "将客户需求与最合适的可用融资机构匹配。"
+                },
+                {
+                    "title": "谈判单位",
+                    "description": "改善条款",
+                    "detail": "以高度专业水准进行谈判，为客户获取最佳条款和定价。"
+                },
+                {
+                    "title": "财务完成单位",
+                    "description": "批准合同",
+                    "detail": "监督完成阶段，确保合同和合同条款的稳健性。"
+                },
+                {
+                    "title": "融资后单位",
+                    "description": "监控义务",
+                    "detail": "监控融资义务、跟踪流量并定期发出建议。"
+                }
+            ],
+            "summary": {
+                "titleNumber": "7",
+                "titleLabel": "专业单位",
+                "text": "完全一体化运作，确保每份档案都以最高质量和专业标准执行。",
+                "qualityStatLabel": "质量",
+                "followStatLabel": "跟进"
+            }
+        },
+        "stats": {
+            "title": "系统数字",
+            "subtitle": "Figures that reflect the strength of KIB Financing’s operating system.",
+            "items": [
+                {
+                    "label": "执行阶段",
+                    "sublabel": "端到端一体化路径"
+                },
+                {
+                    "label": "专业单位",
+                    "sublabel": "和谐一体化运作"
+                },
+                {
+                    "label": "执行总监",
+                    "sublabel": "拥有全球经验和高度能力"
+                },
+                {
+                    "label": "全球标准",
+                    "sublabel": "对质量不妥协"
+                }
+            ],
+            "quote": "具有清晰管理结构、精准权限和有纪律执行路径的机构，是能够提供安全、可持续和具有战略价值融资的机构。"
+        },
+        "quality": {
+            "badge": "质量与卓越标准",
+            "title": "不接受",
+            "titleHighlight": "妥协的标准",
+            "paragraph": "这个执行系统不只是行政组织，而是世界级运营架构，确保每份档案都被专业管理，每项决策都基于分析。",
+            "overlay": {
+                "badge": "质量保证",
+                "subtitle": "Standards that do not accept compromise",
+                "stagesLabel": "阶段",
+                "unitsLabel": "单位",
+                "qualityLabel": "质量"
+            },
+            "standards": [
+                {
+                    "title": "治理与合规",
+                    "description": "每份档案都经过严格的合规审查，以确保符合监管要求。"
+                },
+                {
+                    "title": "数据驱动决策",
+                    "description": "没有来自分析单位的全面精准分析，不会做出任何融资决策。"
+                },
+                {
+                    "title": "主动风险管理",
+                    "description": "在做出决策之前评估风险，并为每份档案设计有效的缓解计划。"
+                },
+                {
+                    "title": "卓越客户体验",
+                    "description": "客户体验总监在每个阶段保证专业沟通和持续跟进。"
+                },
+                {
+                    "title": "运营效率",
+                    "description": "确保完成速度而不影响质量的有纪律执行路径。"
+                },
+                {
+                    "title": "全球标准",
+                    "description": "每个程序都按照融资领域最高国际专业标准执行。"
+                }
+            ]
+        },
+        "cta": {
+            "badge": "开始您的融资旅程",
+            "title": "准备好机构融资",
+            "titleHighlight": "达到全球标准了吗？",
+            "paragraph": "我们的专业执行团队全天候工作，为您的需求设计最优融资解决方案。",
+            "phoneLabel": "直线电话",
+            "emailLabel": "电子邮件",
+            "locationLabel": "总部",
+            "locationValue": "阿拉伯联合酋长国",
+            "ctaViewProcess": "查看阶段",
+            "featureResponseTime": "响应时间",
+            "featureConfidentiality": "完全保密",
+            "featureExperience": "多年经验",
+            "featureFiles": "成功档案",
+            "imageAltMain": "谈判团队",
+            "imageAltStats": "执行统计"
+        }
+    },
+    "financingPath": {
+        "pageTitle": "KIB Financing | 融资路径",
+        "pageDescription": "执行融资路径：按全球机构标准管理的高端融资旅程，适用于需要精准处理和战略远见的客户。",
+        "hero": {
+            "badge": "高管VIP路径",
+            "title": "融资路径",
+            "titleHighlight": "执行",
+            "subtitle": "按全球机构标准管理的高端融资系统。专为财务需求需要精准处理和战略远见的客户设计的路径。",
+            "ctaPrimary": "申请高管咨询",
+            "ctaSecondary": "探索路径",
+            "trustConfidentiality": "100%保密",
+            "trustStages": "8个精准阶段",
+            "trustPartnership": "持续合作",
+            "imageAlt": "沙特国王大厦 - 利雅得"
+        },
+        "stats": {
+            "label1": "百万沙特里亚尔融资",
+            "label2": "战略合作伙伴",
+            "label3": "精准阶段",
+            "label4": "平均完成天数",
+            "imageAlt": "城市天际线"
+        },
+        "timeline": {
+            "sectionTitle": "执行路径",
+            "sectionTitleHighlight": "stages",
+            "subtitle": "基于全球主要金融机构使用的方法论，以保密、精准和专业方式管理的一体化资本旅程。",
+            "viewTimeline": "查看路径",
+            "viewGrid": "查看网格",
+            "fullDetails": "完整详情",
+            "details": "详情",
+            "stageLabel": "阶段",
+            "activitiesTitle": "本阶段关键活动：",
+            "stages": {
+                "1": {
+                    "title": "全面战略尽职调查",
+                    "shortDesc": "成果：从一开始就确定融资方向的清晰战略愿景。",
+                    "fullContent": "在任何步骤之前对业务进行深入解读。我们从私下会话开始了解您的愿景，然后分析运营模式并以高精准度评估财务状况，以识别真实融资需求并建立最合适路径的初步观点。",
+                    "bullets": [
+                        "与客户进行私下会话以了解其愿景",
+                        "业务运营模式分析",
+                        "财务状况的高精准度评估",
+                        "识别真实融资需求",
+                        "建立最佳路径的初步观点",
+                        "识别可以依托的优势"
+                    ]
+                },
+                "2": {
+                    "title": "塑造业务的财务身份",
+                    "shortDesc": "成果：向融资方以更高水准展示客户的强大财务身份。",
+                    "fullContent": "将数据转化为高级财务档案。我们收集重要数据并专业地重新整理，以生成突出优势并解决任何小差距的准确财务图。",
+                    "bullets": [
+                        "仅收集重要数据",
+                        "专业地重新整理信息",
+                        "准备准确的财务图",
+                        "突出财务优势",
+                        "解决任何小差距",
+                        "准备完整的财务档案以供机构展示"
+                    ]
+                },
+                "3": {
+                    "title": "准备执行档案",
+                    "shortDesc": "成果：反映客户实力和准备情况的严格执行档案。",
+                    "fullContent": "为主要机构设计的融资档案。我们起草高级别执行摘要，构建客户的财务故事，准备均衡的还款计划并确定提交策略。",
+                    "bullets": [
+                        "准备全面的执行档案",
+                        "起草高级别执行摘要",
+                        "构建客户的财务故事",
+                        "准备均衡的还款计划",
+                        "确定提交策略",
+                        "准备正式机构展示"
+                    ]
+                },
+                "4": {
+                    "title": "选择理想融资机构",
+                    "shortDesc": "成果：选择提供最高批准率和最佳条款的机构。",
+                    "fullContent": "客户需求与融资项目之间的精准匹配。我们分析融资方的政策并比较项目，以识别最佳匹配和正确的提交渠道。",
+                    "bullets": [
+                        "分析融资机构的政策",
+                        "比较项目和选项",
+                        "识别最佳匹配机构",
+                        "识别正确的提交渠道",
+                        "准备正式沟通计划",
+                        "设定最优提交时机"
+                    ]
+                },
+                "5": {
+                    "title": "正式机构提交",
+                    "shortDesc": "成果：逐步跟进档案直到决定发出。",
+                    "fullContent": "按全球标准提交和管理档案。我们管理与融资机构的沟通，回应技术询问并每天跟踪申请状态，确保顺畅审查。",
+                    "bullets": [
+                        "通过官方渠道提交档案",
+                        "展示执行摘要",
+                        "管理与融资方的沟通",
+                        "回应技术询问",
+                        "每日跟踪申请状态",
+                        "确保顺畅的审查流程"
+                    ]
+                },
+                "6": {
+                    "title": "改善融资条款",
+                    "shortDesc": "成果：卓越的融资方案……更好的条款……更高的收益。",
+                    "fullContent": "获取最佳融资方案。我们致力于改善融资利率、还款期限、费用和完成条件，以提高客户的融资价值。",
+                    "bullets": [
+                        "改善融资利率",
+                        "改善还款期限",
+                        "改善费用",
+                        "改善完成条件",
+                        "改善还款条款",
+                        "提高客户的融资价值"
+                    ]
+                },
+                "7": {
+                    "title": "执行财务完成",
+                    "shortDesc": "成果：顺畅、清晰且令人放心的财务完成。",
+                    "fullContent": "以清晰和自信完成融资。我们在批准协议、签署正式完成和发出最终批准之前审查合同并向客户解释条款。",
+                    "bullets": [
+                        "审查合同",
+                        "向客户解释条款",
+                        "批准协议",
+                        "签署正式完成",
+                        "发出最终批准",
+                        "准备执行计划"
+                    ]
+                },
+                "8": {
+                    "title": "融资后合作",
+                    "shortDesc": "成果：融资后加强客户的持续资本合作。",
+                    "fullContent": "持续的资本关系……而非一次性交易。我们监控承诺并跟踪流量，同时提供持续的财务建议，支持客户应对任何未来更新。",
+                    "bullets": [
+                        "监控承诺",
+                        "跟踪流量",
+                        "提供持续财务建议",
+                        "支持客户应对未来更新",
+                        "加强财务稳定性",
+                        "建立长期关系"
+                    ]
+                },
+                "9": {
+                    "title": "资本增长与扩张战略",
+                    "shortDesc": "Outcome: A structured expansion plan that increases the company’s value and market impact.",
+                    "fullContent": "After achieving financial stability, we move into the growth phase. We analyze expansion opportunities, restructure capital when necessary, and evaluate refinancing or strategic partnership options to enhance the company’s market valuation and support its long-term sustainability.",
+                    "bullets": [
+                        "分析市场扩张机会",
+                        "评估再融资选项",
+                        "在需要时重组资本",
+                        "评估战略合作机会",
+                        "提高市场估值",
+                        "制定长期增长计划"
+                    ]
+                }
+            }
+        },
+        "whoItsFor": {
+            "title": "这个",
+            "titleHighlight": "路径适合谁？",
+            "criteria1Title": "中大型企业",
+            "criteria1Desc": "拥有良好业绩记录并寻求在本地或区域扩展运营的企业。",
+            "criteria2Title": "扩张和增长项目",
+            "criteria2Desc": "寻求收购或新生产线融资的机构。",
+            "criteria3Title": "跨国公司",
+            "criteria3Desc": "寻求与本地市场运营相匹配融资结构的外国公司。",
+            "criteria4Title": "财务重组",
+            "criteria4Desc": "寻求改善资本结构并降低当前融资成本的公司。",
+            "imageAlt1": "战略规划团队",
+            "imageAlt2": "财务数据分析",
+            "badgeText": "我们在王国服务超过50家领先公司"
+        },
+        "benefits": {
+            "title": "为什么选择",
+            "titleHighlight": "执行路径？",
+            "intro": "我们不只是提供融资……我们重塑您的财务地位，建立提高您竞争力并给予您卓越谈判力量的资本路径。",
+            "benefit1Title": "更稳定和稳健",
+            "benefit1Desc": "我们构建提高您竞争力并加强您市场存在的资本路径。",
+            "benefit2Title": "更多价值和影响",
+            "benefit2Desc": "我们给予您只有顶级客户才能获得的谈判力量。",
+            "benefit3Title": "与您的雄心一致",
+            "benefit3Desc": "在完全信心下管理、以完全信任执行并以超出预期的结果完成的合作。",
+            "benefit4Title": "全球标准",
+            "benefit4Desc": "最接近全球金融机构的精准度和专业主义。",
+            "imageAlt1": "自信的商人",
+            "imageAlt2": "交易握手",
+            "imageAlt3": "执行档案准备"
+        },
+        "comparison": {
+            "title": "之间的差异",
+            "titleHighlight": "executive path",
+            "titleSuffix": "与传统路径",
+            "subtitle": "探索为什么杰出客户选择执行路径而非传统路线。",
+            "tabCompare": "完整比较",
+            "tabTraditional": "传统路径",
+            "tabExecutive": "执行路径",
+            "traditionalTitle": "传统路径",
+            "traditionalSubtitle": "获取融资的通常方式",
+            "executiveTitle": "执行路径",
+            "executiveSubtitle": "达到全球标准的一体化资本旅程",
+            "bestBadge": "最佳",
+            "executiveFullSubtitle": "顶级客户的专属福利",
+            "traditionalFullTitle": "传统路径",
+            "traditionalFullSubtitle": "大多数融资申请人面临的挑战和风险",
+            "executiveFullTitle": "执行路径",
+            "ctaStart": "开始您的执行路径",
+            "traditionalItems": [
+                "在没有指导的情况下自行准备档案",
+                "向单一机构申请并等待",
+                "没有条款谈判",
+                "提交后没有跟进",
+                "没有优化的标准融资条款",
+                "放款后没有支持",
+                "漫长且不确定的完成时间"
+            ],
+            "executiveItems": [
+                "全面的战略尽职调查和严格的执行档案",
+                "从数十个选项中选择理想机构",
+                "专业谈判改善每个条款",
+                "逐步跟进直到决定发出",
+                "优化的融资条款和专属福利",
+                "融资后持续资本合作",
+                "平均仅需15个工作日完成"
+            ],
+            "imageAltTraditional": "传统纸质文件",
+            "imageAltExecutive": "专业执行团队"
+        },
+        "partners": {
+            "title": "我们的",
+            "titleHighlight": "战略合作伙伴",
+            "subtitle": "我们与领先金融机构合作，为客户获取最佳条款和选项。",
+            "trustBadge": "我们所有合作关系均已获得沙特中央银行许可和批准",
+            "imageAlt": "金融区 - 利雅得",
+            "names": [
+                "Al Ahli Bank",
+                "Al Rajhi Bank",
+                "Riyad Bank",
+                "Banque Saudi Fransi",
+                "Development Fund",
+                "Export Bank",
+                "Monsha'at",
+                "Kafalah"
+            ]
+        },
+        "faq": {
+            "title": "常见",
+            "titleHighlight": "问题",
+            "items": {
+                "1": {
+                    "q": "什么是执行融资路径？",
+                    "a": "这是一个为财务需求需要精准处理和战略远见的客户设计的框架。我们不提供传统融资，而是基于主要金融机构使用的方法论，以保密和专业方式管理的一体化资本旅程。"
+                },
+                "2": {
+                    "q": "融资流程需要多长时间？",
+                    "a": "持续时间根据融资规模和财务结构的复杂性而异。平均而言，由于我们与决策者的直接关系，我们比传统路线大大缩短了时间，档案完成后平均约15天完成。"
+                },
+                "3": {
+                    "q": "您们保证融资获批吗？",
+                    "a": "通过第一阶段的全面战略尽职调查，我们准确评估成功机会。如果我们决定继续，由于彻底的准备和对正确融资机构的仔细选择，我们的档案成功率超过95%。"
+                },
+                "4": {
+                    "q": "您们服务哪些类型的公司？",
+                    "a": "我们服务中大型企业、扩张和增长项目、在本地市场运营的跨国公司，以及寻求财务重组的公司。"
+                },
+                "5": {
+                    "q": "您们如何确保我们财务数据的保密性？",
+                    "a": "我们遵守最高的保密和隐私标准。在审查任何文件之前签署严格的保密协议（NDA），所有数据都通过安全封闭的系统管理。"
+                }
+            },
+            "imageAlt1": "提供建议的财务顾问",
+            "imageAlt2": "合作握手",
+            "sideTitle": "专业咨询团队",
+            "sideSubtitle": "我们以完全透明的态度回答您的所有询问",
+            "badgeSuccess": "+95%成功率",
+            "badgeDays": "平均15天"
+        },
+        "cta": {
+            "imageTitle": "您的下一步从这里开始",
+            "imageSubtitle": "我们在等待构建您的资本路径。",
+            "heading": "准备好将您的业务提升到下一个级别了吗？",
+            "paragraph": "进入在完全信心下管理、以完全信任执行并以超出预期结果完成的真实资本合作。",
+            "ctaButton": "申请高管咨询",
+            "contactLabel": "或直接通过以下方式联系我们：",
+            "whatsapp": "WhatsApp",
+            "call": "致电",
+            "email": "电子邮件",
+            "imageAlt": "高管握手"
+        }
+    }
+}
