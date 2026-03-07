@@ -56,7 +56,7 @@ export function PhaseCard({
         y: -6,
         scale: 1.02,
       }}
-      className={`relative rounded-3xl overflow-hidden cursor-pointer gradient-border ${large ? 'md:col-span-2' : ''}`}
+      className={`h-full relative rounded-3xl overflow-hidden cursor-pointer gradient-border ${large ? 'md:col-span-2' : ''}`}
       style={{
         background: 'rgba(0,0,0,0.025)',
         border: '1px solid rgba(0,0,0,0.08)',
@@ -157,7 +157,7 @@ export function PhaseCard({
         <p
           className="home-body-large leading-relaxed mb-4"
           style={{
-            fontFamily: 'Tajawal, sans-serif',
+             
             color: 'rgba(0,0,0,0.6)',
           }}
           dir={isRTL ? "rtl" : "ltr"}
@@ -170,7 +170,7 @@ export function PhaseCard({
           <span
             className="home-small-label font-semibold"
             style={{
-              fontFamily: 'Tajawal, sans-serif',
+               
               background: gradient,
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
@@ -240,14 +240,13 @@ export function PhaseCard({
                       transition={{
                         delay: i * 0.05,
                       }}
-                      className="flex items-start gap-3 home-small-label"
+                      className="flex items-start gap-3"
                       style={{
-                        fontFamily: 'Tajawal, sans-serif',
                         color: 'rgba(0,0,0,0.65)',
                       }}
                     >
                       <div
-                        className="flex-shrink-0 w-1.5 h-1.5 rounded-full mt-2"
+                        className="flex-shrink-0 text-xl w-1.5 h-1.5 rounded-full mt-2"
                         style={{
                           background: gradient,
                         }}

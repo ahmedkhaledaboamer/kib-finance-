@@ -31,7 +31,7 @@ export function PrinciplesBadges() {
   }))
   return (
     <section
-      className="relative py-20 overflow-hidden px-[5%]"
+      className="relative md:py-20 pt-0 overflow-hidden px-[5%]"
       style={{
         background: '#ffffff',
       }}
@@ -103,7 +103,7 @@ export function PrinciplesBadges() {
           <p
             className="home-body-large"
             style={{
-              fontFamily: 'Tajawal, sans-serif',
+               
               color: 'rgba(0,0,0,0.5)',
             }}
           >

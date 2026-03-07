@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from '@/i18n/routing'
 import { ArrowLeftIcon, ArrowRightIcon, PhoneIcon, MailIcon, SparklesIcon } from 'lucide-react'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 export function CTASection({ isRTL }: { isRTL: boolean }) {
   const t = useTranslations('integratedPath.cta')
@@ -131,14 +131,14 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
             <SparklesIcon
               size={16}
               style={{
-                color: '#ffd700',
+                color: '#e11d48',
               }}
             />
             <span
               className="home-badge-text font-bold"
               style={{
                 fontFamily: 'Cairo, sans-serif',
-                color: '#ffd700',
+                color: '#e11d48',
               }}
             >
               {t('badge')}
@@ -207,7 +207,7 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
           }}
           className="home-body-large mb-12 mx-auto leading-relaxed"
           style={{
-            fontFamily: 'Tajawal, sans-serif',
+             
             color: 'rgba(0,0,0,0.55)',
           }}
         >
@@ -272,10 +272,11 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
           }}
           className="flex flex-wrap justify-center gap-8"
         >
-          <div
-            className="flex items-center gap-3"
+          <Link
+            href="tel:+971521068882"
+            className="flex items-center gap-3 transition-opacity hover:opacity-80"
             style={{
-              fontFamily: 'Tajawal, sans-serif',
+               
               color: 'rgba(0,0,0,0.5)',
             }}
           >
@@ -286,11 +287,12 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
               }}
             />
             <span className="home-small-label">{t('phone')}</span>
-          </div>
-          <div
-            className="flex items-center gap-3"
+          </Link>
+          <Link
+            href="mailto:info@shazmlc.com"
+            className="flex items-center gap-3 transition-opacity hover:opacity-80"
             style={{
-              fontFamily: 'Tajawal, sans-serif',
+               
               color: 'rgba(0,0,0,0.5)',
             }}
           >
@@ -301,7 +303,7 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
               }}
             />
             <span className="home-small-label">{t('email')}</span>
-          </div>
+          </Link>
         </motion.div>
 
         {/* Bottom divider line */}

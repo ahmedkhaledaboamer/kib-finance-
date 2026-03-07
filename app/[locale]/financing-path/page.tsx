@@ -23,7 +23,7 @@ export default async function FinancingPathPage() {
         <Timeline locale={locale} />
         <WhoItsFor />
         <Benefits />
-        <Comparison />
+        <Comparison locale={locale}/>
         <FAQ locale={locale} />
         <CTASection locale={locale} />
       </main>);

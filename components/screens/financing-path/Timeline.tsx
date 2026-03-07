@@ -267,14 +267,14 @@ export function Timeline({ locale }: { locale: string }) {
                         </div>
 
                         <div className="relative z-10">
-                          <div className="overflow-hidden rounded-lg mb-6 h-56 lg:h-64 xl:h-90 2xl:h-150 relative shadow-inner">
+                          <div className="overflow-hidden rounded-lg mb-6 h-fit relative shadow-inner">
                             <div className="absolute inset-0 bg-dark/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                             <Image
                               src={stage.imageUrl}
                               alt={stage.title}
                               width={500}
                               height={500}
-                              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                              className="w-full h-56 lg:h-64 xl:h-120 object-cover transform group-hover:scale-105 transition-transform duration-700" />
 
                           </div>
                           <h3
@@ -291,7 +291,7 @@ export function Timeline({ locale }: { locale: string }) {
                           className={`cursor-pointer flex items-center gap-2 ${accentClasses[colorKey].text} font-bold hover:opacity-80 transition-opacity group/btn ${isRTL ? 'flex-row-reverse' : ''}`}>
 
                             <span>{t('fullDetails')}</span>
-                            {isRTL ? <ArrowLeft className="w-4 h-4 shrink-0 transform group-hover/btn:translate-x-2 transition-transform" /> : <ArrowRight className="w-4 h-4 shrink-0 transform group-hover/btn:-translate-x-2 transition-transform" />}
+                            {isRTL ? <ArrowLeft className="w-4 h-4 shrink-0 transform group-hover/btn:translate-x-[-5px] transition-transform" /> : <ArrowRight className="w-4 h-4 shrink-0 transform group-hover/btn:-translate-x-[-5px] transition-transform" />}
                           </button>
                         </div>
                       </div>
@@ -407,7 +407,7 @@ export function Timeline({ locale }: { locale: string }) {
               </h4>
               <ul className="space-y-3">
                 {selectedStage.bullets.map((bullet, i) =>
-              <li key={i} className={`flex items-start gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
+              <li key={i} className={`flex ${isRTL ? 'justify-end' : 'justify-start'} items-center gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
                     <CheckCircle2
                   className={`w-5 h-5 shrink-0 mt-0.5 ${accentClasses[accentColors[(selectedStage.id - 1) % accentColors.length] as keyof typeof accentClasses].text}`} />
 

@@ -9,7 +9,7 @@ import {
   SparklesIcon, 
   ArrowRightIcon} from
 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -60,12 +60,12 @@ export function ContactCTA({ locale }: { locale: string }) {
                 <SparklesIcon size={13} />
                 {t('badge')}
               </span>
-              <h2 className="text-center md:text-left home-section-heading font-black text-navy mb-5 leading-tight">
+              <h2 className={`text-center ${isRTL ? 'md:text-right' : 'md:text-left'} home-section-heading font-black text-navy mb-5 leading-tight`}>
                 {t('title')}
                 <br />
                 <span className="gradient-text-gold">{t('titleHighlight')}</span>
               </h2>
-              <p className="text-gray-600 text-center md:text-left home-body-large leading-relaxed mb-8">
+              <p className={`text-gray-600 text-center ${isRTL ? 'md:text-right' : 'md:text-left'} home-body-large leading-relaxed mb-8`}>
                 {t('subtitle')}
               </p>
 
@@ -75,13 +75,15 @@ export function ContactCTA({ locale }: { locale: string }) {
                   {
                     icon: PhoneIcon,
                     label: t('phoneLabel'),
-                    value: '+971 00 000 0000',
+                    value: '+971521068882',
+                    href: 'tel:+971521068882',
                     color: 'text-gold bg-gold/10'
                   },
                   {
                     icon: MailIcon,
                     label: t('emailLabel'),
-                    value: 'info@kebfinancing.com',
+                    value: 'info@shazmlc.com',
+                    href: 'mailto:info@shazmlc.com',
                     color: 'text-teal bg-teal/10'
                   }
                 ].map((item, i) =>
@@ -102,23 +104,27 @@ export function ContactCTA({ locale }: { locale: string }) {
                   transition={{
                     delay: 0.2 + i * 0.1
                   }}
-                  className="flex items-center gap-4">
-
+                >
+                  <Link
+                    href={item.href}
+                    className="flex items-center gap-4 hover:opacity-90 transition-opacity"
+                  >
                     <div
-                    className={`w-10 h-10 rounded-xl ${item.color} flex items-center justify-center flex-shrink-0`}>
-
+                      className={`w-10 h-10 rounded-xl ${item.color} flex items-center justify-center flex-shrink-0`}
+                    >
                       <item.icon size={16} />
                     </div>
                     <div>
                       <div className="text-gray-400 home-small-label">{item.label}</div>
                       <div
-                      className="text-navy font-semibold home-small-label"
-                      dir="ltr">
-
+                        className="text-navy font-semibold home-small-label"
+                        dir="ltr"
+                      >
                         {item.value}
                       </div>
                     </div>
-                  </motion.div>
+                  </Link>
+                </motion.div>
                 )}
               </div>
               <Link href="/implementation-mechanism">
@@ -133,7 +139,7 @@ export function ContactCTA({ locale }: { locale: string }) {
                 className="cursor-pointer group inline-flex items-center gap-3 bg-gradient-to-l from-gold to-gold-light text-navy font-bold px-8 py-4 rounded-2xl shadow-xl shadow-gold/30 home-body-large">
 
                 {t('cta')}
-                <motion.span className="group-hover:-translate-x-1 transition-transform">
+                <motion.span className=" transition-transform">
                   {!isRTL ? <ArrowRightIcon size={18} /> : <ArrowLeftIcon size={18} />}
                 </motion.span>
               </motion.button>

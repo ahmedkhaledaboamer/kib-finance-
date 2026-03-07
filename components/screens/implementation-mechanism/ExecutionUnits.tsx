@@ -151,7 +151,7 @@ export function ExecutionUnits({ isRTL }: { isRTL: boolean }) {
 
           {/* Summary card */}
           <motion.div
-            className="rounded-2xl p-6 text-white shadow-lg sm:col-span-2 lg:col-span-3 xl:col-span-1"
+            className="flex flex-col items-center justify-center rounded-2xl p-6 text-white shadow-lg sm:col-span-2 lg:col-span-3 xl:col-span-1"
             style={{
               background: 'linear-gradient(135deg, #2563EB, #4F46E5)'
             }}
@@ -171,13 +171,13 @@ export function ExecutionUnits({ isRTL }: { isRTL: boolean }) {
               delay: 0.6
             }}>
 
-            <div className="text-5xl font-black mb-2">
+            <div className="text-5xl font-black mb-2 text-center">
               {t('summary.titleNumber')}
             </div>
-            <p className="text-xl font-bold mb-2">
+            <p className="text-xl font-bold mb-2 text-center">
               {t('summary.titleLabel')}
             </p>
-            <p className="text-blue-200 text-sm font-medium leading-relaxed">
+            <p className="text-blue-200 text-sm font-medium leading-relaxed text-center">
               {t('summary.text')}
             </p>
             <div className="mt-4 grid grid-cols-2 gap-2">

@@ -75,7 +75,7 @@ export function ServiceCard({ service, onClick, index, locale }: ServiceCardProp
 
         {/* Dark Overlay that fades in */}
         <div className="absolute inset-0 bg-[#1E3A5F]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex items-center justify-center z-10">
-          <span className="text-white font-bold text-lg flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+          <span className={`text-white font-bold text-lg flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500`}>
             {t('readMore')} {!isRTL ? <ArrowRight className="w-5 h-5" /> : <ArrowLeft className="w-5 h-5" />}
           </span>
         </div>
@@ -98,7 +98,7 @@ export function ServiceCard({ service, onClick, index, locale }: ServiceCardProp
 
         <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between text-[#059669] font-medium group-hover:text-[#1E3A5F] transition-colors duration-300">
           <span>{t('details')}</span>
-          {!isRTL ? <ArrowRight className="w-4 h-4 transform group-hover:-translate-x-2 transition-transform duration-300" /> : <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-2 transition-transform duration-300" />}
+          {!isRTL ? <ArrowRight className="w-4 h-4 transform group-hover:-translate-x-[-10px] transition-transform duration-300" /> : <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-[10px] transition-transform duration-300" />}
         </div>
       </div>
     </motion.div>);

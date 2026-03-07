@@ -1,13 +1,19 @@
-import Logo from "@/components/logo";
+import Image from "next/image";
 
 export default function Loading() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
       <div className="flex flex-col items-center gap-6">
         <div className="relative">
-          <div className="absolute inset-0 rounded-full border-4 border-slate-700 border-t-emerald-400 animate-spin" />
-          <div className="relative p-4 bg-slate-900 rounded-full shadow-lg shadow-emerald-500/20">
-            <Logo size={80} />
+          <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-emerald-400 animate-spin" />
+          <div className="relative p-4 rounded-full">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={80}
+              height={80}
+              className="rounded-3xl object-contain"
+            />
           </div>
         </div>
         <p className="text-sm tracking-wide text-slate-300">

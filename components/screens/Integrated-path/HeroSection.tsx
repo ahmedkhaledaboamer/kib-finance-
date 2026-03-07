@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from '@/i18n/routing'
 import { GeometricPatterns } from './GeometricPatterns'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 export function HeroSection() {
   const t = useTranslations('integratedPath.hero')
@@ -13,7 +13,7 @@ export function HeroSection() {
   ] as { value: string; label: string }[]
   return (
     <section
-      className="relative h-100vh  pt-[10%]   flex items-center justify-center overflow-hidden"
+      className="relative h-100vh pt-[10%] pb-[3%]  flex items-center justify-center overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #3F51B5 0%, #00bcd47a 50%, #EFF6FF 100%)',
       }}
@@ -104,7 +104,7 @@ export function HeroSection() {
           }}
           className="home-body-large mb-12 mx-auto leading-relaxed"
           style={{
-            fontFamily: 'Tajawal, sans-serif',
+             
             color: 'rgba(0,0,0,0.5)',
           }}
         >
@@ -144,7 +144,7 @@ export function HeroSection() {
               <div
                 className="home-stat-label"
                 style={{
-                  fontFamily: 'Tajawal, sans-serif',
+                   
                   color: 'rgba(0,0,0,0.45)',
                 }}
               >

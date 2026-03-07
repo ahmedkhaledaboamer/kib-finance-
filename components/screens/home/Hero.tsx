@@ -9,9 +9,9 @@ import {
   UsersIcon,
   ArrowRightIcon} from
 'lucide-react';
+import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { ContactModal } from './ContactModal';
-import Link from 'next/link';
 
 export function Hero({ locale }: { locale: string }) {
   const isRTL = locale === "ar";
@@ -241,7 +241,7 @@ export function Hero({ locale }: { locale: string }) {
                   className="cursor-pointer group flex items-center gap-3 bg-gradient-to-l from-gold to-gold-light text-navy font-bold md:px-8 px-4 py-3 rounded-2xl shadow-xl shadow-gold/30 md:text-lg text-base">
                   
                   {t('primaryCta')}
-                  <motion.span className="group-hover:-translate-x-1 transition-transform">
+                  <motion.span className="transition-transform">
                     {isRTL ? <ArrowLeftIcon size={18} /> : <ArrowRightIcon size={18} />}
                   </motion.span>
                 </motion.button>

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { MessageCircle, Phone, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -18,10 +18,10 @@ export function CTASection({ locale }: { locale: string }) {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-teal to-amber opacity-50" />
 
       <div className="mx-auto px-6">
-        <div className="bg-cream rounded-3xl shadow-2xl overflow-hidden  flex flex-col md:flex-row border border-gray-100">
+        <div className="bg-cream rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 border border-gray-100">
           
-          {/* Image Side */}
-          <div className="md:w-1/2 relative home-image-full" dir={isRTL ? "rtl" : "ltr"}>
+          {/* Image Side - grid row gives equal height so no empty space below image */}
+          <div className="relative min-h-[clamp(15rem,22vw,30rem)]" dir={isRTL ? "rtl" : "ltr"}>
           <Image
               src="/imges/financing-path/040.webp"
               alt={t('imageAlt')}
@@ -43,7 +43,7 @@ export function CTASection({ locale }: { locale: string }) {
           </div>
 
           {/* Content Side */}
-          <div dir={isRTL ? "rtl" : "ltr"} className="md:w-1/2 p-12 md:p-16 flex flex-col justify-center text-center md:text-right bg-white">
+          <div dir={isRTL ? "rtl" : "ltr"} className="p-12 md:p-16 flex flex-col justify-center text-center md:text-right bg-white">
             <motion.h2
               initial={{
                 opacity: 0,
@@ -56,7 +56,7 @@ export function CTASection({ locale }: { locale: string }) {
               viewport={{
                 once: true
               }}
-              className={`home-section-heading font-bold text-dark mb-6 ${isRTL ? 'text-right' : 'text-left'}`}>
+              className={`texr-xl md:text-2xl lg:text-3xl font-bold text-dark mb-6 ${isRTL ? 'text-right' : 'text-left'}`}>
 
               {t('heading')}
             </motion.h2>
@@ -98,7 +98,7 @@ export function CTASection({ locale }: { locale: string }) {
               className="self-center md:self-start w-full md:w-auto mb-10">
               <Link
                 href="/implementation-mechanism"
-                className="inline-block bg-gradient-gold-amber text-white font-bold text-xl px-12 py-5 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-full md:w-auto text-center no-underline border-0 cursor-pointer"
+                className="inline-block bg-gradient-gold-amber text-white font-bold md:text-xl text-base md:px-12 px-8 md:py-5 py-3 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-full md:w-auto text-center no-underline border-0 cursor-pointer"
                 style={{ color: 'white' }}>
                 {t('ctaButton')}
               </Link>
@@ -110,27 +110,20 @@ export function CTASection({ locale }: { locale: string }) {
                 {t('contactLabel')}
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a
-                  href="#"
-                  className="flex items-center gap-2 bg-emerald/10 text-emerald hover:bg-emerald hover:text-white px-4 py-2 rounded-full transition-colors text-sm font-bold">
-
-                  <MessageCircle className="w-4 h-4" />
-                  {t('whatsapp')}
-                </a>
-                <a
-                  href="#"
+                <Link
+                  href="tel:+971521068882"
                   className="flex items-center gap-2 bg-teal/10 text-teal-dark hover:bg-teal hover:text-white px-4 py-2 rounded-full transition-colors text-sm font-bold">
 
                   <Phone className="w-4 h-4" />
                   {t('call')}
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center gap-2 bg-royal/10 text-royal hover:bg-royal hover:text-gray-900 px-4 py-2 rounded-full transition-colors text-sm font-bold">
+                </Link>
+                <Link
+                  href="mailto:info@shazmlc.com"
+                  className="flex items-center gap-2 text-cyan-950 hover:text-white hover:border-cyan-700 bg-emerald-100/50 hover:bg-cyan-950 px-4 py-2 rounded-full transition-colors text-sm font-bold">
 
                   <Mail className="w-4 h-4" />
                   {t('email')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

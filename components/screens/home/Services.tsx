@@ -17,8 +17,8 @@ import {
 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { ContactModal } from './ContactModal';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
-import Link from 'next/link';
 interface Service {
   icon: React.ElementType;
   key: string;
@@ -262,7 +262,7 @@ function ServiceModal({ service, onClose, onContact, locale }: ServiceModalProps
               </div>
 
               {/* CTA */}
-              <div className="flex gap-3 pt-2 border-t border-gray-100 justify-center">
+              <div className="flex gap-3 pt-2 border-t border-gray-100 justify-center items-center">
                 <Link href="/implementation-mechanism">
                   <motion.button
                   whileHover={{
@@ -271,7 +271,7 @@ function ServiceModal({ service, onClose, onContact, locale }: ServiceModalProps
                   whileTap={{
                     scale: 0.97
                   }}
-                  className="w-full cursor-pointer flex-1 bg-gradient-to-l from-gold to-gold-light text-navy font-bold md:px-5 md:py-3.5 px-3 py-2 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-gold/25 text-sm">
+                  className="w-full cursor-pointer flex-1 bg-gradient-to-l from-gold to-gold-light text-navy font-bold md:px-5 md:py-3.5 px-3 py-2 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-gold/25 text-[clamp(0.7rem,1.25vw,1.2rem)]">
                     {!isRTL?             
                     <>
                       <PhoneIcon size={15} />
@@ -294,7 +294,7 @@ function ServiceModal({ service, onClose, onContact, locale }: ServiceModalProps
                   scale: 0.97
                 }}
                 onClick={onClose}
-                className="cursor-pointer md:px-5 md:py-3.5 px-3 py-2 border-2 border-gray-200 text-gray-500 font-semibold rounded-2xl text-sm hover:border-gray-300 transition-colors">
+                className="cursor-pointer md:px-5 md:py-3.5 px-3 py-2 border-2 border-gray-200 text-gray-500 font-semibold rounded-2xl text-[clamp(0.7rem,1.25vw,1.2rem)] hover:border-gray-300 transition-colors">
 
                   {t('modalClose')}
                 </motion.button>

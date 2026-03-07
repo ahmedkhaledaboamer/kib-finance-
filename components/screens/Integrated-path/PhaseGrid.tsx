@@ -102,7 +102,7 @@ export function PhaseGrid({ isRTL }: { isRTL: boolean }) {
           <p
             className="home-body-large mx-auto"
             style={{
-              fontFamily: 'Tajawal, sans-serif',
+               
               color: 'rgba(0,0,0,0.5)',
             }}
           >
@@ -114,7 +114,7 @@ export function PhaseGrid({ isRTL }: { isRTL: boolean }) {
       {/* Mosaic grid */}
       <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-auto">
         {/* Phase 1 - large */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 h-full">
           <PhaseCard {...phases[0]} index={0} isRTL={isRTL}/>
         </div>
         {/* Phase 2 */}
@@ -122,7 +122,7 @@ export function PhaseGrid({ isRTL }: { isRTL: boolean }) {
         {/* Phase 3 */}
         <PhaseCard {...phases[2]} index={2} isRTL={isRTL}/>
         {/* Phase 4 - large */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 h-full">
           <PhaseCard {...phases[3]} index={3} isRTL={isRTL}/>
         </div>
         {/* Phase 5 */}
@@ -132,7 +132,7 @@ export function PhaseGrid({ isRTL }: { isRTL: boolean }) {
         {/* Phase 7 */}
         <PhaseCard {...phases[6]} index={6} isRTL={isRTL}/>
         {/* Phase 8 - large */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 h-full">
           <PhaseCard {...phases[7]} index={7} isRTL={isRTL}/>
         </div>
         {/* Phase 9 */}

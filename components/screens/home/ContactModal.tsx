@@ -171,7 +171,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         phone: e.target.value
                       }))
                       }
-                      placeholder="+971 XX XXX XXXX"
+                      placeholder="+971521068882"
                       className="w-full pr-9 pl-4 py-3 border border-gray-200 rounded-xl text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all text-sm"
                       dir="ltr" />
 

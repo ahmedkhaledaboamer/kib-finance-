@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from '@/i18n/routing';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 export function HeroSection({ locale }: { locale: string }) {
   const t = useTranslations('servicesPage.hero');

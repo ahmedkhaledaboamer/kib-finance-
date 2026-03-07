@@ -100,7 +100,7 @@ export function Hero({ locale }: { locale: string }) {
               duration: 0.7,
               delay: 0.9
             }}
-            className="home-section-subtitle text-gray-300 mb-14 mx-auto leading-relaxed">
+            className="home-section-subtitle text-white mb-14 mx-auto leading-relaxed">
 
             {t('subtitle')}
           </motion.p>
@@ -131,7 +131,7 @@ export function Hero({ locale }: { locale: string }) {
 
               <span className="relative z-10 flex items-center gap-2">
                 {t('ctaPrimary')}
-                {!isRTL ? <ArrowRight className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> : <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />}
+                {!isRTL ? <ArrowRight className="w-5 h-5 transition-transform" /> : <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />}
               </span>
               <div className="absolute inset-0 -translate-x-full bg-white/20 group-hover:animate-shine z-0" />
             </button>
@@ -147,47 +147,45 @@ export function Hero({ locale }: { locale: string }) {
               {t('ctaSecondary')}
             </button>
           </motion.div>
-
-          {/* Trust Badges */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 15
-            }}
-            animate={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 1.5
-            }}
-            className="flex flex-wrap justify-center gap-3">
-
-            <div className="flex items-center gap-2 bg-white/8 backdrop-blur-sm px-4 py-2.5 rounded-lg border border-white/10 home-badge-text text-gray-300">
-              <div className="w-7 h-7 rounded-md bg-gold/20 flex items-center justify-center">
-                <Shield className="w-3.5 h-3.5 text-gold" />
-              </div>
-              <span>{t('trustConfidentiality')}</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/8 backdrop-blur-sm px-4 py-2.5 rounded-lg border border-white/10 home-badge-text text-gray-300">
-              <div className="w-7 h-7 rounded-md bg-teal/20 flex items-center justify-center">
-                <Clock className="w-3.5 h-3.5 text-teal" />
-              </div>
-              <span>{t('trustStages')}</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/8 backdrop-blur-sm px-4 py-2.5 rounded-lg border border-white/10 home-badge-text text-gray-300">
-              <div className="w-7 h-7 rounded-md bg-amber/20 flex items-center justify-center">
-                <Handshake className="w-3.5 h-3.5 text-amber" />
-              </div>
-              <span>{t('trustPartnership')}</span>
-            </div>
-          </motion.div>
         </div>
       </motion.div>
 
-      {/* Bottom fade to white (smooth transition to next section) */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-20" />
+      {/* Trust Badges — لا يختفي عند السكرول */}
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 15
+        }}
+        animate={{
+          opacity: 1,
+          y: 0
+        }}
+        transition={{
+          duration: 0.5,
+          delay: 1.5
+        }}
+        className="absolute bottom-8 left-0 right-0 flex flex-wrap justify-center gap-3 px-6 z-10">
+        <div className="flex items-center gap-2 bg-white/8 backdrop-blur-sm px-4 py-2.5 rounded-lg border border-white/10 home-badge-text text-gray-300">
+          <div className="w-7 h-7 rounded-md bg-gold/20 flex items-center justify-center">
+            <Shield className="w-3.5 h-3.5 text-gold" />
+          </div>
+          <span>{t('trustConfidentiality')}</span>
+        </div>
+        <div className="flex items-center gap-2 bg-white/8 backdrop-blur-sm px-4 py-2.5 rounded-lg border border-white/10 home-badge-text text-gray-300">
+          <div className="w-7 h-7 rounded-md bg-teal/20 flex items-center justify-center">
+            <Clock className="w-3.5 h-3.5 text-teal" />
+          </div>
+          <span>{t('trustStages')}</span>
+        </div>
+        <div className="flex items-center gap-2 bg-white/8 backdrop-blur-sm px-4 py-2.5 rounded-lg border border-white/10 home-badge-text text-gray-300">
+          <div className="w-7 h-7 rounded-md bg-amber/20 flex items-center justify-center">
+            <Handshake className="w-3.5 h-3.5 text-amber" />
+          </div>
+          <span>{t('trustPartnership')}</span>
+        </div>
+      </motion.div>
+
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent pointer-events-none" />
     </section>);
 
 }

@@ -1,12 +1,13 @@
 'use client';
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check, ArrowLeft, Sparkles } from 'lucide-react';
+import { X, Check, ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 type TabKey = 'compare' | 'traditional' | 'executive';
-export function Comparison() {
+export function Comparison({ locale }: { locale: string }) {
   const t = useTranslations('financingPath.comparison');
+  const isRTL = locale === 'ar';
   const traditionalPath = useMemo(() => (t.raw('traditionalItems') as string[]).map((text) => ({ text, negative: true })), [t]);
   const executivePath = useMemo(() => (t.raw('executiveItems') as string[]).map((text) => ({ text, negative: false })), [t]);
   const [activeTab, setActiveTab] = useState<TabKey>('compare');
@@ -89,7 +90,7 @@ export function Comparison() {
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`cursor-pointer relative px-6 py-3 rounded-lg text-sm font-bold transition-all duration-300 ${activeTab === tab.key ? 'text-white shadow-sm' : 'text-gray-500 hover:text-dark'}`}>
+              className={`cursor-pointer relative md:px-6 px-3 md:py-3 py-2 rounded-lg font-bold transition-all duration-300 ${activeTab === tab.key ? 'text-white shadow-sm' : 'text-gray-500 hover:text-dark'}`}>
 
                 {activeTab === tab.key &&
               <motion.div
@@ -102,7 +103,7 @@ export function Comparison() {
                 }} />
 
               }
-                <span className="relative z-10">{tab.label}</span>
+                <span className="relative z-10 text-[clamp(0.6rem,1.25vw,1.2rem)]">{tab.label}</span>
               </button>
             )}
           </div>
@@ -377,10 +378,10 @@ export function Comparison() {
                     behavior: 'smooth'
                   })
                   }
-                  className="inline-flex items-center gap-2 bg-gradient-gold-amber text-white font-bold px-8 py-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                  className="cursor-pointer inline-flex items-center gap-2 bg-gradient-gold-amber text-white font-bold px-8 py-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
 
                     {t('ctaStart')}
-                    <ArrowLeft className="w-4 h-4" />
+                    {!isRTL ? <ArrowRight className="w-4 h-4" /> : <ArrowLeft className="w-4 h-4" />}
                   </button>
                 </div>
               </div>

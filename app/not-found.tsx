@@ -1,7 +1,6 @@
 import Logo from "@/components/logo";
-import { routing } from "@/i18n/routing";
+import { Link, routing } from "@/i18n/routing";
 import { getLocale, getTranslations } from "next-intl/server";
-import Link from "next/link";
 
 export default async function NotFound() {
   const locale =
@@ -232,7 +231,7 @@ export default async function NotFound() {
                   }}
                 />
                 <Link
-                  href={locale ? `/${locale}` : "/"}
+                  href="/"
                   className="relative inline-flex items-center justify-center rounded-full px-8 py-3 text-sm md:text-base font-semibold transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816]"
                   style={{
                     background:

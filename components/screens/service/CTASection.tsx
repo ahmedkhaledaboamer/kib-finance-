@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from '@/i18n/routing';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 interface CTASectionProps {
   locale: string;
@@ -123,7 +123,7 @@ export function CTASection({ locale }: CTASectionProps) {
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:animate-[shimmer_1.5s_infinite]" />
 
                 <span className="relative z-10">{t('cta')}</span>
-                {!isRTL ? <ArrowRight className="w-6 h-6 group-hover:-translate-x-2 transition-transform relative z-10" /> : <ArrowLeft className="w-6 h-6 group-hover:-translate-x-2 transition-transform relative z-10" />}
+                {!isRTL ? <ArrowRight className="w-6 h-6 group-hover:-translate-x-[-10px] transition-transform relative z-10" /> : <ArrowLeft className="w-6 h-6 group-hover:-translate-x-[10px] transition-transform relative z-10" />}
               </motion.button>
             </div>
           </Link>

@@ -19,7 +19,7 @@ export function HomePageContent({ locale }: { locale: string }) {
         <Services locale={locale} />
         <Benefits />
         <Stats />
-        <WhyUs />
+        <WhyUs locale={locale} />
         <ContactCTA locale={locale} />
       </div>
     </div>

@@ -2,9 +2,9 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2 } from 'lucide-react';
+import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { ServiceItem } from '@/components/screens/service/services';
-import Link from 'next/link';
 import Image from 'next/image';
 interface ServiceModalProps {
   service: ServiceItem | null;

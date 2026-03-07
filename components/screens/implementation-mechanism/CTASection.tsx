@@ -2,8 +2,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ArrowLeftIcon, ArrowRightIcon, PhoneIcon, MailIcon, MapPinIcon } from 'lucide-react';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 export function CTASection({ isRTL }: { isRTL: boolean }) {
@@ -78,18 +78,24 @@ export function CTASection({ isRTL }: { isRTL: boolean }) {
 
             {/* Contact info */}
             <div className="space-y-3 mb-8">
-              <div className="flex items-center justify-center sm:justify-start gap-3 text-blue-100">
+              <Link
+                href="tel:+971521068882"
+                className="flex items-center justify-center sm:justify-start gap-3 text-blue-100 transition-opacity hover:opacity-90"
+              >
                 <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
                   <PhoneIcon size={16} className="text-cyan-300" />
                 </div>
-                <span className="font-medium">+971 XX XXX XXXX</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start gap-3 text-blue-100">
+                <span className="font-medium">+971521068882</span>
+              </Link>
+              <Link
+                href="mailto:info@shazmlc.com"
+                className="flex items-center justify-center sm:justify-start gap-3 text-blue-100 transition-opacity hover:opacity-90"
+              >
                 <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
                   <MailIcon size={16} className="text-cyan-300" />
                 </div>
-                <span className="font-medium">info@kebfinance.com</span>
-              </div>
+                <span className="font-medium">info@shazmlc.com</span>
+              </Link>
               <div className="flex items-center justify-center sm:justify-start gap-3 text-blue-100">
                 <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
                   <MapPinIcon size={16} className="text-cyan-300" />

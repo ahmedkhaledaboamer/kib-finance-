@@ -269,7 +269,8 @@ const governanceItems = [
   key: 'fullCompliance'
 }];
 
-export function WhyUs() {
+export function WhyUs({ locale }: { locale: string }) {
+  const isRTL = locale === 'ar';
   const t = useTranslations('financeHome.whyUs');
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -347,7 +348,7 @@ export function WhyUs() {
             whileHover={{
               y: -4
             }}
-            className="flex flex-col items-center justify-center md:items-start md:justify-start bg-white/5 border border-white/10 rounded-2xl p-4 cursor-default hover:bg-white/8 transition-colors">
+            className="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-4 cursor-default hover:bg-white/8 transition-colors">
 
               <div
               className={`w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 ${item.bg}/20 rounded-xl flex items-center justify-center mb-3`}>
@@ -357,7 +358,7 @@ export function WhyUs() {
               <h3 className="text-white font-bold home-small-label mb-1">
                 {t(`vision.${item.key}.title`)}
               </h3>
-              <p className="text-white/40 home-small-label leading-relaxed text-center md:text-left">
+              <p className="text-white/40 home-small-label leading-relaxed text-center">
                 {t(`vision.${item.key}.desc`)}
               </p>
             </motion.div>
@@ -407,7 +408,7 @@ export function WhyUs() {
                       <div className="text-white font-semibold home-small-label">
                         {t(`governance.${g.key}.title`)}
                       </div>
-                      <div className="text-white/40 home-small-label mt-0.5 text-center md:text-left">
+                      <div className={`text-white/40 home-small-label mt-0.5 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
                         {t(`governance.${g.key}.desc`)}
                       </div>
                     </div>
