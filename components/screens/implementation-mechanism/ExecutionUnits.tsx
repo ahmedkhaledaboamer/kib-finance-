@@ -151,7 +151,7 @@ export function ExecutionUnits({ isRTL }: { isRTL: boolean }) {
 
           {/* Summary card */}
           <motion.div
-            className="flex flex-col items-center justify-center rounded-2xl p-6 text-white shadow-lg sm:col-span-2 lg:col-span-3 xl:col-span-1"
+            className="flex flex-col items-center justify-center rounded-2xl p-6 text-white shadow-lg  lg:col-span-2 xl:col-span-1"
             style={{
               background: 'linear-gradient(135deg, #2563EB, #4F46E5)'
             }}
