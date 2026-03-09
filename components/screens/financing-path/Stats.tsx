@@ -54,11 +54,8 @@ export function Stats() {
   return (
     <section className="relative py-20 z-30 overflow-hidden">
       {/* Background Image with Gradient Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/imges/financing-path/02.webp"
-          alt={t('imageAlt')}
-          className="w-full h-full object-cover " />
+      <div className="absolute inset-0 z-0 bg-[#1C222E] ">
+         
 
         <div className="absolute inset-0 bg-gradient-teal-dark mix-blend-multiply" />
         <div className="absolute inset-0 bg-dark/60" />
